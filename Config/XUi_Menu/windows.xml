@@ -1,0 +1,9 @@
+<config>
+	<set xpath="/windows/window[@name='menuBackground']">
+		<texture depth="1" color="[white]" texture="@modfolder:/UI/MainMenu/background.png" name="bgTexture" anchor_left="#cam,0,-5" anchor_bottom="#cam,0,-5" anchor_right="#cam,1,5" anchor_top="#cam,1,5" />
+	</set>
+	
+	<set xpath="/windows/window[@name='mainMenuLogo']">
+		<texture depth="3" color="[white]" texture="@modfolder:/UI/MainMenu/7DTD_logo.png" name="gameLogo" anchor_left="#cam,0.5,-20" anchor_bottom="#cam,0.5,70" anchor_right="#cam,0.5,-20" anchor_top="#cam,0.5,490" pivot="center" keep_aspect_ratio="BasedOnHeight" aspect_ratio="4" />
+	</set>
+</config>

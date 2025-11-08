@@ -1,0 +1,812 @@
+<config>
+	<!--Shaw Resist Fixes-->
+<remove xpath="/progression/perks/perk[@name='perkWasteTreasures']/effect_group/passive_effect[@name='LootStage']"/>
+<append xpath="/progression/perks/perk[@name='perkWasteTreasures']/effect_group">
+	<passive_effect name="LootStage" operation="perc_add" level="1,5" value=".03,.15">
+		<requirement name="ProgressionLevel" progression_name="attShaw" operation="Equals" value="0"/>
+	</passive_effect>
+</append>
+<remove xpath="/progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@name='ElementalDamageResist']"/>
+<append xpath="/progression/perks/perk[@name='perkDemolitionsExpert']/effect_group">
+	<passive_effect name="ElementalDamageResist" operation="base_add" level="1,5" value="5,25" tags="heat">
+		<requirement name="ProgressionLevel" progression_name="attShaw" operation="Equals" value="0"/>
+	</passive_effect>
+</append>
+	<!--Remove AdvTech Replace with Completionist-->
+<remove xpath="/progression/perks/perk[@name='perkAdvCraftFutureTech']"/>
+<insertAfter xpath="/progression/perks/perk[@name='perkCraftFutureTech']">
+	<perk name="perkTheCompletionist" parent="skillPerks" min_level="0" max_level="1" base_skill_point_cost="5" cost_multiplier_per_level="1" name_key="perkTheCompletionistName" desc_key="perkTheCompletionistDesc" icon="ui_game_symbol_diamond">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attClassFarmer" operation="GTE" value="2" desc_key="reqComplete2"/><requirement name="ProgressionLevel" progression_name="attClassHunter" operation="GTE" value="2" desc_key="reqComplete2"/><requirement name="ProgressionLevel" progression_name="attClassLaborer" operation="GTE" value="2" desc_key="reqComplete2"/><requirement name="ProgressionLevel" progression_name="attClassMechanic" operation="GTE" value="2" desc_key="reqComplete2"/><requirement name="ProgressionLevel" progression_name="attClassScientist" operation="GTE" value="2" desc_key="reqComplete2"/><requirement name="ProgressionLevel" progression_name="attClassSecurity" operation="GTE" value="2" desc_key="reqComplete2"/><requirement name="ProgressionLevel" progression_name="attClassSurvivalist" operation="GTE" value="2" desc_key="reqComplete2"/><requirement name="ProgressionLevel" progression_name="perkMasterFarmer" operation="GTE" value="1" desc_key="reqComplete2"/><requirement name="ProgressionLevel" progression_name="perkMasterHunter" operation="GTE" value="1" desc_key="reqComplete2"/><requirement name="ProgressionLevel" progression_name="perkMasterBuilder" operation="GTE" value="1" desc_key="reqComplete2"/><requirement name="ProgressionLevel" progression_name="perkMasterMechanic" operation="GTE" value="1" desc_key="reqComplete2"/><requirement name="ProgressionLevel" progression_name="perkMasterScientist" operation="GTE" value="1" desc_key="reqComplete2"/><requirement name="ProgressionLevel" progression_name="perkMasterSecurity" operation="GTE" value="1" desc_key="reqComplete2"/><requirement name="ProgressionLevel" progression_name="perkMasterSurvivalist" operation="GTE" value="1" desc_key="reqComplete2"/><requirement name="ProgressionLevel" progression_name="perkCraftFutureTech" operation="GTE" value="5" desc_key="reqComplete2"/></level_requirements>
+
+		<effect_group name="Completionist Bonus">
+			<passive_effect name="PlayerExpGain" operation="perc_add" value="0" level="0"/>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value="0.25" level="1"/>
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffNearDeathTraumaTrigger,buffNearDeathTrauma" level="1"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="1" value="20" tags="DFScifiAIOT,DFmeleeWeaponLaserSword,DFgunLaserPistol,DFgunLaserSniper,DFarmorTechBoots,DFarmorTechVest,DFarmorTechGloves,DFarmorTechHelmet,DFarmorTechLegs,DFmeleeWpnPowerHammer,DFmeleeWpnPlasmaAxe,DFgunLaserShotgun,DFgunLaserAutoRifle,gunSpecialArcGun,DFmeleeSpearLaser,DFmeleeWpnPowerFist,meleeWpnBladeLaserKnife"/>
+			<effect_description level="1" desc_key="perkTheCompletionistRank1Title" long_desc_key="perkTheCompletionistRank1Desc"/>
+			
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="DFgunLaserM60,DFdrinkJarUnleashHell"/>
+			<passive_effect name="CraftingTier" operation="base_set" level="1" value="80" tags="DFgunLaserM60"/>
+		</effect_group>
+	</perk>	
+</insertAfter>
+	<!--Shaw AS Skills-->
+<append xpath="/progression/attributes/attribute[@name='attActionSkills']">
+	<effect_group name="Action Skills Lvl 0 Set">
+		<requirement name="CVarCompare" cvar="$AS_ShawMelee_XP" operation="Equals" value="0"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_ShawMelee_LvlNextAdd" operation="set" value="1000"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_ShawMelee_LvlNextTotal" operation="set" value="1000"/>
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_ShawXP_Mult" operation="set" value="1.2"/>
+	</effect_group>
+	
+	<effect_group name="Action Skills Lvl 0 Set 2">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" cvar="$AS_ShawMelee_LvlNextAdd" operation="set" value="1000"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" cvar="$AS_ShawMelee_LvlNextTotal" operation="set" value="1000"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" cvar="$AS_ShawXP_Mult" operation="set" value="1.2"/>
+	</effect_group>
+	
+	<effect_group name="DoomwoodClub Cvar setup">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" cvar="$PerkDoomwoodClubXPTarget" operation="set" value="2500"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" cvar="$PerkDoomwoodClubXP" operation="set" value="0"/>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$PerkDoomwoodClubXPTarget" operation="set" value="2500">
+			<requirement name="CVarCompare" cvar="$PerkDoomwoodClubXP" operation="Equals" value="0"/>
+		</triggered_effect>
+	</effect_group>
+	
+	<effect_group name="Cannon Cvar setup">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" cvar="$PerkASCannonXPTarget" operation="set" value="4000"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" cvar="$PerkASCannonXP" operation="set" value="0"/>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$PerkASCannonXPTarget" operation="set" value="4000">
+			<requirement name="CVarCompare" cvar="$PerkASCannonXP" operation="Equals" value="0"/>
+		</triggered_effect>
+	</effect_group>
+	
+	<effect_group name="TechMinigun Cvar setup">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" cvar="$PerkASTechMinigunXPTarget" operation="set" value="5000"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" cvar="$PerkASTechMinigunXP" operation="set" value="0"/>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$PerkASTechMinigunXPTarget" operation="set" value="5000">
+			<requirement name="CVarCompare" cvar="$PerkASTechMinigunXP" operation="Equals" value="0"/>
+		</triggered_effect>
+	</effect_group>
+	
+	<effect_group name="BiggestPickaxe Cvar setup">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" cvar="$PerkASBiggestPickaxeXPTarget" operation="set" value="10000"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" cvar="$PerkASBiggestPickaxeXP" operation="set" value="0"/>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$PerkASBiggestPickaxeXPTarget" operation="set" value="10000">
+			<requirement name="CVarCompare" cvar="$PerkASBiggestPickaxeXP" operation="Equals" value="0"/>
+		</triggered_effect>
+	</effect_group>
+	
+	<effect_group name="Gluttony Cvar setup">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" cvar="$PerkASFoodDrinkXPTarget" operation="set" value="1000"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" cvar="$PerkASFoodDrinkXP" operation="set" value="0"/>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$PerkASFoodDrinkXPTarget" operation="set" value="1000">
+			<requirement name="CVarCompare" cvar="$PerkASFoodDrinkXP" operation="Equals" value="0"/>
+		</triggered_effect>
+	</effect_group>
+	
+	<effect_group name="Addict Cvar setup">
+		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" cvar="$PerkASMedsXPTarget" operation="set" value="1000"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" cvar="$PerkASMedsXP" operation="set" value="0"/>
+		<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$PerkASMedsXPTarget" operation="set" value="1000">
+			<requirement name="CVarCompare" cvar="$PerkASMedsXP" operation="Equals" value="0"/>
+		</triggered_effect>
+	</effect_group>
+</append>
+	<!--Base AS Remove Buffs But Keep Leveling-->
+<append xpath="/progression/perks/perk[@name='perkASPistols']">
+	<effect_group name="AS Pistols Lvl Increase 1 SHAW">
+		<requirement name="ItemHasTags" tags="perkGunslinger2"/>
+		<requirement name="ProgressionLevel" progression_name="perkASPistols" operation="LT" value="100"/>
+		<requirement name="CVarCompare" cvar="$AS_Pistols_Lvl" operation="LT" value="100"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="self" buff="buffPistolSkillXPInjure">
+				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfKilledOther" action="AddBuff" target="self" buff="buffPistolSkillXPKill"/>
+	</effect_group>		
+
+	<effect_group name="AS Pistols Lvl Increase 2 SHAW">
+		<requirement name="CVarCompare" cvar="$AS_Pistols_Lvl" operation="LT" value="100"/>
+		<requirement name="CVarCompare" cvar="$AS_Pistols_XP" operation="GTE" value="@$AS_Pistols_LvlNextTotal"/>
+		<requirement name="ProgressionLevel" progression_name="perkASPistols" operation="LT" value="100"/>
+		<requirement name="ItemHasTags" tags="perkGunslinger2"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$AS_Pistols_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$AS_Pistols_LvlNextTotal" operation="add" value="@$AS_Pistols_LvlNextAdd"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="self" buff="buffPistolSkillLvl"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="ShowToolbeltMessage" message="Your Skill In Pistols Has Increased!" message_key="ttPistolLevelUp"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="PlaySound" sound="levelup" play_in_head="true"/>
+	</effect_group>
+	
+	<effect_group name="Legend Unlocks">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="100" value="1" tags="ShawRevolver"/>
+	</effect_group>
+</append>
+<append xpath="/progression/perks/perk[@name='perkASRifles']">
+	<effect_group name="AS Rifles Lvl Increase 1 SHAW">
+		<requirement name="ItemHasTags" tags="perkDeadEye2"/>
+		<requirement name="ProgressionLevel" progression_name="perkASRifles" operation="LT" value="100"/>
+		<requirement name="CVarCompare" cvar="$AS_Rifles_Lvl" operation="LT" value="100"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="self" buff="buffRifleSkillXPInjure">
+				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfKilledOther" action="AddBuff" target="self" buff="buffRifleSkillXPKill"/>
+	</effect_group>	
+	
+	<effect_group name="AS Rifles Lvl Increase 2 SHAW">
+		<requirement name="CVarCompare" cvar="$AS_Rifles_Lvl" operation="LT" value="100"/>
+		<requirement name="CVarCompare" cvar="$AS_Rifles_XP" operation="GTE" value="@$AS_Rifles_LvlNextTotal"/>
+		<requirement name="ProgressionLevel" progression_name="perkASRifles" operation="LT" value="100"/>
+		<requirement name="ItemHasTags" tags="perkDeadEye2"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$AS_Rifles_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$AS_Rifles_LvlNextTotal" operation="add" value="@$AS_Rifles_LvlNextAdd"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="self" buff="buffRiflesSkillLvl"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="ShowToolbeltMessage" message="Your Skill In Rifles Has Increased!" message_key="ttRiflesLevelUp"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="PlaySound" sound="levelup" play_in_head="true"/>
+	</effect_group>
+	<effect_group>
+		<requirement name="ProgressionLevel" progression_name="perkASRifles" operation="LT" value="100"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Rifles_XP" operation="add" value="@$AS_Rifles_LvlNextAdd"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Rifles_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Rifles_LvlNextTotal" operation="add" value="@$AS_Rifles_LvlNextAdd"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_Rifles_Lvl_Perm" operation="add" value="1"/>
+	</effect_group>
+	
+	<effect_group name="Legend Unlocks">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="100" value="1" tags="ShawMartiniHenry"/>
+	</effect_group>
+</append>
+<append xpath="/progression/perks/perk[@name='perkASShotguns']">
+	<effect_group name="AS Shotguns Lvl Increase 1">
+		<requirement name="ItemHasTags" tags="perkShotgunMessiah2"/>
+		<requirement name="ProgressionLevel" progression_name="perkASShotguns" operation="LT" value="100"/>
+		<requirement name="CVarCompare" cvar="$AS_Shotguns_Lvl" operation="LT" value="100"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="self" buff="buffShotgunSkillXPInjure">
+				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfKilledOther" action="AddBuff" target="self" buff="buffShotgunSkillXPKill"/>
+	</effect_group>	
+
+	<effect_group name="AS Shotguns Lvl Increase 2">
+		<requirement name="CVarCompare" cvar="$AS_Shotguns_Lvl" operation="LT" value="100"/>
+		<requirement name="CVarCompare" cvar="$AS_Shotguns_XP" operation="GTE" value="@$AS_Shotguns_LvlNextTotal"/>
+		<requirement name="ProgressionLevel" progression_name="perkASShotguns" operation="LT" value="100"/>
+		<requirement name="ItemHasTags" tags="perkShotgunMessiah2"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$AS_Shotguns_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$AS_Shotguns_LvlNextTotal" operation="add" value="@$AS_Shotguns_LvlNextAdd"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="self" buff="buffShotgunSkillLvl"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="ShowToolbeltMessage" message="Your Skill In Shotguns Has Increased!" message_key="ttShotgunLevelUp"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="PlaySound" sound="levelup" play_in_head="true"/>
+	</effect_group>
+	
+	<effect_group name="Legend Unlocks">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="100" value="1" tags="ShawDoubleBarrelShotgun"/>
+	</effect_group>
+</append>
+<append xpath="/progression/perks/perk[@name='perkASAutomatics']">
+	<effect_group name="AS Automatics Lvl Increase 1">
+		<requirement name="ItemHasTags" tags="perkAutomaticWeapons2"/>
+		<requirement name="ProgressionLevel" progression_name="perkASAutomatics" operation="LT" value="100"/>
+		<requirement name="CVarCompare" cvar="$AS_Automatics_Lvl" operation="LT" value="100"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="self" buff="buffAutomaticSkillXPInjure">
+				<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfKilledOther" action="AddBuff" target="self" buff="buffAutomaticSkillXPKill"/>
+	</effect_group>	
+	
+	<effect_group name="AS Automatics Lvl Increase 2">
+		<requirement name="CVarCompare" cvar="$AS_Automatics_Lvl" operation="LT" value="100"/>
+		<requirement name="CVarCompare" cvar="$AS_Automatics_XP" operation="GTE" value="@$AS_Automatics_LvlNextTotal"/>
+		<requirement name="ProgressionLevel" progression_name="perkASAutomatics" operation="LT" value="100"/>
+		<requirement name="ItemHasTags" tags="perkAutomaticWeapons2"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$AS_Automatics_LvlNextAdd" operation="multiply" value="@$AS_XP_Mult"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$AS_Automatics_LvlNextTotal" operation="add" value="@$AS_Automatics_LvlNextAdd"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="self" buff="buffAutomaticSkillLvl"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="ShowToolbeltMessage" message="Your Skill In Automatic Weapons Has Increased!" message_key="ttAutomaticsLevelUp"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="PlaySound" sound="levelup" play_in_head="true"/>
+	</effect_group>
+	
+	<effect_group name="Legend Unlocks">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="100" value="1" tags="ShawAK"/>
+	</effect_group>
+</append>
+	<!--Craft Speed-->
+<append xpath="/progression/perks/perk[@name='perkCraftScience']/effect_group">
+	<passive_effect name="CraftingTime" operation="perc_subtract" level="1,5" value="-0.05,-0.25" tags="NoCraftSpeedBasic"/>
+</append>
+<append xpath="/progression/perks/perk[@name='perkQuickerCrafting']/effect_group">
+	<passive_effect name="CraftingTime" operation="perc_add" level="0,1,2,3" value="0,0.1,0.2,0.3" tags="NoCraftSpeedBasic"/>
+</append>			
+	<!--Hydroponic-->
+<csv xpath="/progression/perks/perk[@name='perkYeahScience']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='3,5']/@tags" op="add" delim=",">HydroponicsBasinShaw</csv>
+<csv xpath="/progression/perks/perk[@name='perkYeahScience']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @level='5']/@tags" op="add" delim=",">HydroponicsGrowLights</csv>
+	<!--Max Level-->
+<set xpath="/progression/level/@max_level">1000</set>
+	<!--Shaw Skills-->
+<append xpath="/progression/attributes">
+<attribute name="attShaw" name_key="attShawName" desc_key="attShawDesc" icon="ui_game_symbol_shaw"  min_level="0" max_level="1">
+	<level_requirements level="1">
+	<requirement name="PlayerLevel" target="self" operation="GTE" value="150" desc_key="attShawDescRank1"/>
+	<requirement name="ProgressionLevel" progression_name="attFortitude" operation="Equals" value="5" desc_key="reqattFortitude"/>
+	</level_requirements>
+	<effect_group>
+		<effect_description level="1" desc_key="attShawRank1Desc"/>
+	</effect_group>
+	<effect_group name="Buffs">
+		<passive_effect name="BuffResistance" operation="base_set" value="100" tags="buffNearDeathTraumaTrigger,buffNearDeathTrauma" level="1"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="100" tags="buffDysentery01Untreated,buffIllPneumonia01,buffIllFoodPoisoning01,buffInfection01Untreated,buffInfection02Untreated,buffInfection03Untreated" level="1"/>
+		<passive_effect name="CarryCapacity" operation="base_set" value="120" level="1"/>
+		<passive_effect name="WalkSpeed" operation="perc_add" value=".075" level="1"/>
+		<passive_effect name="RunSpeed" operation="perc_add" value=".075" level="1"/>
+		<passive_effect name="Mobility" operation="perc_add" value=".075" level="1"/> 
+					
+		<passive_effect name="AttacksPerMinute" operation="perc_add" value="0.125" level="1" tags="perkPummelPete,perkDeepCuts">
+			<requirement name="HoldingItemHasTags" tags="melee"/>
+		</passive_effect>
+		<passive_effect name="EntityDamage" operation="perc_add" value="0.25" level="1" tags="melee">
+			<requirement name="HoldingItemHasTags" tags="melee"/>
+		</passive_effect>
+		<passive_effect name="DismemberChance" operation="perc_add" value="0.125" level="1">
+			<requirement name="HoldingItemHasTags" tags="melee"/>
+		</passive_effect>
+		
+		<passive_effect name="BlockDamage" operation="perc_add" value="1" level="1" tags="perkMotherLode">
+			<requirement name="HoldingItemHasTags" tags="perkMotherLode"/>
+		</passive_effect>
+		<passive_effect name="HarvestCount" operation="perc_add" value="1" level="1" tags="oreWoodHarvest">
+			<requirement name="HoldingItemHasTags" tags="perkMotherLode"/>
+		</passive_effect>
+	</effect_group>
+</attribute>
+<attribute name="attShawRecipes" name_key="attShawRecipesName" desc_key="attShawRecipesDesc" icon="ui_game_symbol_Shaw_craft"  min_level="1" max_level="1">
+	<level_requirements level="1">
+	<requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key=""/>
+	</level_requirements>
+	<effect_group>
+	</effect_group>
+</attribute>
+</append>
+
+<append xpath="/progression/perks">
+<!--<skill name="skillShaw" parent="attShaw" name_key="skillShawName" desc_key="skillShawDesc" icon="ui_game_symbol_shaw"><effect_group/></skill>-->
+<skill name="skillShaw2" parent="attShaw" name_key="skillShaw2Name" desc_key="skillShaw2Desc" icon="buffMeleeShaw"><effect_group/></skill>
+<skill name="skillShaw4" parent="attShaw" name_key="skillShaw4Name" desc_key="skillShaw4Desc" icon="ShawTroll"><effect_group/></skill>
+<skill name="skillShaw3" parent="attShaw" name_key="skillShaw3Name" desc_key="skillShaw3Desc" icon="ui_game_symbol_near_death_trauma"><effect_group/></skill>
+<skill name="skillShawRecipes" parent="attShawRecipes" name_key="skillShawRecipesName" desc_key="skillShawRecipesDesc" icon="buffPopeyesMeal"><effect_group/></skill>
+<!--<skill name="skillShawBaseGameMelee" parent="attActionSkills" name_key="skillShawBaseGameMeleeName" desc_key="skillShawBaseGameMeleeDesc" icon="WoodenSword"><effect_group/></skill>-->
+</append>
+
+<append xpath="/progression/skills">
+	<!--Action Skills-->
+<perk name="perkASMeleeShaw" parent="skillShaw2" min_level="0" max_level="5" base_skill_point_cost="0" name_key="perkASMeleeShawName" desc_key="perkASMeleeShawDesc" icon="LinkedSword">
+	<level_requirements level="1"></level_requirements>
+	<level_requirements level="2"></level_requirements>
+	<level_requirements level="3"></level_requirements>
+	<level_requirements level="4"></level_requirements>
+	<level_requirements level="5">
+	<requirement name="ProgressionLevel" progression_name="perkMonkeyFruit" operation="Equals" value="1" desc_key="reqperkMonkeyFruit"/>
+	</level_requirements>
+	
+	<effect_group>
+		<effect_description level="1" desc_key="perkASMeleeShaw1Desc" long_desc_key="perkASMeleeShaw1LongDesc"/> 
+		<effect_description level="2" desc_key="perkASMeleeShaw2Desc" long_desc_key="perkASMeleeShaw2LongDesc"/>
+		<effect_description level="3" desc_key="perkASMeleeShaw3Desc" long_desc_key="perkASMeleeShaw3LongDesc"/>
+		<effect_description level="4" desc_key="perkASMeleeShaw4Desc" long_desc_key="perkASMeleeShaw4LongDesc"/>
+		<effect_description level="5" desc_key="perkASMeleeShaw5Desc" long_desc_key="perkASMeleeShaw5LongDesc"/>
+		
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,5" value="1" tags="Firebrand,Venomshank"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="Darkheart,Illumina"/>
+	</effect_group>	
+	
+	<effect_group name="Lvl Increase 1">
+		<requirement name="ItemHasTags" tags="ASMeleeShaw"/>
+		<requirement name="ProgressionLevel" progression_name="perkASMeleeShaw" operation="LT" value="5"/>
+		<requirement name="CVarCompare" cvar="$AS_ShawMelee_Lvl" operation="LT" value="5"/>
+		<requirement name="NotHasBuff" buff="buffTurretASWorkaround"/>
+			<triggered_effect trigger="onSelfKilledOther" action="AddBuff" target="self" buff="buffShawMeleeSkillXPKill"/>
+	</effect_group>	
+	
+	<effect_group name="Lvl Increase 2">
+		<requirement name="CVarCompare" cvar="$AS_ShawMelee_Lvl" operation="LT" value="5"/>
+		<requirement name="CVarCompare" cvar="$AS_ShawMelee_XP" operation="GTE" value="@$AS_ShawMelee_LvlNextTotal"/>
+		<requirement name="ProgressionLevel" progression_name="perkASMeleeShaw" operation="LT" value="5"/>
+		<requirement name="NotHasBuff" buff="buffTurretASWorkaround"/>
+		<requirement name="ItemHasTags" tags="ASMeleeShaw"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$AS_ShawMelee_LvlNextAdd" operation="multiply" value="@$AS_ShawXP_Mult"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$AS_ShawMelee_LvlNextTotal" operation="add" value="@$AS_ShawMelee_LvlNextAdd"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$AS_ShawMelee_LvlNextTotal" operation="add" value="@$AS_ShawMelee_LvlNextAdd">
+				<requirement name="CVarCompare" cvar="$AS_ShawMelee_Lvl" operation="Equals" value="4"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="self" buff="buffShawMeleeSkillLvl"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="ShowToolbeltMessage" message="Your Sword Mastery Has Increased!" message_key="ttShawMeleeLevelUp"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="PlaySound" sound="levelup" play_in_head="true"/>
+	</effect_group>
+	
+	<effect_group>
+		<requirement name="ProgressionLevel" progression_name="perkASMeleeShaw" operation="LT" value="5"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_ShawMelee_XP" operation="add" value="@$AS_ShawMelee_LvlNextAdd"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_ShawMelee_LvlNextAdd" operation="multiply" value="@$AS_ShawXP_Mult"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_ShawMelee_LvlNextTotal" operation="add" value="@$AS_ShawMelee_LvlNextAdd"/>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$AS_ShawMelee_Lvl_Perm" operation="add" value="1"/>
+	</effect_group>
+</perk>
+<perk name="perkASDoomwoodClub" parent="skillShaw2" min_level="0" max_level="5" base_skill_point_cost="0" name_key="perkASDoomwoodClubName" desc_key="perkASDoomwoodClubDesc" icon="DoomwoodClub">
+	<level_requirements level="1">
+	<requirement name="ProgressionLevel" progression_name="perkMonkeyFruit" operation="Equals" value="1" desc_key="reqperkMonkeyFruit"/>
+	</level_requirements>
+	<level_requirements level="2">
+	<requirement name="ProgressionLevel" progression_name="perkMonkeyFruit" operation="Equals" value="1" desc_key="reqperkMonkeyFruit"/>
+	</level_requirements>
+	<level_requirements level="3">
+	<requirement name="ProgressionLevel" progression_name="perkMonkeyFruit" operation="Equals" value="1" desc_key="reqperkMonkeyFruit"/>
+	</level_requirements>
+	<level_requirements level="4">
+	<requirement name="ProgressionLevel" progression_name="perkMonkeyFruit" operation="Equals" value="1" desc_key="reqperkMonkeyFruit"/>
+	</level_requirements>
+	<level_requirements level="5">
+	<requirement name="ProgressionLevel" progression_name="perkMonkeyFruit" operation="Equals" value="1" desc_key="reqperkMonkeyFruit"/>
+	</level_requirements>
+	
+	<effect_group>
+		<effect_description level="1" desc_key="perkASDoomwoodClub1Desc" long_desc_key="perkASDoomwoodClub1LongDesc"/> 
+		<effect_description level="2" desc_key="perkASDoomwoodClub2Desc" long_desc_key="perkASDoomwoodClub2LongDesc"/>
+		<effect_description level="3" desc_key="perkASDoomwoodClub3Desc" long_desc_key="perkASDoomwoodClub3LongDesc"/>
+		<effect_description level="4" desc_key="perkASDoomwoodClub4Desc" long_desc_key="perkASDoomwoodClub4LongDesc"/>
+		<effect_description level="5" desc_key="perkASDoomwoodClub5Desc" long_desc_key="perkASDoomwoodClub5LongDesc"/>
+	</effect_group>	
+	
+	<effect_group name="Level Increase Tracking">
+		<requirement name="ItemHasTags" tags="DoomwoodClub"/>
+		<requirement name="ProgressionLevel" progression_name="perkASDoomwoodClub" operation="LT" value="4"/>
+		<requirement name="NotHasBuff" buff="buffTurretASWorkaround"/>
+		<requirement name="CVarCompare" cvar="$PerkDoomwoodClubXP" operation="GTE" value="@$PerkDoomwoodClubXPTarget"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$PerkDoomwoodClubXPTarget" operation="add" value="2500"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="self" buff="buffPerkASDoomwoodClubLevel"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="ShowToolbeltMessage" message="Your Darkie Demolisher Skill Has Increased" message_key="ttShawMeleeLevelUp"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="PlaySound" sound="levelup" play_in_head="true"/>
+	</effect_group>
+</perk>
+<perk name="perkASCannon" parent="skillShaw2" min_level="0" max_level="5" base_skill_point_cost="0" name_key="perkASCannonName" desc_key="perkASCannonDesc" icon="ShawCannon">
+	<level_requirements level="1">
+	<requirement name="ProgressionLevel" progression_name="perkMonkeyFruit" operation="Equals" value="1" desc_key="reqperkMonkeyFruit"/>
+	</level_requirements>
+	<level_requirements level="2">
+	<requirement name="ProgressionLevel" progression_name="perkMonkeyFruit" operation="Equals" value="1" desc_key="reqperkMonkeyFruit"/>
+	</level_requirements>
+	<level_requirements level="3">
+	<requirement name="ProgressionLevel" progression_name="perkMonkeyFruit" operation="Equals" value="1" desc_key="reqperkMonkeyFruit"/>
+	</level_requirements>
+	<level_requirements level="4">
+	<requirement name="ProgressionLevel" progression_name="perkMonkeyFruit" operation="Equals" value="1" desc_key="reqperkMonkeyFruit"/>
+	</level_requirements>
+	<level_requirements level="5">
+	<requirement name="ProgressionLevel" progression_name="perkMonkeyFruit" operation="Equals" value="1" desc_key="reqperkMonkeyFruit"/>
+	</level_requirements>
+	
+	<effect_group>
+		<effect_description level="1" desc_key="perkASCannon1Desc" long_desc_key="perkASCannon1LongDesc"/> 
+		<effect_description level="2" desc_key="perkASCannon2Desc" long_desc_key="perkASCannon2LongDesc"/>
+		<effect_description level="3" desc_key="perkASCannon3Desc" long_desc_key="perkASCannon3LongDesc"/>
+		<effect_description level="4" desc_key="perkASCannon4Desc" long_desc_key="perkASCannon4LongDesc"/>
+		<effect_description level="5" desc_key="perkASCannon5Desc" long_desc_key="perkASCannon5LongDesc"/>
+	</effect_group>	
+	
+<!--	<effect_group name="Level 1 XP">
+		<requirement name="ItemHasTags" tags="Cannon"/>
+		<requirement name="ProgressionLevel" progression_name="perkASCannon" operation="LTE" value="0"/>
+		<requirement name="NotHasBuff" buff="buffTurretASWorkaround"/>
+			<triggered_effect trigger="onSelfKilledOther" action="AddBuff" target="self" buff="buffPerkASCannonXP">
+				<requirement name="EntityTagCompare" target="other" tags="bigzed"/>
+			</triggered_effect>
+	</effect_group>
+	
+	<effect_group name="Level 2 XP">
+		<requirement name="ItemHasTags" tags="Cannon"/>
+		<requirement name="ProgressionLevel" progression_name="perkASCannon" operation="Equals" value="1"/>
+		<requirement name="NotHasBuff" buff="buffTurretASWorkaround"/>
+			<triggered_effect trigger="onSelfKilledOther" action="AddBuff" target="self" buff="buffPerkASCannonXP2">
+				<requirement name="EntityTagCompare" target="other" tags="bigBehemoth"/>
+			</triggered_effect>
+	</effect_group>-->
+	
+	<effect_group name="Level Increase Tracking">
+		<requirement name="ItemHasTags" tags="Cannon"/>
+		<requirement name="ProgressionLevel" progression_name="perkASCannon" operation="LT" value="3"/>
+		<requirement name="NotHasBuff" buff="buffTurretASWorkaround"/>
+		<requirement name="CVarCompare" cvar="$PerkASCannonXP" operation="GTE" value="@$PerkASCannonXPTarget"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$PerkASCannonXPTarget" operation="add" value="4000"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="self" buff="buffPerkASCannonLevel"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="ShowToolbeltMessage" message="Your Cannoneer Skill Has Increased" message_key="ttShawMeleeLevelUp"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="PlaySound" sound="levelup" play_in_head="true"/>
+	</effect_group>
+</perk>
+<perk name="perkASTechMinigun" parent="skillShaw2" min_level="0" max_level="5" base_skill_point_cost="0" name_key="perkASTechMinigunName" desc_key="perkASTechMinigunDesc" icon="TechMinigun">
+	<level_requirements level="1">
+	<requirement name="ProgressionLevel" progression_name="perkMonkeyFruit" operation="Equals" value="1" desc_key="reqperkMonkeyFruit"/>
+	</level_requirements>
+	<level_requirements level="2">
+	<requirement name="ProgressionLevel" progression_name="perkMonkeyFruit" operation="Equals" value="1" desc_key="reqperkMonkeyFruit"/>
+	</level_requirements>
+	<level_requirements level="3">
+	<requirement name="ProgressionLevel" progression_name="perkMonkeyFruit" operation="Equals" value="1" desc_key="reqperkMonkeyFruit"/>
+	</level_requirements>
+	<level_requirements level="4">
+	<requirement name="ProgressionLevel" progression_name="perkMonkeyFruit" operation="Equals" value="1" desc_key="reqperkMonkeyFruit"/>
+	</level_requirements>
+	<level_requirements level="5">
+	<requirement name="ProgressionLevel" progression_name="perkMonkeyFruit" operation="Equals" value="1" desc_key="reqperkMonkeyFruit"/>
+	</level_requirements>
+	
+	<effect_group>
+		<effect_description level="1" desc_key="perkASTechMinigun1Desc" long_desc_key="perkASTechMinigun1LongDesc"/> 
+		<effect_description level="2" desc_key="perkASTechMinigun2Desc" long_desc_key="perkASTechMinigun2LongDesc"/>
+		<effect_description level="3" desc_key="perkASTechMinigun3Desc" long_desc_key="perkASTechMinigun3LongDesc"/>
+		<effect_description level="4" desc_key="perkASTechMinigun4Desc" long_desc_key="perkASTechMinigun4LongDesc"/>
+		<effect_description level="5" desc_key="perkASTechMinigun5Desc" long_desc_key="perkASTechMinigun5LongDesc"/>
+	</effect_group>	
+	
+	<effect_group name="Level Increase Tracking">
+		<requirement name="ItemHasTags" tags="TechMinigun"/>
+		<requirement name="ProgressionLevel" progression_name="perkASTechMinigun" operation="LT" value="5"/>
+		<requirement name="NotHasBuff" buff="buffTurretASWorkaround"/>
+		<requirement name="CVarCompare" cvar="$PerkASTechMinigunXP" operation="GTE" value="@$PerkASTechMinigunXPTarget"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$PerkASTechMinigunXPTarget" operation="add" value="5000"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="self" buff="buffPerkASTechMinigunLevel"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="ShowToolbeltMessage" message="Your Commando Skill Has Increased" message_key="ttShawMeleeLevelUp"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="PlaySound" sound="levelup" play_in_head="true"/>
+	</effect_group>
+</perk>
+<perk name="perkASBiggestPickaxe" parent="skillShaw4" min_level="0" max_level="3" base_skill_point_cost="0" name_key="perkASBiggestPickaxeName" desc_key="perkASBiggestPickaxeDesc" icon="BiggestPickaxe">
+	<level_requirements level="1">
+	<requirement name="ProgressionLevel" progression_name="perkMonkeyFruit" operation="Equals" value="1" desc_key="reqperkMonkeyFruit"/>
+	</level_requirements>
+	<level_requirements level="2">
+	<requirement name="ProgressionLevel" progression_name="perkMonkeyFruit" operation="Equals" value="1" desc_key="reqperkMonkeyFruit"/>
+	</level_requirements>
+	<level_requirements level="3">
+	<requirement name="ProgressionLevel" progression_name="perkMonkeyFruit" operation="Equals" value="1" desc_key="reqperkMonkeyFruit"/>
+	</level_requirements>
+	
+	<effect_group>
+		<effect_description level="1" desc_key="perkASBiggestPickaxe1Desc" long_desc_key="perkASBiggestPickaxe1LongDesc"/> 
+		<effect_description level="2" desc_key="perkASBiggestPickaxe2Desc" long_desc_key="perkASBiggestPickaxe2LongDesc"/>
+		<effect_description level="3" desc_key="perkASBiggestPickaxe3Desc" long_desc_key="perkASBiggestPickaxe3LongDesc"/>
+	</effect_group>	
+	
+	<effect_group name="Level Increase Tracking">
+		<requirement name="ItemHasTags" tags="BiggestPickaxe"/>
+		<requirement name="ProgressionLevel" progression_name="perkASBiggestPickaxe" operation="LT" value="3"/>
+		<requirement name="NotHasBuff" buff="buffTurretASWorkaround"/>
+		<requirement name="CVarCompare" cvar="$PerkASBiggestPickaxeXP" operation="GTE" value="@$PerkASBiggestPickaxeXPTarget"/>
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" cvar="$PerkASBiggestPickaxeXPTarget" operation="add" value="10000"/>
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="self" buff="buffPerkASBiggestPickaxeLevel"/>
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ShowToolbeltMessage" message="70 Harvester Skill Has Increased" message_key="ttShawMeleeLevelUp"/>
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="PlaySound" sound="levelup" play_in_head="true"/>
+	</effect_group>
+</perk>
+	<!--Progression-->
+<perk name="perkUnleashHell" parent="skillShaw3" name_key="perkUnleashHellName" desc_key="perkUnleashHellDesc" base_skill_point_cost="0" min_level="0" max_level="1" icon="drinkunleashhelldf">
+	<level_requirements level="1">
+	</level_requirements>
+	<effect_group>
+		<effect_description level="1" desc_key="perkUnleashHell1Desc"/>
+	</effect_group>
+</perk>
+<perk name="perkBloodOrange" parent="skillShaw3" name_key="perkBloodOrangeName" desc_key="perkBloodOrangeDesc" base_skill_point_cost="0" min_level="0" max_level="1" icon="BloodOrange">
+	<level_requirements level="1">
+	<requirement name="ProgressionLevel" progression_name="attFortitude" operation="Equals" value="5" desc_key="reqattFortitude"/>
+	</level_requirements>
+	<effect_group>
+		<effect_description level="1" desc_key="perkBloodOrange1Desc"/>
+	</effect_group>
+</perk>
+<perk name="perkMericleFruit" parent="skillShaw3" name_key="perkMericleFruitName" desc_key="perkMericleFruitDesc" base_skill_point_cost="0" min_level="0" max_level="1" icon="MericleFruit">
+	<level_requirements level="1">
+	<requirement name="ProgressionLevel" progression_name="perkUnleashHell" operation="Equals" value="1" desc_key="reqperkUnleashHell"/>
+	<requirement name="ProgressionLevel" progression_name="perkBloodOrange" operation="Equals" value="1" desc_key="reqperkBloodOrange"/>
+	</level_requirements>
+	<effect_group>
+		<effect_description level="1" desc_key="perkMericleFruit1Desc"/>
+	</effect_group>
+</perk>
+<perk name="perkElderberry" parent="skillShaw3" name_key="perkElderberryName" desc_key="perkElderberryDesc" base_skill_point_cost="0" min_level="0" max_level="1" icon="Elderberry">
+	<level_requirements level="1">
+	<requirement name="ProgressionLevel" progression_name="perkMericleFruit" operation="Equals" value="1" desc_key="reqperkMericleFruit"/>
+	</level_requirements>
+	<effect_group>
+		<effect_description level="1" desc_key="perkElderberry1Desc"/>
+	</effect_group>
+</perk>
+<perk name="perkMonkeyFruit" parent="skillShaw3" name_key="perkMonkeyFruitName" desc_key="perkMonkeyFruitDesc" base_skill_point_cost="0" min_level="0" max_level="1" icon="MonkeyFruit">
+	<level_requirements level="1">
+	<requirement name="ProgressionLevel" progression_name="perkElderberry" operation="Equals" value="1" desc_key="reqperkElderberry"/>
+	</level_requirements>
+	<effect_group>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1" tags="BiggerCatalyst"/>
+		
+		<effect_description level="1" desc_key="perkMonkeyFruit1Desc"/>
+	</effect_group>
+</perk>
+<perk name="perkRedcliffChestArmor" parent="skillShaw3" name_key="perkRedcliffChestArmorName" desc_key="perkRedcliffChestArmorDesc" base_skill_point_cost="0" min_level="0" max_level="1" icon="RedcliffChestArmor">
+	<level_requirements level="1">
+	<requirement name="ProgressionLevel" progression_name="perkMonkeyFruit" operation="Equals" value="1" desc_key="reqperkMonkeyFruit"/>
+	</level_requirements>
+	<effect_group>
+		<effect_description level="1" desc_key="perkRedcliffChestArmor1Desc"/>
+	</effect_group>
+</perk>
+<perk name="perkPurpleHeadCharm" parent="skillShaw3" name_key="perkPurpleHeadCharmName" desc_key="perkPurpleHeadCharmDesc" base_skill_point_cost="0" min_level="0" max_level="1" icon="PurpleHeadCharm">
+	<level_requirements level="1">
+	<requirement name="ProgressionLevel" progression_name="perkMonkeyFruit" operation="Equals" value="1" desc_key="reqperkMonkeyFruit"/>
+	</level_requirements>
+	<effect_group>
+		<effect_description level="1" desc_key="perkPurpleHeadCharm1Desc"/>
+	</effect_group>
+</perk>
+<perk name="perkHealthAutoInjector" parent="skillShaw3" name_key="perkHealthAutoInjectorName" desc_key="perkHealthAutoInjectorDesc" base_skill_point_cost="0" min_level="0" max_level="1" icon="HealthAutoInjector">
+	<level_requirements level="1">
+	<requirement name="ProgressionLevel" progression_name="perkMonkeyFruit" operation="Equals" value="1" desc_key="reqperkMonkeyFruit"/>
+	</level_requirements>
+	<effect_group>
+		<effect_description level="1" desc_key="perkHealthAutoInjector1Desc"/>
+	</effect_group>
+</perk>
+<perk name="perkCommanderFlag" parent="skillShaw3" name_key="perkCommanderFlagName" desc_key="perkCommanderFlagDesc" base_skill_point_cost="0" min_level="0" max_level="1" icon="CommanderFlag">
+	<level_requirements level="1">
+	<requirement name="ProgressionLevel" progression_name="perkMonkeyFruit" operation="Equals" value="1" desc_key="reqperkMonkeyFruit"/>
+	</level_requirements>
+	<effect_group>
+		<effect_description level="1" desc_key="perkCommanderFlag1Desc"/>
+	</effect_group>
+</perk>
+<perk name="perkDewCanReactor" parent="skillShaw3" name_key="perkDewCanReactorName" desc_key="perkDewCanReactorDesc" base_skill_point_cost="0" min_level="0" max_level="1" icon="DewCanReactor">
+	<level_requirements level="1">
+	<requirement name="ProgressionLevel" progression_name="perkMonkeyFruit" operation="Equals" value="1" desc_key="reqperkMonkeyFruit"/>
+	</level_requirements>
+	<effect_group>
+		<effect_description level="1" desc_key="perkDewCanReactor1Desc"/>
+	</effect_group>
+</perk>
+	<!--Perks-->
+<perk name="perkASFoodDrink" parent="skillShaw4" name_key="perkASFoodDrinkName" desc_key="perkASFoodDrinkDesc" base_skill_point_cost="0" min_level="0" max_level="2" icon="ui_game_symbol_pack_mule">
+	<level_requirements level="1">
+	<requirement name="ProgressionLevel" progression_name="perkMonkeyFruit" operation="Equals" value="1" desc_key="reqperkMonkeyFruit"/>
+	</level_requirements>
+	<level_requirements level="2">
+	<requirement name="ProgressionLevel" progression_name="perkMonkeyFruit" operation="Equals" value="1" desc_key="reqperkMonkeyFruit"/>
+	</level_requirements>
+	<effect_group>
+		<effect_description level="1" desc_key="perkASFoodDrink1Desc" long_desc_key="perkASFoodDrink1LongDesc"/> 
+		<effect_description level="2" desc_key="perkASFoodDrink2Desc" long_desc_key="perkASFoodDrink2LongDesc"/> 
+	</effect_group>
+	
+	<effect_group name="Level Increase Tracking">
+		<requirement name="ProgressionLevel" progression_name="perkASFoodDrink" operation="LT" value="2"/>
+		<requirement name="CVarCompare" cvar="$PerkASFoodDrinkXP" operation="GTE" value="@$PerkASFoodDrinkXPTarget"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$PerkASFoodDrinkXPTarget" operation="add" value="1000"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="self" buff="buffPerkASFoodDrinkLevel"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="ShowToolbeltMessage" message="Your Gluttony Skill Has Increased" message_key="ttShawMeleeLevelUp"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="PlaySound" sound="levelup" play_in_head="true"/>
+	</effect_group>
+</perk>
+<perk name="perkASMeds" parent="skillShaw4" name_key="perkASMedsName" desc_key="perkASMedsDesc" base_skill_point_cost="0" min_level="0" max_level="2" icon="HealthShot">
+	<level_requirements level="1">
+	<requirement name="ProgressionLevel" progression_name="perkMonkeyFruit" operation="Equals" value="1" desc_key="reqperkMonkeyFruit"/>
+	</level_requirements>
+	<level_requirements level="2">
+	<requirement name="ProgressionLevel" progression_name="perkMonkeyFruit" operation="Equals" value="1" desc_key="reqperkMonkeyFruit"/>
+	</level_requirements>
+	<effect_group>
+		<effect_description level="1" desc_key="perkASMeds1Desc" long_desc_key="perkASMeds1LongDesc"/> 
+		<effect_description level="2" desc_key="perkASMeds2Desc" long_desc_key="perkASMeds2LongDesc"/> 
+	</effect_group>
+	
+	<effect_group name="Level Increase Tracking">
+		<requirement name="ProgressionLevel" progression_name="perkASMeds" operation="LT" value="2"/>
+		<requirement name="CVarCompare" cvar="$PerkASMedsXP" operation="GTE" value="@$PerkASMedsXPTarget"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$PerkASMedsXPTarget" operation="add" value="1000"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="self" buff="buffPerkASMedsLevel"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="ShowToolbeltMessage" message="Your Addict Skill Has Increased" message_key="ttShawMeleeLevelUp"/>
+			<triggered_effect trigger="onSelfDamagedOther" action="PlaySound" sound="levelup" play_in_head="true"/>
+	</effect_group>
+</perk>
+	<!--Gamestage-->
+<perk name="perkShawGamestage1" parent="skillShawRecipes" name_key="perkShawGamestage1Name" desc_key="perkShawGamestage1Desc" base_skill_point_cost="0" min_level="0" max_level="1" icon="perkShawGamestage1">
+	<level_requirements level="1">
+	<requirement name="ProgressionLevel" progression_name="perkMonkeyFruit" operation="Equals" value="1" desc_key="reqperkMonkeyFruit"/>
+	</level_requirements>
+	<effect_group>
+		<effect_description level="1" desc_key="perkShawGamestage1Desc2"/>
+	</effect_group>
+</perk>
+<perk name="perkShawGamestage2" parent="skillShawRecipes" name_key="perkShawGamestage2Name" desc_key="perkShawGamestage2Desc" base_skill_point_cost="0" min_level="0" max_level="1" icon="perkShawGamestage2">
+	<level_requirements level="1">
+	<requirement name="ProgressionLevel" progression_name="perkMonkeyFruit" operation="Equals" value="1" desc_key="reqperkMonkeyFruit"/>
+	</level_requirements>
+	<effect_group>
+		<effect_description level="1" desc_key="perkShawGamestage2Desc2"/>
+	</effect_group>
+</perk>
+
+	<!--TODO Remove old perks-->
+<!--<perk name="perkCraftShaw" parent="skillShaw" name_key="perkCraftShawName" desc_key="perkCraftShawDesc" base_skill_point_cost="0" min_level="0" max_level="3" icon="perkCraftShaw">
+	<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="150" desc_key="reqPlayerLevel150"/><requirement name="ProgressionLevel" progression_name="attShaw" operation="Equals" value="1" desc_key="reqattShaw"/></level_requirements>
+	<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="175" desc_key="reqPlayerLevel175"/><requirement name="ProgressionLevel" progression_name="attShaw" operation="Equals" value="1" desc_key="reqattShaw"/></level_requirements>
+	<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="250" desc_key="reqPlayerLevel250"/><requirement name="ProgressionLevel" progression_name="attShaw" operation="Equals" value="1" desc_key="reqattShaw"/></level_requirements>
+	<effect_group>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,3" tags="BiggerCatalyst"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,3" tags="HarambeWorkstation,RuinsWorkstation,SakuraGardenWorkstation,OilWorkstation,GingerbreadManCell,TrollJuiceCell,ShawKnowledgeShawUpgradeTool"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3" tags="BiggestBench"/>
+		
+		<effect_description level="1" desc_key="perkCraftShawRank1Desc"/>
+		<effect_description level="2" desc_key="perkCraftShawRank2Desc"/>
+		<effect_description level="3" desc_key="perkCraftShawRank3Desc"/>
+		<effect_description level="4" desc_key="perkCraftShawRank4Desc"/>
+	</effect_group>
+</perk>-->
+<!--<perk name="perkMeleeShaw" parent="skillShaw2" name_key="perkMeleeShawName" desc_key="perkMeleeShawDesc" base_skill_point_cost="0" min_level="0" max_level="1" icon="buffMeleeShaw">
+	<level_requirements level="1">
+	<requirement name="ProgressionLevel" progression_name="attShaw" operation="Equals" value="1" desc_key="reqattShaw"/>
+	<requirement name="PlayerLevel" target="self" operation="GTE" value="175" desc_key="reqPlayerLevel175"/>
+	<requirement name="ProgressionLevel" progression_name="perkTheCompletionist" operation="Equals" value="1" desc_key="reqTheCompletionist"/>
+	<requirement name="ProgressionLevel" progression_name="perkASBlunt" operation="Equals" value="100" desc_key="reqMaxBlunt"/>
+	<requirement name="ProgressionLevel" progression_name="perkPummelPete" operation="Equals" value="5" desc_key="reqperkPummelPete"/>
+	<requirement name="ProgressionLevel" progression_name="perkBreakingAndEntering" operation="Equals" value="5" desc_key="reqperkBreakingAndEntering"/>
+	<requirement name="ProgressionLevel" progression_name="perkBarBrawling" operation="Equals" value="5" desc_key="reqperkBarBrawling"/>
+	<requirement name="ProgressionLevel" progression_name="perkFlurryOfBlows" operation="Equals" value="5" desc_key="reqperkFlurryOfBlows"/>
+	
+	<requirement name="ProgressionLevel" progression_name="perkASBladed" operation="Equals" value="100" desc_key="reqMaxBladed"/>
+	<requirement name="ProgressionLevel" progression_name="perkKnifeGuy" operation="Equals" value="5" desc_key="reqperkKnifeGuy"/>
+	<requirement name="ProgressionLevel" progression_name="perkBladeMaster" operation="Equals" value="5" desc_key="reqperkBladeMaster"/>
+	<requirement name="ProgressionLevel" progression_name="perkSpearMaster" operation="Equals" value="5" desc_key="reqperkSpearMaster"/>
+	
+	<requirement name="ProgressionLevel" progression_name="perkASMiningTools" operation="Equals" value="100" desc_key="reqMaxTools"/>
+	<requirement name="ProgressionLevel" progression_name="perkMiner69r" operation="Equals" value="5" desc_key="reqperkMiner69r"/>
+	<requirement name="ProgressionLevel" progression_name="perkSalvageOperations" operation="Equals" value="5" desc_key="reqperkSalvageOperations"/>
+	<requirement name="ProgressionLevel" progression_name="perkWellMaintained" operation="Equals" value="5" desc_key="reqperkWellMaintained"/>
+	</level_requirements>
+	<effect_group>
+		<effect_description level="1" desc_key="perkMeleeShawRank1Desc"/>
+	</effect_group>
+	<effect_group name="Buffs">
+		<passive_effect name="StaminaLoss" operation="perc_add" value="-.25" level="1">
+			<requirement name="ItemHasTags" tags="biggest"/>
+			<requirement name="ItemHasTags" tags="melee"/>
+		</passive_effect>
+		<passive_effect name="HarvestCount" operation="perc_add" value="2.5" tags="oreWoodHarvest" level="1">
+			<requirement name="ItemHasTags" tags="biggest"/>
+			<requirement name="ItemHasTags" tags="melee"/>
+		</passive_effect>
+		<passive_effect name="HarvestCount" operation="perc_add" value="2.5" tags="salvageHarvest" level="1">
+			<requirement name="ItemHasTags" tags="biggest"/>
+			<requirement name="ItemHasTags" tags="melee"/>
+		</passive_effect>
+		<passive_effect name="BuffResistance" operation="base_add" value="100" tags="buffSaintFloydsNewport,buffSaintFloydsNewportBonus,buffSaintFloydsNewportDamage" level="1"/>
+	</effect_group>
+	<effect_group name="Add Tracking Buffs">
+		<triggered_effect trigger="onPerkLevelChanged" action="AddBuff" buff="buffMeleeShaw"/>
+
+		<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="add" value="10"/>
+	</effect_group>
+</perk>	-->
+<!--<perk name="perkEndlessHunger" parent="skillShaw3" name_key="perkEndlessHungerName" desc_key="perkEndlessHungerDesc" base_skill_point_cost="0" min_level="0" max_level="1" icon="ui_game_symbol_pack_mule">
+	<level_requirements level="1">
+	<requirement name="PlayerLevel" target="self" operation="GTE" value="150" desc_key="reqPlayerLevel150"/>
+	<requirement name="ProgressionLevel" progression_name="attShaw" operation="Equals" value="1" desc_key="reqattShaw"/>
+	
+	<requirement name="ProgressionLevel" progression_name="perkASAthletics" operation="Equals" value="100" desc_key="reqperkASAthletics"/>
+	<requirement name="ProgressionLevel" progression_name="attFortitude" operation="Equals" value="5" desc_key="reqattFortitude"/>
+	<requirement name="ProgressionLevel" progression_name="perkSexualTrex" operation="Equals" value="5" desc_key="reqperkSexualTrex"/>
+	<requirement name="ProgressionLevel" progression_name="perkParkour" operation="Equals" value="5" desc_key="reqperkParkour"/>
+	<requirement name="ProgressionLevel" progression_name="perkFromTheShadows" operation="Equals" value="5" desc_key="reqperkFromTheShadows"/>
+	<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="5" desc_key="reqperkSlowMetabolism"/>
+	<requirement name="ProgressionLevel" progression_name="perkSousChef" operation="Equals" value="5" desc_key="reqperkSousChef"/>
+	<requirement name="ProgressionLevel" progression_name="perkPainTolerance" operation="Equals" value="5" desc_key="reqperkPainTolerance"/>
+	</level_requirements>
+	<effect_group>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1" tags="WyattButter"/>
+	
+		<passive_effect name="BuffResistance" operation="base_add" value="100" tags="buffDysentery01Untreated,buffIllPneumonia01,buffIllFoodPoisoning01" level="1"/>
+	
+		<passive_effect name="FoodMax" operation="base_set" value="250" level="1"/>
+		<passive_effect name="WaterMax" operation="base_set" value="250" level="1"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="100" tags="buffStatusHungry01,buffStatusHungry02,buffStatusHungry03,buffStatusThirsty01,buffStatusThirsty02,buffStatusThirsty03" level="1"/>
+		
+		<effect_description level="1" desc_key="perkEndlessHunger1Desc"/>
+	</effect_group>
+</perk>-->
+	<!--TODO Remove old knowledge-->
+<!--<perk name="perkBiggestMeleeRecipes" parent="skillShawRecipes" name_key="perkBiggestMeleeRecipesName" desc_key="perkBiggestMeleeRecipesDesc" base_skill_point_cost="0" min_level="0" max_level="4" icon="BiggestHammer">
+	<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqShawRecipes"/></level_requirements>
+	<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqShawRecipes"/></level_requirements>
+	<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqShawRecipes"/></level_requirements>
+	<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqShawRecipes"/></level_requirements>
+	<effect_group>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,4" tags="BiggestBaton"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,4" tags="BiggestFist"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,4" tags="BiggestSword"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4" tags="BiggestHammer"/>
+	
+		<effect_description level="1" desc_key="perkBiggestMeleeRecipesRank1Desc"/>
+		<effect_description level="2" desc_key="perkBiggestMeleeRecipesRank2Desc"/>
+		<effect_description level="3" desc_key="perkBiggestMeleeRecipesRank3Desc"/>
+		<effect_description level="4" desc_key="perkBiggestMeleeRecipesRank4Desc"/>
+	</effect_group>
+</perk>
+<perk name="perkBiggestGunsRecipes" parent="skillShawRecipes" name_key="perkBiggestGunsRecipesName" desc_key="perkBiggestGunsRecipesDesc" base_skill_point_cost="0" min_level="0" max_level="5" icon="BiggestGun">
+	<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqShawRecipes"/></level_requirements>
+	<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqShawRecipes"/></level_requirements>
+	<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqShawRecipes"/></level_requirements>
+	<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqShawRecipes"/></level_requirements>
+	<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqShawRecipes"/></level_requirements>
+	<effect_group>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,5" tags="BiggestPistol"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,5" tags="BiggestShotgun"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5" tags="BiggestSniper"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4,5" tags="BiggestAssaultRifle"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="5" tags="BiggestGun"/>
+	
+		<effect_description level="1" desc_key="perkBiggestGunsRecipesRank1Desc"/>
+		<effect_description level="2" desc_key="perkBiggestGunsRecipesRank2Desc"/>
+		<effect_description level="3" desc_key="perkBiggestGunsRecipesRank3Desc"/>
+		<effect_description level="4" desc_key="perkBiggestGunsRecipesRank4Desc"/>
+		<effect_description level="5" desc_key="perkBiggestGunsRecipesRank5Desc"/>
+	</effect_group>
+</perk>
+<perk name="perkBiggestToolsRecipes" parent="skillShawRecipes" name_key="perkBiggestToolsRecipesName" desc_key="perkBiggestToolsRecipesDesc" base_skill_point_cost="0" min_level="0" max_level="2" icon="BiggestPickaxe">
+	<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqShawRecipes"/></level_requirements>
+	<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqShawRecipes"/></level_requirements>
+	<effect_group>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,2" tags="ShawUpgradeTool"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2" tags="BiggestPickaxe"/>
+		
+		<effect_description level="1" desc_key="perkBiggestToolsRecipesRank1Desc"/>
+		<effect_description level="2" desc_key="perkBiggestToolsRecipesRank2Desc"/>
+	</effect_group>
+</perk>
+<perk name="perkBiggestBombsRecipes" parent="skillShawRecipes" name_key="perkBiggestBombsRecipesName" desc_key="perkBiggestBombsRecipesDesc" base_skill_point_cost="0" min_level="0" max_level="5" icon="BiggestGL">
+	<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqShawRecipes"/></level_requirements>
+	<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqShawRecipes"/></level_requirements>
+	<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqShawRecipes"/></level_requirements>
+	<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqShawRecipes"/></level_requirements>
+	<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqShawRecipes"/></level_requirements>
+	<effect_group>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,5" tags="40mmGL,40mmGLAmmo"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,5" tags="40mmGLAmmo2"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5" tags="40mmGLAmmoBiggest"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4,5" tags="40mmGLAmmoHyper"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="5" tags="BiggestGL,BiggestGLAmmo"/>
+		
+		<effect_description level="1" desc_key="perkBiggestBombsRecipesRank1Desc"/>
+		<effect_description level="2" desc_key="perkBiggestBombsRecipesRank2Desc"/>
+		<effect_description level="3" desc_key="perkBiggestBombsRecipesRank3Desc"/>
+		<effect_description level="4" desc_key="perkBiggestBombsRecipesRank4Desc"/>
+		<effect_description level="5" desc_key="perkBiggestBombsRecipesRank5Desc"/>
+	</effect_group>
+</perk>
+<perk name="perkBiggestArmorRecipes" parent="skillShawRecipes" name_key="perkBiggestArmorRecipesName" desc_key="perkBiggestArmorRecipesDesc" base_skill_point_cost="0" min_level="0" max_level="4" icon="modArmorPlatingBiggest">
+	<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqShawRecipes"/></level_requirements>
+	<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqShawRecipes"/></level_requirements>
+	<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqShawRecipes"/></level_requirements>
+	<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqShawRecipes"/></level_requirements>
+	<effect_group>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,4" tags="modArmorPlatingBig"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,4" tags="modArmorPlatingBigger"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,4" tags="modArmorPlatingBiggest"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4" tags="armorBiggestHelmet,armorBiggestVest,armorBiggestGloves,armorBiggestLegs,armorBiggestBoots"/>
+		
+		<effect_description level="1" desc_key="perkBiggestArmorRecipesRank1Desc"/>
+		<effect_description level="2" desc_key="perkBiggestArmorRecipesRank2Desc"/>
+		<effect_description level="3" desc_key="perkBiggestArmorRecipesRank3Desc"/>
+		<effect_description level="4" desc_key="perkBiggestArmorRecipesRank4Desc"/>
+	</effect_group>
+</perk>
+<perk name="perkQuestRecipes" parent="skillShawRecipes" name_key="perkQuestRecipesName" desc_key="perkQuestRecipesDesc" base_skill_point_cost="0" min_level="0" max_level="1" icon="QuestCookieFactory">
+	<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqShawRecipes"/></level_requirements>
+	<effect_group>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1" tags="QuestCookieFactoryHarambeWorkstation,QuestCookieFactorySakuraGardenWorkstation,QuestCookieFactoryOilWorkstation,QuestCookieFactoryOilWorkstation"/>
+
+		<effect_description level="1" desc_key="perkQuestRecipesRank1Desc"/>
+	</effect_group>
+</perk>
+--></append>
+</config>

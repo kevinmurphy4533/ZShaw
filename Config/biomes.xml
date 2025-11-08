@@ -1,0 +1,31 @@
+<config>
+<append xpath="/worldgeneration/biomes">
+	<biomemap id="41" name="test_biome_dirt"/>
+</append>
+<append xpath="/worldgeneration/biomes">
+<biome name="test_biome_dirt" topsoil_block="ShawCookieDirt" biomemapcolor="#80FFFF" difficulty="5">
+	<weather name="default" prob="100">
+		<Temperature min="50" max="90" prob="1"/>
+		<CloudThickness min="0" max="0" prob="30"/>
+		<CloudThickness min="10" max="70" prob="70"/>
+		<Precipitation min="0" max="0" prob="1"/>
+		<Fog min="0" max="5" prob="1"/>
+		<Wind min="7" max="20" prob="1"/>
+	</weather>
+	<layers>
+		<layer depth="1" blockname="ShawCookieDirt"/> 
+		<layer depth="2" blockname="ShawCookieStone"/>
+		<layer depth="10" blockname="ShawCookieStone">
+			<resource blockname="ShawCookieOreAlex" prob="0.001" rwgGenerationType="all"/>
+			<resource blockname="ShawCookieOre1" prob="0.11" rwgGenerationType="all"/>
+			<resource blockname="ShawCookieGravel" prob="1" rwgGenerationType="all"/>
+		</layer>
+		<layer depth="*" blockname="ShawCookieStone2"/>
+			<resource blockname="ShawCookieOreAlex" prob="0.002" rwgGenerationType="all"/>
+			<resource blockname="ShawCookieOre1" prob="0.2" rwgGenerationType="all"/>
+			<resource blockname="ShawCookieGravel" prob="1" rwgGenerationType="all"/>
+		<layer depth="3" blockname="terrBedrock"/>
+	</layers>
+</biome>
+</append>
+</config>

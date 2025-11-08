@@ -1,0 +1,62 @@
+<config>
+<set xpath="/xui/ruleset/@scale">1.075</set>
+<append xpath="/xui/ruleset">
+<!--Bigger Catalyst-->
+<window_group name="workstation_BiggerCatalyst" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+	<window name="windowCraftingList"/>
+	<window name="craftingInfoPanel"/>
+	<window name="windowCraftingQueue"/>
+	<window name="windowNonPagingHeader"/>
+	<window name="windowOutputBiggerCatalyst"/>				
+</window_group>
+<!--Bigger Catalyst POI-->
+<window_group name="workstation_BiggerCatalystPOI" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+	<window name="windowCraftingList"/>
+	<window name="craftingInfoPanel"/>
+	<window name="windowCraftingQueue"/>
+	<window name="windowNonPagingHeader"/>
+	<window name="windowOutputBiggestBench"/>				
+</window_group>
+<!--Hydroponics Basin-->
+<window_group name="workstation_HydroponicsBasinShaw" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+	<window name="windowCraftingList"/>
+	<window name="craftingInfoPanel"/>
+	<window name="windowCraftingQueue"/>
+	<window name="windowNonPagingHeader"/>
+	<window name="windowToolsHydroponics"/>
+	<window name="windowOutputHydroponics"/>				
+</window_group>
+<!--Hydraulic Press-->
+<window_group name="workstation_HydraulicPress" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+	<window name="windowCraftingList"/>
+	<window name="craftingInfoPanel"/>
+	<window name="windowCraftingQueue"/>
+	<window name="windowNonPagingHeader"/>
+	<window name="windowOutputHydraulicPress"/>				
+</window_group>
+<!--Big Forge-->
+<window_group name="workstation_BigHeadForge" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+	<window name="windowCraftingList"/>
+	<window name="craftingInfoPanel"/>
+	<window name="windowCraftingQueue"/>
+	<window name="windowNonPagingHeader"/>
+	<window name="windowOutputBigHeadForge"/>				
+</window_group>
+<!--Big Assembler-->
+<window_group name="workstation_BigAssembler" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+	<window name="windowCraftingList"/>
+	<window name="craftingInfoPanel"/>
+	<window name="windowCraftingQueue"/>
+	<window name="windowNonPagingHeader"/>
+	<window name="windowOutputBigAssembler"/>				
+</window_group>
+<!--Big Food Maker-->
+<window_group name="workstation_BigFoodMaker" controller="XUiC_WorkstationWindowGroup" open_backpack_on_open="true" close_compass_on_open="true">
+	<window name="windowCraftingList"/>
+	<window name="craftingInfoPanel"/>
+	<window name="windowCraftingQueue"/>
+	<window name="windowNonPagingHeader"/>
+	<window name="windowOutputBigFoodMaker"/>				
+</window_group>
+</append>
+</config>

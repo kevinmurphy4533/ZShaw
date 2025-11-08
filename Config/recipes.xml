@@ -1,0 +1,1056 @@
+<config> 
+<remove xpath="/recipes/recipe[@name='meleeToolRepairT0StoneAxe']"/>
+<remove xpath="/recipes/recipe[@name='ammoArrowStone']"/>
+<remove xpath="/recipes/recipe[@name='ammoCrossbowBoltStone']"/>
+<remove xpath="/recipes/recipe[@name='DFgunLaserM60']"/>
+<remove xpath="/recipes/recipe[@name='DFdrinkJarUnleashHell']"/>
+<append xpath="/recipes">
+<recipe name="meleeToolRepairT0StoneAxe" count="1" tags="perkMiner69r">
+	<ingredient name="resourceRockSmall" count="2"/>
+	<ingredient name="resourceYuccaFibers" count="2"/>
+	<ingredient name="resourceWood" count="2"/>
+</recipe>
+<recipe name="ammoArrowStone" count="1">
+	<ingredient name="resourceRockSmall" count="1"/>
+	<ingredient name="DFstick" count="1"/>
+	<ingredient name="resourceCloth" count="1"/>
+</recipe>
+<recipe name="ammoCrossbowBoltStone" count="1">
+	<ingredient name="resourceRockSmall" count="1"/>
+	<ingredient name="DFstick" count="1"/>
+	<ingredient name="resourceCloth" count="1"/>
+</recipe>
+<recipe name="ammoArrowStone" count="1">
+	<ingredient name="resourceRockSmall" count="1"/>
+	<ingredient name="DFstick" count="1"/>
+	<ingredient name="resourceFeather" count="1"/>
+</recipe>
+<recipe name="ammoCrossbowBoltStone" count="1">
+	<ingredient name="resourceRockSmall" count="1"/>
+	<ingredient name="DFstick" count="1"/>
+	<ingredient name="resourceFeather" count="1"/>
+</recipe>
+<recipe name="meleeToolPaintToolAdmin" count="1" craft_time="21">
+	<ingredient name="meleeToolPaintTool" count="1"/>
+	<ingredient name="oldCash" count="20"/>
+</recipe>
+<recipe name="ShawPaintingVariantHelper" count="1" craft_time="5">
+	<ingredient name="casinoCoin" count="20"/>
+</recipe>	
+<recipe name="DFanimalFeed" count="1" scrapable="False" tags="learnable">
+	<ingredient name="DFOrange" count="2" />
+</recipe>
+<recipe name="DFanimalFeed" count="1" scrapable="False" tags="learnable" craft_area="PandM">
+	<ingredient name="DFOrange" count="1" />
+</recipe>
+<recipe name="DFanimalFeed" count="1" scrapable="False" tags="learnable">
+	<ingredient name="DFCoconut" count="2" />
+</recipe>
+<recipe name="DFanimalFeed" count="1" scrapable="False" tags="learnable" craft_area="PandM">
+	<ingredient name="DFCoconut" count="1" />
+</recipe>
+<recipe name="foodCropPotato" count="1" craft_time="120" craft_area="HydroponicsBasinShawCraft" tags="HydroponicsBasinShawCraft,NoCraftSpeedBasic">
+</recipe>
+<recipe name="foodCropCorn" count="1" craft_time="120" craft_area="HydroponicsBasinShawCraft" tags="HydroponicsBasinShawCraft,NoCraftSpeedBasic">
+</recipe>
+<recipe name="foodCropGraceCorn" count="1" craft_time="150" craft_area="HydroponicsBasinShawCraft" craft_tool="HydroponicsGrowLights" tags="HydroponicsBasinShawCraft,NoCraftSpeedBasic">
+</recipe>
+<recipe name="foodCropMushrooms" count="1" craft_time="120" craft_area="HydroponicsBasinShawCraft" tags="HydroponicsBasinShawCraft,NoCraftSpeedBasic">
+</recipe>
+<recipe name="foodCropBlueberries" count="1" craft_time="120" craft_area="HydroponicsBasinShawCraft" tags="HydroponicsBasinShawCraft,NoCraftSpeedBasic">
+</recipe>
+<recipe name="foodCropPumpkin" count="1" craft_time="150" craft_area="HydroponicsBasinShawCraft" craft_tool="HydroponicsGrowLights" tags="HydroponicsBasinShawCraft,NoCraftSpeedBasic">
+</recipe>
+<recipe name="foodCropYuccaFruit" count="1" craft_time="120" craft_area="HydroponicsBasinShawCraft" tags="HydroponicsBasinShawCraft,NoCraftSpeedBasic">
+</recipe>
+<recipe name="resourceCropCoffeeBeans" count="1" craft_time="120" craft_area="HydroponicsBasinShawCraft" tags="HydroponicsBasinShawCraft,NoCraftSpeedBasic">
+</recipe>
+<recipe name="resourceCropHopsFlower" count="1" craft_time="150" craft_area="HydroponicsBasinShawCraft" craft_tool="HydroponicsGrowLights" tags="HydroponicsBasinShawCraft,NoCraftSpeedBasic">
+</recipe>
+<recipe name="resourceCropChrysanthemumPlant" count="1" craft_time="30" craft_area="HydroponicsBasinShawCraft" tags="HydroponicsBasinShawCraft,NoCraftSpeedBasic">
+</recipe>
+<recipe name="resourceCropGoldenrodPlant" count="1" craft_time="30" craft_area="HydroponicsBasinShawCraft" tags="HydroponicsBasinShawCraft,NoCraftSpeedBasic">
+</recipe>
+<recipe name="resourceCropAloeLeaf" count="1" craft_time="30" craft_area="HydroponicsBasinShawCraft" tags="HydroponicsBasinShawCraft,NoCraftSpeedBasic">
+</recipe>
+<recipe name="resourceYuccaFibers" count="1" craft_time="1" craft_area="HydroponicsBasinShawCraft" tags="HydroponicsBasinShawCraft,NoCraftSpeedBasic">
+</recipe>
+<recipe name="DFTomato" count="1" craft_time="120" craft_area="HydroponicsBasinShawCraft" tags="HydroponicsBasinShawCraft,NoCraftSpeedBasic">
+</recipe>
+<recipe name="DFCarrot" count="1" craft_time="120" craft_area="HydroponicsBasinShawCraft" tags="HydroponicsBasinShawCraft,NoCraftSpeedBasic">
+</recipe>
+<recipe name="DFRice" count="1" craft_time="120" craft_area="HydroponicsBasinShawCraft" tags="HydroponicsBasinShawCraft,NoCraftSpeedBasic">
+</recipe>
+<recipe name="DFWheat" count="1" craft_time="120" craft_area="HydroponicsBasinShawCraft" tags="HydroponicsBasinShawCraft,NoCraftSpeedBasic">
+</recipe>
+<recipe name="DFBanana" count="1" craft_time="120" craft_area="HydroponicsBasinShawCraft" tags="HydroponicsBasinShawCraft,NoCraftSpeedBasic">
+</recipe>
+<recipe name="DFCoconut" count="1" craft_time="120" craft_area="HydroponicsBasinShawCraft" tags="HydroponicsBasinShawCraft,NoCraftSpeedBasic">
+</recipe>
+<recipe name="DFApple" count="1" craft_time="120" craft_area="HydroponicsBasinShawCraft" tags="HydroponicsBasinShawCraft,NoCraftSpeedBasic">
+</recipe>
+<recipe name="DFOrange" count="1" craft_time="120" craft_area="HydroponicsBasinShawCraft" tags="HydroponicsBasinShawCraft,NoCraftSpeedBasic">
+</recipe>
+</append> 
+<insertAfter xpath="/recipes/recipe[@name='steelShapes:VariantHelper']">
+		<!--Craft times based around max speed take craft_time and mult by .4 to get real time if you want to add mult by 2.5 to get correct time-->
+		<!--add NoCraftSpeedBasic for no speedup from base skills-->
+	<!--Consumables-->
+		<!--T1-->
+<recipe name="ShawBurger" count="1" craft_time="60" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="ShawMeat" count="2"/>
+	<ingredient name="ShawBread" count="2"/>
+	<ingredient name="ShawCheese" count="2"/>
+	<ingredient name="DFenrichedUranium" count="200"/>
+</recipe>
+<recipe name="ShawBloxyCola" count="1" craft_time="60" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="ShawSugar" count="2"/>
+	<ingredient name="ShawWater" count="2"/>
+	<ingredient name="ShawCarbon" count="2"/>
+	<ingredient name="DFenrichedUranium" count="200"/>
+</recipe>
+		<!--T2-->
+<recipe name="ShawBurger" count="1" craft_time="15" craft_area="BigFoodMakerCraft" tags="BigFoodMakerCraft,NoCraftSpeedBasic">
+	<ingredient name="ShawMeat" count="2"/>
+	<ingredient name="ShawBread" count="2"/>
+	<ingredient name="ShawCheese" count="2"/>
+	<ingredient name="DFenrichedUranium" count="150"/>
+</recipe>
+<recipe name="ShawBloxyCola" count="1" craft_time="15" craft_area="BigFoodMakerCraft" tags="BigFoodMakerCraft,NoCraftSpeedBasic">
+	<ingredient name="ShawSugar" count="2"/>
+	<ingredient name="ShawWater" count="2"/>
+	<ingredient name="ShawCarbon" count="2"/>
+	<ingredient name="DFenrichedUranium" count="150"/>
+</recipe>
+<recipe name="ShawCake" count="1" craft_time="45" craft_area="BigFoodMakerCraft" tags="BigFoodMakerCraft,NoCraftSpeedBasic">
+	<ingredient name="ShawMeat" count="5"/>
+	<ingredient name="ShawBread" count="5"/>
+	<ingredient name="ShawCheese" count="5"/>
+	<ingredient name="CookieProcessed1" count="1"/>
+</recipe>
+<recipe name="ShawBloxiade" count="1" craft_time="45" craft_area="BigFoodMakerCraft" tags="BigFoodMakerCraft,NoCraftSpeedBasic">
+	<ingredient name="ShawSugar" count="5"/>
+	<ingredient name="ShawWater" count="5"/>
+	<ingredient name="ShawCarbon" count="5"/>
+	<ingredient name="CookieProcessed1" count="1"/>
+</recipe>
+<recipe name="ShawTaco" count="1" craft_time="90" craft_area="BigFoodMakerCraft" tags="BigFoodMakerCraft,NoCraftSpeedBasic">
+	<ingredient name="ShawEgg" count="5"/>
+	<ingredient name="ShawMeat" count="3"/>
+	<ingredient name="ShawBread" count="3"/>
+	<ingredient name="ShawCheese" count="3"/>
+	<ingredient name="CookieProcessed1" count="3"/>
+</recipe>
+<recipe name="ShawWitchesBrew" count="1" craft_time="90" craft_area="BigFoodMakerCraft" tags="BigFoodMakerCraft,NoCraftSpeedBasic">
+	<ingredient name="ShawMinerals" count="5"/>
+	<ingredient name="ShawSugar" count="3"/>
+	<ingredient name="ShawWater" count="3"/>
+	<ingredient name="ShawCarbon" count="3"/>
+	<ingredient name="CookieProcessed1" count="3"/>
+</recipe>
+	<!--Meds-->
+		<!--T1-->
+<recipe name="HealthShot" count="1" craft_time="60" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="ShawNeedle" count="5"/>
+	<ingredient name="DFenrichedUranium" count="100"/>
+</recipe>
+<recipe name="WellnessShot" count="1" craft_time="60" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="ShawNeedle" count="1"/>
+	<ingredient name="resourceRawDiamond" count="1"/>
+	<ingredient name="resourceGoldNugget" count="2"/>
+	<ingredient name="resourceSilverNugget" count="3"/>
+	<ingredient name="DFenrichedUranium" count="50"/>
+</recipe>
+		<!--T2-->
+<recipe name="HealthShot" count="1" craft_time="15" craft_area="BigFoodMakerCraft" tags="BigFoodMakerCraft,NoCraftSpeedBasic">
+	<ingredient name="ShawNeedle" count="4"/>
+	<ingredient name="DFenrichedUranium" count="100"/>
+</recipe>
+<recipe name="WellnessShot" count="2" craft_time="15" craft_area="BigFoodMakerCraft" tags="BigFoodMakerCraft,NoCraftSpeedBasic">
+	<ingredient name="ShawNeedle" count="1"/>
+	<ingredient name="resourceRawDiamond" count="2"/>
+	<ingredient name="resourceGoldNugget" count="3"/>
+	<ingredient name="resourceSilverNugget" count="4"/>
+	<ingredient name="DFenrichedUranium" count="100"/>
+</recipe>
+	<!--Progression-->
+<recipe name="DFdrinkJarUnleashHell" count="1" craft_time="500" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="DFresourceDemonicEssence" count="10"/>
+	<ingredient name="foodCropGraceCorn" count="10"/>
+	<ingredient name="DFPortalPowerSource" count="2"/>
+	<ingredient name="resourceAcid" count="5"/>
+	<ingredient name="drinkJarBeer" count="5"/>		
+</recipe>
+<recipe name="BloodOrange" count="1" craft_time="2000" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="LegendaryShardDF" count="1"/>
+	<ingredient name="resourceRawDiamond" count="2"/>
+	<ingredient name="resourceGoldNugget" count="3"/>
+	<ingredient name="DFforgedTitanium" count="500"/>
+	<ingredient name="DFOrange" count="100"/>
+</recipe>
+<recipe name="MericleFruit" count="1" craft_time="3000" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="LegendaryShardDF" count="3"/>
+	<ingredient name="resourceRawDiamond" count="5"/>
+	<ingredient name="resourceGoldNugget" count="15"/>
+	<ingredient name="resourceSilverNugget" count="50"/>
+	<ingredient name="DFApple" count="200"/>
+</recipe>
+<recipe name="Elderberry" count="1" craft_time="4000" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="LegendaryShardDF" count="5"/>
+	<ingredient name="resourceRawDiamond" count="10"/>
+	<ingredient name="resourceGoldNugget" count="25"/>
+	<ingredient name="resourceSilverNugget" count="75"/>
+	<ingredient name="foodCropBlueberries" count="300"/>
+</recipe>
+<recipe name="MonkeyFruit" count="1" craft_time="100" craft_area="BiggerCatalystPOI" tags="BiggerCatalystPOI">
+	<ingredient name="KeemstarAlex" count="1"/>
+	<ingredient name="LegendaryShardDF" count="7"/>
+	<ingredient name="resourceRawDiamond" count="15"/>
+	<ingredient name="resourceGoldNugget" count="35"/>
+	<ingredient name="DFBanana" count="400"/>
+</recipe>
+<recipe name="EssenceKey" count="1" craft_time="5000" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="LegendaryShardDF" count="1"/>
+	<ingredient name="casinoCoin" count="500000"/>
+</recipe>
+<recipe name="EssenceBossT1" count="1" craft_time="60" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="BigHead" count="30"/>
+	<ingredient name="Essence" count="50"/>
+	<ingredient name="casinoCoin" count="2500000"/>
+</recipe>
+	<!--Workstations/Blocks-->
+		<!--T0-->
+<recipe name="HydroponicsBasinShaw" count="1" craft_time="1000" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable">
+	<ingredient name="resourceForgedIron" count="150"/>
+	<ingredient name="resourceMetalPipe" count="75"/>
+	<ingredient name="DFfertilizer" count="25"/>
+	<ingredient name="resourceElectricParts" count="25"/>
+	<ingredient name="resourceSilverNugget" count="10"/>
+</recipe>
+<recipe name="HydroponicsGrowLights" count="1" craft_time="1000" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable">
+	<ingredient name="resourceForgedSteel" count="10"/>
+	<ingredient name="resourceScrapPolymers" count="10"/>
+	<ingredient name="resourceElectricParts" count="10"/>
+	<ingredient name="resourceGoldNugget" count="1"/>
+	<ingredient name="carBattery" count="3"/>
+</recipe>
+<recipe name="HydroponicsGrowLights" count="1" craft_time="1000" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="learnable">
+	<ingredient name="resourceForgedSteel" count="10"/>
+	<ingredient name="resourceScrapPolymers" count="10"/>
+	<ingredient name="resourceElectricParts" count="10"/>
+	<ingredient name="resourceSilverNugget" count="5"/>
+	<ingredient name="carBattery" count="3"/>
+</recipe>
+<recipe name="HydraulicPress" count="1" craft_time="2000" craft_area="workstationMetal" craft_tool="DFtoolweldingTorch" tags="HydraulicPressCraft">
+	<ingredient name="resourceForgedSteel" count="500"/>
+	<ingredient name="resourceElectricParts" count="100"/>
+	<ingredient name="resourceMechanicalParts" count="100"/>
+	<ingredient name="resourceGoldNugget" count="15"/>
+	<ingredient name="carBattery" count="5"/>
+</recipe>	
+<recipe name="HydraulicPress" count="1" craft_time="500" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="DFforgedTitanium" count="25"/>
+	<ingredient name="resourceForgedSteel" count="500"/>
+	<ingredient name="resourceElectricParts" count="100"/>
+	<ingredient name="resourceMechanicalParts" count="100"/>
+	<ingredient name="resourceSilverNugget" count="5"/>
+</recipe>	
+<recipe name="BiggestSeller" count="1" craft_time="2500" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="DFforgedTitanium" count="250"/>
+	<ingredient name="resourceForgedSteel" count="1000"/>
+	<ingredient name="DFcoilBattery" count="5000"/>
+	<ingredient name="resourceGoldNugget" count="3"/>
+	<ingredient name="resourceSilverNugget" count="10"/>
+</recipe>
+<recipe name="steelShapes:VariantHelper" craft_time="5" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceForgedSteel" count="10"/>
+</recipe>
+<recipe name="stainlessSteelShapes:VariantHelper" craft_time="7" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceForgedSteel" count="20"/>
+</recipe>
+<recipe name="titaniumShapes:VariantHelper" craft_time="10" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="DFforgedTitanium" count="10"/>
+</recipe>
+		<!--T1-->
+<recipe name="BiggerCatalyst" count="1" craft_time="2500" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft,learnable">
+	<ingredient name="BigHead" count="5"/>
+</recipe>
+		<!--T2-->
+<recipe name="BigHeadForge" count="1" craft_time="1200" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="KeemstarAlex" count="2"/>
+	<ingredient name="Sheckle" count="150"/>
+	<ingredient name="CookieRaw1" count="15000"/>
+	<ingredient name="BigHead" count="20"/>
+	<ingredient name="Essence" count="25"/>
+</recipe>
+<recipe name="BigAssembler" count="1" craft_time="1200" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="Steven" count="1"/>
+	<ingredient name="CookieProcessed1" count="150"/>
+	<ingredient name="Sheckle" count="200"/>
+	<ingredient name="BigHead" count="25"/>
+	<ingredient name="Essence" count="30"/>
+</recipe>
+<recipe name="BigFoodMaker" count="1" craft_time="600" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="Steven" count="1"/>
+	<ingredient name="CookieProcessed1" count="200"/>
+	<ingredient name="Sheckle" count="250"/>
+	<ingredient name="BigHeadBlessed" count="3"/>
+</recipe>
+<recipe name="BiggestSeller" count="1" craft_time="150" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="BigHead" count="3"/>
+	<ingredient name="Essence" count="3"/>
+	<ingredient name="resourceRawDiamond" count="3"/>
+	<ingredient name="resourceGoldNugget" count="5"/>
+	<ingredient name="resourceSilverNugget" count="10"/>
+</recipe>
+	<!--Tools-->
+		<!--T0-->
+<recipe name="modMotorToolV8" count="1" craft_time="1000" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="LegendaryShardDF" count="1"/>
+	<ingredient name="DFV8Engine" count="1"/>
+	<ingredient name="DFforgedTitanium" count="250"/>
+	<ingredient name="resourceGoldNugget" count="3"/>
+	<ingredient name="resourceSilverNugget" count="5"/>
+</recipe>
+<recipe name="modGunRechargableBatteryV2" count="1" craft_time="2000" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="LegendaryShardDF" count="3"/>
+	<ingredient name="DFresourceDemonicEssence" count="25"/>
+	<ingredient name="resourceRawDiamond" count="5"/>
+	<ingredient name="resourceGoldNugget" count="10"/>
+	<ingredient name="resourceSilverNugget" count="15"/>
+</recipe>
+		<!--T1-->
+<recipe name="modHeadCoreTool" count="1" craft_time="300" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="BigHead" count="2"/>
+	<ingredient name="Essence" count="3"/>
+</recipe>
+<recipe name="ShawUpgradeTool" count="1" craft_time="300" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="BigHead" count="2"/>
+	<ingredient name="Essence" count="3"/>
+</recipe>	
+		<!--T2-->
+<recipe name="BiggestPickaxe" count="1" craft_time="600" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="KeemstarAlex" count="1"/>
+	<ingredient name="LegendaryShard" count="3"/>
+	<ingredient name="BigHead" count="10"/>
+	<ingredient name="Essence" count="20"/>
+	<ingredient name="Sheckle" count="100"/>
+</recipe>
+<recipe name="BiggestPickaxeGolden" count="1" craft_time="600" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="BiggestPickaxe" count="1"/>
+	<ingredient name="GoldBarMagic" count="1"/>
+	<ingredient name="KeemstarAlex" count="1"/>
+	<ingredient name="CookieProcessed1" count="100"/>
+	<ingredient name="Sheckle" count="100"/>
+</recipe>
+	<!--Weapons-->
+		<!--T0-->
+<recipe name="DFgunLaserM60" count="1" craft_time="2000" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft,learnable">
+	<ingredient name="DFforgedTitanium" count="750"/>
+	<ingredient name="DFenrichedUranium" count="500"/>
+	<ingredient name="DFPortalPowerSource" count="1"/>
+</recipe>
+<recipe name="LinkedSword" count="1" craft_time="2000" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="LegendaryShardDF" count="1"/>
+	<ingredient name="DFforgedTitanium" count="250"/>
+	<ingredient name="resourceForgedSteel" count="750"/>
+	<ingredient name="resourceGoldNugget" count="3"/>
+	<ingredient name="resourceSilverNugget" count="5"/>
+</recipe>
+<recipe name="ShawCannon" count="1" craft_time="2000" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="KeemstarAlex" count="1"/>
+	<ingredient name="LegendaryShardDF" count="5"/>
+	<ingredient name="resourceRawDiamond" count="25"/>
+	<ingredient name="DFforgedTitanium" count="1000"/>
+	<ingredient name="resourceForgedSteel" count="2500"/>
+</recipe>
+<recipe name="Firebrand" count="1" craft_time="3000" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft,learnable">
+	<ingredient name="LinkedSword" count="1"/>
+	<ingredient name="LegendaryShardDF" count="3"/>
+	<ingredient name="resourceRawDiamond" count="3"/>
+	<ingredient name="DFresourceDemonicEssence" count="25"/>
+	<ingredient name="DFforgedTitanium" count="500"/>
+</recipe>
+<recipe name="Venomshank" count="1" craft_time="3000" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft,learnable">
+	<ingredient name="LinkedSword" count="1"/>
+	<ingredient name="LegendaryShardDF" count="3"/>
+	<ingredient name="resourceRawDiamond" count="3"/>
+	<ingredient name="DFresourceDemonicEssence" count="25"/>
+	<ingredient name="DFforgedTitanium" count="500"/>
+</recipe>
+		<!--T1-->
+<recipe name="LegendaryCrate" count="1" craft_time="1200" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="KeemstarAlex" count="1"/>
+	<ingredient name="LegendaryShard" count="1"/>
+	<ingredient name="BigHead" count="1"/>
+	<ingredient name="Essence" count="2"/>
+	<ingredient name="resourceRawDiamond" count="75"/>
+</recipe>
+<recipe name="LegendaryCrate" count="1" craft_time="60" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="ShawAK" count="1"/>
+	<ingredient name="Essence" count="1"/>
+	<ingredient name="BigHead" count="1"/>
+</recipe>
+<recipe name="LegendaryCrate" count="1" craft_time="60" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="ShawMartiniHenry" count="1"/>
+	<ingredient name="Essence" count="1"/>
+	<ingredient name="BigHead" count="1"/>
+</recipe>
+<recipe name="LegendaryCrate" count="1" craft_time="60" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="ShawRevolver" count="1"/>
+	<ingredient name="Essence" count="1"/>
+	<ingredient name="BigHead" count="1"/>
+</recipe>
+<recipe name="LegendaryCrate" count="1" craft_time="60" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="ShawDoubleBarrelShotgun" count="1"/>
+	<ingredient name="Essence" count="1"/>
+	<ingredient name="BigHead" count="1"/>
+</recipe>
+<recipe name="Darkheart" count="1" craft_time="1200" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,learnable,NoCraftSpeedBasic">
+	<ingredient name="Firebrand" count="1"/>
+	<ingredient name="LegendaryShard" count="1"/>
+	<ingredient name="BigHead" count="2"/>
+	<ingredient name="Essence" count="3"/>
+</recipe>
+<recipe name="Darkheart" count="1" craft_time="1200" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,learnable,NoCraftSpeedBasic">
+	<ingredient name="Venomshank" count="1"/>
+	<ingredient name="LegendaryShard" count="1"/>
+	<ingredient name="BigHead" count="2"/>
+	<ingredient name="Essence" count="3"/>
+</recipe>
+<recipe name="Illumina" count="1" craft_time="1200" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,learnable,NoCraftSpeedBasic">
+	<ingredient name="Firebrand" count="1"/>
+	<ingredient name="LegendaryShard" count="1"/>
+	<ingredient name="BigHead" count="2"/>
+	<ingredient name="Essence" count="3"/>
+</recipe>
+<recipe name="Illumina" count="1" craft_time="1200" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,learnable,NoCraftSpeedBasic">
+	<ingredient name="Venomshank" count="1"/>
+	<ingredient name="LegendaryShard" count="1"/>
+	<ingredient name="BigHead" count="2"/>
+	<ingredient name="Essence" count="3"/>
+</recipe>
+<recipe name="DoomwoodClub" count="1" craft_time="1500" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="Boomer" count="1"/>
+	<ingredient name="KeemstarAlex" count="3"/>
+	<ingredient name="LegendaryShard" count="5"/>
+	<ingredient name="BigHead" count="5"/>
+	<ingredient name="Essence" count="10"/>
+</recipe>
+<recipe name="TechMinigun" count="1" craft_time="1500" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="ClassicFedora" count="1"/>
+	<ingredient name="KeemstarAlex" count="3"/>
+	<ingredient name="LegendaryShard" count="5"/>
+	<ingredient name="BigHead" count="5"/>
+	<ingredient name="Essence" count="10"/>
+</recipe>
+		<!--T2-->
+<recipe name="CookieBlade" count="1" craft_time="1200" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="Illumina" count="1"/>
+	<ingredient name="Steven" count="1"/>
+	<ingredient name="CookieProcessed1" count="150"/>
+	<ingredient name="Sheckle" count="150"/>
+	<ingredient name="casinoCoin" count="1000000"/>
+</recipe>
+<recipe name="CookieBlade" count="1" craft_time="1200" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="Darkheart" count="1"/>
+	<ingredient name="Steven" count="1"/>
+	<ingredient name="CookieProcessed1" count="150"/>
+	<ingredient name="Sheckle" count="150"/>
+	<ingredient name="casinoCoin" count="1000000"/>
+</recipe>
+<recipe name="ShawAK47GoldenMLG" count="1" craft_time="1200" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="ShawAK" count="1"/>
+	<ingredient name="GoldDewKit" count="1"/>
+	<ingredient name="KeemstarAlexV2" count="1"/>
+	<ingredient name="Steven" count="1"/>
+	<ingredient name="BigHeadBlessed" count="3"/>
+</recipe>
+<recipe name="ShawMartiniHenryGoldenMLG" count="1" craft_time="1200" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="ShawMartiniHenry" count="1"/>
+	<ingredient name="GoldDewKit" count="1"/>
+	<ingredient name="KeemstarAlexV2" count="1"/>
+	<ingredient name="Steven" count="1"/>
+	<ingredient name="BigHeadBlessed" count="3"/>
+</recipe>
+<recipe name="ShawRevolverGoldenMLG" count="1" craft_time="1200" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="ShawRevolver" count="1"/>
+	<ingredient name="GoldDewKit" count="1"/>
+	<ingredient name="KeemstarAlexV2" count="1"/>
+	<ingredient name="Steven" count="1"/>
+	<ingredient name="BigHeadBlessed" count="3"/>
+</recipe>
+<recipe name="ShawDoubleBarrelShotgunGoldenMLG" count="1" craft_time="1200" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="ShawDoubleBarrelShotgun" count="1"/>
+	<ingredient name="GoldDewKit" count="1"/>
+	<ingredient name="KeemstarAlexV2" count="1"/>
+	<ingredient name="Steven" count="1"/>
+	<ingredient name="BigHeadBlessed" count="3"/>
+</recipe>
+	<!--Perks-->
+		<!--T1-->
+<recipe name="ShawSkillBookAll" count="1" craft_time="300" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="Essence" count="1"/>
+</recipe>
+<recipe name="ASFoodDrinkEssence" count="1" craft_time="450" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="Essence" count="1"/>
+	<ingredient name="LegendaryShardDF" count="1"/>
+	<ingredient name="resourceGoldNugget" count="15"/>
+	<ingredient name="ShawBurger" count="1"/>
+	<ingredient name="ShawBloxyCola" count="1"/>
+</recipe>
+<recipe name="ASMedsEssence" count="1" craft_time="450" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="Essence" count="1"/>
+	<ingredient name="LegendaryShardDF" count="1"/>
+	<ingredient name="resourceGoldNugget" count="15"/>
+	<ingredient name="HealthShot" count="2"/>
+</recipe>
+	<!--Ammo-->
+		<!--T0-->
+<recipe name="CannonBall1" count="1" craft_time="60" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceGunPowder" count="1000"/>
+	<ingredient name="resourceScrapLead" count="350"/>
+	<ingredient name="resourceForgedSteel" count="30"/>
+</recipe>
+<recipe name="DFresourceEnergyCell" count="100" craft_time="75" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="DFcoilBattery" count="400"/>
+</recipe>
+<recipe name="DFresourceOverchargedEnergyCell" count="100" craft_time="75" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="DFresourceEnergyCell" count="100"/>
+	<ingredient name="DFenrichedUranium" count="5"/>
+</recipe>
+		<!--T1-->
+<recipe name="DFresourceOverchargedEnergyCell" count="1000" craft_time="60" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="DFforgedTitanium" count="250"/>
+	<ingredient name="resourceForgedSteel" count="250"/>
+	<ingredient name="DFenrichedUranium" count="100"/>
+	<ingredient name="resourceSilverNugget" count="1"/>
+	<ingredient name="casinoCoin" count="2000"/>
+</recipe>
+<recipe name="CannonBall2" count="1" craft_time="60" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="DFforgedTitanium" count="150"/>
+	<ingredient name="DFenrichedUranium" count="75"/>
+	<ingredient name="casinoCoin" count="4000"/>
+</recipe>		
+<recipe name="ShawAmmo762" count="100" craft_time="60" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="DFforgedTitanium" count="500"/>
+	<ingredient name="DFenrichedUranium" count="150"/>
+	<ingredient name="casinoCoin" count="10000"/>
+</recipe>
+<recipe name="ShawAmmoHeavy" count="50" craft_time="60" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="DFforgedTitanium" count="500"/>
+	<ingredient name="DFenrichedUranium" count="150"/>
+	<ingredient name="casinoCoin" count="10000"/>
+</recipe>
+<recipe name="ShawAmmo44" count="37" craft_time="60" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="DFforgedTitanium" count="500"/>
+	<ingredient name="DFenrichedUranium" count="150"/>
+	<ingredient name="casinoCoin" count="10000"/>
+</recipe>
+<recipe name="ShawAmmoShell" count="25" craft_time="60" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="DFforgedTitanium" count="500"/>
+	<ingredient name="DFenrichedUranium" count="150"/>
+	<ingredient name="casinoCoin" count="10000"/>
+</recipe>
+		<!--T2-->
+<recipe name="ShawAmmoMinigunT1" count="250" craft_time="60" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="CookieProcessed1" count="3"/>
+	<ingredient name="ShawAmmo762" count="100"/>
+	<ingredient name="casinoCoin" count="7500"/>
+</recipe>
+<recipe name="ShawAmmoMinigunT1" count="250" craft_time="60" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="CookieProcessed1" count="3"/>
+	<ingredient name="ShawAmmoHeavy" count="50"/>
+	<ingredient name="casinoCoin" count="7500"/>
+</recipe>
+<recipe name="ShawAmmoMinigunT1" count="250" craft_time="60" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="CookieProcessed1" count="3"/>
+	<ingredient name="ShawAmmo44" count="37"/>
+	<ingredient name="casinoCoin" count="7500"/>
+</recipe>
+<recipe name="ShawAmmoMinigunT1" count="250" craft_time="60" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="CookieProcessed1" count="3"/>
+	<ingredient name="ShawAmmoShell" count="25"/>
+	<ingredient name="casinoCoin" count="15000"/>
+</recipe>
+<!--<recipe name="40mmGLAmmo" count="1" craft_time="5" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="DFforgedTitanium" count="50"/>
+	<ingredient name="DFenrichedUranium" count="30"/>
+	<ingredient name="casinoCoin" count="5000"/>
+</recipe>
+--><!--
+<recipe name="CookieAmmo1" count="10" craft_time="3" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft">
+	<ingredient name="CookieProcessed1" count="1"/>
+	<ingredient name="DFresourceOverchargedEnergyCell" count="25"/>
+	<ingredient name="FutCoin" count="20"/>
+</recipe>
+<recipe name="CookieAmmo2" count="15" craft_time="30" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft">
+	<ingredient name="CookieProcessed1" count="2"/>
+	<ingredient name="FutCoin" count="25"/>
+</recipe>
+<recipe name="CookieAmmo3" count="100" craft_time="30" craft_area="BiggestBenchCraft" tags="BiggestBenchCraft">
+	<ingredient name="Essence" count="1"/>
+	<ingredient name="CookieProcessed1" count="50"/>
+	<ingredient name="FutCoin" count="1000"/>
+</recipe>
+<recipe name="40mmGLAmmo2" count="2" craft_time="3" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,learnable">
+	<ingredient name="CookieProcessed1" count="3"/>
+	<ingredient name="FutCoin" count="15"/>
+</recipe>
+<recipe name="40mmGLAmmoBiggest" count="1" craft_time="4" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,learnable">
+	<ingredient name="CookieProcessed1" count="7"/>
+	<ingredient name="FutCoin" count="70"/>
+</recipe>
+<recipe name="40mmGLAmmoHyper" count="1" craft_time="4" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,learnable">
+	<ingredient name="CookieProcessed1" count="10"/>
+	<ingredient name="FutCoin" count="100"/>
+</recipe>
+<recipe name="BiggestGLAmmo" count="3" craft_time="5" craft_area="BiggestBenchCraft" tags="BiggestBenchCraft">
+	<ingredient name="Essence" count="1"/>
+	<ingredient name="BigHead" count="1"/>
+	<ingredient name="CookieProcessed1" count="150"/>
+	<ingredient name="FutCoin" count="250"/>
+</recipe>
+-->
+	<!--Materials-->
+		<!--T0-->
+<recipe name="resourceRawDiamond" count="3" craft_time="2000" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceRockSmall" count="10000"/>
+</recipe>
+<recipe name="resourceGoldNugget" count="5" craft_time="2000" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceRockSmall" count="10000"/>
+</recipe>
+<recipe name="resourceSilverNugget" count="10" craft_time="2000" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceRockSmall" count="10000"/>
+</recipe>
+<recipe name="LegendaryShardDF" count="1" craft_time="1000" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="casinoCoin" count="100000"/>
+	<ingredient name="resourceRawDiamond" count="3"/>
+</recipe>
+		<!--T1-->
+<recipe name="Essence" count="1" craft_time="60" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="HeadEssenceT1" count="20"/>
+</recipe>
+<recipe name="BigHead" count="1" craft_time="60" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="HeadEssenceT1" count="25"/>
+</recipe>
+<recipe name="KeemstarAlex" count="1" craft_time="300" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="LegendaryShard" count="2"/>
+</recipe>
+<recipe name="LegendaryShard" count="1" craft_time="300" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="KeemstarAlex" count="1"/>
+</recipe>
+<recipe name="LegendaryShard" count="1" craft_time="300" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft,NoCraftSpeedBasic">
+	<ingredient name="casinoCoin" count="250000"/>
+	<ingredient name="BigHead" count="1"/>
+	<ingredient name="Essence" count="1"/>
+</recipe>
+		<!--T2-->
+<recipe name="DFforgedTitanium" count="3" craft_time=".03" craft_area="BigHeadForgeCraft" material_based="false" tags="BigHeadForgeCraft,NoCraftSpeedBasic">
+	<ingredient name="DFscrapTitanium" count="40"/>
+</recipe>
+<recipe name="DFenrichedUranium" count="3" craft_time=".03" craft_area="BigHeadForgeCraft" material_based="false" tags="BigHeadForgeCraft,NoCraftSpeedBasic">
+	<ingredient name="DFrawUranium" count="20"/>
+	<ingredient name="DFplutonium" count="20"/>
+</recipe>
+<recipe name="resourceForgedSteel" count="3" craft_time=".015" craft_area="BigHeadForgeCraft" material_based="false" tags="BigHeadForgeCraft,NoCraftSpeedBasic">
+	<ingredient name="resourceScrapIron" count="20"/>
+</recipe>
+<recipe name="resourceCement" count="3" craft_time=".015" craft_area="BigHeadForgeCraft" material_based="false" tags="BigHeadForgeCraft,NoCraftSpeedBasic">
+	<ingredient name="resourceRockSmall" count="2"/>
+</recipe>
+<recipe name="CookieProcessed1" count="1" craft_time="7.2" craft_area="BigHeadForgeCraft" tags="BigHeadForgeCraft,NoCraftSpeedBasic">
+	<ingredient name="CookieRaw1" count="100"/>
+	<ingredient name="CookieRaw2" count="25"/>
+	<ingredient name="casinoCoin" count="500"/>
+</recipe>
+<recipe name="GoldCoin" count="1" craft_time="24" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft,NoCraftSpeedBasic">
+	<ingredient name="CookieProcessed1" count="1"/>
+	<ingredient name="casinoCoin" count="500"/>
+</recipe>
+<recipe name="Sheckle" count="1" craft_time="7.2" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="GoldCoin" count="1"/>
+	<ingredient name="CookieRaw2" count="35"/>
+	<ingredient name="DFforgedTitanium" count="75"/>
+	<ingredient name="DFenrichedUranium" count="25"/>
+	<ingredient name="casinoCoin" count="1500"/>
+</recipe>
+<recipe name="Steven" count="1" craft_time="450" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="KeemstarAlex" count="2"/>
+	<ingredient name="CookieProcessed1" count="100"/>
+	<ingredient name="Sheckle" count="100"/>
+	<ingredient name="LegendaryShard" count="4"/>
+	<ingredient name="BigHeadBlessed" count="2"/>
+</recipe>
+<recipe name="KeemstarAlexV2" count="1" craft_time="600" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="KeemstarAlex" count="3"/>
+	<ingredient name="CookieProcessed1" count="250"/>
+	<ingredient name="Sheckle" count="250"/>
+	<ingredient name="LegendaryShard" count="6"/>
+	<ingredient name="BigHeadBlessed" count="4"/>
+</recipe>
+<recipe name="BigHeadBlessed" count="1" craft_time="60" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="BigHead" count="10"/>
+	<ingredient name="Essence" count="10"/>
+	<ingredient name="casinoCoin" count="350000"/>
+	<ingredient name="resourceRawDiamond" count="1"/>
+</recipe>
+<recipe name="GoldDewKit" count="1" craft_time="300" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="GoldBarMagic" count="1"/>
+	<ingredient name="MountainDewMagic" count="1"/>
+	<ingredient name="CookieProcessed1" count="250"/>
+	<ingredient name="Sheckle" count="250"/>
+	<ingredient name="casinoCoin" count="1000000"/>
+</recipe>
+<recipe name="KeemstarAlex" count="1" craft_time="300" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="GoldBarMagic" count="1"/>
+</recipe>
+<recipe name="KeemstarAlex" count="2" craft_time="300" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="MountainDewMagic" count="1"/>
+</recipe>
+<recipe name="KeemstarAlex" count="2" craft_time="300" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="RedcliffChestArmorT1" count="1"/>
+</recipe>
+<!-- Temp
+<recipe name="BiggestCore" count="1" craft_time="500" craft_area="OilWorkstationCraft" tags="OilWorkstationCraft">
+	<ingredient name="LegendaryShard" count="5"/>
+	<ingredient name="BiggestHead" count="3"/>
+	<ingredient name="BiggerHead" count="5"/>
+	<ingredient name="BigHead" count="7"/>
+	<ingredient name="Essence" count="15"/>
+</recipe>
+<recipe name="CounterfeitCore" count="1" craft_time="500" craft_area="OilWorkstationCraft" tags="OilWorkstationCraft">
+	<ingredient name="LegendaryShard" count="1"/>
+	<ingredient name="CookieRaw2" count="10000"/>
+	<ingredient name="oldCash" count="50000"/>
+	<ingredient name="casinoCoin" count="100000"/>
+	<ingredient name="Essence" count="3"/>
+</recipe>
+<recipe name="FutCore" count="1" craft_time="500" craft_area="HarambeWorkstationCraft" tags="HarambeWorkstationCraft">
+	<ingredient name="LegendaryShard" count="1"/>
+	<ingredient name="FutCoin" count="555"/>
+	<ingredient name="ShapeShifterMessi" count="3"/>
+	<ingredient name="ShapeShifterRonaldo" count="3"/>
+	<ingredient name="Essence" count="3"/>
+</recipe>
+<recipe name="JewCore" count="1" craft_time="500" craft_area="OilWorkstationCraft" tags="OilWorkstationCraft">
+	<ingredient name="casinoCoin" count="5550000"/>
+</recipe>
+<recipe name="IndustryCore" count="1" craft_time="500" craft_area="OilWorkstationCraft" tags="OilWorkstationCraft">
+	<ingredient name="LegendaryShard" count="1"/>
+	<ingredient name="CookieProcessed1" count="500"/>
+	<ingredient name="Essence" count="5"/>
+</recipe>
+<recipe name="FoodCore" count="1" craft_time="500" craft_area="SakuraGardenWorkstationCraft" tags="SakuraGardenWorkstationCraft">
+	<ingredient name="LegendaryShard" count="1"/>
+	<ingredient name="CookieRaw2" count="10000"/>
+	<ingredient name="ShawDrinkBundle" count="5"/>
+	<ingredient name="ShawFoodBundle" count="5"/>
+	<ingredient name="Essence" count="5"/>
+</recipe>
+<recipe name="ShapeShifterMessi" count="1" craft_time="333" craft_area="HarambeWorkstationCraft" tags="HarambeWorkstationCraft">
+	<ingredient name="CookieProcessed1" count="100"/>
+</recipe>
+<recipe name="ShapeShifterRonaldo" count="1" craft_time="333" craft_area="HarambeWorkstationCraft" tags="HarambeWorkstationCraft">
+	<ingredient name="CookieProcessed1" count="150"/>
+</recipe>
+<recipe name="FutCoin" count="1" craft_time="1" craft_area="HarambeWorkstationCraft" tags="HarambeWorkstationCraft">
+	<ingredient name="CookieRaw2" count="10"/>
+	<ingredient name="casinoCoin" count="10"/>
+</recipe>
+<recipe name="Essence" count="1" craft_time="10" craft_area="RuinsWorkstationCraft" tags="RuinsWorkstationCraft">
+	<ingredient name="FutCoin" count="100"/>
+</recipe>
+<recipe name="Essence" count="1" craft_time="50" craft_area="BiggerCatalystCraft" tags="BiggerCatalystCraft">
+	<ingredient name="DFscrapSkill" count="25"/>
+</recipe>
+<recipe name="HeadEssenceT2" count="1" craft_time="10" craft_area="RuinsWorkstationCraft" tags="RuinsWorkstationCraft">
+	<ingredient name="HeadEssenceT1V2" count="5"/>
+</recipe>
+-->
+	<!--Armor-->
+		<!--T2-->
+<recipe name="modArmorPlatingBig" count="5" craft_time="600" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="KeemstarAlexV2" count="1"/>
+	<ingredient name="Steven" count="1"/>
+	<ingredient name="BigHeadBlessed" count="5"/>
+	<ingredient name="CookieProcessed1" count="250"/>
+	<ingredient name="Sheckle" count="250"/>
+</recipe>
+<recipe name="DewCanReactor" count="1" craft_time="600" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="MountainDewMagic" count="1"/>
+	<ingredient name="KeemstarAlexV2" count="1"/>
+	<ingredient name="Steven" count="1"/>
+	<ingredient name="KeemstarAlex" count="1"/>
+	<ingredient name="BigHeadBlessed" count="1"/>
+</recipe>
+<!--
+<recipe name="modHyperRed2" count="1" craft_time="600" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="modHyperRed1" count="1"/>
+	<ingredient name="LegendaryShard" count="1"/>
+	<ingredient name="Essence" count="3"/>
+	<ingredient name="CookieProcessed1" count="50"/>
+	<ingredient name="Sheckle" count="100"/>
+</recipe>
+<recipe name="modHyperYellow2" count="1" craft_time="600" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="modHyperYellow1" count="1"/>
+	<ingredient name="LegendaryShard" count="1"/>
+	<ingredient name="Essence" count="3"/>
+	<ingredient name="CookieProcessed1" count="50"/>
+	<ingredient name="Sheckle" count="100"/>
+</recipe>
+<recipe name="modHyperGreen2" count="1" craft_time="600" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="modHyperGreen1" count="1"/>
+	<ingredient name="LegendaryShard" count="1"/>
+	<ingredient name="Essence" count="3"/>
+	<ingredient name="CookieProcessed1" count="50"/>
+	<ingredient name="Sheckle" count="100"/>
+</recipe>
+<recipe name="modHyperDiamond2" count="1" craft_time="600" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="modHyperDiamond1" count="1"/>
+	<ingredient name="LegendaryShard" count="1"/>
+	<ingredient name="Essence" count="3"/>
+	<ingredient name="CookieProcessed1" count="50"/>
+	<ingredient name="Sheckle" count="100"/>
+</recipe>
+<recipe name="modHyperOrange2" count="1" craft_time="600" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="modHyperOrange1" count="1"/>
+	<ingredient name="LegendaryShard" count="1"/>
+	<ingredient name="Essence" count="3"/>
+	<ingredient name="CookieProcessed1" count="50"/>
+	<ingredient name="Sheckle" count="100"/>
+</recipe>
+<recipe name="modHyperBlue2" count="1" craft_time="600" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="modHyperBlue1" count="1"/>
+	<ingredient name="LegendaryShard" count="1"/>
+	<ingredient name="Essence" count="3"/>
+	<ingredient name="CookieProcessed1" count="50"/>
+	<ingredient name="Sheckle" count="100"/>
+</recipe>
+<recipe name="modHyperPurple2" count="1" craft_time="600" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="modHyperPurple1" count="1"/>
+	<ingredient name="LegendaryShard" count="1"/>
+	<ingredient name="Essence" count="3"/>
+	<ingredient name="CookieProcessed1" count="50"/>
+	<ingredient name="Sheckle" count="100"/>
+</recipe>
+<recipe name="modHyperPink2" count="1" craft_time="600" craft_area="BigAssemblerCraft" tags="BigAssemblerCraft,NoCraftSpeedBasic">
+	<ingredient name="modHyperPink1" count="1"/>
+	<ingredient name="LegendaryShard" count="1"/>
+	<ingredient name="Essence" count="3"/>
+	<ingredient name="CookieProcessed1" count="50"/>
+	<ingredient name="Sheckle" count="100"/>
+</recipe>-->	
+	<!--Gun Parts in Press 10x the price-->
+<recipe name="DFpistolGrip" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceForgedSteel" count="50"/>
+	<ingredient name="resourceScrapPolymers" count="100"/>
+	<ingredient name="resourceOil" count="10"/>
+</recipe>
+<recipe name="DFpistolParts" count="1" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceForgedSteel" count="50"/>
+	<ingredient name="resourceMechanicalParts" count="100"/>
+	<ingredient name="resourceOil" count="10"/>
+</recipe>
+<recipe name="DFpistolBarrel" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceMetalPipe" count="10"/>
+	<ingredient name="resourceOil" count="20"/>
+</recipe>
+<recipe name="DFpistolFrame" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceForgedSteel" count="100"/>
+	<ingredient name="resourceMechanicalParts" count="50"/>
+	<ingredient name="resourceOil" count="10"/>
+</recipe>
+<recipe name="DFP225Frame" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceForgedSteel" count="100"/>
+	<ingredient name="resourceMechanicalParts" count="50"/>
+	<ingredient name="resourceOil" count="10"/>
+</recipe>
+<recipe name="DFmagnumFrame" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceForgedSteel" count="100"/>
+	<ingredient name="resourceMechanicalParts" count="50"/>
+	<ingredient name="resourceOil" count="10"/>
+</recipe>
+<recipe name="DFDEagleFrame" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceForgedSteel" count="100"/>
+	<ingredient name="resourceMechanicalParts" count="50"/>
+	<ingredient name="resourceOil" count="10"/>
+</recipe>
+<recipe name="DFrifleStock" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceForgedSteel" count="50"/>
+	<ingredient name="resourceScrapPolymers" count="150"/>
+	<ingredient name="resourceOil" count="10"/>
+</recipe>
+<recipe name="DFrifleParts" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceForgedSteel" count="50"/>
+	<ingredient name="resourceMechanicalParts" count="150"/>
+	<ingredient name="resourceOil" count="10"/>
+</recipe>
+<recipe name="DFrifleBarrel" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceMetalPipe" count="20"/>
+	<ingredient name="resourceOil" count="20"/>
+</recipe>
+<recipe name="DFhuntingRifleReceiver" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceForgedSteel" count="150"/>
+	<ingredient name="resourceMechanicalParts" count="50"/>
+	<ingredient name="resourceOil" count="10"/>
+</recipe>
+<recipe name="DFwinchesterRifleReceiver" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceForgedSteel" count="150"/>
+	<ingredient name="resourceMechanicalParts" count="50"/>
+	<ingredient name="resourceOil" count="10"/>
+</recipe>
+<recipe name="DFsniperRifleReceiver" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceForgedSteel" count="150"/>
+	<ingredient name="resourceMechanicalParts" count="50"/>
+	<ingredient name="resourceOil" count="10"/>
+</recipe>
+<recipe name="DFautoRifleStock" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceForgedSteel" count="50"/>
+	<ingredient name="resourceScrapPolymers" count="150"/>
+	<ingredient name="resourceOil" count="10"/>
+</recipe>
+<recipe name="DFautoRifleParts" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceForgedSteel" count="50"/>
+	<ingredient name="resourceMechanicalParts" count="150"/>
+	<ingredient name="resourceOil" count="10"/>
+</recipe>
+<recipe name="DFautoRifleBarrel" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceMetalPipe" count="20"/>
+	<ingredient name="resourceOil" count="20"/>
+</recipe>
+<recipe name="DFAK47Receiver" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceForgedSteel" count="150"/>
+	<ingredient name="resourceMechanicalParts" count="50"/>
+	<ingredient name="resourceOil" count="10"/>
+</recipe>
+<recipe name="DFAR15Receiver" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceForgedSteel" count="150"/>
+	<ingredient name="resourceMechanicalParts" count="50"/>
+	<ingredient name="resourceOil" count="10"/>
+</recipe>
+<recipe name="DFM4A1Receiver" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceForgedSteel" count="150"/>
+	<ingredient name="resourceMechanicalParts" count="50"/>
+	<ingredient name="resourceOil" count="10"/>
+</recipe>
+<recipe name="DFM60Receiver" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceForgedSteel" count="150"/>
+	<ingredient name="resourceMechanicalParts" count="50"/>
+	<ingredient name="resourceOil" count="10"/>
+</recipe>
+<recipe name="DFshotgunStock" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceForgedSteel" count="50"/>
+	<ingredient name="resourceScrapPolymers" count="150"/>
+	<ingredient name="resourceOil" count="10"/>
+</recipe>
+<recipe name="DFshotgunParts" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceForgedSteel" count="50"/>
+	<ingredient name="resourceMechanicalParts" count="150"/>
+	<ingredient name="resourceOil" count="10"/>
+</recipe>
+<recipe name="DFshotgunBarrel" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceMetalPipe" count="20"/>
+	<ingredient name="resourceOil" count="20"/>
+</recipe>
+<recipe name="DFshotgunReceiver" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceForgedSteel" count="150"/>
+	<ingredient name="resourceMechanicalParts" count="50"/>
+	<ingredient name="resourceOil" count="10"/>
+</recipe>
+<recipe name="DFautoShotgunReceiver" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceForgedSteel" count="150"/>
+	<ingredient name="resourceMechanicalParts" count="50"/>
+	<ingredient name="resourceOil" count="10"/>
+</recipe>
+<recipe name="DFcoilgunParts" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceForgedSteel" count="300"/>
+	<ingredient name="resourceMechanicalParts" count="100"/>
+	<ingredient name="resourceElectricParts" count="100"/>
+	<ingredient name="resourceOil" count="50"/>
+</recipe>
+<recipe name="DFcoilgunGrip" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceForgedSteel" count="200"/>
+	<ingredient name="resourceMechanicalParts" count="200"/>
+	<ingredient name="resourceElectricParts" count="200"/>
+	<ingredient name="resourceOil" count="50"/>
+</recipe>
+<recipe name="DFcoilpistolBarrel" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceMetalPipe" count="40"/>
+	<ingredient name="resourceOil" count="50"/>
+</recipe>
+<recipe name="DFcoilpistolReceiver" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceForgedSteel" count="300"/>
+	<ingredient name="resourceMechanicalParts" count="100"/>
+	<ingredient name="resourceElectricParts" count="100"/>
+	<ingredient name="resourceOil" count="50"/>
+</recipe>
+<recipe name="DFCoilshotgunBarrel" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceMetalPipe" count="40"/>
+	<ingredient name="resourceOil" count="50"/>
+</recipe>
+<recipe name="DFCoilshotgunReceiver" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceForgedSteel" count="300"/>
+	<ingredient name="resourceMechanicalParts" count="100"/>
+	<ingredient name="resourceElectricParts" count="100"/>
+	<ingredient name="resourceOil" count="50"/>
+</recipe>
+<recipe name="DFcoilrifleBarrel" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceMetalPipe" count="60"/>
+	<ingredient name="resourceOil" count="50"/>
+</recipe>
+<recipe name="DFcoilrifleReceiver" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceForgedSteel" count="300"/>
+	<ingredient name="resourceMechanicalParts" count="100"/>
+	<ingredient name="resourceElectricParts" count="100"/>
+	<ingredient name="resourceOil" count="50"/>
+</recipe>
+<recipe name="DFcoilsniperBarrel" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceMetalPipe" count="60"/>
+	<ingredient name="resourceOil" count="50"/>
+</recipe>
+<recipe name="DFcoilsniperReceiver" count="1" craft_time="200" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="resourceForgedSteel" count="300"/>
+	<ingredient name="resourceMechanicalParts" count="100"/>
+	<ingredient name="resourceElectricParts" count="100"/>
+	<ingredient name="resourceOil" count="50"/>
+</recipe>
+	<!--Legendary Shards-->
+<recipe name="LegendaryShardDF" count="1" craft_time="500" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="DFmeleeToolAshsChainsaw" count="1"/>
+</recipe>
+<recipe name="LegendaryShardDF" count="1" craft_time="500" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="DFJasonMachete" count="1"/>
+</recipe>
+<recipe name="LegendaryShardDF" count="1" craft_time="500" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="DFmeleeWpnMCsHumanSkinKnuckles" count="1"/>
+</recipe>
+<recipe name="LegendaryShardDF" count="1" craft_time="500" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="DFEriksHammer" count="1"/>
+</recipe>
+<recipe name="LegendaryShardDF" count="1" craft_time="500" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="DFLucile" count="1"/>
+</recipe>
+<recipe name="LegendaryShardDF" count="1" craft_time="500" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="DFgunBlackSky" count="1"/>
+</recipe>
+<recipe name="LegendaryShardDF" count="1" craft_time="500" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="gunBowFailnot" count="1"/>
+</recipe>
+<recipe name="LegendaryShardDF" count="1" craft_time="500" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="DFgunPorkinsShotgun" count="1"/>
+</recipe>
+<recipe name="LegendaryShardDF" count="1" craft_time="500" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="KhainesPatreonFund" count="1"/>
+</recipe>
+<recipe name="LegendaryShardDF" count="1" craft_time="500" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="DFMythShades" count="1"/>
+</recipe>
+<recipe name="LegendaryShardDF" count="1" craft_time="500" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="modTobisBalancingAct" count="1"/>
+</recipe>
+<recipe name="LegendaryShardDF" count="1" craft_time="500" craft_area="HydraulicPressCraft" tags="HydraulicPressCraft">
+	<ingredient name="modToolLuckyRabbitsFoot" count="1"/>
+</recipe>
+</insertAfter>
+</config>

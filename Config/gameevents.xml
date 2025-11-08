@@ -1,0 +1,1125 @@
+<config>
+<set xpath="/gameevents/@max_entities">100000</set>
+<append xpath="/gameevents">
+<!--T1 Big-->
+	<!--Spawns basic big zeds on death of leader-->
+<action_sequence name="BigZombieLeaderSpawnsT1">
+	<property name="allow_user_trigger" value="true" />
+	<property name="action_type" value="Game" />
+	<property name="allow_while_dead" value="true" />
+	
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieWightBig,zombieFatCopBig,zombieDemolitionBig,zombieFemaleFatBig,zombieMoeBig,zombieFatHawaiianBig,zombieSoldierBig,zombieBikerBig,zombieLumberjackBig,zombieBoeBig,zombieJoeBig,zombieArleneBig,zombieDarleneBig,zombieMarleneBig,zombieYoBig,zombieSteveBig,zombieBusinessManBig,zombieSpiderBig,zombieNurseBig,zombieMaleHazmatBig,zombieUtilityWorkerBig,zombieSkateboarderBig,zombieJanitorBig,zombiePartyGirlBig"/>
+		<property name="spawn_count" value="5"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+</action_sequence>
+	<!--Spawns basic big zeds on death of leader-->
+<action_sequence name="BigZombieLeaderSpawnsT1Vet">
+	<property name="allow_user_trigger" value="true" />
+	<property name="action_type" value="Game" />
+	<property name="allow_while_dead" value="true" />
+	
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieWightBig,zombieFatCopBig,zombieDemolitionBig,zombieFemaleFatBig,zombieMoeBig,zombieFatHawaiianBig,zombieSoldierBig,zombieBikerBig,zombieLumberjackBig,zombieBoeBig,zombieJoeBig,zombieArleneBig,zombieDarleneBig,zombieMarleneBig,zombieYoBig,zombieSteveBig,zombieBusinessManBig,zombieSpiderBig,zombieNurseBig,zombieMaleHazmatBig,zombieUtilityWorkerBig,zombieSkateboarderBig,zombieJanitorBig,zombiePartyGirlBig"/>
+		<property name="spawn_count" value="8"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+</action_sequence>
+	<!--Spawns screamer from base game screamer-->
+<action_sequence name="BigZombieScoutT1">
+	<property name="allow_user_trigger" value="true" />
+	<property name="action_type" value="Game" />
+	<property name="allow_while_dead" value="true" />
+	
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieWightScout"/>
+		<property name="spawn_count" value="1"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="attack_target" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+</action_sequence>
+	<!--Spawns weak zeds on a timer from scout-->
+<action_sequence name="BigZombieScoutSpawnsT1Base">
+	<property name="allow_user_trigger" value="true" />
+	<property name="action_type" value="Game" />
+	<property name="allow_while_dead" value="true" />
+	
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieWightBig,zombieFatCopBig,zombieDemolitionBig,zombieFemaleFatBig,zombieMoeBig,zombieFatHawaiianBig,zombieSoldierBig,zombieBikerBig,zombieLumberjackBig,zombieBoeBig,zombieJoeBig,zombieArleneBig,zombieDarleneBig,zombieMarleneBig,zombieYoBig,zombieSteveBig,zombieBusinessManBig,zombieSpiderBig,zombieNurseBig,zombieMaleHazmatBig,zombieUtilityWorkerBig,zombieSkateboarderBig,zombieJanitorBig,zombiePartyGirlBig"/>
+		<property name="spawn_count" value="1"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="attack_target" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+</action_sequence>
+	<!--Spawns weak zeds on death of scout-->
+<action_sequence name="BigZombieScoutSpawnsT1Death">
+	<property name="allow_user_trigger" value="true" />
+	<property name="action_type" value="Game" />
+	<property name="allow_while_dead" value="true" />
+	
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieWightBig,zombieFatCopBig,zombieDemolitionBig,zombieFemaleFatBig,zombieMoeBig,zombieFatHawaiianBig,zombieSoldierBig,zombieBikerBig,zombieLumberjackBig,zombieBoeBig,zombieJoeBig,zombieArleneBig,zombieDarleneBig,zombieMarleneBig,zombieYoBig,zombieSteveBig,zombieBusinessManBig,zombieSpiderBig,zombieNurseBig,zombieMaleHazmatBig,zombieUtilityWorkerBig,zombieSkateboarderBig,zombieJanitorBig,zombiePartyGirlBig"/>
+		<property name="spawn_count" value="5"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+</action_sequence>
+	<!--Spawns weak zeds and rangers on death of knight-->
+<action_sequence name="BigZombieKnightSpawnsT1">
+	<property name="allow_user_trigger" value="true" />
+	<property name="action_type" value="Game" />
+	<property name="allow_while_dead" value="true" />
+	
+	<action class="SpawnEntity">
+		<!--<property name="phase" value="1" />-->
+		<property name="entity_names" value="zombieWightBig,zombieFatCopBig,zombieDemolitionBig,zombieFemaleFatBig,zombieMoeBig,zombieFatHawaiianBig,zombieSoldierBig,zombieBikerBig,zombieLumberjackBig,zombieBoeBig,zombieJoeBig,zombieArleneBig,zombieDarleneBig,zombieMarleneBig,zombieYoBig,zombieSteveBig,zombieBusinessManBig,zombieSpiderBig,zombieNurseBig,zombieMaleHazmatBig,zombieUtilityWorkerBig,zombieSkateboarderBig,zombieJanitorBig,zombiePartyGirlBig"/>
+		<property name="spawn_count" value="10"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+	<action class="SpawnEntity">
+		<!--<property name="phase" value="2" />-->
+		<property name="entity_names" value="zombieFatCopBigRanger,zombieFemaleFatBigRanger,zombieMoeBigRanger,zombieFatHawaiianBigRanger,zombieSoldierBigRanger,zombieBikerBigRanger,zombieLumberjackBigRanger"/>
+		<property name="spawn_count" value="5"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+</action_sequence>
+	<!--Spawns guards on death of MLG zombie-->
+<action_sequence name="BigZombieMLGSpawnsT1">
+	<property name="allow_user_trigger" value="true" />
+	<property name="action_type" value="Game" />
+	<property name="allow_while_dead" value="true" />
+	
+	<action class="SpawnEntity">
+		<property name="phase" value="0" />
+		<property name="entity_names" value="zombieWightBig,zombieFatCopBig,zombieDemolitionBig,zombieFemaleFatBig,zombieMoeBig,zombieFatHawaiianBig,zombieSoldierBig,zombieBikerBig,zombieLumberjackBig,zombieBoeBig,zombieJoeBig,zombieArleneBig,zombieDarleneBig,zombieMarleneBig,zombieYoBig,zombieSteveBig,zombieBusinessManBig,zombieSpiderBig,zombieNurseBig,zombieMaleHazmatBig,zombieUtilityWorkerBig,zombieSkateboarderBig,zombieJanitorBig,zombiePartyGirlBig"/>
+		<property name="spawn_count" value="5"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="add_to_group" value="guards" />
+		<property name="add_buffs" value="buffIsBigZombieMLGGuard"/>
+		<property name="air_spawn" value="true" />
+	</action>
+	
+	<!--<action class="AddBuff">
+		<property name="buff_name" value="buffIsBigZombieMLGGuard" />
+		<property name="phase" value="1" />
+		<property name="target_group" value="guards" />
+	</action>-->
+</action_sequence>
+	<!--Spawns guards on death of golden zombie-->
+<action_sequence name="BigZombieGoldenSpawnsT1">
+	<property name="allow_user_trigger" value="true" />
+	<property name="action_type" value="Game" />
+	<property name="allow_while_dead" value="true" />
+	
+	<action class="SpawnEntity">
+		<property name="phase" value="0" />
+		<property name="entity_names" value="zombieWightBig,zombieFatCopBig,zombieDemolitionBig,zombieFemaleFatBig,zombieMoeBig,zombieFatHawaiianBig,zombieSoldierBig,zombieBikerBig,zombieLumberjackBig,zombieBoeBig,zombieJoeBig,zombieArleneBig,zombieDarleneBig,zombieMarleneBig,zombieYoBig,zombieSteveBig,zombieBusinessManBig,zombieSpiderBig,zombieNurseBig,zombieMaleHazmatBig,zombieUtilityWorkerBig,zombieSkateboarderBig,zombieJanitorBig,zombiePartyGirlBig"/>
+		<property name="spawn_count" value="5"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="add_to_group" value="guards" />
+		<property name="add_buffs" value="buffIsBigZombieLeaderGoldenGuard"/>
+		<property name="air_spawn" value="true" />
+	</action>
+</action_sequence>
+	<!--Spawns T1 Boss-->
+<action_sequence name="BigZombieBossSpawnT1">
+	<property name="allow_user_trigger" value="true" />
+	<property name="action_type" value="Game" />
+	<property name="allow_while_dead" value="true" />
+	<property name="target_type" value="Entity" />
+	
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieWightBossT1"/>
+		<property name="spawn_count" value="1"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="min_distance" value="25" />
+		<property name="max_distance" value="35" />
+		<property name="spawn_type" value="WanderingHorde" />
+		<property name="air_spawn" value="true" />
+	</action>
+</action_sequence>
+	<!--Spawns Boss base-->
+<action_sequence name="ZombieBossT1Spawns1">
+	<property name="allow_user_trigger" value="true" />
+	<property name="action_type" value="Game" />
+	<property name="allow_while_dead" value="true" />
+	
+	<action class="SpawnEntity">
+		<!--<property name="phase" value="1" />-->
+		<property name="entity_names" value="zombieWightBig,zombieFatCopBig,zombieDemolitionBig,zombieFemaleFatBig,zombieMoeBig,zombieFatHawaiianBig,zombieSoldierBig,zombieBikerBig,zombieLumberjackBig,zombieBoeBig,zombieJoeBig,zombieArleneBig,zombieDarleneBig,zombieMarleneBig,zombieYoBig,zombieSteveBig,zombieBusinessManBig,zombieSpiderBig,zombieNurseBig,zombieMaleHazmatBig,zombieUtilityWorkerBig,zombieSkateboarderBig,zombieJanitorBig,zombiePartyGirlBig"/>
+		<property name="spawn_count" value="15"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+	<action class="SpawnEntity">
+		<!--<property name="phase" value="2" />-->
+		<property name="entity_names" value="zombieFatCopBigRanger,zombieFemaleFatBigRanger,zombieMoeBigRanger,zombieFatHawaiianBigRanger,zombieSoldierBigRanger,zombieBikerBigRanger,zombieLumberjackBigRanger"/>
+		<property name="spawn_count" value="5"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+	<action class="SpawnEntity">
+		<!--<property name="phase" value="2" />-->
+		<property name="entity_names" value="zombieWightBigLeader,zombieFemaleFatBigLeader,zombieMoeBigLeader,zombieFatHawaiianBigLeader,zombieSoldierBigLeader,zombieBikerBigLeader,zombieLumberjackBigLeader"/>
+		<property name="spawn_count" value="1"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+</action_sequence>
+	<!--Spawns Boss hp 1-->
+<action_sequence name="ZombieBossT1Spawns2">
+	<property name="allow_user_trigger" value="true" />
+	<property name="action_type" value="Game" />
+	<property name="allow_while_dead" value="true" />
+	
+	<action class="SpawnEntity">
+		<!--<property name="phase" value="1" />-->
+		<property name="entity_names" value="zombieWightBig,zombieFatCopBig,zombieDemolitionBig,zombieFemaleFatBig,zombieMoeBig,zombieFatHawaiianBig,zombieSoldierBig,zombieBikerBig,zombieLumberjackBig,zombieBoeBig,zombieJoeBig,zombieArleneBig,zombieDarleneBig,zombieMarleneBig,zombieYoBig,zombieSteveBig,zombieBusinessManBig,zombieSpiderBig,zombieNurseBig,zombieMaleHazmatBig,zombieUtilityWorkerBig,zombieSkateboarderBig,zombieJanitorBig,zombiePartyGirlBig"/>
+		<property name="spawn_count" value="20"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+	<action class="SpawnEntity">
+		<!--<property name="phase" value="2" />-->
+		<property name="entity_names" value="zombieFatCopBigRanger,zombieFemaleFatBigRanger,zombieMoeBigRanger,zombieFatHawaiianBigRanger,zombieSoldierBigRanger,zombieBikerBigRanger,zombieLumberjackBigRanger"/>
+		<property name="spawn_count" value="5"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+	<action class="SpawnEntity">
+		<!--<property name="phase" value="2" />-->
+		<property name="entity_names" value="zombieWightBigLeader,zombieFemaleFatBigLeader,zombieMoeBigLeader,zombieFatHawaiianBigLeader,zombieSoldierBigLeader,zombieBikerBigLeader,zombieLumberjackBigLeader"/>
+		<property name="spawn_count" value="2"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+	<action class="SpawnEntity">
+		<!--<property name="phase" value="2" />-->
+		<property name="entity_names" value="zombieBehemoth1Big"/>
+		<property name="spawn_count" value="1"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+</action_sequence>
+	<!--Spawns Boss hp 2-->
+<action_sequence name="ZombieBossT1Spawns3">
+	<property name="allow_user_trigger" value="true" />
+	<property name="action_type" value="Game" />
+	<property name="allow_while_dead" value="true" />
+	
+	<action class="SpawnEntity">
+		<!--<property name="phase" value="1" />-->
+		<property name="entity_names" value="zombieWightBig,zombieFatCopBig,zombieDemolitionBig,zombieFemaleFatBig,zombieMoeBig,zombieFatHawaiianBig,zombieSoldierBig,zombieBikerBig,zombieLumberjackBig,zombieBoeBig,zombieJoeBig,zombieArleneBig,zombieDarleneBig,zombieMarleneBig,zombieYoBig,zombieSteveBig,zombieBusinessManBig,zombieSpiderBig,zombieNurseBig,zombieMaleHazmatBig,zombieUtilityWorkerBig,zombieSkateboarderBig,zombieJanitorBig,zombiePartyGirlBig"/>
+		<property name="spawn_count" value="30"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+	<action class="SpawnEntity">
+		<!--<property name="phase" value="2" />-->
+		<property name="entity_names" value="zombieFatCopBigRanger,zombieFemaleFatBigRanger,zombieMoeBigRanger,zombieFatHawaiianBigRanger,zombieSoldierBigRanger,zombieBikerBigRanger,zombieLumberjackBigRanger"/>
+		<property name="spawn_count" value="10"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+	<action class="SpawnEntity">
+		<!--<property name="phase" value="2" />-->
+		<property name="entity_names" value="zombieWightBigLeader,zombieFemaleFatBigLeader,zombieMoeBigLeader,zombieFatHawaiianBigLeader,zombieSoldierBigLeader,zombieBikerBigLeader,zombieLumberjackBigLeader"/>
+		<property name="spawn_count" value="3"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+	<action class="SpawnEntity">
+		<!--<property name="phase" value="2" />-->
+		<property name="entity_names" value="zombieBehemoth1Big"/>
+		<property name="spawn_count" value="2"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+	<action class="SpawnEntity">
+		<!--<property name="phase" value="2" />-->
+		<property name="entity_names" value="zombieWightBigKnight"/>
+		<property name="spawn_count" value="1"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+</action_sequence>
+	<!--Spawns Boss hp 3-->
+<action_sequence name="ZombieBossT1Spawns4">
+	<property name="allow_user_trigger" value="true" />
+	<property name="action_type" value="Game" />
+	<property name="allow_while_dead" value="true" />
+	
+	<action class="SpawnEntity">
+		<!--<property name="phase" value="1" />-->
+		<property name="entity_names" value="zombieWightBig,zombieFatCopBig,zombieDemolitionBig,zombieFemaleFatBig,zombieMoeBig,zombieFatHawaiianBig,zombieSoldierBig,zombieBikerBig,zombieLumberjackBig,zombieBoeBig,zombieJoeBig,zombieArleneBig,zombieDarleneBig,zombieMarleneBig,zombieYoBig,zombieSteveBig,zombieBusinessManBig,zombieSpiderBig,zombieNurseBig,zombieMaleHazmatBig,zombieUtilityWorkerBig,zombieSkateboarderBig,zombieJanitorBig,zombiePartyGirlBig"/>
+		<property name="spawn_count" value="40"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+	<action class="SpawnEntity">
+		<!--<property name="phase" value="2" />-->
+		<property name="entity_names" value="zombieFatCopBigRanger,zombieFemaleFatBigRanger,zombieMoeBigRanger,zombieFatHawaiianBigRanger,zombieSoldierBigRanger,zombieBikerBigRanger,zombieLumberjackBigRanger"/>
+		<property name="spawn_count" value="20"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+	<action class="SpawnEntity">
+		<!--<property name="phase" value="2" />-->
+		<property name="entity_names" value="zombieWightBigLeader,zombieFemaleFatBigLeader,zombieMoeBigLeader,zombieFatHawaiianBigLeader,zombieSoldierBigLeader,zombieBikerBigLeader,zombieLumberjackBigLeader"/>
+		<property name="spawn_count" value="5"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+	<action class="SpawnEntity">
+		<!--<property name="phase" value="2" />-->
+		<property name="entity_names" value="zombieBehemoth1Big"/>
+		<property name="spawn_count" value="3"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+	<action class="SpawnEntity">
+		<!--<property name="phase" value="2" />-->
+		<property name="entity_names" value="zombieWightBigKnight"/>
+		<property name="spawn_count" value="1"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+	<action class="SpawnEntity">
+		<!--<property name="phase" value="2" />-->
+		<property name="entity_names" value="zombieBusinessManBigGolden"/>
+		<property name="spawn_count" value="1"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+	<action class="SpawnEntity">
+		<!--<property name="phase" value="2" />-->
+		<property name="entity_names" value="zombieMoeBigMLG"/>
+		<property name="spawn_count" value="1"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+</action_sequence>
+<!--T2 Enraged Big-->
+	<!--Spawns basic big zeds on death of leader-->
+<action_sequence name="BigZombieLeaderSpawnsT2">
+	<property name="allow_user_trigger" value="true" />
+	<property name="action_type" value="Game" />
+	<property name="allow_while_dead" value="true" />
+	
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieJanitorBigWarriorEnraged,zombieWightBigEnraged,zombieFatCopBigEnraged,zombieDemolitionBigEnraged,zombieFemaleFatBigEnraged,zombieMoeBigEnraged,zombieFatHawaiianBigEnraged,zombieSoldierBigEnraged,zombieBikerBigEnraged,zombieLumberjackBigEnraged,zombieBoeBigEnraged,zombieJoeBigEnraged,zombieArleneBigEnraged,zombieDarleneBigEnraged,zombieMarleneBigEnraged,zombieYoBigEnraged,zombieSteveBigEnraged,zombieBusinessManBigEnraged,zombieSpiderBigEnraged,zombieNurseBigEnraged,zombieMaleHazmatBigEnraged,zombieUtilityWorkerBigEnraged,zombieSkateboarderBigEnraged,zombieJanitorBigEnraged,zombiePartyGirlBigEnraged"/>
+		<property name="spawn_count" value="5"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+</action_sequence>
+	<!--Spawns basic big zeds on death of leader-->
+<action_sequence name="BigZombieLeaderSpawnsT2Vet">
+	<property name="allow_user_trigger" value="true" />
+	<property name="action_type" value="Game" />
+	<property name="allow_while_dead" value="true" />
+	
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieJanitorBigWarriorEnraged,zombieWightBigEnraged,zombieFatCopBigEnraged,zombieDemolitionBigEnraged,zombieFemaleFatBigEnraged,zombieMoeBigEnraged,zombieFatHawaiianBigEnraged,zombieSoldierBigEnraged,zombieBikerBigEnraged,zombieLumberjackBigEnraged,zombieBoeBigEnraged,zombieJoeBigEnraged,zombieArleneBigEnraged,zombieDarleneBigEnraged,zombieMarleneBigEnraged,zombieYoBigEnraged,zombieSteveBigEnraged,zombieBusinessManBigEnraged,zombieSpiderBigEnraged,zombieNurseBigEnraged,zombieMaleHazmatBigEnraged,zombieUtilityWorkerBigEnraged,zombieSkateboarderBigEnraged,zombieJanitorBigEnraged,zombiePartyGirlBigEnraged"/>
+		<property name="spawn_count" value="8"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+</action_sequence>
+	<!--Spawns screamer from base game screamer-->
+<action_sequence name="BigZombieScoutT2">
+	<property name="allow_user_trigger" value="true" />
+	<property name="action_type" value="Game" />
+	<property name="allow_while_dead" value="true" />
+	
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieWightScoutEnraged"/>
+		<property name="spawn_count" value="1"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="attack_target" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+</action_sequence>
+	<!--Spawns weak zeds on a timer from scout-->
+<action_sequence name="BigZombieScoutSpawnsT2Base">
+	<property name="allow_user_trigger" value="true" />
+	<property name="action_type" value="Game" />
+	<property name="allow_while_dead" value="true" />
+	
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieJanitorBigWarriorEnraged,zombieWightBigEnraged,zombieFatCopBigEnraged,zombieDemolitionBigEnraged,zombieFemaleFatBigEnraged,zombieMoeBigEnraged,zombieFatHawaiianBigEnraged,zombieSoldierBigEnraged,zombieBikerBigEnraged,zombieLumberjackBigEnraged,zombieBoeBigEnraged,zombieJoeBigEnraged,zombieArleneBigEnraged,zombieDarleneBigEnraged,zombieMarleneBigEnraged,zombieYoBigEnraged,zombieSteveBigEnraged,zombieBusinessManBigEnraged,zombieSpiderBigEnraged,zombieNurseBigEnraged,zombieMaleHazmatBigEnraged,zombieUtilityWorkerBigEnraged,zombieSkateboarderBigEnraged,zombieJanitorBigEnraged,zombiePartyGirlBigEnraged"/>
+		<property name="spawn_count" value="1"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="attack_target" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+</action_sequence>
+	<!--Spawns weak zeds on death of scout-->
+<action_sequence name="BigZombieScoutSpawnsT2Death">
+	<property name="allow_user_trigger" value="true" />
+	<property name="action_type" value="Game" />
+	<property name="allow_while_dead" value="true" />
+	
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieJanitorBigWarriorEnraged,zombieWightBigEnraged,zombieFatCopBigEnraged,zombieDemolitionBigEnraged,zombieFemaleFatBigEnraged,zombieMoeBigEnraged,zombieFatHawaiianBigEnraged,zombieSoldierBigEnraged,zombieBikerBigEnraged,zombieLumberjackBigEnraged,zombieBoeBigEnraged,zombieJoeBigEnraged,zombieArleneBigEnraged,zombieDarleneBigEnraged,zombieMarleneBigEnraged,zombieYoBigEnraged,zombieSteveBigEnraged,zombieBusinessManBigEnraged,zombieSpiderBigEnraged,zombieNurseBigEnraged,zombieMaleHazmatBigEnraged,zombieUtilityWorkerBigEnraged,zombieSkateboarderBigEnraged,zombieJanitorBigEnraged,zombiePartyGirlBigEnraged"/>
+		<property name="spawn_count" value="5"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+</action_sequence>
+	<!--Spawns weak zeds and rangers on death of knight-->
+<action_sequence name="BigZombieKnightSpawnsT2">
+	<property name="allow_user_trigger" value="true" />
+	<property name="action_type" value="Game" />
+	<property name="allow_while_dead" value="true" />
+	
+	<action class="SpawnEntity">
+		<!--<property name="phase" value="1" />-->
+		<property name="entity_names" value="zombieJanitorBigWarriorEnraged,zombieWightBigEnraged,zombieFatCopBigEnraged,zombieDemolitionBigEnraged,zombieFemaleFatBigEnraged,zombieMoeBigEnraged,zombieFatHawaiianBigEnraged,zombieSoldierBigEnraged,zombieBikerBigEnraged,zombieLumberjackBigEnraged,zombieBoeBigEnraged,zombieJoeBigEnraged,zombieArleneBigEnraged,zombieDarleneBigEnraged,zombieMarleneBigEnraged,zombieYoBigEnraged,zombieSteveBigEnraged,zombieBusinessManBigEnraged,zombieSpiderBigEnraged,zombieNurseBigEnraged,zombieMaleHazmatBigEnraged,zombieUtilityWorkerBigEnraged,zombieSkateboarderBigEnraged,zombieJanitorBigEnraged,zombiePartyGirlBigEnraged"/>
+		<property name="spawn_count" value="10"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+	<action class="SpawnEntity">
+		<!--<property name="phase" value="2" />-->
+		<property name="entity_names" value="zombieFatCopBigRangerEnraged,zombieFemaleFatBigRangerEnraged,zombieMoeBigRangerEnraged,zombieFatHawaiianBigRangerEnraged,zombieSoldierBigRangerEnraged,zombieBikerBigRangerEnraged,zombieLumberjackBigRangerEnraged"/>
+		<property name="spawn_count" value="5"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+</action_sequence>
+	<!--Spawns guards on death of MLG zombie-->
+<action_sequence name="BigZombieMLGSpawnsT2">
+	<property name="allow_user_trigger" value="true" />
+	<property name="action_type" value="Game" />
+	<property name="allow_while_dead" value="true" />
+	
+	<action class="SpawnEntity">
+		<property name="phase" value="0" />
+		<property name="entity_names" value="zombieWightBigEnraged,zombieFatCopBigEnraged,zombieDemolitionBigEnraged,zombieFemaleFatBigEnraged,zombieMoeBigEnraged,zombieFatHawaiianBigEnraged,zombieSoldierBigEnraged,zombieBikerBigEnraged,zombieLumberjackBigEnraged,zombieBoeBigEnraged,zombieJoeBigEnraged,zombieArleneBigEnraged,zombieDarleneBigEnraged,zombieMarleneBigEnraged,zombieYoBigEnraged,zombieSteveBigEnraged,zombieBusinessManBigEnraged,zombieSpiderBigEnraged,zombieNurseBigEnraged,zombieMaleHazmatBigEnraged,zombieUtilityWorkerBigEnraged,zombieSkateboarderBigEnraged,zombieJanitorBigEnraged,zombiePartyGirlBigEnraged"/>
+		<property name="spawn_count" value="5"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="add_to_group" value="guards" />
+		<property name="add_buffs" value="buffIsBigZombieMLGGuard"/>
+		<property name="air_spawn" value="true" />
+	</action>
+</action_sequence>
+	<!--Spawns guards on death of golden zombie-->
+<action_sequence name="BigZombieGoldenSpawnsT2">
+	<property name="allow_user_trigger" value="true" />
+	<property name="action_type" value="Game" />
+	<property name="allow_while_dead" value="true" />
+	
+	<action class="SpawnEntity">
+		<property name="phase" value="0" />
+		<property name="entity_names" value="zombieWightBigEnraged,zombieFatCopBigEnraged,zombieDemolitionBigEnraged,zombieFemaleFatBigEnraged,zombieMoeBigEnraged,zombieFatHawaiianBigEnraged,zombieSoldierBigEnraged,zombieBikerBigEnraged,zombieLumberjackBigEnraged,zombieBoeBigEnraged,zombieJoeBigEnraged,zombieArleneBigEnraged,zombieDarleneBigEnraged,zombieMarleneBigEnraged,zombieYoBigEnraged,zombieSteveBigEnraged,zombieBusinessManBigEnraged,zombieSpiderBigEnraged,zombieNurseBigEnraged,zombieMaleHazmatBigEnraged,zombieUtilityWorkerBigEnraged,zombieSkateboarderBigEnraged,zombieJanitorBigEnraged,zombiePartyGirlBigEnraged"/>
+		<property name="spawn_count" value="5"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="add_to_group" value="guards" />
+		<property name="add_buffs" value="buffIsBigZombieLeaderGoldenGuard"/>
+		<property name="air_spawn" value="true" />
+	</action>
+</action_sequence>
+	<!--Spawns Warriors and rangers from commander-->
+<action_sequence name="BigZombieCommanderSpawnsT2">
+	<property name="allow_user_trigger" value="true" />
+	<property name="action_type" value="Game" />
+	<property name="allow_while_dead" value="true" />
+	
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieJanitorBigWarriorEnraged"/>
+		<property name="spawn_count" value="5"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieFatCopBigRangerEnraged,zombieFemaleFatBigRangerEnraged,zombieMoeBigRangerEnraged,zombieFatHawaiianBigRangerEnraged,zombieSoldierBigRangerEnraged,zombieBikerBigRangerEnraged,zombieLumberjackBigRangerEnraged"/>
+		<property name="spawn_count" value="10"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+</action_sequence>
+	<!--Spawns Warriors rangers and behemoth from commander-->
+<action_sequence name="BigZombieCommanderSpawnsV2T2">
+	<property name="allow_user_trigger" value="true" />
+	<property name="action_type" value="Game" />
+	<property name="allow_while_dead" value="true" />
+	
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieJanitorBigWarriorEnraged"/>
+		<property name="spawn_count" value="10"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieFatCopBigRangerEnraged,zombieFemaleFatBigRangerEnraged,zombieMoeBigRangerEnraged,zombieFatHawaiianBigRangerEnraged,zombieSoldierBigRangerEnraged,zombieBikerBigRangerEnraged,zombieLumberjackBigRangerEnraged"/>
+		<property name="spawn_count" value="10"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieBehemoth1BigEnraged"/>
+		<property name="spawn_count" value="1"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="air_spawn" value="true" />
+	</action>
+</action_sequence>
+	<!--Spawns horde from heat buildup-->
+<action_sequence name="BiggestPickaxeHeatT2Small">
+	<property name="allow_user_trigger" value="true" />
+	<property name="action_type" value="Game" />
+	<property name="allow_while_dead" value="true" />
+	
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieJanitorBigWarriorEnraged,zombieWightBigEnraged,zombieFatCopBigEnraged,zombieDemolitionBigEnraged,zombieFemaleFatBigEnraged,zombieMoeBigEnraged,zombieFatHawaiianBigEnraged,zombieSoldierBigEnraged,zombieBikerBigEnraged,zombieLumberjackBigEnraged,zombieBoeBigEnraged,zombieJoeBigEnraged,zombieArleneBigEnraged,zombieDarleneBigEnraged,zombieMarleneBigEnraged,zombieYoBigEnraged,zombieSteveBigEnraged,zombieBusinessManBigEnraged,zombieSpiderBigEnraged,zombieNurseBigEnraged,zombieMaleHazmatBigEnraged,zombieUtilityWorkerBigEnraged,zombieSkateboarderBigEnraged,zombieJanitorBigEnraged,zombiePartyGirlBigEnraged"/>
+		<property name="spawn_count" value="10"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="safe_spawn" value="true" />
+		<property name="min_distance" value="50" />
+		<property name="max_distance" value="65" />
+		<property name="spawn_type" value="WanderingHorde" />
+	</action>
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieBikerBigDroidEnraged,zombieFatCopBigRangerEnraged,zombieFemaleFatBigRangerEnraged,zombieMoeBigRangerEnraged,zombieFatHawaiianBigRangerEnraged,zombieSoldierBigRangerEnraged,zombieBikerBigRangerEnraged,zombieLumberjackBigRangerEnraged"/>
+		<property name="spawn_count" value="5"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="safe_spawn" value="true" />
+		<property name="min_distance" value="50" />
+		<property name="max_distance" value="65" />
+		<property name="spawn_type" value="WanderingHorde" />
+	</action>
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieWightScoutEnraged"/>
+		<property name="spawn_count" value="3"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="safe_spawn" value="true" />
+		<property name="min_distance" value="50" />
+		<property name="max_distance" value="65" />
+		<property name="spawn_type" value="WanderingHorde" />
+	</action>
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieFatCopBigLeaderEnraged,zombieFemaleFatBigLeaderEnraged,zombieMoeBigLeaderEnraged,zombieFatHawaiianBigLeaderEnraged,zombieSoldierBigLeaderEnraged,zombieBikerBigLeaderEnraged,zombieLumberjackBigLeaderEnraged"/>
+		<property name="spawn_count" value="2"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="safe_spawn" value="true" />
+		<property name="min_distance" value="50" />
+		<property name="max_distance" value="65" />
+		<property name="spawn_type" value="WanderingHorde" />
+	</action>
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieBehemoth1BigEnraged,zombieBehemoth2BigEnraged"/>
+		<property name="spawn_count" value="1"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="safe_spawn" value="true" />
+		<property name="min_distance" value="50" />
+		<property name="max_distance" value="65" />
+		<property name="spawn_type" value="WanderingHorde" />
+	</action>
+</action_sequence>
+	<!--Spawns horde from heat buildup-->
+<action_sequence name="BiggestPickaxeHeatT2Med">
+	<property name="allow_user_trigger" value="true" />
+	<property name="action_type" value="Game" />
+	<property name="allow_while_dead" value="true" />
+	
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieJanitorBigWarriorEnraged,zombieWightBigEnraged,zombieFatCopBigEnraged,zombieDemolitionBigEnraged,zombieFemaleFatBigEnraged,zombieMoeBigEnraged,zombieFatHawaiianBigEnraged,zombieSoldierBigEnraged,zombieBikerBigEnraged,zombieLumberjackBigEnraged,zombieBoeBigEnraged,zombieJoeBigEnraged,zombieArleneBigEnraged,zombieDarleneBigEnraged,zombieMarleneBigEnraged,zombieYoBigEnraged,zombieSteveBigEnraged,zombieBusinessManBigEnraged,zombieSpiderBigEnraged,zombieNurseBigEnraged,zombieMaleHazmatBigEnraged,zombieUtilityWorkerBigEnraged,zombieSkateboarderBigEnraged,zombieJanitorBigEnraged,zombiePartyGirlBigEnraged"/>
+		<property name="spawn_count" value="25"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="safe_spawn" value="true" />
+		<property name="min_distance" value="50" />
+		<property name="max_distance" value="65" />
+		<property name="spawn_type" value="WanderingHorde" />
+	</action>
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieBikerBigDroidEnraged,zombieFatCopBigRangerEnraged,zombieFemaleFatBigRangerEnraged,zombieMoeBigRangerEnraged,zombieFatHawaiianBigRangerEnraged,zombieSoldierBigRangerEnraged,zombieBikerBigRangerEnraged,zombieLumberjackBigRangerEnraged"/>
+		<property name="spawn_count" value="10"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="safe_spawn" value="true" />
+		<property name="min_distance" value="50" />
+		<property name="max_distance" value="65" />
+		<property name="spawn_type" value="WanderingHorde" />
+	</action>
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieWightScoutEnraged"/>
+		<property name="spawn_count" value="7"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="safe_spawn" value="true" />
+		<property name="min_distance" value="50" />
+		<property name="max_distance" value="65" />
+		<property name="spawn_type" value="WanderingHorde" />
+	</action>
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieFatCopBigLeaderEnraged,zombieFemaleFatBigLeaderEnraged,zombieMoeBigLeaderEnraged,zombieFatHawaiianBigLeaderEnraged,zombieSoldierBigLeaderEnraged,zombieBikerBigLeaderEnraged,zombieLumberjackBigLeaderEnraged"/>
+		<property name="spawn_count" value="3"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="safe_spawn" value="true" />
+		<property name="min_distance" value="50" />
+		<property name="max_distance" value="65" />
+		<property name="spawn_type" value="WanderingHorde" />
+	</action>
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieBehemoth1BigEnraged,zombieBehemoth2BigEnraged"/>
+		<property name="spawn_count" value="2"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="safe_spawn" value="true" />
+		<property name="min_distance" value="50" />
+		<property name="max_distance" value="65" />
+		<property name="spawn_type" value="WanderingHorde" />
+	</action>
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieBusinessManBigGoldenEnraged,zombieWightBigKnightEnraged,zombieMoeBigMLGEnraged,zombieWightBigCommanderEnraged"/>
+		<property name="spawn_count" value="1"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="safe_spawn" value="true" />
+		<property name="min_distance" value="50" />
+		<property name="max_distance" value="65" />
+		<property name="spawn_type" value="WanderingHorde" />
+	</action>
+</action_sequence>
+	<!--Spawns horde from heat buildup-->
+<action_sequence name="BiggestPickaxeHeatT2Large">
+	<property name="allow_user_trigger" value="true" />
+	<property name="action_type" value="Game" />
+	<property name="allow_while_dead" value="true" />
+	
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieJanitorBigWarriorEnraged,zombieWightBigEnraged,zombieFatCopBigEnraged,zombieDemolitionBigEnraged,zombieFemaleFatBigEnraged,zombieMoeBigEnraged,zombieFatHawaiianBigEnraged,zombieSoldierBigEnraged,zombieBikerBigEnraged,zombieLumberjackBigEnraged,zombieBoeBigEnraged,zombieJoeBigEnraged,zombieArleneBigEnraged,zombieDarleneBigEnraged,zombieMarleneBigEnraged,zombieYoBigEnraged,zombieSteveBigEnraged,zombieBusinessManBigEnraged,zombieSpiderBigEnraged,zombieNurseBigEnraged,zombieMaleHazmatBigEnraged,zombieUtilityWorkerBigEnraged,zombieSkateboarderBigEnraged,zombieJanitorBigEnraged,zombiePartyGirlBigEnraged"/>
+		<property name="spawn_count" value="40"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="safe_spawn" value="true" />
+		<property name="min_distance" value="50" />
+		<property name="max_distance" value="65" />
+		<property name="spawn_type" value="WanderingHorde" />
+	</action>
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieBikerBigDroidEnraged,zombieFatCopBigRangerEnraged,zombieFemaleFatBigRangerEnraged,zombieMoeBigRangerEnraged,zombieFatHawaiianBigRangerEnraged,zombieSoldierBigRangerEnraged,zombieBikerBigRangerEnraged,zombieLumberjackBigRangerEnraged"/>
+		<property name="spawn_count" value="15"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="safe_spawn" value="true" />
+		<property name="min_distance" value="50" />
+		<property name="max_distance" value="65" />
+		<property name="spawn_type" value="WanderingHorde" />
+	</action>
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieWightScoutEnraged"/>
+		<property name="spawn_count" value="10"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="safe_spawn" value="true" />
+		<property name="min_distance" value="50" />
+		<property name="max_distance" value="65" />
+		<property name="spawn_type" value="WanderingHorde" />
+	</action>
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieFatCopBigLeaderEnraged,zombieFemaleFatBigLeaderEnraged,zombieMoeBigLeaderEnraged,zombieFatHawaiianBigLeaderEnraged,zombieSoldierBigLeaderEnraged,zombieBikerBigLeaderEnraged,zombieLumberjackBigLeaderEnraged"/>
+		<property name="spawn_count" value="4"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="safe_spawn" value="true" />
+		<property name="min_distance" value="50" />
+		<property name="max_distance" value="65" />
+		<property name="spawn_type" value="WanderingHorde" />
+	</action>
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieBehemoth1BigEnraged,zombieBehemoth2BigEnraged"/>
+		<property name="spawn_count" value="4"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="safe_spawn" value="true" />
+		<property name="min_distance" value="50" />
+		<property name="max_distance" value="65" />
+		<property name="spawn_type" value="WanderingHorde" />
+	</action>
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieBusinessManBigGoldenEnraged,zombieWightBigKnightEnraged,zombieMoeBigMLGEnraged,zombieWightBigCommanderEnraged"/>
+		<property name="spawn_count" value="2"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="safe_spawn" value="true" />
+		<property name="min_distance" value="50" />
+		<property name="max_distance" value="65" />
+		<property name="spawn_type" value="WanderingHorde" />
+	</action>
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieWightBigCommanderEnraged"/>
+		<property name="spawn_count" value="1"/>
+		<property name="ignore_multiplier" value="true"/>
+		<property name="safe_spawn" value="true" />
+		<property name="min_distance" value="50" />
+		<property name="max_distance" value="65" />
+		<property name="spawn_type" value="WanderingHorde" />
+	</action>
+</action_sequence>
+	<!--DoomwoodClub-->
+<action_sequence name="DoomwoodClubCharge10">
+	<property name="allow_user_trigger" value="true" />
+	<property name="action_type" value="Game" />
+	<property name="allow_while_dead" value="true" />
+	
+	<action class="Explode">
+		<property name="phase" value="1" />
+		<property name="blast_power" value="60" />
+		<property name="blast_power" value="0" />
+		<property name="block_damage" value="0" />
+		<property name="block_radius" value="1" />
+		<property name="entity_damage" value="1" />
+		<property name="entity_radius" value="3" />
+		<property name="particle_index" value="11" />
+	</action>
+</action_sequence>
+<action_sequence name="DoomwoodClubCharge25">
+	<property name="allow_user_trigger" value="true" />
+	<property name="action_type" value="Game" />
+	<property name="allow_while_dead" value="true" />
+	
+	<action class="Explode">
+		<property name="phase" value="1" />
+		<property name="blast_power" value="100" />
+		<property name="block_damage" value="0" />
+		<property name="block_radius" value="1" />
+		<property name="entity_damage" value="1" />
+		<property name="entity_radius" value="5" />
+		<property name="particle_index" value="13" />
+	</action>
+</action_sequence>
+<action_sequence name="DoomwoodClubCharge50">
+	<property name="allow_user_trigger" value="true" />
+	<property name="action_type" value="Game" />
+	<property name="allow_while_dead" value="true" />
+	
+	<action class="Explode">
+		<property name="phase" value="1" />
+		<property name="blast_power" value="125" />
+		<property name="block_damage" value="0" />
+		<property name="block_radius" value="1" />
+		<property name="entity_damage" value="1" />
+		<property name="entity_radius" value="7" />
+		<property name="particle_index" value="5" />
+	</action>
+</action_sequence>
+
+<action_sequence name="game_player_level_reset">
+
+	<action class="ResetPlayerData">
+		<property name="reset_skills" value="false" />
+		<property name="reset_books" value="false" />
+		<property name="reset_crafting" value="false" />
+		<property name="reset_levels" value="true" />
+		<property name="remove_landclaims" value="false" />
+		<property name="remove_bedroll" value="false" />
+		<property name="remove_quests" value="false" />
+		<property name="remove_backpack" value="false" />
+		<property name="reset_stats" value="false" />
+	</action>
+	
+	<action class="BeltTooltip">
+		<property name="text" value="Your Level has been reset!" />
+	</action>
+</action_sequence>
+<action_sequence name="game_player_crafting_reset">
+
+	<action class="ResetPlayerData">
+		<property name="reset_skills" value="false" />
+		<property name="reset_books" value="false" />
+		<property name="reset_crafting" value="true" />
+		<property name="reset_levels" value="false" />
+		<property name="remove_landclaims" value="false" />
+		<property name="remove_bedroll" value="false" />
+		<property name="remove_quests" value="false" />
+		<property name="remove_backpack" value="false" />
+		<property name="reset_stats" value="false" />
+	</action>
+	
+	<action class="BeltTooltip">
+		<property name="text" value="Your Crafting has been reset!" />
+	</action>
+</action_sequence>
+<action_sequence name="PlayerAirStrike">	
+	
+	<action class="GetNearbyPoint">
+		<property name="phase" value="0" />
+		<property name="safe_spawn" value="true" />
+		<property name="air_spawn" value="true"/>
+		<property name="yOffset" value="10" />
+	</action>
+	
+	<action class="SpawnEntity">
+		<property name="phase" value="1" />
+		<property name="entity_names" value="animalZombieVulture" />
+		<property name="spawn_count" value="10" />
+		<property name="air_spawn" value="true" />
+		<property name="spawn_type" value="Position" />
+		<property name="yOffset" value="10" />
+	</action>
+	
+<!--	<action class="GetNearbyPoint">
+		<property name="phase" value="1" />
+		<property name="safe_spawn" value="true" />
+		<property name="air_spawn" value="true"/>
+		<property name="yOffset" value="25" />
+		<property name="min_distance" value="10" />
+		<property name="max_distance" value="20" />
+	</action>
+	
+	<action class="SpawnEntity">
+		<property name="phase" value="2" />
+		<property name="entity_names" value="animalZombieVulture"/>
+		<property name="spawn_count" value="10"/>
+		<property name="spawn_type" value="Position" />
+	</action>-->
+<!--	<loop class="For">
+		<property name="loop_count" value="10"/>
+		<property name="phase" value="1" />
+
+		<action class="Delay">
+			<property name="time" value="1"/>
+			<property name="phase" value="2" />
+		</action>
+		
+		<action class="SpawnEntity">
+			<property name="entity_names" value="animalZombieVulture"/>
+			<property name="spawn_count" value="1"/>
+			<property name="spawn_type" value="Position" />
+		</action>
+	</loop>-->
+</action_sequence>
+<action_sequence name="ChimpoutSpawnsBase">
+	<property name="action_type" value="Game" />
+	<property name="target_type" value="Entity" />
+	<property name="allow_while_dead" value="false" />
+	
+	<action class="PlaySound">
+		<property name="sound" value="Chimp2" />
+		<property name="phase" value="0" />
+	</action>
+	
+	<loop class="For">
+		<property name="loop_count" value="1" param1="loops"/>
+		<property name="phase" value="1" />
+
+		<action class="Delay">
+			<property name="time" value="10" param1="delay_time"/>
+			<property name="phase" value="2" />
+		</action>
+		
+		<action class="SpawnEntity">
+		  <property name="entity_group" value="SleeperGSList" />
+		  <property name="spawn_count" value="10" param1="count"/>
+		  <property name="air_spawn" value="false" />
+		  <property name="add_to_group" value="Chimps" />
+		  <property name="safe_spawn" value="true" />
+		  <property name="min_distance" value="50" />
+		  <property name="max_distance" value="60" />
+		  <property name="spawn_type" value="WanderingHorde" />
+		</action>
+	</loop>
+</action_sequence>
+
+<action_sequence name="ChimpoutSpawns30" template="ChimpoutSpawnsBase">
+	<variable name="loops" value="3" />
+</action_sequence>
+
+<action_sequence name="ChimpoutSpawns50" template="ChimpoutSpawnsBase">
+	<variable name="loops" value="5" />
+</action_sequence>
+
+<action_sequence name="ChimpoutSpawns100" template="ChimpoutSpawnsBase">
+	<variable name="loops" value="10" />
+</action_sequence>
+<!--35-->
+<action_sequence name="CookieFactoryBase1" template="ChimpoutSpawnsBase">
+	<variable name="loops" value="5" />
+	<variable name="delay_time" value="10" />
+	<variable name="count" value="7" />
+</action_sequence>
+<!--64-->
+<action_sequence name="CookieFactoryBase2" template="ChimpoutSpawnsBase">
+	<variable name="loops" value="8" />
+	<variable name="delay_time" value="10" />
+	<variable name="count" value="8" />
+</action_sequence>
+<!--30-->
+<action_sequence name="CookieFactoryBase3" template="ChimpoutSpawnsBase">
+	<variable name="loops" value="3" />
+	<variable name="delay_time" value="30" />
+	<variable name="count" value="10" />
+</action_sequence>
+
+<action_sequence name="CookieFactoryBaseT1">
+	<property name="action_type" value="Game" />
+	<property name="target_type" value="Entity" />
+	<property name="allow_while_dead" value="false" />
+	
+	<action class="PlaySound">
+		<property name="sound" value="Chimp2" />
+		<property name="phase" value="0" />
+	</action>
+	
+	<loop class="For">
+		<property name="loop_count" value="5"/>
+		<property name="phase" value="1" />
+		
+		<action class="Delay">
+			<property name="time" value="10"/>
+			<property name="phase" value="2" />
+		</action>
+		
+		<action class="SpawnEntity">
+		  <property name="entity_group" value="SleeperGSList" />
+		  <property name="spawn_count" value="10"/>
+		  <property name="air_spawn" value="false" />
+		  <property name="add_to_group" value="Chimps" />
+		  <property name="safe_spawn" value="true" />
+		  <property name="min_distance" value="50" />
+		  <property name="max_distance" value="60" />
+		  <property name="spawn_type" value="WanderingHorde" />
+		</action>
+	</loop>
+</action_sequence>
+<action_sequence name="CookieFactoryBaseT1V2">
+	<property name="action_type" value="Game" />
+	<property name="target_type" value="Entity" />
+	<property name="allow_while_dead" value="false" />
+	
+	<action class="PlaySound">
+		<property name="sound" value="Chimp2" />
+		<property name="phase" value="0" />
+	</action>
+	
+	<loop class="For">
+		<property name="loop_count" value="2"/>
+		<property name="phase" value="1" />
+		
+		<action class="Delay">
+			<property name="time" value="12"/>
+			<property name="phase" value="2" />
+		</action>
+		
+		<action class="SpawnEntity">
+		  <property name="entity_group" value="BigHordeBehemoth" />
+		  <property name="spawn_count" value="4"/>
+		  <property name="air_spawn" value="false" />
+		  <property name="add_to_group" value="Chimps" />
+		  <property name="safe_spawn" value="true" />
+		  <property name="min_distance" value="50" />
+		  <property name="max_distance" value="60" />
+		  <property name="spawn_type" value="WanderingHorde" />
+		</action>
+	</loop>
+</action_sequence>
+<action_sequence name="CookieFactoryBaseT2">
+	<property name="action_type" value="Game" />
+	<property name="target_type" value="Entity" />
+	<property name="allow_while_dead" value="false" />
+	
+	<action class="PlaySound">
+		<property name="sound" value="Chimp2" />
+		<property name="phase" value="0" />
+	</action>
+	
+	<loop class="For">
+		<property name="loop_count" value="6"/>
+		<property name="phase" value="1" />
+		
+		<action class="Delay">
+			<property name="time" value="8"/>
+			<property name="phase" value="2" />
+		</action>
+		
+		<action class="SpawnEntity">
+		  <property name="entity_group" value="SleeperGSList" />
+		  <property name="spawn_count" value="10"/>
+		  <property name="air_spawn" value="false" />
+		  <property name="add_to_group" value="Chimps" />
+		  <property name="safe_spawn" value="true" />
+		  <property name="min_distance" value="50" />
+		  <property name="max_distance" value="60" />
+		  <property name="spawn_type" value="WanderingHorde" />
+		</action>
+	</loop>
+</action_sequence>
+<action_sequence name="CookieFactoryBaseT2V2">
+	<property name="action_type" value="Game" />
+	<property name="target_type" value="Entity" />
+	<property name="allow_while_dead" value="false" />
+	
+	<action class="PlaySound">
+		<property name="sound" value="Chimp2" />
+		<property name="phase" value="0" />
+	</action>
+	
+	<loop class="For">
+		<property name="loop_count" value="3"/>
+		<property name="phase" value="1" />
+		
+		<action class="Delay">
+			<property name="time" value="12"/>
+			<property name="phase" value="2" />
+		</action>
+		
+		<action class="SpawnEntity">
+		  <property name="entity_group" value="BigHordeBehemoth" />
+		  <property name="spawn_count" value="4"/>
+		  <property name="air_spawn" value="false" />
+		  <property name="add_to_group" value="Chimps" />
+		  <property name="safe_spawn" value="true" />
+		  <property name="min_distance" value="50" />
+		  <property name="max_distance" value="60" />
+		  <property name="spawn_type" value="WanderingHorde" />
+		</action>
+	</loop>
+</action_sequence>
+
+<!--<action_sequence name="ScoutSpawnsGetPlayer">
+	<property name="action_type" value="Game" />
+	<property name="target_type" value="Entity" />
+	<property name="allow_while_dead" value="true" />
+	
+	<action class="AddClosestEntityToGroup">
+		<property name="phase" value="0" />
+		<property name="group_name" value="playerTarget" />
+		<property name="entity_tags" value="player" />
+		<property name="max_distance" value="150" />
+	</action>
+	
+	<action class="PlaySound">
+		<property name="phase" value="1" />
+		<property name="sound" value="DOIT" />
+	</action>
+		
+	<action class="AddBuff">
+		<property name="buff_name" value="ScoutSpawnsDeath" />
+		<property name="phase" value="2" />
+		<property name="target_group" value="playerTarget" />
+	</action>
+</action_sequence>
+-->
+<action_sequence name="ScoutSpawnsDeath">
+	<property name="action_type" value="Game" />
+	<property name="target_type" value="Entity" />
+	<property name="allow_user_trigger" value="true" />
+	
+	<action class="PlaySound">
+		<property name="sound" value="Chimp2" />
+		<property name="phase" value="0" />
+	</action>
+	
+	<action class="SpawnEntity">
+	  <property name="entity_group" value="SleeperGSList" />
+	  <property name="spawn_count" value="5"/>
+	  <property name="min_distance" value="50" />
+	  <property name="max_distance" value="60" />
+	  <property name="spawn_type" value="WanderingHorde" />
+	</action>
+</action_sequence>
+<action_sequence name="ScoutSpawnsDeathScreamer">
+	<property name="action_type" value="Game" />
+	<property name="target_type" value="Entity" />
+	<property name="allow_user_trigger" value="true" />
+	
+	<action class="PlaySound">
+		<property name="sound" value="Chimp2" />
+		<property name="phase" value="0" />
+	</action>
+	
+	<action class="SpawnEntity">
+	  <property name="entity_group" value="SleeperGSList" />
+	  <property name="spawn_count" value="10"/>
+	  <property name="min_distance" value="50" />
+	  <property name="max_distance" value="60" />
+	  <property name="spawn_type" value="WanderingHorde" />
+	</action>
+</action_sequence>
+<action_sequence name="ScoutSpawnsAttack">
+	<property name="action_type" value="Game" />
+	<property name="target_type" value="Entity" />
+	<property name="allow_user_trigger" value="true" />
+	
+	<action class="PlaySound">
+		<property name="sound" value="Chimp2" />
+		<property name="phase" value="0" />
+	</action>
+	
+	<action class="SpawnEntity">
+	  <property name="entity_group" value="SleeperGSList" />
+	  <property name="spawn_count" value="5"/>
+	  <property name="min_distance" value="50" />
+	  <property name="max_distance" value="60" />
+	  <property name="spawn_type" value="WanderingHorde" />
+	</action>
+</action_sequence>
+<action_sequence name="ScoutBossSpawn">
+	<property name="action_type" value="Game" />
+	<property name="target_type" value="Entity" />
+	<property name="allow_user_trigger" value="true" />
+	
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieWightScoutBoss" param1="zombiename" />
+		<property name="spawn_count" value="1"/>
+		<property name="min_distance" value="25" />
+		<property name="max_distance" value="35" />
+		<property name="spawn_type" value="WanderingHorde" />
+	</action>
+</action_sequence>
+<action_sequence name="ScoutBossGuards1">
+	<property name="action_type" value="Game" />
+	<property name="target_type" value="Entity" />
+	<property name="allow_user_trigger" value="true" />
+	
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieWightScout" param1="zombiename" />
+		<property name="spawn_count" value="5"/>
+	</action>
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieWightScoutBossGuard" param1="zombiename" />
+		<property name="spawn_count" value="3"/>
+	</action>
+</action_sequence>
+<action_sequence name="ScoutBossGuards2">
+	<property name="action_type" value="Game" />
+	<property name="target_type" value="Entity" />
+	<property name="allow_user_trigger" value="true" />
+	
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieWightScout" param1="zombiename" />
+		<property name="spawn_count" value="2"/>
+	</action>
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieWightScoutBossGuard" param1="zombiename" />
+		<property name="spawn_count" value="4"/>
+	</action>
+</action_sequence>
+<action_sequence name="ScoutBossGuards3">
+	<property name="action_type" value="Game" />
+	<property name="target_type" value="Entity" />
+	<property name="allow_user_trigger" value="true" />
+	
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieWightScout" param1="zombiename" />
+		<property name="spawn_count" value="2"/>
+	</action>
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieWightScoutBossGuard" param1="zombiename" />
+		<property name="spawn_count" value="5"/>
+	</action>
+</action_sequence>
+<action_sequence name="ScoutBossGuards4">
+	<property name="action_type" value="Game" />
+	<property name="target_type" value="Entity" />
+	<property name="allow_user_trigger" value="true" />
+	
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieWightScout" param1="zombiename" />
+		<property name="spawn_count" value="2"/>
+	</action>
+	<action class="SpawnEntity">
+		<property name="entity_names" value="zombieWightScoutBossGuard" param1="zombiename" />
+		<property name="spawn_count" value="6"/>
+	</action>
+</action_sequence>
+</append>
+</config>

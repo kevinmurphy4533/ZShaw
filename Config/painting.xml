@@ -1,0 +1,798 @@
+<config>
+<insertAfter xpath="/paints/paint[@name='txName_concrete_broken']">
+<opaque id="DO_NOT_USE" name="DO_NOT_USE" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?BiggestHead.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?RonaldoN.png"/>
+	<property name="Group" value="DO_NOT_USE"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="true"/>
+</opaque>
+<opaque id="Ronaldo" name="RonaldoName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?Ronaldo.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?RonaldoN.png"/>
+	<property name="Group" value="ShawMisc"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="metal"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="Edp" name="EdpName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?EDP.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?EDPN.png"/>
+	<property name="Group" value="ShawMisc"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="metal"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="Trump" name="TrumpName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?Trump.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?TrumpN.png"/>
+	<property name="Group" value="ShawMisc"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="metal"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="BiggestHead" name="BiggestHeadName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?BiggestHead.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?BiggestHeadN.png"/>
+	<property name="Group" value="ShawMisc"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="metal"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="Marble" name="MarbleName" x="0" y="0" w="2" h="2" blockw="2" blockh="2">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesBase.unity3d?Marble1.png,Marble2.png,Marble3.png,Marble4.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesBase.unity3d?Marble1N.png,Marble2N.png,Marble3N.png,Marble4N.png"/>
+	<property name="Group" value="ShawStone"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="stone"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="MarbleE" name="MarbleEName" x="0" y="0" w="2" h="2" blockw="2" blockh="2">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesBase.unity3d?ExoticMarble1.png,ExoticMarble2.png,ExoticMarble3.png,ExoticMarble4.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesBase.unity3d?ExoticMarble1N.png,ExoticMarble2N.png,ExoticMarble3N.png,ExoticMarble4N.png"/>
+	<property name="Group" value="ShawStone"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="stone"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="MarbleTilesBrown" name="MarbleTilesBrownName" x="0" y="0" w="2" h="2" blockw="2" blockh="2">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesBase.unity3d?MarbleTilesBrown1.png,MarbleTilesBrown2.png,MarbleTilesBrown3.png,MarbleTilesBrown4.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesBase.unity3d?MarbleTilesBrown1N.png,MarbleTilesBrown2N.png,MarbleTilesBrown3N.png,MarbleTilesBrown4N.png"/>
+	<property name="Group" value="ShawStone"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="stone"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="GraniteR" name="GraniteRName" x="0" y="0" w="2" h="2" blockw="2" blockh="2">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesBase.unity3d?Granite1.png,Granite2.png,Granite3.png,Granite4.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesBase.unity3d?Granite1N.png,Granite2N.png,Granite3N.png,Granite4N.png"/>
+	<property name="Group" value="ShawStone"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="stone"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="RedWood" name="RedWoodName" x="0" y="0" w="2" h="2" blockw="2" blockh="2">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesBase.unity3d?Redwood1.png,Redwood2.png,Redwood3.png,Redwood4.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesBase.unity3d?Redwood1N.png,Redwood2N.png,Redwood3N.png,Redwood4N.png"/>
+	<property name="Group" value="ShawWood"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="BlueWood" name="BlueWoodName" x="0" y="0" w="2" h="2" blockw="2" blockh="2">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesBase.unity3d?Bluewood1.png,Bluewood2.png,Bluewood3.png,Bluewood4.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesBase.unity3d?Bluewood1N.png,Bluewood2N.png,Bluewood3N.png,Bluewood4N.png"/>
+	<property name="Group" value="ShawWood"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="TrollFace" name="TrollFaceName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?TrollFace.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?TrollFaceN.png"/>
+	<property name="Group" value="ShawMisc"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="metal"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="TrollFace2" name="TrollFace2Name" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?TrollFace2.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?TrollFace2N.png"/>
+	<property name="Group" value="ShawMisc"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="metal"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="Magma" name="MagmaName" x="0" y="0" w="2" h="2" blockw="2" blockh="2">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesBase.unity3d?Magma1.png,Magma2.png,Magma3.png,Magma4.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesBase.unity3d?Magma1N.png,Magma2N.png,Magma3N.png,Magma4N.png"/>
+	<property name="Group" value="ShawStone"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="stone"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="LimestoneBricks" name="LimestoneBricksName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesBase.unity3d?LimestoneBricks1.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesBase.unity3d?LimestoneBricks1N.png"/>
+	<property name="Group" value="ShawStone"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="stone"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="LimestoneTiles" name="LimestoneTilesName" x="0" y="0" w="2" h="2" blockw="2" blockh="2">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesBase.unity3d?LimestoneTiles1.png,LimestoneTiles2.png,LimestoneTiles3.png,LimestoneTiles4.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesBase.unity3d?LimestoneTiles1N.png,LimestoneTiles2N.png,LimestoneTiles3N.png,LimestoneTiles4N.png"/>
+	<property name="Group" value="ShawStone"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="stone"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="LimestoneBricks2" name="LimestoneBricks2Name" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesBase.unity3d?LimeStoneBricksB.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesBase.unity3d?LimeStoneBricksBN.png"/>
+	<property name="Group" value="ShawStone"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="stone"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="LimestoneBricks3" name="LimestoneBricks3Name" x="0" y="0" w="2" h="2" blockw="2" blockh="2">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesBase.unity3d?LimeStoneBricksA1.png,LimeStoneBricksA2.png,LimeStoneBricksA3.png,LimeStoneBricksA4.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesBase.unity3d?LimeStoneBricksA1N.png,LimeStoneBricksA2N.png,LimeStoneBricksA3N.png,LimeStoneBricksA4N.png"/>
+	<property name="Group" value="ShawStone"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="stone"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="CobbleStone" name="CobbleStoneName" x="0" y="0" w="2" h="2" blockw="2" blockh="2">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesBase.unity3d?CobbleStone1.png,CobbleStone2.png,CobbleStone3.png,CobbleStone4.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesBase.unity3d?CobbleStone1N.png,CobbleStone2N.png,CobbleStone3N.png,CobbleStone4N.png"/>
+	<property name="Group" value="ShawStone"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="stone"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="ChiseledSandstone" name="ChiseledSandstoneName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMC.unity3d?ChiseledSandstone.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMC.unity3d?ChiseledSandstoneN.png"/>
+	<property name="Group" value="ShawMC"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="stone"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="CobblestoneMC" name="CobblestoneMCName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMC.unity3d?CobblestoneMC.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMC.unity3d?CobblestoneMCN.png"/>
+	<property name="Group" value="ShawMC"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="stone"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="EndStoneBricks" name="EndStoneBricksName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMC.unity3d?EndStoneBricks.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMC.unity3d?EndStoneBricksN.png"/>
+	<property name="Group" value="ShawMC"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="stone"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="Netherrack" name="NetherrackName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMC.unity3d?Netherrack.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMC.unity3d?NetherrackN.png"/>
+	<property name="Group" value="ShawMC"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="stone"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="NetherrackTroll" name="NetherrackTrollName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMC.unity3d?NetherrackTroll.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMC.unity3d?NetherrackTrollN.png"/>
+	<property name="Group" value="ShawMC"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="stone"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="Obsidian" name="ObsidianName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMC.unity3d?Obsidian.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMC.unity3d?ObsidianN.png"/>
+	<property name="Group" value="ShawMC"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="stone"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="Sandstone" name="SandstoneName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMC.unity3d?Sandstone.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMC.unity3d?SandstoneN.png"/>
+	<property name="Group" value="ShawMC"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="stone"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="SmoothStone" name="SmoothStoneName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMC.unity3d?SmoothStone.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMC.unity3d?SmoothStoneN.png"/>
+	<property name="Group" value="ShawMC"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="stone"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="OakLog" name="OakLogName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMC.unity3d?OakLog.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMC.unity3d?OakLogN.png"/>
+	<property name="Group" value="ShawMC"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="OakPlanks" name="OakPlanksName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMC.unity3d?OakPlanks.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMC.unity3d?OakPlanksN.png"/>
+	<property name="Group" value="ShawMC"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="Alex" name="AlexName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?Alex.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?AlexN.png"/>
+	<property name="Group" value="ShawMisc"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="Pessi1" name="Pessi1Name" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?Pessi1.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?Pessi1N.png"/>
+	<property name="Group" value="ShawMisc"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="stone"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="Pessi2" name="Pessi2Name" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?Pessi2.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?Pessi2N.png"/>
+	<property name="Group" value="ShawMisc"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="stone"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="Floyd" name="FloydName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?Floyd.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?FloydN.png"/>
+	<property name="Group" value="ShawMisc"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="stone"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="Bleach" name="BleachName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?Bleach.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?BleachN.png"/>
+	<property name="Group" value="ShawMisc"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="stone"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<!--Not Used Start-->
+<opaque id="Menu2" name="DO_NOT_USE" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?BiggestHead.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?RonaldoN.png"/>
+	<property name="Group" value="DO_NOT_USE"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="true"/>
+</opaque>
+<opaque id="Menu3" name="DO_NOT_USE" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?BiggestHead.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?RonaldoN.png"/>
+	<property name="Group" value="DO_NOT_USE"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="true"/>
+</opaque>
+<opaque id="Menu4" name="DO_NOT_USE" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?BiggestHead.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?RonaldoN.png"/>
+	<property name="Group" value="DO_NOT_USE"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="true"/>
+</opaque>
+<opaque id="Menu5" name="DO_NOT_USE" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?BiggestHead.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?RonaldoN.png"/>
+	<property name="Group" value="DO_NOT_USE"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="true"/>
+</opaque>
+<opaque id="Sign1" name="DO_NOT_USE" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?BiggestHead.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?RonaldoN.png"/>
+	<property name="Group" value="DO_NOT_USE"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="true"/>
+</opaque>
+<opaque id="Sign2" name="DO_NOT_USE" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?BiggestHead.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?RonaldoN.png"/>
+	<property name="Group" value="DO_NOT_USE"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="true"/>
+</opaque>
+<opaque id="BurgerSign1" name="DO_NOT_USE" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?BiggestHead.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?RonaldoN.png"/>
+	<property name="Group" value="DO_NOT_USE"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="true"/>
+</opaque>
+<opaque id="BurgerSign2" name="DO_NOT_USE" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?BiggestHead.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?RonaldoN.png"/>
+	<property name="Group" value="DO_NOT_USE"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="true"/>
+</opaque>
+<opaque id="BurgerSign3" name="DO_NOT_USE" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?BiggestHead.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?RonaldoN.png"/>
+	<property name="Group" value="DO_NOT_USE"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="true"/>
+</opaque>
+<opaque id="BurgerSign4" name="DO_NOT_USE" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?BiggestHead.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?RonaldoN.png"/>
+	<property name="Group" value="DO_NOT_USE"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="true"/>
+</opaque>
+<opaque id="BurgerSign5" name="DO_NOT_USE" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?BiggestHead.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?RonaldoN.png"/>
+	<property name="Group" value="DO_NOT_USE"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="true"/>
+</opaque>
+<opaque id="PeterMenu1" name="DO_NOT_USE" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?BiggestHead.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?RonaldoN.png"/>
+	<property name="Group" value="DO_NOT_USE"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="true"/>
+</opaque>
+<opaque id="PeterSign1" name="DO_NOT_USE" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?BiggestHead.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?RonaldoN.png"/>
+	<property name="Group" value="DO_NOT_USE"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="true"/>
+</opaque>
+<opaque id="PeterSign2" name="DO_NOT_USE" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?BiggestHead.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?RonaldoN.png"/>
+	<property name="Group" value="DO_NOT_USE"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="true"/>
+</opaque>
+<opaque id="MukySign1" name="DO_NOT_USE" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?BiggestHead.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?RonaldoN.png"/>
+	<property name="Group" value="DO_NOT_USE"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="true"/>
+</opaque>
+<opaque id="MukySign2" name="DO_NOT_USE" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?BiggestHead.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?RonaldoN.png"/>
+	<property name="Group" value="DO_NOT_USE"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="true"/>
+</opaque>
+<opaque id="MukySign3" name="DO_NOT_USE" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?BiggestHead.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?RonaldoN.png"/>
+	<property name="Group" value="DO_NOT_USE"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="true"/>
+</opaque>
+<opaque id="MukySign4" name="DO_NOT_USE" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?BiggestHead.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?RonaldoN.png"/>
+	<property name="Group" value="DO_NOT_USE"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="true"/>
+</opaque>
+	<!--Not Used End-->
+<opaque id="Hunter" name="HunterName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?Hunter.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?HunterN.png"/>
+	<property name="Group" value="ShawMisc"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="true"/>
+</opaque>
+<opaque id="HunterTub" name="HunterTubName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?HunterTub.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?HunterTubN.png"/>
+	<property name="Group" value="ShawMisc"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="true"/>
+</opaque>
+<opaque id="HunterTile" name="HunterTileName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?HunterTile.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesMisc.unity3d?HunterTileN.png"/>
+	<property name="Group" value="ShawMisc"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="Cookie1" name="CookieName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?Cookie1.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?Cookie1N.png"/>
+	<property name="Group" value="ShawCookie"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="Cookie2" name="CookieName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?Cookie2.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?Cookie1N.png"/>
+	<property name="Group" value="ShawCookie"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="Cookie3" name="CookieName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?Cookie3.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?Cookie1N.png"/>
+	<property name="Group" value="ShawCookie"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="Cookie4" name="CookieName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?Cookie4.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?Cookie1N.png"/>
+	<property name="Group" value="ShawCookie"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="Cookie5" name="CookieName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?Cookie5.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?Cookie1N.png"/>
+	<property name="Group" value="ShawCookie"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="Cookie6" name="CookieName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?Cookie6.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?Cookie1N.png"/>
+	<property name="Group" value="ShawCookie"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="Cookie7" name="CookieName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?Cookie7.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?Cookie1N.png"/>
+	<property name="Group" value="ShawCookie"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="Cookie8" name="CookieName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?Cookie8.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?Cookie1N.png"/>
+	<property name="Group" value="ShawCookie"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="Cookie9" name="CookieName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?Cookie9.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?Cookie1N.png"/>
+	<property name="Group" value="ShawCookie"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="CookieBricks1" name="CookieBricksName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?CookieBricks1.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?CookieBricks1N.png"/>
+	<property name="Group" value="ShawCookie"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="CookieBricks2" name="CookieBricksName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?CookieBricks2.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?CookieBricks1N.png"/>
+	<property name="Group" value="ShawCookie"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="CookieBricks3" name="CookieBricksName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?CookieBricks3.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?CookieBricks1N.png"/>
+	<property name="Group" value="ShawCookie"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="CookieBricks4" name="CookieBricksName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?CookieBricks4.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?CookieBricks1N.png"/>
+	<property name="Group" value="ShawCookie"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="CookieBricks5" name="CookieBricksName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?CookieBricks5.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?CookieBricks1N.png"/>
+	<property name="Group" value="ShawCookie"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="CookieBricks6" name="CookieBricksName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?CookieBricks6.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?CookieBricks1N.png"/>
+	<property name="Group" value="ShawCookie"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="CookieBricks7" name="CookieBricksName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?CookieBricks7.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?CookieBricks1N.png"/>
+	<property name="Group" value="ShawCookie"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+<opaque id="CookieBricks8" name="CookieBricksName" x="0" y="0" w="1" h="1" blockw="1" blockh="1">
+	<property name="Diffuse" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?CookieBricks8.png"/>
+	<property name="Normal" value="#@modfolder:Resources/ShawBlockTexturesCookies.unity3d?CookieBricks1N.png"/>
+	<property name="Group" value="ShawCookie"/>
+	<property name="GlobalUV" value="False"/>
+	<property name="SwitchUV" value="False"/>
+	<property name="Color" value="0,0,0"/>
+	<property name="Material" value="wood"/>
+	<property name="PaintCost" value="1"/>
+	<property name="Hidden" value="false"/>
+</opaque>
+</insertAfter>
+</config>

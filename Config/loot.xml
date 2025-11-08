@@ -1,0 +1,2626 @@
+<config>
+<insertAfter xpath="/lootcontainers/lootprobtemplates/lootprobtemplate[@name='ProbT3']"> 
+<lootprobtemplate name="ProbShawT0">
+	<loot level="0,4999" prob="1"/>
+	<loot level="5000,999999" prob="0"/>
+</lootprobtemplate>
+<lootprobtemplate name="ProbShawT1">
+	<loot level="0,4999" prob="0"/>
+	<loot level="5000,5999" prob="1"/>
+	<loot level="6000,999999" prob="0"/>
+</lootprobtemplate>
+<lootprobtemplate name="ProbShawT2">
+	<loot level="0,5999" prob="0"/>
+	<loot level="6000,6999" prob="1"/>
+	<loot level="7000,999999" prob="0"/>
+</lootprobtemplate>
+</insertAfter>
+<insertAfter xpath="/lootcontainers/lootgroup[@name='gunSchematicsT1']">
+<lootgroup name="groupSwords">
+	<item name="LinkedSword" count="1"/>
+	<item name="Firebrand" count="1"/>
+	<item name="Venomshank" count="1"/>
+	<item name="Darkheart" count="1"/>
+	<item name="Illumina" count="1"/>
+	<item name="Icedagger" count="1"/>
+	<item name="Windforce" count="1"/>
+	<item name="Ghostwalker" count="1"/>
+</lootgroup>
+<lootgroup name="groupStrongLegendaryItems">
+	<item group="groupSwords" count="1"/>
+	<item name="ShawAK" count="1"/>
+	<item name="ShawMartiniHenry" count="1"/>
+	<item name="ShawRevolver" count="1"/>
+	<item name="ShawDoubleBarrelShotgun" count="1"/>
+</lootgroup>
+</insertAfter>
+<insertAfter xpath="/lootcontainers/lootgroup[@name='groupLaserAmmo']">
+	<!--Random Groups most are not used-->
+<lootgroup name="groupHyperChrome">
+	<item name="modHyperRed1" count="1"/>
+	<item name="modHyperYellow1" count="1"/>
+	<item name="modHyperGreen1" count="1"/>
+	<item name="modHyperDiamond1" count="1"/>
+	<item name="modHyperOrange1" count="1"/>
+	<item name="modHyperBlue1" count="1"/>
+	<item name="modHyperPurple1" count="1"/>
+	<item name="modHyperPink1" count="1"/>
+</lootgroup>
+<lootgroup name="group70Items">
+	<item name="BiggestBaton" count="1"/>
+	<item name="BiggestHammer" count="1"/>
+	<item name="BiggestSword" count="1"/>
+	<item name="BiggestFist" count="1"/>
+</lootgroup>
+<lootgroup name="groupHeads">
+	<item name="BigHead" count="1" prob="40"/>
+	<item name="BiggerHead" count="1" prob="35"/>
+	<item name="BiggestHead" count="1" prob="25"/>
+</lootgroup>
+<lootgroup name="groupLegendaryConsumables"> 
+	<item name="TrollJuice" prob="50"/>
+	<item name="GingerbreadMan" prob="50"/>
+	<!--<item name="Cross" prob="10"/>-->
+</lootgroup>
+<lootgroup name="groupLegendaryMaps">
+	<!--<item name="TreasureQuestDuke" count="1"/>-->
+	<item name="TreasureQuestEdp" count="1"/>
+	<item name="TreasureQuestTrump" count="1"/>
+	<item name="TreasureQuestBiggestHead" count="1"/>
+</lootgroup>
+<lootgroup name="groupTrump">
+	<item name="oldCash" count="750,1500"/>
+	<item name="resourceSilverNugget" count="25,50"/>
+	<item name="resourceGoldNugget" count="10,20"/>
+	<item name="resourceRawDiamond" count="5,10"/>
+</lootgroup>
+<lootgroup name="groupShawsCoffin" count="all">
+	<item name="Essence" count="75,100"/>
+	<item name="Cross" count="5,10"/>
+</lootgroup>
+<lootgroup name="groupGoldChestEssenceKey" count="all">
+	<item name="EssenceKey" count="1"/>
+	<item name="QuestCookieHouse" count="1"/>
+</lootgroup>
+<lootgroup name="groupGoldChestCookieFactoryBase" count="all">
+	<item name="ShawKnowledgeQuestRecipes" count="1"/>
+	<item name="SakuraGardenPart" count="1"/>
+</lootgroup>
+<lootgroup name="groupShawMedicalStuff">
+	<item name="Narcan" count="1" prob="90"/>
+	<item name="Butter" count="1" prob="10"/>
+</lootgroup>
+<lootgroup name="groupEssenceKeyHack">
+	<item name="EssenceKey" count="1" prob="1"/>
+	<item name="resourceSilverNugget" count="0" prob="99"/>
+</lootgroup>
+<lootgroup name="groupShapeShifters">
+	<item name="ShapeShifterMessi" count="1"/>
+	<item name="ShapeShifterRonaldo" count="1"/>
+</lootgroup>
+<lootgroup name="groupFIFA" count="all">
+	<item group="groupShapeShifters" count="1" />
+	<item name="FutCoin" count="2222,4444"/>
+</lootgroup>
+	<!--Base Mats-->
+		<!--T1-->
+<lootgroup name="groupZedBigMoney" count="all">
+	<item name="oldCash" count="700,750"/>
+</lootgroup>
+<lootgroup name="groupShawBooksT1">
+	<item name="HeadEssenceT1" count="2,3" prob="90"/>
+	<item name="Essence" count="1" prob="10"/>
+</lootgroup>
+<lootgroup name="groupShawBooksJunkT1">
+	<item name="HeadEssenceT1" count="1,2"/>
+</lootgroup>
+<lootgroup name="groupShawMatsFood">
+	<item name="ShawMeat" count="1"/>
+	<item name="ShawBread" count="1"/>
+	<item name="ShawCheese" count="1"/>
+</lootgroup>
+<lootgroup name="groupShawMatsDrink">
+	<item name="ShawSugar" count="1"/>
+	<item name="ShawWater" count="1"/>
+	<item name="ShawCarbon" count="1"/>
+</lootgroup>
+<lootgroup name="groupShawMatsFoodDrink">
+	<item group="groupShawMatsFood" count="1" />
+	<item group="groupShawMatsDrink" count="1" />
+</lootgroup>
+<lootgroup name="groupShawMatsMeds">
+	<item name="ShawNeedle" count="1"/>
+</lootgroup>
+<lootgroup name="groupShawMatsAll">
+	<item group="groupShawMatsFood" count="1" />
+	<item group="groupShawMatsDrink" count="1" />
+	<item group="groupShawMatsMeds" count="1" />
+</lootgroup>
+<lootgroup name="groupShawLiquor">
+	<item name="ShawWhiskey" count="1" prob="75"/>
+	<item name="ShawCoffee" count="1" prob="25"/>
+</lootgroup>
+<lootgroup name="groupShawChems">
+	<item group="groupShawMatsMeds" count="1" prob="75"/>
+	<item group="groupShawLiquor" count="1" prob="25"/>
+</lootgroup>
+<lootgroup name="groupShawGeneralMats">
+	<item name="DFforgedTitanium" count="3"/>
+	<item name="DFenrichedUranium" count="2"/>
+</lootgroup>
+<lootgroup name="groupShawAmmoBigSingleT1">
+	<item name="ShawAmmo762" count="20"/>
+	<item name="ShawAmmoHeavy" count="10"/>
+	<item name="ShawAmmo44" count="7,8"/>
+	<item name="ShawAmmoShell" count="5"/>
+</lootgroup>
+		<!--T2-->
+<lootgroup name="groupZedBigMoneyT2" count="all">
+	<item name="oldCash" count="875,925"/>
+</lootgroup>
+<lootgroup name="groupShawBooksT2">
+	<item name="HeadEssenceT1" count="5" prob="90"/>
+	<item name="Essence" count="1,2" prob="10"/>
+</lootgroup>
+<lootgroup name="groupShawBooksJunkT2">
+	<item name="HeadEssenceT1" count="3"/>
+</lootgroup>
+<lootgroup name="groupShawMatsFoodT2">
+	<item group="groupShawMatsFood" count="1,2" prob="70"/>
+	<item name="ShawEgg" count="1" prob="30"/>
+</lootgroup>
+<lootgroup name="groupShawMatsDrinkT2">
+	<item group="groupShawMatsDrink" count="1,2" prob="70"/>
+	<item name="ShawMinerals" count="1" prob="30"/>
+</lootgroup>
+<lootgroup name="groupShawMatsFoodDrinkT2">
+	<item group="groupShawMatsFoodT2" count="1" />
+	<item group="groupShawMatsDrinkT2" count="1" />
+</lootgroup>
+<lootgroup name="groupShawMatsMedsT2">
+	<item name="ShawNeedle" count="1,2"/>
+</lootgroup>
+<lootgroup name="groupShawMatsAllT2">
+	<item group="groupShawMatsFoodT2" count="1" />
+	<item group="groupShawMatsDrinkT2" count="1" />
+	<item group="groupShawMatsMedsT2" count="1" />
+</lootgroup>
+<lootgroup name="groupShawLiquorT2">
+	<item group="groupShawLiquor" count="1,2"/>
+</lootgroup>
+<lootgroup name="groupShawChemsT2">
+	<item group="groupShawMatsMedsT2" count="1" prob="75"/>
+	<item group="groupShawLiquorT2" count="1" prob="25"/>
+</lootgroup>
+<lootgroup name="groupShawGeneralMatsT2">
+	<item group="groupShawGeneralMats" count="1" prob="74.75"/>
+	<item group="groupShawGeneralMats" count="2" prob="24.75"/>
+	<item name="GoldCoin" count="1" prob=".25"/>
+	<item name="CookieProcessed1" count="1" prob=".25"/>
+</lootgroup>
+<lootgroup name="groupShawAmmoBigSingleT2">
+	<item name="ShawAmmo762" count="30"/>
+	<item name="ShawAmmoHeavy" count="20"/>
+	<item name="ShawAmmo44" count="15"/>
+	<item name="ShawAmmoShell" count="10"/>
+</lootgroup>
+	<!--Key Rolls-->
+<lootgroup name="groupEssenceKeyWealthRollT1">
+	<item group="groupZedBigMoney" count="0" prob="99.5"/>
+	<item name="EssenceKeyWealth" count="1" prob="0.5"/>
+</lootgroup>
+<lootgroup name="groupEssenceKeyWealthRollT2">
+	<item group="groupZedBigMoney" count="0" prob="99"/>
+	<item name="EssenceKeyWealth" count="1" prob="1"/>
+</lootgroup>
+<lootgroup name="groupEssenceKeyWealthRollT3">
+	<item group="groupZedBigMoney" count="0" prob="97"/>
+	<item name="EssenceKeyWealth" count="1" prob="3"/>
+</lootgroup>
+<lootgroup name="groupEssenceKeyWealthRollT4">
+	<item group="groupZedBigMoney" count="0" prob="95"/>
+	<item name="EssenceKeyWealth" count="1" prob="5"/>
+</lootgroup>
+	<!--Zeds-->
+		<!--T1-->
+<lootgroup name="groupZedBigDrops">
+	<item group="groupZedBigMoney" count="1" prob="65"/>
+	<item group="groupShawMatsAll" count="1" prob="25"/>
+	<item group="groupShawAmmoBigSingleT1" count="2" prob="10"/>
+</lootgroup>
+<lootgroup name="groupZedBigDropsRare">
+	<item group="groupZedBigMoney" count="0" prob="94.5"/>
+	<item group="groupTreasureMaps" count="1" prob="0.5"/>
+	<item name="BigHead" count="1" prob="2.5"/>
+	<item name="Essence" count="1" prob="2.5"/>
+</lootgroup>
+<lootgroup name="groupZedBig" count="all">
+	<item group="groupZedBigDrops" count="1"/>
+	<item group="groupZedBigDropsRare" count="1"/>
+	<item name="HeadEssenceT1" count="1"/>
+</lootgroup>
+<lootgroup name="groupZedBigVetDrops">
+	<item group="groupZedBigMoney" count="2,3" prob="45"/>
+	<item group="groupShawMatsAll" count="1,2" prob="45"/>
+	<item group="groupShawAmmoBigSingleT1" count="4,6" prob="10"/>
+</lootgroup>
+<lootgroup name="groupZedBigVetDropsRare">
+	<item group="groupZedBigMoney" count="0" prob="92"/>
+	<item group="groupTreasureMaps" count="1" prob="1"/>
+	<item name="BigHead" count="1" prob="3.5"/>
+	<item name="Essence" count="1" prob="3.5"/>
+</lootgroup>
+<lootgroup name="groupZedBigVet" count="all">
+	<item group="groupZedBigVetDrops" count="1"/>
+	<item group="groupZedBigVetDropsRare" count="1"/>
+	<item name="HeadEssenceT1" count="2"/>
+</lootgroup>
+<lootgroup name="groupZedBigBehemothDropsRare">
+	<item group="groupZedBigMoney" count="0" prob="83"/>
+	<item group="groupTreasureMaps" count="1" prob="3"/>
+	<item group="groupLegendaryMaps" count="1" prob="1"/>
+	<item name="PurpleHeadCharm" count="1" prob="1"/>
+	<item name="KeemstarAlex" count="1" prob="2"/>
+	<item name="BigHead" count="1" prob="5"/>
+	<item name="Essence" count="1" prob="5"/>
+</lootgroup>
+<lootgroup name="groupZedBigBehemoth" count="all">
+	<item group="groupZedBigVetDrops" count="1,3"/>
+	<item group="groupZedBigBehemothDropsRare" count="1"/>
+	<item name="HeadEssenceT1" count="3"/>
+</lootgroup>
+<lootgroup name="groupZedBigSpecialDrops">
+	<item group="groupZedBigMoney" count="0" prob="65.5"/>
+	<item group="groupTreasureMaps" count="1" prob="7.5"/>
+	<item group="groupLegendaryMaps" count="1" prob="5"/>
+	<item name="KeemstarAlex" count="1" prob="2"/>
+	<item name="BigHead" count="1" prob="10"/>
+	<item name="Essence" count="1" prob="10"/>
+</lootgroup>
+<lootgroup name="groupZedBigGoldenDropsRare">
+	<item group="groupZedBigMoney" count="0" prob="98"/>
+	<item name="GoldBarMagic" count="1" prob="2"/>
+</lootgroup>
+<lootgroup name="groupZedBigGolden" count="all">
+	<item group="groupZedBigVetDrops" count="2,3"/>
+	<item group="groupZedBigSpecialDrops" count="1"/>
+	<item group="groupZedBigGoldenDropsRare" count="1"/>
+	<item name="HeadEssenceT1" count="5"/>
+</lootgroup>
+<lootgroup name="groupZedBigKnightDropsRare">
+	<item group="groupZedBigMoney" count="0" prob="98"/>
+	<item name="RedcliffChestArmorT1" count="1" prob="2"/>
+</lootgroup>
+<lootgroup name="groupZedBigKnight" count="all">
+	<item group="groupZedBigVetDrops" count="2,3"/>
+	<item group="groupZedBigSpecialDrops" count="1"/>
+	<item group="groupZedBigKnightDropsRare" count="1"/>
+	<item name="HeadEssenceT1" count="5"/>
+</lootgroup>
+<lootgroup name="groupZedBigMLGDropsRare">
+	<item group="groupZedBigMoney" count="0" prob="98"/>
+	<item name="MountainDewMagic" count="1" prob="2"/>
+</lootgroup>
+<lootgroup name="groupZedBigMLG" count="all">
+	<item group="groupZedBigVetDrops" count="2,3"/>
+	<item group="groupZedBigSpecialDrops" count="1"/>
+	<item group="groupZedBigMLGDropsRare" count="1"/>
+	<item name="HeadEssenceT1" count="5"/>
+</lootgroup>
+<lootgroup name="groupZedBoss1" count="all">
+	<item name="EssenceKeyWealthEnter" count="1"/>
+	<item name="ShawsBlessing" count="1"/>
+	<item name="EssenceKeyWealth" count="1"/>
+	<item name="HeadEssenceT1" count="100"/>
+	<item name="HeadEssenceT1" count="100"/>
+	<item name="HeadEssenceT1" count="100"/>
+</lootgroup>
+		<!--T2-->
+<lootgroup name="groupZedBigEnragedDrops">
+	<item group="groupZedBigMoneyT2" count="1" prob="60"/>
+	<item group="groupShawMatsAllT2" count="1" prob="30"/>
+	<item group="groupShawAmmoBigSingleT2" count="2" prob="10"/>
+</lootgroup>
+<lootgroup name="groupZedBigEnragedDropsRare">
+	<item group="groupZedBigMoney" count="0" prob="94"/>
+	<item group="groupTreasureMaps" count="1" prob="0.5"/>
+	<item name="LegendaryShard" count="1" prob="0.5"/>
+	<item name="BigHead" count="1,2" prob="2.5"/>
+	<item name="Essence" count="1,2" prob="2.5"/>
+</lootgroup>
+<lootgroup name="groupZedBigEnraged" count="all">
+	<item group="groupZedBigEnragedDrops" count="1"/>
+	<item group="groupZedBigEnragedDropsRare" count="1,2"/>
+	<item group="groupEssenceKeyWealthRollT1" count="1"/>
+	<item name="HeadEssenceT1" count="3"/>
+</lootgroup>
+<lootgroup name="groupZedBigVetEnragedDrops">
+	<item group="groupZedBigMoneyT2" count="2,3" prob="40"/>
+	<item group="groupShawMatsAllT2" count="1,2" prob="50"/>
+	<item group="groupShawAmmoBigSingleT2" count="4,6" prob="10"/>
+</lootgroup>
+<lootgroup name="groupZedBigVetEnragedDropsRare">
+	<item group="groupZedBigMoney" count="0" prob="91.5"/>
+	<item group="groupTreasureMaps" count="1" prob="1"/>
+	<item name="KeemstarAlex" count="1" prob="0.5"/>
+	<item name="BigHead" count="1,2" prob="3.5"/>
+	<item name="Essence" count="1,2" prob="3.5"/>
+</lootgroup>
+<lootgroup name="groupZedBigVetEnraged" count="all">
+	<item group="groupZedBigVetEnragedDrops" count="1"/>
+	<item group="groupZedBigVetEnragedDropsRare" count="1,2"/>
+	<item group="groupEssenceKeyWealthRollT2" count="1"/>
+	<item name="HeadEssenceT1" count="6"/>
+</lootgroup>
+<lootgroup name="groupZedBigBehemothEnragedDropsRare">
+	<item group="groupZedBigMoney" count="0" prob="82"/>
+	<item group="groupTreasureMaps" count="1" prob="3"/>
+	<item group="groupLegendaryMaps" count="1" prob="1"/>
+	<item name="PurpleHeadCharm" count="1" prob="1"/>
+	<item name="KeemstarAlex" count="1" prob="2"/>
+	<item name="Steven" count="1" prob="1"/>
+	<item name="BigHead" count="1,2" prob="5"/>
+	<item name="Essence" count="1,2" prob="5"/>
+</lootgroup>
+<lootgroup name="groupZedBigBehemothEnraged" count="all">
+	<item group="groupZedBigVetEnragedDrops" count="1,3"/>
+	<item group="groupZedBigBehemothEnragedDropsRare" count="1,2"/>
+	<item group="groupEssenceKeyWealthRollT3" count="1"/>
+	<item name="HeadEssenceT1" count="9"/>
+</lootgroup>
+<lootgroup name="groupZedBigBehemoth2Enraged" count="all">
+	<item group="groupZedBigVetEnragedDrops" count="2,3"/>
+	<item group="groupZedBigBehemothEnragedDropsRare" count="2"/>
+	<item group="groupEssenceKeyWealthRollT4" count="1"/>
+	<item name="HeadEssenceT1" count="10"/>
+</lootgroup>
+<lootgroup name="groupZedBigEnragedSpecialDrops">
+	<item group="groupZedBigMoney" count="0" prob="64.5"/>
+	<item group="groupTreasureMaps" count="1" prob="7.5"/>
+	<item group="groupLegendaryMaps" count="1" prob="5"/>
+	<item name="KeemstarAlex" count="1" prob="2"/>
+	<item name="Steven" count="1" prob="1"/>
+	<item name="BigHead" count="1,2" prob="10"/>
+	<item name="Essence" count="1,2" prob="10"/>
+</lootgroup>
+<lootgroup name="groupZedBigGoldenEnragedDropsRare">
+	<item group="groupZedBigMoney" count="0" prob="90"/>
+	<item name="GoldBarMagic" count="1" prob="10"/>
+</lootgroup>
+<lootgroup name="groupZedBigGoldenEnraged" count="all">
+	<item group="groupZedBigVetEnragedDrops" count="2,4"/>
+	<item group="groupZedBigEnragedSpecialDrops" count="1"/>
+	<item group="groupZedBigGoldenEnragedDropsRare" count="1"/>
+	<item group="groupEssenceKeyWealthRollT4" count="1"/>
+	<item name="HeadEssenceT1" count="15"/>
+</lootgroup>
+<lootgroup name="groupZedBigKnightEnragedDropsRare">
+	<item group="groupZedBigMoney" count="0" prob="90"/>
+	<item name="RedcliffChestArmorT1" count="1" prob="10"/>
+</lootgroup>
+<lootgroup name="groupZedBigKnightEnraged" count="all">
+	<item group="groupZedBigVetEnragedDrops" count="2,4"/>
+	<item group="groupZedBigEnragedSpecialDrops" count="1"/>
+	<item group="groupZedBigKnightEnragedDropsRare" count="1"/>
+	<item group="groupEssenceKeyWealthRollT4" count="1"/>
+	<item name="HeadEssenceT1" count="15"/>
+</lootgroup>
+<lootgroup name="groupZedBigMLGEnragedDropsRare">
+	<item group="groupZedBigMoney" count="0" prob="90"/>
+	<item name="MountainDewMagic" count="1" prob="10"/>
+</lootgroup>
+<lootgroup name="groupZedBigMLGEnraged" count="all">
+	<item group="groupZedBigVetEnragedDrops" count="2,4"/>
+	<item group="groupZedBigEnragedSpecialDrops" count="1"/>
+	<item group="groupZedBigMLGEnragedDropsRare" count="1"/>
+	<item group="groupEssenceKeyWealthRollT4" count="1"/>
+	<item name="HeadEssenceT1" count="15"/>
+</lootgroup>
+<lootgroup name="groupZedBigDroidEnragedDropsRare">
+	<item group="groupZedBigMoney" count="0" prob="99"/>
+	<item name="HealthAutoInjector" count="1" prob="1"/>
+</lootgroup>
+<lootgroup name="groupZedBigDroidEnraged" count="all">
+	<item group="groupZedBigVetEnragedDrops" count="1,2"/>
+	<item group="groupZedBigEnragedSpecialDrops" count="0,1"/>
+	<item group="groupZedBigDroidEnragedDropsRare" count="1"/>
+	<item group="groupEssenceKeyWealthRollT3" count="1"/>
+	<item name="HeadEssenceT1" count="10"/>
+</lootgroup>
+<lootgroup name="groupZedBigCommanderEnragedDropsRare">
+	<item group="groupZedBigMoney" count="0" prob="97.5"/>
+	<item name="CommanderFlag" count="1" prob="2.5"/>
+</lootgroup>
+<lootgroup name="groupZedBigCommanderEnraged" count="all">
+	<item group="groupZedBigVetEnragedDrops" count="3,6"/>
+	<item group="groupZedBigEnragedSpecialDrops" count="1,2"/>
+	<item group="groupZedBigCommanderEnragedDropsRare" count="1"/>
+	<item group="groupEssenceKeyWealthRollT4" count="1,2"/>
+	<item name="HeadEssenceT1" count="22,23"/>
+</lootgroup>
+	<!--Random Shit TODO REMOVE-->
+<lootgroup name="groupScout1">
+	<item name="EyeballT1" count="1"/>
+</lootgroup>
+<lootgroup name="groupZedBigEmpowered">
+	<item name="HeadEssenceT1" count="2" prob="90"/>
+	<item name="HeadEssenceT1" count="3" prob="10"/>
+</lootgroup>
+<lootgroup name="groupZedBigBehemoth2">
+	<item name="HeadEssenceT1V2" count="2" prob="87"/>
+	<item name="HeadEssenceT1V2" count="3" prob="10"/>
+	<item group="groupLegendaryMaps" count="1" prob="1"/>
+	<item group="groupTreasureMaps" count="1" prob="1"/>
+	<item group="groupLegendaryConsumables" count="1" prob="1"/>
+</lootgroup>
+<lootgroup name="groupZedBigSuper">
+	<item name="HeadEssenceT1V2" count="2" prob="90"/>
+	<item name="HeadEssenceT1V2" count="5,7" prob="10"/>
+</lootgroup>
+<lootgroup name="groupZedBigBehemothSuper2">
+	<item group="groupLegendaryMaps" count="1" prob="10"/>
+	<item group="groupLegendaryMaps" count="0" prob="90"/>
+</lootgroup>
+<lootgroup name="groupZedBigBehemothSuper" count="all">
+	<item name="HeadEssenceT1V2" count="10,15"/>
+	<item group="groupZedBigBehemothSuper2" count="1"/>
+</lootgroup>
+<lootgroup name="groupZedBigger2">
+	<item group="groupZedBigMoney" count="3,5" prob="95.8"/>
+	<item group="groupZedBigMoney" count="1" prob="3"/>
+	<item name="EssenceKey" count="1" prob="1"/>
+	<item name="EssenceKey2" count="1" prob=".2"/>
+</lootgroup>
+<lootgroup name="groupZedBigger" count="all">
+	<item group="groupZedBigger2" count="1"/>
+	<item name="HeadEssenceT2" count="1"/>
+</lootgroup>
+<!--Loot After Blessing-->
+	<!--Trash DF loot-->
+<lootgroup name="groupDFAirDrop">
+	<item group="groupModAllScaled" count="1,2" prob="0.5"/>
+	<item group="groupWeaponsMeleeScaledTPlus" count="1" prob="1"/>
+	<item group="groupWeaponsRangedScaledTPlus" count="1" prob="1"/>
+	<item group="groupAmmoLarge" count="2,4" prob="1"/>
+	<item group="groupArmorScaledTPlus" count="1,2" prob="1"/>
+	<item group="supplyCrateWorkstationToolsScaled" count="1" loot_prob_template="veryLow"/>
+	<item group="group_FoodScaled" count="1,2" prob="1"/>
+	<item group="group_DrinksScaled" count="1,2" prob="1"/>
+	<item group="groupToolsTiered" count="1" prob="1"/>	
+	<item group="group_SupplyBooksScaled" count="1" loot_prob_template="veryLow"/>	
+	<item group="group_SupplyMedsScaled" count="1,2" prob="1.5"/>	
+	<item group="group_SupplyConstructionScaled" count="2,4" prob="2"/>
+	<item name="DFLathe" loot_prob_template="low" count="1"/>
+	<item name="farmPlotBlockVariantHelper" loot_prob_template="low" count="1,4"/>
+	<item group="groupLegendaryItems" prob=".005" count="1"/>
+</lootgroup>
+<lootgroup name="groupDFPoliceCar">
+	<item group="groupAmmoAdvanced"/>
+	<item group="medicine" prob="0.1"/>
+	<item group="groupWeaponsAllScaledNoStone" prob="0.15"/>
+</lootgroup>
+<lootgroup name="groupDFCupboard">
+	<item group="groupCupboard"/>
+	<item name="DFFlour" prob="0.2"/>
+	<item name="DFYeast" prob="0.2"/>
+</lootgroup>
+	<!--Used for trash Containers like shelves or dishwasher-->
+<lootgroup name="groupShawJunkLarge">
+	<item group="groupZedBigMoney" count="1,2" prob="40"/>
+	<item group="groupShawMatsAll" count="1" prob="15"/>
+	<item group="groupShawGeneralMats" count="100" prob="30"/>
+	<item group="groupShawAmmoBigSingleT1" count="1,2" prob="15"/>
+</lootgroup>
+<lootgroup name="groupShawJunkLargeT2">
+	<item group="groupZedBigMoneyT2" count="1,2" prob="40"/>
+	<item group="groupShawMatsAllT2" count="1" prob="15"/>
+	<item group="groupShawGeneralMatsT2" count="100" prob="30"/>
+	<item group="groupShawAmmoBigSingleT2" count="1,2" prob="15"/>
+</lootgroup>
+<lootgroup name="groupShawJunk">
+	<item group="groupZedBigMoney" count="1" prob="50"/>
+	<item group="groupShawMatsAll" count="1" prob="10"/>
+	<item group="groupShawGeneralMats" count="50" prob="30"/>
+	<item group="groupShawAmmoBigSingleT1" count="1" prob="10"/>
+</lootgroup>
+<lootgroup name="groupShawJunkT2">
+	<item group="groupZedBigMoneyT2" count="1" prob="50"/>
+	<item group="groupShawMatsAllT2" count="1" prob="10"/>
+	<item group="groupShawGeneralMatsT2" count="50" prob="30"/>
+	<item group="groupShawAmmoBigSingleT2" count="1" prob="10"/>
+</lootgroup>
+	<!--Used for things like weapon rack and miltary locker-->
+<lootgroup name="groupShawMilitary">
+	<item group="groupShawMatsAll" count="2" prob="25"/>
+	<item group="groupShawGeneralMats" count="250" prob="25"/>
+	<item group="groupShawAmmoBigSingleT1" count="2" prob="50"/>
+</lootgroup>
+<lootgroup name="groupShawMilitaryT2">
+	<item group="groupShawMatsAllT2" count="2" prob="25"/>
+	<item group="groupShawGeneralMatsT2" count="250" prob="25"/>
+	<item group="groupShawAmmoBigSingleT2" count="2" prob="50"/>
+</lootgroup>
+		<!--Gold Chest-->
+<lootgroup name="groupGoldChestLoot" count="all">
+	<item name="Sheckle" count="25,50"/>
+</lootgroup>
+<lootgroup name="groupGoldChest">
+	<item group="groupGoldChestLoot" count="0" loot_prob_template="ProbShawT0"/>
+	<item group="groupGoldChestLoot" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupGoldChestLoot" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Ronaldo Box Unused-->
+<lootgroup name="groupRonaldoBoxLoot">
+	<item group="groupFIFA" count="1"/>
+</lootgroup>
+<lootgroup name="groupRonaldoBox">
+	<item group="groupRonaldoBoxLoot" count="0" loot_prob_template="ProbShawT0"/>
+	<item group="groupRonaldoBoxLoot" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupRonaldoBoxLoot" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--EDP Box-->
+<lootgroup name="groupEDPBoxLoot">
+	<item group="groupHyperChrome" count="1"/>
+</lootgroup>
+<lootgroup name="groupEDPBox">
+	<item group="groupEDPBoxLoot" count="0" loot_prob_template="ProbShawT0"/>
+	<item group="groupEDPBoxLoot" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupEDPBoxLoot" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Trump Box-->
+<lootgroup name="groupTrumpBoxLoot">
+	<item group="groupZedBigMoney" count="150"/>
+</lootgroup>
+<lootgroup name="groupTrumpBoxLootT2">
+	<item group="groupZedBigMoney" count="200"/>
+</lootgroup>
+<lootgroup name="groupTrumpBox">
+	<item group="groupTrumpBoxLoot" count="0" loot_prob_template="ProbShawT0"/>
+	<item group="groupTrumpBoxLoot" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupTrumpBoxLootT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Cardriver Box-->
+<lootgroup name="groupCardriverBoxLoot">
+	<item name="BigHead" count="1" prob="40"/>
+	<item name="Essence" count="1" prob="60"/>
+</lootgroup>
+<lootgroup name="groupCardriverBoxLootT2">
+	<item name="BigHead" count="1" prob="40"/>
+	<item name="Essence" count="1" prob="60"/>
+</lootgroup>
+<lootgroup name="groupCardriverBox">
+	<item group="groupCardriverBoxLoot" count="0" loot_prob_template="ProbShawT0"/>
+	<item group="groupCardriverBoxLoot" count="10" loot_prob_template="ProbShawT1"/>
+	<item group="groupCardriverBoxLootT2" count="25" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--T5 Chest-->
+<lootgroup name="groupShawChestT5" count="all">
+	<item group="groupZedBigMoney" count="50"/>
+	<item group="groupShawMatsAll" count="10"/>
+	<item group="groupShawGeneralMats" count="1000"/>
+	<item group="groupShawAmmoBigSingleT1" count="20"/>
+</lootgroup>
+<lootgroup name="groupShawChestT5V2" count="all">
+	<item group="groupZedBigMoneyT2" count="50"/>
+	<item group="groupShawMatsAllT2" count="10"/>
+	<item group="groupShawGeneralMatsT2" count="1000"/>
+	<item group="groupShawAmmoBigSingleT2" count="20"/>
+</lootgroup>
+<lootgroup name="groupShawHardenedChestT5">
+	<item group="groupHardenedChestT5" count="1,2" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawChestT5" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawChestT5V2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+<lootgroup name="groupShawHardenedChestT5Broken">
+	<item group="groupHardenedChestT5Broken" count="1,2" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawChestT5" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawChestT5V2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--T4 Chest-->
+<lootgroup name="groupShawChestT4" count="all">
+	<item group="groupZedBigMoney" count="35"/>
+	<item group="groupShawMatsAll" count="7"/>
+	<item group="groupShawGeneralMats" count="500"/>
+	<item group="groupShawAmmoBigSingleT1" count="14"/>
+</lootgroup>
+<lootgroup name="groupShawChestT4V2" count="all">
+	<item group="groupZedBigMoneyT2" count="35"/>
+	<item group="groupShawMatsAllT2" count="7"/>
+	<item group="groupShawGeneralMatsT2" count="500"/>
+	<item group="groupShawAmmoBigSingleT2" count="14"/>
+</lootgroup>
+<lootgroup name="groupShawHardenedChestT4">
+	<item group="groupHardenedChestT4" count="1,2" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawChestT4" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawChestT4V2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+<lootgroup name="groupShawHardenedChestT4Broken">
+	<item group="groupHardenedChestT4Broken" count="1,2" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawChestT4" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawChestT4V2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--T3 Chest-->
+<lootgroup name="groupShawChestT3" count="all">
+	<item group="groupZedBigMoney" count="20"/>
+	<item group="groupShawMatsAll" count="4"/>
+	<item group="groupShawGeneralMats" count="350"/>
+	<item group="groupShawAmmoBigSingleT1" count="8"/>
+</lootgroup>
+<lootgroup name="groupShawChestT3V2" count="all">
+	<item group="groupZedBigMoneyT2" count="20"/>
+	<item group="groupShawMatsAllT2" count="4"/>
+	<item group="groupShawGeneralMatsT2" count="350"/>
+	<item group="groupShawAmmoBigSingleT2" count="8"/>
+</lootgroup>
+<lootgroup name="groupShawReinforcedChestT3">
+	<item group="groupReinforcedChestT3" count="1,2" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawChestT3" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawChestT3V2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+<lootgroup name="groupShawReinforcedChestT3Broken">
+	<item group="groupReinforcedChestT3Broken" count="1,2" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawChestT3" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawChestT3V2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--T2 Chest-->
+<lootgroup name="groupShawChestT2" count="all">
+	<item group="groupZedBigMoney" count="10"/>
+	<item group="groupShawMatsAll" count="2,3"/>
+	<item group="groupShawGeneralMats" count="250"/>
+	<item group="groupShawAmmoBigSingleT1" count="6"/>
+</lootgroup>
+<lootgroup name="groupShawChestT2V2" count="all">
+	<item group="groupZedBigMoneyT2" count="10"/>
+	<item group="groupShawMatsAllT2" count="2,3"/>
+	<item group="groupShawGeneralMatsT2" count="250"/>
+	<item group="groupShawAmmoBigSingleT2" count="6"/>
+</lootgroup>
+<lootgroup name="groupShawReinforcedChestT2">
+	<item group="groupReinforcedChestT2" count="1,2" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawChestT2" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawChestT2V2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--T1 Chest-->
+<lootgroup name="groupShawChestT1" count="all">
+	<item group="groupZedBigMoney" count="5"/>
+	<item group="groupShawMatsAll" count="1,2"/>
+	<item group="groupShawGeneralMats" count="150"/>
+	<item group="groupShawAmmoBigSingleT1" count="4"/>
+</lootgroup>
+<lootgroup name="groupShawChestT1V2" count="all">
+	<item group="groupZedBigMoneyT2" count="5"/>
+	<item group="groupShawMatsAllT2" count="1,2"/>
+	<item group="groupShawGeneralMatsT2" count="150"/>
+	<item group="groupShawAmmoBigSingleT2" count="4"/>
+</lootgroup>
+<lootgroup name="groupShawReinforcedChestT1">
+	<item group="groupReinforcedChestT1" count="1,2" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawChestT1" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawChestT1V2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Treasure Chest-->
+<lootgroup name="groupShawBuriedTreasureLoot" count="all">
+	<item group="groupZedBigMoney" count="100"/>
+	<item group="groupShawMatsAll" count="15"/>
+	<item group="groupShawGeneralMats" count="1500"/>
+	<item group="groupShawAmmoBigSingleT1" count="22"/>
+</lootgroup>
+<lootgroup name="groupShawBuriedTreasureLootV2" count="all">
+	<item group="groupZedBigMoneyT2" count="100"/>
+	<item group="groupShawMatsAllT2" count="15"/>
+	<item group="groupShawGeneralMatsT2" count="1500"/>
+	<item group="groupShawAmmoBigSingleT2" count="22"/>
+</lootgroup>
+<lootgroup name="groupShawBuriedTreasure">
+	<item group="groupBuriedTreasure" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawBuriedTreasureLoot" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawBuriedTreasureLootV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+<lootgroup name="groupShawBuriedTreasureBroken">
+	<item group="groupBuriedTreasureBroken" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawBuriedTreasureLoot" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawBuriedTreasureLootV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Gun Safe-->
+<lootgroup name="groupShawGunSafe" count="all">
+	<item group="groupZedBigMoney" count="15"/>
+	<item group="groupShawMatsAll" count="2"/>
+	<item group="groupShawAmmoBigSingleT1" count="6"/>
+</lootgroup>
+<lootgroup name="groupShawGunSafeV2" count="all">
+	<item group="groupZedBigMoneyT2" count="15"/>
+	<item group="groupShawMatsAllT2" count="2"/>
+	<item group="groupShawAmmoBigSingleT2" count="6"/>
+</lootgroup>
+<lootgroup name="groupShawGunSafeSecure">
+	<item group="groupGunSafeSecure" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawGunSafe" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawGunSafeV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+<lootgroup name="groupShawGunSafeBroken">
+	<item group="groupGunSafeBroken" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawGunSafe" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawGunSafeV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Small Safe-->
+<lootgroup name="groupShawSmallSafe" count="all">
+	<item group="groupZedBigMoney" count="5"/>
+	<item group="groupShawMatsAll" count="1"/>
+	<item group="groupShawAmmoBigSingleT1" count="2"/>
+</lootgroup>
+<lootgroup name="groupShawSmallSafeV2" count="all">
+	<item group="groupZedBigMoneyT2" count="5"/>
+	<item group="groupShawMatsAllT2" count="1"/>
+	<item group="groupShawAmmoBigSingleT2" count="2"/>
+</lootgroup>
+<lootgroup name="groupShawSmallSafeLoot">
+	<item group="groupSmallSafeLoot" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawSmallSafe" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawSmallSafeV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Large Weapons Bag-->
+<lootgroup name="groupShawWeaponBag" count="all">
+	<item group="groupZedBigMoney" count="4"/>
+	<item group="groupShawAmmoBigSingleT1" count="1"/>
+</lootgroup>
+<lootgroup name="groupShawWeaponBagV2" count="all">
+	<item group="groupZedBigMoneyT2" count="4"/>
+	<item group="groupShawAmmoBigSingleT2" count="1"/>
+</lootgroup>
+<lootgroup name="groupShawLargeWeaponBag">
+	<item group="groupLargeWeaponBag" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawWeaponBag" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawWeaponBagV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Small Weapons Bag-->
+<lootgroup name="groupShawSmallWeaponBagLoot" count="all">
+	<item group="groupZedBigMoney" count="2,3"/>
+	<item group="groupShawAmmoBigSingleT1" count="2"/>
+</lootgroup>
+<lootgroup name="groupShawSmallWeaponBagLootV2" count="all">
+	<item group="groupZedBigMoneyT2" count="2,3"/>
+	<item group="groupShawAmmoBigSingleT2" count="2"/>
+</lootgroup>
+<lootgroup name="groupShawSmallWeaponBag">
+	<item group="groupSmallWeaponBag" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawSmallWeaponBagLoot" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawSmallWeaponBagLootV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Large Ammo Pile-->
+<lootgroup name="groupShawAmmoPileT3" count="all">
+	<item group="groupShawAmmoBigSingleT1" count="4"/>
+</lootgroup>
+<lootgroup name="groupShawAmmoPileT3V2" count="all">
+	<item group="groupShawAmmoBigSingleT2" count="4"/>
+</lootgroup>
+<lootgroup name="groupShawAmmoPileLarge">
+	<item group="groupAmmoPileLarge" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawAmmoPileT3" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawAmmoPileT3V2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Med Ammo Pile-->
+<lootgroup name="groupShawAmmoPileT2" count="all">
+	<item group="groupShawAmmoBigSingleT1" count="2"/>
+</lootgroup>
+<lootgroup name="groupShawAmmoPileT2V2" count="all">
+	<item group="groupShawAmmoBigSingleT2" count="2"/>
+</lootgroup>
+<lootgroup name="groupShawAmmoPileMed">
+	<item group="groupAmmoPileMed" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawAmmoPileT2" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawAmmoPileT2V2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Small Ammo Pile-->
+<lootgroup name="groupShawAmmoPileT1" count="all">
+	<item group="groupShawAmmoBigSingleT1" count="1"/>
+</lootgroup>
+<lootgroup name="groupShawAmmoPileT1V2" count="all">
+	<item group="groupShawAmmoBigSingleT2" count="1"/>
+</lootgroup>
+<lootgroup name="groupShawAmmoPileSmall">
+	<item group="groupAmmoPileSmall" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawAmmoPileT1" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawAmmoPileT1V2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Munitions Box-->
+<lootgroup name="groupShawAmmoMunitionsBox" count="all">
+	<item group="groupShawAmmoBigSingleT1" count="6"/>
+</lootgroup>
+<lootgroup name="groupShawAmmoMunitionsBoxV2" count="all">
+	<item group="groupShawAmmoBigSingleT2" count="6"/>
+</lootgroup>
+<lootgroup name="groupShawAmmoMunitions">
+	<item group="groupAmmoMunitions" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawAmmoMunitionsBox" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawAmmoMunitionsBoxV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Hidden Stash-->
+<lootgroup name="groupShawHiddenStashBox" count="all">
+	<item group="groupZedBigMoney" count="25"/>
+	<item group="groupShawMatsAll" count="5"/>
+	<item group="groupShawGeneralMats" count="450"/>
+	<item group="groupShawAmmoBigSingleT1" count="3"/>
+</lootgroup>
+<lootgroup name="groupShawHiddenStashBoxV2" count="all">
+	<item group="groupZedBigMoneyT2" count="25"/>
+	<item group="groupShawMatsAllT2" count="5"/>
+	<item group="groupShawGeneralMatsT2" count="450"/>
+	<item group="groupShawAmmoBigSingleT2" count="3"/>
+</lootgroup>			
+<lootgroup name="groupShawHiddenStash">
+	<item group="groupHiddenStash" count="2,4" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawHiddenStashBox" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawHiddenStashBoxV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Clothing Crate-->
+<lootgroup name="groupShawSavageCountryBox" count="all">
+	<item group="groupShawMatsAll" count="1,2"/>
+	<item group="groupShawGeneralMats" count="250"/>
+</lootgroup>		
+<lootgroup name="groupShawSavageCountryBoxV2" count="all">
+	<item group="groupShawMatsAllT2" count="1,2"/>
+	<item group="groupShawGeneralMatsT2" count="250"/>
+</lootgroup>		
+<lootgroup name="groupShawSavageCountryCrate">
+	<item group="groupSavageCountryCrate" count="1,2" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawSavageCountryBox" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawSavageCountryBoxV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Car Parts Crate-->
+<lootgroup name="groupShawPassNGasBox" count="all">
+	<item group="groupShawMatsAll" count="1,2"/>
+	<item group="groupShawGeneralMats" count="250"/>
+</lootgroup>		
+<lootgroup name="groupShawPassNGasBoxV2" count="all">
+	<item group="groupShawMatsAllT2" count="1,2"/>
+	<item group="groupShawGeneralMatsT2" count="250"/>
+</lootgroup>	
+<lootgroup name="groupShawPassNGas">
+	<item group="groupPassNGas" count="1,2" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawPassNGasBox" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawPassNGasBoxV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Book Crate-->
+<lootgroup name="groupShawCrackabookBox" count="all">
+	<item group="groupShawBooksT1" count="3"/>
+</lootgroup>
+<lootgroup name="groupShawCrackabookBoxV2" count="all">
+	<item group="groupShawBooksT2" count="3"/>
+</lootgroup>
+<lootgroup name="groupShawCrackabookCrate">
+	<item group="groupCrackabookCrate" count="1,2" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawCrackabookBox" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawCrackabookBoxV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Food Crate-->
+<lootgroup name="groupShawShamwayBox" count="all">
+	<item group="groupShawMatsFoodDrink" count="3"/>
+</lootgroup>
+<lootgroup name="groupShawShamwayBoxV2" count="all">
+	<item group="groupShawMatsFoodDrinkT2" count="3"/>
+</lootgroup>
+<lootgroup name="groupShawShamwayCrate">
+	<item group="groupShamwayCrate" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawShamwayBox" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawShamwayBoxV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Power Crate-->
+<lootgroup name="groupShawMoPowerBox" count="all">
+	<item group="groupShawMatsAll" count="1,2"/>
+	<item group="groupShawGeneralMats" count="250"/>
+</lootgroup>
+<lootgroup name="groupShawMoPowerBoxV2" count="all">
+	<item group="groupShawMatsAllT2" count="1,2"/>
+	<item group="groupShawGeneralMatsT2" count="250"/>
+</lootgroup>
+<lootgroup name="groupShawMoPower">
+	<item group="groupMoPower" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawMoPowerBox" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawMoPowerBoxV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Pills Crate-->
+<lootgroup name="groupShawPopNPillsBox" count="all">
+	<item group="groupShawMatsMeds" count="3"/>
+</lootgroup>
+<lootgroup name="groupShawPopNPillsBoxV2" count="all">
+	<item group="groupShawMatsMedsT2" count="3"/>
+</lootgroup>
+<lootgroup name="groupShawPopNPillsCrate">
+	<item group="groupPopNPillsCrate" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawPopNPillsBox" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawPopNPillsBoxV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Shotgun Crate-->
+<lootgroup name="groupShawShotgunMessiahBox" count="all">
+	<item group="groupShawAmmoBigSingleT1" count="3,4"/>
+</lootgroup>
+<lootgroup name="groupShawShotgunMessiahBoxV2" count="all">
+	<item group="groupShawAmmoBigSingleT2" count="3,4"/>
+</lootgroup>
+<lootgroup name="groupShawShotgunMessiahCrate">
+	<item group="groupShotgunMessiahCrate" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawShotgunMessiahBox" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawShotgunMessiahBoxV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Working Stiff Crate-->
+<lootgroup name="groupShawWorkingStiffsBox" count="all">
+	<item group="groupShawGeneralMats" count="450"/>
+</lootgroup>
+<lootgroup name="groupShawWorkingStiffsBoxV2" count="all">
+	<item group="groupShawGeneralMatsT2" count="450"/>
+</lootgroup>
+<lootgroup name="groupShawWorkingStiffsCrate">
+	<item group="groupWorkingStiffsCrate" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawWorkingStiffsBox" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawWorkingStiffsBoxV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Construction Crate-->
+<lootgroup name="groupShawConstructionBox" count="all">
+	<item group="groupShawGeneralMats" count="250"/>
+</lootgroup>
+<lootgroup name="groupShawConstructionBoxV2" count="all">
+	<item group="groupShawGeneralMatsT2" count="250"/>
+</lootgroup>
+<lootgroup name="groupShawConstructionCrate">
+	<item group="groupConstructionCrate" count="1,2" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawConstructionBox" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawConstructionBoxV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>		
+		<!--Cardboard Box-->
+<lootgroup name="groupShawCardboardBox">
+	<item group="groupCardboardBox" count="1,2" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawJunkLarge" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawJunkLargeT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Garage Box-->
+<lootgroup name="groupShawGarageBox">
+	<item group="groupGarage" count="1,2" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawJunkLarge" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawJunkLargeT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Cop Car-->
+<lootgroup name="groupShawPoliceCarLoot" count="all">
+	<item group="groupZedBigMoney" count="15"/>
+	<item group="groupShawMatsAll" count="1,2"/>
+	<item group="groupShawAmmoBigSingleT1" count="2"/>
+</lootgroup>		
+<lootgroup name="groupShawPoliceCarLootV2" count="all">
+	<item group="groupZedBigMoneyT2" count="15"/>
+	<item group="groupShawMatsAllT2" count="1,2"/>
+	<item group="groupShawAmmoBigSingleT2" count="2"/>
+</lootgroup>		
+<lootgroup name="groupShawPoliceCar">
+	<item group="groupDFPoliceCar" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawPoliceCarLoot" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawPoliceCarLootV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+<lootgroup name="groupShawPoliceCarBonus">
+	<item group="groupPoliceCarBonus" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawPoliceCarLoot" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawPoliceCarLootV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Air Drop-->
+<lootgroup name="groupShawAirDropLoot" count="all">
+	<item group="groupZedBigMoney" count="100"/>
+	<item group="groupShawMatsAll" count="25"/>
+	<item group="groupShawGeneralMats" count="2500"/>
+	<item group="groupShawAmmoBigSingleT1" count="22"/>
+</lootgroup>
+<lootgroup name="groupShawAirDropLootV2" count="all">
+	<item group="groupZedBigMoneyT2" count="100"/>
+	<item group="groupShawMatsAllT2" count="25"/>
+	<item group="groupShawGeneralMatsT2" count="2500"/>
+	<item group="groupShawAmmoBigSingleT2" count="22"/>
+</lootgroup>
+<lootgroup name="groupShawAirDrop">
+	<item group="groupDFAirDrop" count="3,6" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawAirDropLoot" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawAirDropLootV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Infested T5-->
+<lootgroup name="groupShawInfestedT5">
+	<item group="groupInfestedT5" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawChestT5" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawChestT5V2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Infested T4-->
+<lootgroup name="groupShawInfestedT4">
+	<item group="groupInfestedT4" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawChestT4" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawChestT4V2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Infested T3-->
+<lootgroup name="groupShawInfestedT3">
+	<item group="groupInfestedT3" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawChestT3" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawChestT3V2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Infested T2-->
+<lootgroup name="groupShawInfestedT2">
+	<item group="groupInfestedT2" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawChestT2" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawChestT2V2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Infested T1-->
+<lootgroup name="groupShawInfestedT1">
+	<item group="groupInfestedT1" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawChestT1" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawChestT1V2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--ATM-->
+<lootgroup name="groupShawAtmOpen" count="all">
+	<item group="groupZedBigMoney" count="10,15"/>
+</lootgroup>			
+<lootgroup name="groupShawAtmOpenV2" count="all">
+	<item group="groupZedBigMoneyT2" count="10,15"/>
+</lootgroup>			
+<lootgroup name="groupShawAtmLoot">
+	<item name="oldCash" count="300,1200" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawAtmOpen" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawAtmOpenV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Cash Register-->
+<lootgroup name="groupShawCashRegisterOpen" count="all">
+	<item group="groupZedBigMoney" count="5,7"/>
+</lootgroup>
+<lootgroup name="groupShawCashRegisterOpenV2" count="all">
+	<item group="groupZedBigMoneyT2" count="5,7"/>
+</lootgroup>
+<lootgroup name="groupShawCashRegister">
+	<item name="oldCash" count="100,250" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawCashRegisterOpen" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawCashRegisterOpenV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Med Medical Pile-->
+<lootgroup name="groupShawMedicalPileMed">
+	<item group="groupMedicalPileSmall" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawMatsMeds" count="1,2" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawMatsMedsT2" count="1,2" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Small Medical Pile-->
+<lootgroup name="groupShawMedicalPileSmall">
+	<item group="groupMedicalPileMed" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawMatsMeds" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawMatsMedsT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Pill Shelf-->
+<lootgroup name="groupShawPopnpillsShelves">
+	<item group="groupPopnpillsShelves" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawMatsMeds" count="1,2" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawMatsMedsT2" count="1,2" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Pill Case Small With Doors-->
+<lootgroup name="groupShawMedicalPileLarge">
+	<item group="groupMedicalPileLarge" count="1,2" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawMatsMeds" count="1,2" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawMatsMedsT2" count="1,2" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Medicine Cabinet-->
+<lootgroup name="groupShawMedicineCabinet">
+	<item group="groupMedicineCabinet" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawMatsMeds" count="1,2" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawMatsMedsT2" count="1,2" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Food Pile Large-->
+<lootgroup name="groupShawDrinksPileLarge">
+	<item group="groupFoodPileLarge" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawMatsFoodDrink" count="3" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawMatsFoodDrinkT2" count="3" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Food Pile Med-->
+<lootgroup name="groupShawDrinksPileMed">
+	<item group="groupFoodPileMed" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawMatsFoodDrink" count="2" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawMatsFoodDrinkT2" count="2" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Food Pile Small-->
+<lootgroup name="groupShawDrinksPileSmall">
+	<item group="groupFoodPileSmall" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawMatsFoodDrink" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawMatsFoodDrinkT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Liquor Pile Large-->
+<lootgroup name="groupShawLiquorPileLarge">
+	<item group="groupLiquorPileLarge" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawLiquor" count="3" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawLiquorT2" count="3" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Liquor Pile Med-->
+<lootgroup name="groupShawLiquorPileMed">
+	<item group="groupLiquorPileMed" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawLiquor" count="2" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawLiquorT2" count="2" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Liquor Pile Small-->
+<lootgroup name="groupShawLiquorPileSmall">
+	<item group="groupLiquorPileSmall" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawLiquor" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawLiquorT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Soda Fountian-->
+<lootgroup name="groupShawSodaFountain">
+	<item group="groupSodaFountain" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawLiquor" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawLiquorT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Coffee Maker-->
+<lootgroup name="groupShawCoffeeMaker">
+	<item group="groupCoffeeMaker" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawLiquor" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawLiquorT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Beer Cooler-->
+<lootgroup name="groupShawBeerCooler">
+	<item group="groupBeerCooler" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawLiquor" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawLiquorT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Water Cooler-->
+<lootgroup name="groupShawWaterCooler">
+	<item name="drinkJarRiverWater" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawLiquor" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawLiquorT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--FreezerFood-->
+<lootgroup name="groupShawShamwayFreezer">
+	<item group="groupShamwayFreezer" count="1,2" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawMatsFood" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawMatsFoodT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--FreezerDrinks-->
+<lootgroup name="groupShawshamwayDrinks">
+	<item group="groupShamwayFreezer" count="1,2" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawMatsDrink" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawMatsDrinkT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Drink Cooler-->
+<lootgroup name="groupShawShamwayCooler">
+	<item group="groupShamwayCooler" count="1,2" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawMatsDrink" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawMatsDrinkT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Portable Cooler-->
+<lootgroup name="groupShawCooler">
+	<item group="groupCooler" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawMatsDrink" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawMatsDrinkT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Refrigerator-->
+<lootgroup name="groupShawRefrigerator">
+	<item group="groupRefrigerator" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawMatsFoodDrink" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawMatsFoodDrinkT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Chem Pile Large-->
+<lootgroup name="groupShawChemPileLarge">
+	<item group="groupChemPileLarge" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawChems" count="3" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawChemsT2" count="3" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Chem Pile Med-->
+<lootgroup name="groupShawChemPileMed">
+	<item group="groupChemPileMed" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawChems" count="2" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawChemsT2" count="2" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Chem Pile Small-->
+<lootgroup name="groupShawChemPileSmall">
+	<item group="groupChemPileSmall" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawChems" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawChemsT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Book Pile Big-->
+<lootgroup name="groupShawBookPile">
+	<item group="groupBookPile" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawBooksJunkT1" count="2" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawBooksJunkT2" count="2" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Book Pile Small-->
+<lootgroup name="groupShawSingleBooks">
+	<item group="groupSingleBooks" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawBooksJunkT1" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawBooksJunkT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Book Shelf-->
+<lootgroup name="groupShawCrackabookShelves">
+	<item group="groupCrackabookShelves" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawBooksT1" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawBooksT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Bookcase-->
+<lootgroup name="groupShawBookcase">
+	<item group="groupBookcase" count="1,2" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawBooksT1" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawBooksT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--File Cabinet-->
+<lootgroup name="groupShawFileCabinet">
+	<item group="groupFileCabinet" count="1,2" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawBooksJunkT1" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawBooksJunkT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Armor Rack-->
+<lootgroup name="groupShawArmorScaled">
+	<item group="groupArmorScaled" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawMilitary" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawMilitaryT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Gun Rack-->
+<lootgroup name="groupShawGunRack">
+	<item group="groupGunRack" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawMilitary" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawMilitaryT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Ammo Rack-->
+<lootgroup name="groupShawAmmoRack">
+	<item group="groupAmmoRackDisplay" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawMilitary" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawMilitaryT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Miltary Goods-->
+<lootgroup name="groupShawMilitaryFootlocker">
+	<item group="groupMilitaryFootlocker" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawMilitary" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawMilitaryT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Power Shelf-->
+<lootgroup name="groupShawMoPowerShelves">
+	<item group="groupMoPowerShelves" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawJunkLarge" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawJunkLargeT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Stock Shelf-->
+<lootgroup name="groupShawTrashShelves">
+	<item group="groupJunk" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawJunk" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawJunkT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Food Shelf-->
+<lootgroup name="groupShawShamwayShelves">
+	<item group="groupShamwayShelves" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawMatsFoodDrink" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawMatsFoodDrinkT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Produce Baskets-->
+<lootgroup name="groupShawShamwayProduce">
+	<item group="groupShamwayProduce" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawMatsFoodDrink" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawMatsFoodDrinkT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Hardware Shelf-->
+<lootgroup name="groupShawWorkingStiffs01">
+	<item group="groupWorkingStiffs01" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawJunkLarge" count="1,2" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawJunkLargeT2" count="1,2" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Rolling Tool Box-->
+<lootgroup name="groupShawRollingToolbox">
+	<item group="groupRollingToolbox" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawJunkLarge" count="1,2" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawJunkLargeT2" count="1,2" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Tool Box-->
+<lootgroup name="groupShawToolbox">
+	<item group="groupToolbox" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawJunkLarge" count="1,2" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawJunkLargeT2" count="1,2" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Microwave-->
+<lootgroup name="groupShawMicrowave">
+	<item group="groupMicrowave" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawMatsFoodDrink" count="0,1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawMatsFoodDrinkT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Oven-->
+<lootgroup name="groupShawOven">
+	<item group="groupOven" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawMatsFoodDrink" count="0,1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawMatsFoodDrinkT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Cupboard-->
+<lootgroup name="groupShawCupboard">
+	<item group="groupDFCupboard" count="1,2" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawMatsFoodDrink" count="0,1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawMatsFoodDrinkT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Sinks-->
+<lootgroup name="groupShawSinks">
+	<item group="groupSinks" count="1,2" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawMatsFoodDrink" count="0,1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawMatsFoodDrinkT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Trash Bags-->
+<lootgroup name="groupShawJunkTrashBag">
+	<item group="groupJunk" count="0,2" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawJunk" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawJunkT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Trash Cans Bags-->
+<lootgroup name="groupShawJunkNOPOP">
+	<item group="groupJunk" count="1,2" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawJunk" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawJunkT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Trash Cans-->
+<lootgroup name="groupShawGarbage">
+	<item group="groupGarbage" count="1,2" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawJunk" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawJunkT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Gas Barrel-->
+<lootgroup name="groupShawGasBarrelLoot">
+	<item group="groupShawChems" count="1"/>
+	<item name="ShawCarbon" count="1"/>
+</lootgroup>
+<lootgroup name="groupShawGasBarrelLootV2">
+	<item group="groupShawChemsT2" count="1"/>
+	<item name="ShawCarbon" count="1,2"/>
+</lootgroup>
+<lootgroup name="groupShawGasBarrel">
+	<item name="ammoGasCan" count="100,200" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawGasBarrelLoot" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawGasBarrelLootV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Toilets-->
+<lootgroup name="groupShawToiletLoot">
+	<item group="groupShawJunk" count="1"/>
+	<item group="groupShawChems" count="1"/>
+	<item name="ShawWater" count="1"/>
+</lootgroup>
+<lootgroup name="groupShawToiletLootV2">
+	<item group="groupShawJunkT2" count="1"/>
+	<item group="groupShawChemsT2" count="1"/>
+	<item name="ShawWater" count="1,2"/>
+</lootgroup>
+<lootgroup name="groupShawToilet">
+	<item group="groupToilet" count="1" loot_prob_template="ProbShawT0"/>
+	<item name="DFturd" count="1,4" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawToiletLoot" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawToiletLootV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Dumpster-->
+<lootgroup name="groupDumpsterBase">
+	<item group="groupJunk"/>
+	<item group="groupDumpsterFood" prob="0.05"/>
+</lootgroup>
+<lootgroup name="groupShawDumpster">
+	<item group="groupDumpsterBase" count="1,2" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawJunkLarge" count="2" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawJunkLargeT2" count="2" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Pants-->
+<lootgroup name="groupPants">
+	<item name="resourceCloth" count="2,7" prob=".08"/>
+	<item group="groupApparelPants" prob="1"/>
+	<item name="apparelSuitPants" prob=".1" mods="dye" mod_chance="0"/>
+</lootgroup>
+<lootgroup name="groupShawPants">
+	<item group="groupPants" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawJunkLarge" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawJunkLargeT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Shirts-->
+<lootgroup name="groupShirts">
+	<item name="resourceCloth" count="2,7" prob=".08"/>
+	<item group="groupApparelShirtLong" prob=".55"/>
+	<item group="groupApparelTankTopTShirt" prob="0.55"/>
+</lootgroup>
+<lootgroup name="groupShawShirts">
+	<item group="groupShirts" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawJunkLarge" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawJunkLargeT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Military Pants-->
+<lootgroup name="groupMilitaryPants">
+	<item name="resourceCloth" count="2,7" loot_prob_template="high"/>
+	<item name="apparelArmyPants" mods="modDyeBrown,modDyeGreen,modDyeBlack" mod_chance=".33" loot_prob_template="med"/>
+	<item name="resourceMilitaryFiber" count="1,2" loot_prob_template="medLow"/>
+	<item group="groupApparelHazmat" loot_prob_template="low"/>
+	<item group="groupMilitaryArmor" loot_prob_template="veryLow"/>
+</lootgroup>
+<lootgroup name="groupShawMilitaryPants">
+	<item group="groupMilitaryPants" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawJunkLarge" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawJunkLargeT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Military Shirts-->
+<lootgroup name="groupMilitaryShirts">
+	<item name="resourceCloth" count="2,7" loot_prob_template="high"/>
+	<item name="apparelArmyShirt" mods="modDyeBrown,modDyeGreen,modDyeBlack" mod_chance=".33" loot_prob_template="med"/>
+	<item name="apparelTankTop" mods="modDyeBrown,modDyeGreen,modDyeBlack" mod_chance=".33" loot_prob_template="med"/>
+	<item name="apparelTShirtPlain" mods="modDyeBrown,modDyeGreen,modDyeBlack" mod_chance=".33" loot_prob_template="med"/>
+	<item name="resourceMilitaryFiber" count="1,2" loot_prob_template="medLow"/>
+	<item group="groupApparelHazmat" loot_prob_template="low"/>
+	<item group="groupMilitaryArmor" loot_prob_template="veryLow"/>
+</lootgroup>
+<lootgroup name="groupShawMilitaryShirts">
+	<item group="groupMilitaryShirts" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawJunkLarge" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawJunkLargeT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Broken Vending Machine-->
+<lootgroup name="groupShawColdFood">
+	<item group="cannedfood" count="0,2" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawShamwayBox" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawShamwayBoxV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Footlocker-->
+<lootgroup name="groupShawFootlocker">
+	<item group="groupFootlocker" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawJunkLarge" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawJunkLargeT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Closet Bag-->
+<lootgroup name="groupShawCloset">
+	<item group="groupCloset" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawJunkLarge" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawJunkLargeT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Collapsed DewCollector-->
+<lootgroup name="groupShawCollapsedDewCollector">
+	<item group="groupDewCollector" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawJunkLarge" count="2,3" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawJunkLargeT2" count="2,3" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Collapsed Forge-->
+<lootgroup name="groupShawCollapsedForge">
+	<item group="groupForge" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawConstructionBox" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawConstructionBoxV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Collapsed Workbench-->
+<lootgroup name="groupShawCollapsedWorkbench">
+	<item group="groupWorkbenchLoot" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawWorkingStiffsBox" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawWorkingStiffsBoxV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Collapsed CementMixer-->
+<lootgroup name="groupShawCollapsedCementMixer">
+	<item group="groupCementMixerLoot" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawWorkingStiffsBox" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawWorkingStiffsBoxV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Collapsed ChemistryStation-->
+<lootgroup name="groupShawCollapsedChemistryStation">
+	<item group="groupChemistryStationLoot" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawPopNPillsBox" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawPopNPillsBoxV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Washing Machine-->
+<lootgroup name="groupShawLaundry">
+	<item group="groupLaundry" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawJunk" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawJunkT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Purse-->
+<lootgroup name="groupShawPurseLoot">
+	<item group="groupZedBigMoney" count="3"/>
+	<item group="groupShawChems" count="1"/>
+</lootgroup>
+<lootgroup name="groupShawPurseLootV2">
+	<item group="groupZedBigMoneyT2" count="3"/>
+	<item group="groupShawChemsT2" count="1"/>
+</lootgroup>
+<lootgroup name="groupShawPurse">
+	<item group="groupPurse" count="1,2" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawPurseLoot" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawPurseLootV2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Mailbox-->
+<lootgroup name="groupShawMailbox">
+	<item group="groupMailbox" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawBooksJunkT1" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawBooksJunkT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Backpack-->
+<lootgroup name="groupShawBackpacks">
+	<item group="groupBackpacks" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawJunkLarge" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawJunkLargeT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Grill-->
+<lootgroup name="groupShawGrills">
+	<item group="groupGrills" count="1,2" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawMatsFood" count="0,1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawMatsFoodT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Shopping Cart-->
+<lootgroup name="groupShawShoppingCart">
+	<item group="groupShoppingCart" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawMatsFoodDrink" count="0,1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawMatsFoodDrinkT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Lockers-->
+<lootgroup name="groupShawLocker">
+	<item group="groupLocker" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawJunkLarge" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawJunkLargeT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Nightstand-->
+<lootgroup name="groupShawNightstand">
+	<item group="groupNightstand" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawJunk" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawJunkT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Luggage-->
+<lootgroup name="groupShawLuggage">
+	<item group="groupLuggage" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawJunk" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawJunkT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Desks-->
+<lootgroup name="groupShawDesks">
+	<item group="groupDesks" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawJunkLarge" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawJunkLargeT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Utility Cart-->
+<lootgroup name="groupShawUtilityCart">
+	<item group="groupUtilityCart" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawJunk" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawJunkT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Dishwasher-->
+<lootgroup name="groupShawDishwasherJunk">
+	<item group="groupDishwasherJunk" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawJunk" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawJunkT2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Cars-->
+<lootgroup name="groupShawCars">
+	<item group="groupCars" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawJunkLarge" count="1,2" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawJunkLargeT2" count="1,2" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Ambulance-->
+<lootgroup name="groupShawAmbulance">
+	<item group="groupAmbulance" count="1,2" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawPopNPillsBox" count="1,2" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawPopNPillsBoxV2" count="1,2" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Working Stiff Truck-->
+<lootgroup name="groupShawWorkingStiffsTruck">
+	<item group="groupWorkingStiffsCrate" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawWorkingStiffsBox" count="1,2" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawWorkingStiffsBoxV2" count="1,2" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Mo Power Truck-->
+<lootgroup name="groupShawMoPowerTruck">
+	<item group="groupMoPower" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawMoPowerBox" count="1,2" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawMoPowerBoxV2" count="1,2" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+		<!--Army Truck-->
+<lootgroup name="groupShawArmyTruck">
+	<item group="groupArmyTruck" count="1" loot_prob_template="ProbShawT0"/>
+	<item group="groupShawChestT3" count="1" loot_prob_template="ProbShawT1"/>
+	<item group="groupShawChestT3V2" count="1" loot_prob_template="ProbShawT2"/>
+</lootgroup>
+	<!--BASE DF-->
+		<!--Behemoth-->
+<lootgroup name="groupZBehemoth">
+	<item group="groupAmmoLargeNoCoil" count="1,4" prob="1"/>
+	<item group="groupGunsAllT3" count="1" prob="0.8"/>
+	<item group="groupMeleeAllT3" count="1" prob="0.8"/>
+	<item group="groupArmorAllT3" count="1,2" prob="0.5"/>
+	<item group="rareMedicine" prob="0.5"/>
+</lootgroup>
+		<!--Behemoth Radiated-->
+<lootgroup name="groupZBehemothR">
+	<item group="groupAmmoLargeOnlyCoil" count="1,4" prob="1"/>
+	<item group="groupGunsAllT4" count="1" prob="0.8"/>
+	<item group="groupMeleeAllT4" count="1" prob="0.8"/>
+	<item group="groupArmorAllT4" count="1,2" prob="0.5"/>
+	<item group="rareMedicine" prob="0.5"/>
+</lootgroup>
+		<!--Behemoth Demon-->
+<lootgroup name="groupZBehemothD">
+	<item group="groupLaserAmmo" count="1,4" prob="1"/>
+	<item group="groupGunsAllT5" count="1" prob="0.8"/>
+	<item group="groupMeleeAllT5" count="1" prob="0.8"/>
+	<item group="groupArmorAllT5" count="1,2" prob="0.5"/>
+	<item group="rareMedicine" prob="0.5"/> 
+</lootgroup>
+		<!--Incubus-->
+<lootgroup name="groupZIncubus">
+	<item group="groupLaserAmmo" count="1,4" prob="1"/>
+	<item group="groupGunsAllT5" count="1" prob="0.8"/>
+	<item group="groupMeleeAllT5" count="1" prob="0.8"/>
+	<item group="groupArmorAllT5" count="1,2" prob="0.5"/>
+</lootgroup>
+		<!--Incubus Empowered-->
+<lootgroup name="groupZIncubusE">
+	<item group="groupLaserAmmo" count="1,4" prob="1"/>
+	<item group="groupGunsAllT5" count="1" prob="0.8"/>
+	<item group="groupMeleeAllT5" count="1" prob="0.8"/>
+	<item group="groupArmorAllT5" count="1,2" prob="0.5"/>
+</lootgroup>
+		<!--Succubus-->
+<lootgroup name="groupZSuccubus">
+	<item group="groupLaserAmmo" count="1,4" prob="1"/>
+	<item group="groupGunsAllT5" count="1" prob="0.8"/>
+	<item group="groupMeleeAllT5" count="1" prob="0.8"/>
+	<item group="groupArmorAllT5" count="1,2" prob="0.5"/>
+</lootgroup>
+		<!--Succubus Empowered-->
+<lootgroup name="groupZSuccubusE">
+	<item group="groupLaserAmmo" count="1,4" prob="1"/>
+	<item group="groupGunsAllT5" count="1" prob="0.8"/>
+	<item group="groupMeleeAllT5" count="1" prob="0.8"/>
+	<item group="groupArmorAllT5" count="1,2" prob="0.5"/>
+</lootgroup>
+</insertAfter>
+
+<append xpath="/lootcontainers">
+	<!--Loot-->
+<lootcontainer name="GoldChestEssenceKey" count="1" size="12,12" sound_open="Victory" sound_close="Victory" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupGoldChestEssenceKey" count="1"/>
+</lootcontainer>
+<lootcontainer name="GoldChestBlessing" count="1" size="12,12" sound_open="Victory" sound_close="Victory" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item name="ShawsBlessing" count="1"/>
+</lootcontainer>
+<lootcontainer name="GoldChestBlessing2" count="1" size="12,12" sound_open="Victory" sound_close="Victory" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item name="BiggestSeller" count="1"/>
+</lootcontainer>
+<lootcontainer name="GoldChest" count="1" size="12,12" sound_open="Victory" sound_close="Victory" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupGoldChest" count="1"/>
+</lootcontainer>
+<lootcontainer name="MCChest" count="3" size="12,12" sound_open="Victory" sound_close="Victory" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupGoldChest" count="1,2"/>
+</lootcontainer>
+<lootcontainer name="GoldChest2" count="1" size="12,12" sound_open="Victory" sound_close="Victory" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupSwords" count="1"/>
+</lootcontainer>
+<lootcontainer name="WoodenSwordStump" count="1" size="1,1" sound_open="Victory" sound_close="Victory" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item name="WoodenSword" count="1"/>
+</lootcontainer>
+<lootcontainer name="WoodenBoardStump" count="1" size="1,1" sound_open="Victory" sound_close="Victory" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item name="WoodenBoard" count="1"/>
+</lootcontainer>
+<lootcontainer name="ShawsCoffin" count="1" size="6,6" sound_open="UseActions/open_apache_artifact_chest" sound_close="UseActions/close_apache_artifact_chest" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupShawsCoffin"/>
+</lootcontainer>
+<lootcontainer name="GoldChestCookieFactoryBase" count="1" size="12,12" sound_open="Victory" sound_close="Victory" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupGoldChestCookieFactoryBase" count="1"/>
+</lootcontainer>
+<lootcontainer name="GoldChestCookieFactoryHarambeWorkstation" count="1" size="12,12" sound_open="Victory" sound_close="Victory" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item name="HarambeWorkstation" count="1"/>
+</lootcontainer>
+<lootcontainer name="GoldChestCookieFactoryRuinsWorkstation" count="1" size="12,12" sound_open="Victory" sound_close="Victory" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item name="RuinsWorkstation" count="1"/>
+</lootcontainer>
+<lootcontainer name="GoldChestCookieFactorySakuraGardenWorkstation" count="1" size="12,12" sound_open="Victory" sound_close="Victory" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item name="SakuraGardenWorkstation" count="1"/>
+</lootcontainer>
+<lootcontainer name="GoldChestCookieFactoryOilWorkstation" count="1" size="12,12" sound_open="Victory" sound_close="Victory" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item name="OilWorkstation" count="1"/>
+</lootcontainer>
+		<!--Crates-->
+<lootcontainer name="RonaldoBox" count="1" size="6,6" sound_open="Ronaldo" sound_close="Ronaldo" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupRonaldoBox" count="1"/>
+</lootcontainer>
+<lootcontainer name="EDPBox" count="1" size="6,6" sound_open="EdpShowTime" sound_close="EdpShowTime" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupEDPBox" count="1"/>
+</lootcontainer>
+<lootcontainer name="TrumpBox" count="1" size="6,6" sound_open="Wrong" sound_close="Wrong" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupTrumpBox" count="1"/>
+</lootcontainer>
+<lootcontainer name="CardriverBox" count="1" size="6,6" sound_open="OMG" sound_close="OMG" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupCardriverBox" count="1"/>
+</lootcontainer>
+<lootcontainer name="GavinBox" count="2,3" size="6,6" sound_open="OMG" sound_close="OMG" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item name="ShawMarijuana" count="1"/>
+</lootcontainer>
+<lootcontainer name="GusBox" count="2,3" size="6,6" sound_open="OMG" sound_close="OMG" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item name="ShawGoatCheese" count="1"/>
+</lootcontainer>
+<lootcontainer name="MukyBox" count="2,3" size="6,6" sound_open="OMG" sound_close="OMG" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item name="ShawChurro" count="1"/>
+</lootcontainer>
+<lootcontainer name="KGBBox" count="2,3" size="6,6" sound_open="OMG" sound_close="OMG" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item name="ShawKFCBucket" count="1"/>
+</lootcontainer>
+<lootcontainer name="PopeyesBox" count="2,3" size="6,6" sound_open="OMG" sound_close="OMG" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item name="ShawPopeyesMeal" count="1"/>
+</lootcontainer>
+<lootcontainer name="JohnaBox" count="2,3" size="6,6" sound_open="OMG" sound_close="OMG" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item name="ShawBurger" count="1"/>
+</lootcontainer>
+<lootcontainer name="PeterBox" count="2,3" size="6,6" sound_open="OMG" sound_close="OMG" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item name="ShawPizza" count="1"/>
+</lootcontainer>
+	<!--Loot Bags-->
+		<!--Zeds-->
+<lootcontainer name="ZedBig" count="1" size="6,6" sound_open="CashRegister" sound_close="CashRegister" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBig" count="1"/>
+</lootcontainer>
+<lootcontainer name="ZedBigVet" count="1" size="6,6" sound_open="CashRegister" sound_close="CashRegister" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBigVet" count="1"/>
+</lootcontainer>
+<lootcontainer name="Behemoth1Big" count="1" size="6,6" sound_open="CashRegister" sound_close="CashRegister" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBigBehemoth" count="1"/>
+</lootcontainer>
+<lootcontainer name="ZedBigGolden" count="1" size="6,6" sound_open="CashRegister" sound_close="CashRegister" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBigGolden" count="1"/>
+</lootcontainer>
+<lootcontainer name="ZedBigKnight" count="1" size="6,6" sound_open="CashRegister" sound_close="CashRegister" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBigKnight" count="1"/>
+</lootcontainer>
+<lootcontainer name="ZedBigMLG" count="1" size="6,6" sound_open="CashRegister" sound_close="CashRegister" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBigMLG" count="1"/>
+</lootcontainer>
+<lootcontainer name="ZedBoss1" count="1" size="6,6" sound_open="CashRegister" sound_close="CashRegister" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBoss1" count="1"/>
+</lootcontainer>
+
+<lootcontainer name="ZedBigEnraged" count="1" size="6,6" sound_open="CashRegister" sound_close="CashRegister" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBigEnraged" count="1"/>
+</lootcontainer>
+<lootcontainer name="ZedBigVetEnraged" count="1" size="6,6" sound_open="CashRegister" sound_close="CashRegister" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBigVetEnraged" count="1"/>
+</lootcontainer>
+<lootcontainer name="Behemoth1BigEnraged" count="1" size="6,6" sound_open="CashRegister" sound_close="CashRegister" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBigBehemothEnraged" count="1"/>
+</lootcontainer>
+<lootcontainer name="Behemoth2BigEnraged" count="1" size="6,6" sound_open="CashRegister" sound_close="CashRegister" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBigBehemoth2Enraged" count="1"/>
+</lootcontainer>
+<lootcontainer name="ZedBigGoldenEnraged" count="1" size="6,6" sound_open="CashRegister" sound_close="CashRegister" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBigGoldenEnraged" count="1"/>
+</lootcontainer>
+<lootcontainer name="ZedBigKnightEnraged" count="1" size="6,6" sound_open="CashRegister" sound_close="CashRegister" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBigKnightEnraged" count="1"/>
+</lootcontainer>
+<lootcontainer name="ZedBigMLGEnraged" count="1" size="6,6" sound_open="CashRegister" sound_close="CashRegister" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBigMLGEnraged" count="1"/>
+</lootcontainer>
+<lootcontainer name="ZedBigDroidEnraged" count="1" size="6,6" sound_open="CashRegister" sound_close="CashRegister" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBigDroidEnraged" count="1"/>
+</lootcontainer>
+<lootcontainer name="ZedBigCommanderEnraged" count="1" size="6,6" sound_open="CashRegister" sound_close="CashRegister" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBigCommanderEnraged" count="1"/>
+</lootcontainer>
+
+
+<lootcontainer name="Scout1" count="1" size="6,6" sound_open="DOIT" sound_close="DOIT" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupScout1" count="1"/>
+</lootcontainer>
+<lootcontainer name="Behemoth2Big" count="1" size="6,6" sound_open="DOIT" sound_close="DOIT" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBigBehemoth2" count="1"/>
+</lootcontainer>
+<!-- TODO Remove
+<lootcontainer name="ZedBigEmpowered" count="1" size="6,6" sound_open="DOIT" sound_close="DOIT" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBigEmpowered" count="1"/>
+</lootcontainer>
+<lootcontainer name="BiggerZed" count="1" size="6,6" sound_open="DOIT" sound_close="DOIT" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBigger" count="1"/>
+</lootcontainer>
+<lootcontainer name="BiggerZedEmpowered" count="3,4" size="6,6" sound_open="DOIT" sound_close="DOIT" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBig" count="1"/>
+</lootcontainer>
+
+<lootcontainer name="BiggestZed" count="4,5" size="6,6" sound_open="DOIT" sound_close="DOIT" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBig" count="1"/>
+</lootcontainer>
+<lootcontainer name="BiggestZedEmpowered" count="5,6" size="6,6" sound_open="DOIT" sound_close="DOIT" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBig" count="1"/>
+</lootcontainer>
+		<!{1}**Behemoths**{1}>
+<lootcontainer name="BigSuper" count="1" size="6,6" sound_open="DOIT" sound_close="DOIT" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBigSuper" count="1"/>
+</lootcontainer>
+<lootcontainer name="BehemothBigSuper" count="1" size="6,6" sound_open="DOIT" sound_close="DOIT" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBigBehemothSuper" count="1"/>
+</lootcontainer>
+
+
+<lootcontainer name="Behemoth2BigEmpowered" count="1" size="6,6" sound_open="DOIT" sound_close="DOIT" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBigEmpowered" count="7,10"/>
+</lootcontainer>
+
+
+<lootcontainer name="Behemoth1Bigger" count="5,9" size="6,6" sound_open="DOIT" sound_close="DOIT" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBig" count="1"/>
+</lootcontainer>
+<lootcontainer name="Behemoth2Bigger" count="10,18" size="6,6" sound_open="DOIT" sound_close="DOIT" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBig" count="1"/>
+</lootcontainer>
+
+<lootcontainer name="Behemoth1BiggerEmpowered" count="6,12" size="6,6" sound_open="DOIT" sound_close="DOIT" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBig" count="1"/>
+</lootcontainer>
+<lootcontainer name="Behemoth2BiggerEmpowered" count="12,24" size="6,6" sound_open="DOIT" sound_close="DOIT" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBig" count="1"/>
+</lootcontainer>
+
+<lootcontainer name="Behemoth1Biggest" count="8,15" size="6,6" sound_open="DOIT" sound_close="DOIT" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBig" count="1"/>
+</lootcontainer>
+<lootcontainer name="Behemoth2Biggest" count="16,30" size="6,6" sound_open="DOIT" sound_close="DOIT" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBig" count="1"/>
+</lootcontainer>
+
+<lootcontainer name="Behemoth1BiggestEmpowered" count="11,21" size="6,6" sound_open="DOIT" sound_close="DOIT" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBig" count="1"/>
+</lootcontainer>
+<lootcontainer name="Behemoth2BiggestEmpowered" count="22,42" size="6,6" sound_open="DOIT" sound_close="DOIT" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupZedBig" count="1"/>
+</lootcontainer>-->
+</append>
+	<!--Loot Containers After Blessing-->
+<setattribute xpath="/lootcontainers/lootcontainer[@name='ammoDisplay']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='ammoDisplay']">
+	<item group="groupShawAmmoRack"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='armyTruck']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='armyTruck']">
+	<item group="groupShawArmyTruck"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='ambulance']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='ambulance']">
+	<item group="groupShawAmbulance"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='mopowerTruck']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='mopowerTruck']">
+	<item group="groupShawMoPowerTruck"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='workingStiffsTruck']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='workingStiffsTruck']">
+	<item group="groupShawWorkingStiffsTruck"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='cars']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='cars']">
+	<item group="groupShawCars"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='sinks']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='sinks']">
+	<item group="groupShawSinks"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='dishwasher']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='dishwasher']">
+	<item group="groupShawDishwasherJunk"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='utilityCart']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='utilityCart']">
+	<item group="groupShawUtilityCart"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='woodenDesk']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='woodenDesk']">
+	<item group="groupShawDesks"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='metalDesk']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='metalDesk']">
+	<item group="groupShawDesks"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='luggage']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='luggage']">
+	<item group="groupShawLuggage"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='nightstand']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='nightstand']">
+	<item group="groupShawNightstand"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='lockers']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='lockers']">
+	<item group="groupShawLocker"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='purse']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='purse']">
+	<item group="groupShawPurse"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='mailbox']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='mailbox']">
+	<item group="groupShawMailbox"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='junkNOPOP']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='junkNOPOP']">
+	<item group="groupShawJunkNOPOP"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='junk']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='junk']">
+	<item group="groupShawJunkNOPOP"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='gasBarrel']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='gasBarrel']">
+	<item group="groupShawGasBarrel"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='coldFood']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='coldFood']">
+	<item group="groupShawColdFood"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='PObox']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='PObox']">
+	<item group="groupShawMailbox"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='cntBackpack']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='cntBackpack']">
+	<item group="groupShawBackpacks"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='shamwayProduce']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='shamwayProduce']">
+	<item group="groupShawShamwayProduce"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='charcoalGrill']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='charcoalGrill']">
+	<item group="groupShawGrills"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='gasGrill']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='gasGrill']">
+	<item group="groupShawGrills"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='shoppingCart']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='shoppingCart']">
+	<item group="groupShawShoppingCart"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='shoppingBasket']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='shoppingBasket']">
+	<item group="groupShawShoppingCart"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='cooler']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='cooler']">
+	<item group="groupShawCooler"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='hardenedChestT5']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='hardenedChestT5']">
+	<item group="groupShawHardenedChestT5"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='hardenedChestT5Broken']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='hardenedChestT5Broken']">
+	<item group="groupShawHardenedChestT5Broken"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='hardenedChestT4']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='hardenedChestT4']">
+	<item group="groupShawHardenedChestT4"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='hardenedChestT4Broken']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='hardenedChestT4Broken']">
+	<item group="groupShawHardenedChestT4Broken"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='reinforcedChestT3']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='reinforcedChestT3']">
+	<item group="groupShawReinforcedChestT3"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='reinforcedChestT3Broken']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='reinforcedChestT3Broken']">
+	<item group="groupShawReinforcedChestT3Broken"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='reinforcedChestT2']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='reinforcedChestT2']">
+	<item group="groupShawReinforcedChestT2"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='reinforcedChestT1']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='reinforcedChestT1']">
+	<item group="groupShawReinforcedChestT1"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='ammoPileLarge']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='ammoPileLarge']">
+	<item group="groupShawAmmoPileLarge"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='ammoPileMed']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='ammoPileMed']">
+	<item group="groupShawAmmoPileMed"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='ammoPileSmall']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='ammoPileSmall']">
+	<item group="groupShawAmmoPileSmall"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='munitions']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='munitions']">
+	<item group="groupShawAmmoMunitions"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='gunSafe']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='gunSafe']">
+	<item group="groupShawGunSafeBroken"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='gunSafePickBonus']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='gunSafePickBonus']">
+	<item group="groupShawGunSafeSecure"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='smallSafes']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='smallSafes']">
+	<item group="groupShawSmallSafeLoot"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='buriedTreasure']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='buriedTreasure']">
+	<item group="groupShawBuriedTreasure"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='buriedTreasureBroken']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='buriedTreasureBroken']">
+	<item group="groupShawBuriedTreasureBroken"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='weaponsBagLarge']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='weaponsBagLarge']">
+	<item group="groupShawLargeWeaponBag"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='weaponsBagSmall']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='weaponsBagSmall']">
+	<item group="groupShawSmallWeaponBag"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='hiddenStash']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='hiddenStash']">
+	<item group="groupShawHiddenStash"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='constructionCrate']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='constructionCrate']">
+	<item group="groupShawConstructionCrate"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='savageCountryCrate']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='savageCountryCrate']">
+	<item group="groupShawSavageCountryCrate"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='passngasCrate']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='passngasCrate']">
+	<item group="groupShawPassNGas"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='crackabookCrate']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='crackabookCrate']">
+	<item group="groupShawCrackabookCrate"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='shamwayCrate']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='shamwayCrate']">
+	<item group="groupShawShamwayCrate"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='mopowerCrate']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='mopowerCrate']">
+	<item group="groupShawMoPower"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='popnpillsCrate']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='popnpillsCrate']">
+	<item group="groupShawPopNPillsCrate"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='workingStiffsCrate']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='workingStiffsCrate']">
+	<item group="groupShawWorkingStiffsCrate"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='shotgunMessiahCrate']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='shotgunMessiahCrate']">
+	<item group="groupShawShotgunMessiahCrate"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='airDrop']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='airDrop']">
+	<item group="groupShawAirDrop"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='infestedT1']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='infestedT1']">
+	<item group="groupShawInfestedT1"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='infestedT2']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='infestedT2']">
+	<item group="groupShawInfestedT2"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='infestedT3']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='infestedT3']">
+	<item group="groupShawInfestedT3"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='infestedT4']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='infestedT4']">
+	<item group="groupShawInfestedT4"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='infestedT5']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='infestedT5']">
+	<item group="groupShawInfestedT5"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='medicalPileMedium']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='medicalPileMedium']">
+	<item group="groupShawMedicalPileMed"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='medicalPileSmall']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='medicalPileSmall']">
+	<item group="groupShawMedicalPileSmall"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='policeCar']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='policeCar']">
+	<item group="groupShawPoliceCar"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='cardboardBox']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='cardboardBox']">
+	<item group="groupShawCardboardBox"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='bookcase']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='bookcase']">
+	<item group="groupShawBookcase"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='foodPileLarge']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='foodPileLarge']">
+	<item group="groupShawDrinksPileLarge"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='foodPileMed']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='foodPileMed']">
+	<item group="groupShawDrinksPileMed"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='foodPileSmall']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='foodPileSmall']">
+	<item group="groupShawDrinksPileSmall"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='popnpillsShelves']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='popnpillsShelves']">
+	<item group="groupShawPopnpillsShelves"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='medicalPillCase']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='medicalPillCase']">
+	<item group="groupShawMedicalPileLarge"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='sodaFountain']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='sodaFountain']">
+	<item group="groupShawSodaFountain"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='liquorPileLarge']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='liquorPileLarge']">
+	<item group="groupShawLiquorPileLarge"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='liquorPileMed']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='liquorPileMed']">
+	<item group="groupShawLiquorPileMed"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='liquorPileSmall']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='liquorPileSmall']">
+	<item group="groupShawLiquorPileSmall"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='atmLoot']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='atmLoot']">
+	<item group="groupShawAtmLoot"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='chemPileSmall']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='chemPileSmall']">
+	<item group="groupShawChemPileSmall"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='chemPileMed']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='chemPileMed']">
+	<item group="groupShawChemPileMed"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='chemPileLarge']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='chemPileLarge']">
+	<item group="groupShawChemPileLarge"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='bookPile']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='bookPile']">
+	<item group="groupShawBookPile"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='singleBooks']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='singleBooks']">
+	<item group="groupShawSingleBooks"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='crackabookShelves']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='crackabookShelves']">
+	<item group="groupShawCrackabookShelves"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='armorRack']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='armorRack']">
+	<item group="groupShawGunRack"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='gunRack']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='gunRack']">
+	<item group="groupShawGunRack"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='beerCooler']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='beerCooler']">
+	<item group="groupShawBeerCooler"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='mopowerShelves']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='mopowerShelves']">
+	<item group="groupShawMoPowerShelves"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='workingStiffsShelves']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='workingStiffsShelves']">
+	<item group="groupShawWorkingStiffs01"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='trashShelves']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='trashShelves']">
+	<item group="groupShawTrashShelves"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='garage']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='garage']">
+	<item group="groupShawGarageBox"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='coffeeMaker']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='coffeeMaker']">
+	<item group="groupShawCoffeeMaker"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='shamwayShelves']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='shamwayShelves']">
+	<item group="groupShawShamwayShelves"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='shamwayFreezer']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='shamwayFreezer']">
+	<item group="groupShawShamwayFreezer"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='shamwayDrinks']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='shamwayDrinks']">
+	<item group="groupShawshamwayDrinks"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='oven']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='oven']">
+	<item group="groupShawOven"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='cupboard']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='cupboard']">
+	<item group="groupShawCupboard"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='waterCooler']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='waterCooler']">
+	<item group="groupShawWaterCooler"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='rollingToolBox']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='rollingToolBox']">
+	<item group="groupShawRollingToolbox"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='toolBox']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='toolBox']">
+	<item group="groupShawToolbox"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='policeCars']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='policeCars']">
+	<item group="groupShawPoliceCar"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='policeCarsBonus']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='policeCarsBonus']">
+	<item group="groupShawPoliceCarBonus"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='cashRegister']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='cashRegister']">
+	<item group="groupShawCashRegister"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='fileCabinet']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='fileCabinet']">
+	<item group="groupShawFileCabinet"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='militaryShelves']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='militaryShelves']">
+	<item group="groupShawMilitaryFootlocker"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='militaryGoods']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='militaryGoods']">
+	<item group="groupShawMilitaryFootlocker"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='junkTrashBag']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='junkTrashBag']">
+	<item group="groupShawJunkTrashBag"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='garbage']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='garbage']">
+	<item group="groupShawGarbage"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='rollingTrashBin']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='rollingTrashBin']">
+	<item group="groupShawGarbage"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='toilet']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='toilet']">
+	<item group="groupShawToilet"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='dumpster']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='dumpster']">
+	<item group="groupShawDumpster"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='pants']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='pants']">
+	<item group="groupShawPants"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='shirts']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='shirts']">
+	<item group="groupShawShirts"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='militaryPants']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='militaryPants']">
+	<item group="groupShawMilitaryPants"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='footlocker']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='footlocker']">
+	<item group="groupShawFootlocker"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='militaryShirts']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='militaryShirts']">
+	<item group="groupShawMilitaryShirts"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='pantsShelves']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='pantsShelves']">
+	<item group="groupShawPants"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='shirtsShelves']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='shirtsShelves']">
+	<item group="groupShawShirts"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='medicineCabinet']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='medicineCabinet']">
+	<item group="groupShawMedicineCabinet"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='refrigerator']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='refrigerator']">
+	<item group="groupShawRefrigerator"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='microwave']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='microwave']">
+	<item group="groupShawMicrowave"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='closet']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='closet']">
+	<item group="groupShawCloset"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='collapsedDewCollector']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='collapsedDewCollector']">
+	<item group="groupShawCollapsedDewCollector"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='collapsedForge']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='collapsedForge']">
+	<item group="groupShawCollapsedForge"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='collapsedWorkbench']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='collapsedWorkbench']">
+	<item group="groupShawCollapsedWorkbench"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='laundry']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='laundry']">
+	<item group="groupShawLaundry"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='collapsedCementMixer']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='collapsedCementMixer']">
+	<item group="groupShawCollapsedCementMixer"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='collapsedChemistryStation']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='collapsedChemistryStation']">
+	<item group="groupShawCollapsedChemistryStation"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='zBehemoth']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='zBehemoth']">
+	<item group="groupZBehemoth" prob="95" count="2,6"/>
+	<item group="groupLegendaryItems" prob="4" count="1"/>
+	<item name="KeemstarAlex" prob="1" count="1"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='zBehemothR']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='zBehemothR']">
+	<item group="groupZBehemothR" prob="93" count="2,6"/>
+	<item group="groupLegendaryItems" prob="6" count="1"/>
+	<item name="KeemstarAlex" prob="1" count="1"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='zBehemothD']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='zBehemothD']">
+	<item group="groupZBehemothD" prob="91" count="2,6"/>
+	<item group="groupLegendaryItems" prob="8" count="1"/>
+	<item name="KeemstarAlex" prob="1" count="1"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='zIncubus']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='zIncubus']">
+	<item group="groupZIncubus" prob="92" count="2,6"/>
+	<item group="groupLegendaryItems" prob="7" count="1"/>
+	<item name="KeemstarAlex" prob="1" count="1"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='zIncubusE']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='zIncubusE']">
+	<item group="groupZIncubusE" prob="91" count="2,6"/>
+	<item group="groupLegendaryItems" prob="8" count="1"/>
+	<item name="KeemstarAlex" prob="1" count="1"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='zSuccubus']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='zSuccubus']">
+	<item group="groupZSuccubus" prob="92" count="2,6"/>
+	<item group="groupLegendaryItems" prob="7" count="1"/>
+	<item name="KeemstarAlex" prob="1" count="1"/>
+</set>
+<setattribute xpath="/lootcontainers/lootcontainer[@name='zSuccubusE']" name="count">1</setattribute>
+<set xpath="/lootcontainers/lootcontainer[@name='zSuccubusE']">
+	<item group="groupZSuccubusE" prob="91" count="2,6"/>
+	<item group="groupLegendaryItems" prob="8" count="1"/>
+	<item name="KeemstarAlex" prob="1" count="1"/>
+</set>
+	<!--DF Portal Quest addon-->
+<append xpath="/lootcontainers">
+<lootgroup name="groupScifiPortal" count="all">
+	<item name="DFPortalPowerSource" count="3,6"/>
+	<item name="QuestEssenceKey1" count="1"/>
+</lootgroup>
+</append>
+<remove xpath="/lootcontainers/lootcontainer[@name='scifiPortal']"/>
+<append xpath="/lootcontainers">
+<lootcontainer name="scifiPortal" count="1" size="5,6" destroy_on_close="true" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="1" loot_quality_template="qualPlus1Template" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupScifiPortal" count="1"/>
+</lootcontainer>
+<lootcontainer name="LegendaryBox" count="1" size="5,6" destroy_on_close="true" sound_open="Victory" sound_close="DOIT" open_time="1" loot_quality_template="qualPlus1Template" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item name="ShawAK" count="1"/>
+	<item name="ShawMartiniHenry" count="1"/>
+	<item name="ShawRevolver" count="1"/>
+	<item name="ShawDoubleBarrelShotgun" count="1"/>
+</lootcontainer>
+<lootcontainer name="LegendaryBox2" count="1" size="5,6" destroy_on_close="true" sound_open="Victory" sound_close="DOIT" open_time="1" loot_quality_template="qualPlus1Template" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+	<item group="groupSwords" count="1"/>
+</lootcontainer>
+</append>
+<!--	<!{1}**TODO Remove**{1}>
+<remove xpath="/lootcontainers/lootcontainer[@name='zBehemoth']"/>
+<append xpath="/lootcontainers">
+<lootgroup name="groupGunsAllT3" loot_quality_template="QLTemplateT1Max60">
+	<item name="gunShotgunT3AutoShotgun"/>
+	<item name="gunRifleT3SniperRifle"/>
+	<item name="gunMGT3M60"/>
+	<item name="gunHandgunT3DesertVulture"/>			
+	<item name="gunBowT3CompoundBow"/>
+	<item name="gunBowT3CompoundCrossbow"/>
+	<item name="DFgunWinchesterRifle"/>
+	<item name="DFgunM4A1"/>			
+	<item name="gunExplosivesT3RocketLauncher"/>
+	<item name="gunHandgunT3SMG5"/>
+</lootgroup>
+
+<lootgroup name="groupGunsAllT4" loot_quality_template="QLTemplateT2Max60">
+	<item name="DFgunCoilpistol"/>
+	<item name="DFCoilshotgun"/>
+	<item name="DFgunCoilrifle"/>
+	<item name="DFgunCoilSniper"/>
+</lootgroup>
+
+<lootgroup name="groupGunsAllT5" loot_quality_template="QLTemplateT3Max60">
+	<item name="DFgunLaserPistol"/>
+	<item name="DFgunLaserShotgun"/>
+	<item name="DFgunLaserAutoRifle"/>
+	<item name="DFgunLaserSniper"/>
+</lootgroup>
+
+<lootgroup name="groupMeleeAllT3" loot_quality_template="QLTemplateT1Max60">
+	<item name="meleeWpnSpearT3SteelSpear"/>
+	<item name="meleeWpnClubT3SteelClub"/>
+	<item name="meleeWpnBladeT3Machete"/>
+	<!{1}**<item name="meleeWpnBladeT3SteelKnife"/>**{1}>
+	<item name="meleeWpnSledgeT3SteelSledgehammer"/>
+	<item name="meleeWpnKnucklesT3SteelKnuckles"/>
+</lootgroup>
+
+<lootgroup name="groupMeleeAllT4" loot_quality_template="QLTemplateT2Max60">
+	<item name="DFmeleeSpearTitanium"/>
+	<item name="DFclubTitanium"/>
+	<item name="DFmeleeToolMacheteTitanium"/>
+	<item name="DFtitaniumHuntingKnife"/>
+	<item name="DFtitaniumSledgehammer"/>
+	<item name="DFmeleeKnucklesTitanium"/>
+</lootgroup>
+
+<lootgroup name="groupMeleeAllT5" loot_quality_template="QLTemplateT3Max60">
+	<item name="DFmeleeSpearLaser"/>
+	<item name="meleeWpnBatonT3PlasmaBaton"/>
+	<item name="DFmeleeWeaponLaserSword"/>
+	<!{1}**<item name="meleeWpnBladeLaserKnife"/>**{1}>
+	<item name="DFmeleeWpnPowerHammer"/>
+	<item name="DFmeleeWpnPowerFist"/>
+</lootgroup>
+
+<lootgroup name="groupArmorAllT3" loot_quality_template="QLTemplateT1Max60">
+	<item name="armorMilitaryHelmet"/>
+	<item name="armorMilitaryVest"/>
+	<item name="armorMilitaryGloves"/>
+	<item name="armorMilitaryLegs"/>
+	<item name="armorMilitaryBoots"/>
+	<item name="armorSteelHelmet"/>
+	<item name="armorSteelChest"/>
+	<item name="armorSteelGloves"/>
+	<item name="armorSteelLegs"/>
+	<item name="armorSteelBoots"/>
+</lootgroup>
+
+<lootgroup name="groupArmorAllT4" loot_quality_template="QLTemplateT2Max60">
+	<item name="DFarmorTitaniumHelmet"/>
+	<item name="DFarmorTitaniumVest"/>
+	<item name="DFarmorTitaniumGloves"/>
+	<item name="DFarmorTitaniumLegs"/>
+	<item name="DFarmorTitaniumBoots"/>
+	<item name="armorKevlarHelmet"/>
+	<item name="armorKevlarVest"/>
+	<item name="armorKevlarGloves"/>
+	<item name="armorKevlarLegs"/>
+	<item name="armorKevlarBoots"/>
+</lootgroup>
+
+<lootgroup name="groupArmorAllT5" loot_quality_template="QLTemplateT3Max60">
+	<item name="DFarmorTechBoots"/>
+	<item name="DFarmorTechVest"/>
+	<item name="DFarmorTechGloves"/>
+	<item name="DFarmorTechHelmet"/>
+	<item name="DFarmorTechLegs"/>
+</lootgroup>
+		
+<lootgroup name="groupAmmoLargeNoCoil">
+	<item group="group9mmLarge"/>
+	<item group="group762mmLarge"/>
+	<item group="group44MagnumLarge"/>
+	<item group="groupShotgunShellLarge"/>
+	<item name="ammoArrowSteelAP" count="10,20"/>
+	<item name="ammoArrowFlaming" count="10,20"/>			
+	<item name="ammoCrossbowBoltSteelAP" count="10,20"/>	
+	<item name="ammoCrossbowBoltFlaming" count="10,20"/>	
+</lootgroup>
+
+<lootgroup name="groupAmmoLargeOnlyCoil">
+	<item group="group44mmCoilLarge"/>
+	<item group="group762mmCoilLarge"/>
+	<item group="groupCoilshellLarge"/>
+	<item group="group44mmCoilLarge"/>
+	<item group="group762mmCoilLarge"/>
+	<item group="groupCoilshellLarge"/>
+	<item name="DFammoArrowTitanium" count="10,20"/>
+	<item name="ammoArrowExploding" count="10,20"/>			
+	<item name="DFammoCrossbowBoltTitanium" count="10,20"/>	
+	<item name="ammoCrossbowBoltExploding" count="10,20"/>	
+</lootgroup>
+
+<lootgroup name="groupLaserAmmo">
+	<item name="DFresourceEnergyCell" count="50,100"/>
+	<item name="ammoArrowExplodingPulse" count="10,50"/>
+	<item name="ammoCrossbowBoltExplodingPulse" count="10,50"/>
+	<item name="DFpulseGrenade" count="5,10"/>			
+</lootgroup>	
+		
+<lootgroup name="groupZBehemoth">
+	<item group="groupAmmoLargeNoCoil" count="1,4" prob="1"/>
+	<item group="groupGunsAllT3" count="1" prob="0.8"/>
+	<item group="groupMeleeAllT3" count="1" prob="0.8"/>
+	<item group="groupArmorAllT3" count="1,2" prob="0.5"/>
+	<item group="rareMedicine" prob="0.5"/>
+</lootgroup>
+<lootgroup name="groupZBehemothR">
+	<item group="groupAmmoLargeOnlyCoil" count="1,4" prob="1"/>
+	<item group="groupGunsAllT4" count="1" prob="0.8"/>
+	<item group="groupMeleeAllT4" count="1" prob="0.8"/>
+	<item group="groupArmorAllT4" count="1,2" prob="0.5"/>
+	<item group="rareMedicine" prob="0.5"/>
+</lootgroup>
+<lootgroup name="groupZBehemothD">
+	<item group="groupLaserAmmo" count="1,4" prob="1"/>
+	<item group="groupGunsAllT5" count="1" prob="0.8"/>
+	<item group="groupMeleeAllT5" count="1" prob="0.8"/>
+	<item group="groupArmorAllT5" count="1,2" prob="0.5"/>
+	<item group="rareMedicine" prob="0.5"/> 
+</lootgroup>
+<lootgroup name="groupZIncubus">
+	<item group="groupLaserAmmo" count="1,4" prob="1"/>
+	<item group="groupGunsAllT5" count="1" prob="0.8"/>
+	<item group="groupMeleeAllT5" count="1" prob="0.8"/>
+	<item group="groupArmorAllT5" count="1,2" prob="0.5"/>
+	<item group="groupLegendaryItems" prob=".0125" count="1"/>
+</lootgroup>
+<!{1}** Behemoth Loot **{1}>
+<lootcontainer name="zBehemoth" count="1" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualPlus1Template" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
+	<item group="groupZBehemoth" count="2,6" prob="97.4"/>
+	<item group="groupLegendaryItems" count="1" prob="2.5"/>
+	<item name="KeemstarAlex" count="1" prob=".1"/>
+</lootcontainer>
+
+<!{1}** Behemoth Radiated Loot **{1}>
+<lootcontainer name="zBehemothR" count="1" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualPlus1Template" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
+	<item group="groupZBehemothR" count="2,6" prob="96.9"/>
+	<item group="groupLegendaryItems" count="1" prob="3"/>
+	<item name="KeemstarAlex" count="1" prob=".1"/>
+</lootcontainer>
+
+<!{1}** Behemoth Demon Loot **{1}>
+<lootcontainer name="zBehemothD" count="1" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualPlus1Template" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
+	<item group="groupZBehemothD" count="4,8" prob="94.9"/>
+	<item group="groupLegendaryItems" count="1" prob="5"/>
+	<item name="KeemstarAlex" count="1" prob=".1"/>
+</lootcontainer>
+
+<!{1}** Incubus Loot **{1}>
+<lootcontainer name="zIncubus" count="1" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualPlus1Template" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
+	<item group="groupZIncubus" count="2,6" prob="95.9"/>
+	<item group="groupLegendaryItems" count="1" prob="4"/>
+	<item name="KeemstarAlex" count="1" prob=".1"/>
+</lootcontainer>
+
+<!{1}** Incubus Empowered Loot **{1}>
+<lootcontainer name="zIncubusE" count="1" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualPlus1Template" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
+	<item group="groupZIncubus" count="4,8" prob="94.9"/>
+	<item group="groupLegendaryItems" count="1" prob="5"/>
+	<item name="KeemstarAlex" count="1" prob=".1"/>
+</lootcontainer>
+
+<!{1}** Succubus Loot **{1}>
+<lootcontainer name="zSuccubus" count="1" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualPlus1Template" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
+	<item group="groupZIncubus" count="2,6" prob="95.9"/>
+	<item group="groupLegendaryItems" count="1" prob="4"/>
+	<item name="KeemstarAlex" count="1" prob=".1"/>
+</lootcontainer>
+
+<!{1}** Succubus Empowered Loot **{1}>
+<lootcontainer name="zSuccubusE" count="1" size="12,4" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" loot_quality_template="qualPlus1Template" buff="buffScavengingServerHack,buffScavengingSkillXPTick" unmodified_lootstage="true">
+	<item group="groupZIncubus" count="4,8" prob="94.9"/>
+	<item group="groupLegendaryItems" count="1" prob="5"/>
+	<item name="KeemstarAlex" count="1" prob=".1"/>
+</lootcontainer>
+</append>-->
+</config>

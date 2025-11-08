@@ -1,0 +1,14 @@
+<config>
+<append xpath="/ui_display_info/crafting_category_display">
+	<crafting_category_list display_type="HydraulicPress">
+		<crafting_category name="Hydraulic_Press" icon="HydraulicPressIcon" display_name="lblCategoryShawAmmo" />
+		<crafting_category name="Ranged Weapons" icon="ui_game_symbol_knife" display_name="lblCategoryGunParts" />
+		<crafting_category name="Shaw_Mats" icon="LegendaryShard" display_name="lblCategoryShawMats" />
+	</crafting_category_list>
+	
+	<crafting_category_list display_type="BiggerCatalyst">
+		<crafting_category name="Bigger_Catalyst" icon="BiggerCatalyst" display_name="lblCategoryBiggerCatalyst" />
+		<crafting_category name="Shaw_Mats_BiggerCatalyst" icon="LegendaryShard" display_name="lblCategoryShawMats" />
+	</crafting_category_list>
+</append>
+</config>

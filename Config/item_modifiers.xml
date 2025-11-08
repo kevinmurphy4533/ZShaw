@@ -1,0 +1,1236 @@
+<config>
+<append xpath="/item_modifiers">
+	<!--BaseGuns-->
+<item_modifier name="modGunRechargableBatteryV2" installable_tags="perkCraftFutureTech" modifier_tags="laserBattery" blocked_tags="noMods,armor" type="attachment" rarity="0.5">
+	<property name="CustomIcon" value="modGunRechargableBatteryV2" />
+	<property name="DescriptionKey" value="modGunRechargableBatteryV2Desc"/>	
+	<property name="Stacknumber" value="1"/>
+	<property name="Group" value="Hydraulic_Press" />
+	
+	<!-- This returns energy cells to the player -->
+	<effect_group tiered="false">
+		<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+		<requirement name="RoundsInMagazine" operation="GTE" value="1"/>
+		<requirement name="HoldingItemHasTags" tags="perkCraftFutureTech"/>
+			<triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" target="self" buff="buffRechargeLaserOC"/>
+			<triggered_effect trigger="onSelfRangedBurstShotEnd" action="AddBuff" target="self" buff="buffRechargeLaserOC"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<passive_effect name="RoundsPerMinute" operation="perc_add" value=".25"/>
+	</effect_group>
+</item_modifier>
+	<!--Armor-->
+<item_modifier name="modArmorSaintFloydsBlessing" installable_tags="armorChest" type="attachment">
+	<property name="DescriptionKey" value="modArmorSaintFloydsBlessingDesc"/>
+	<property name="CustomIcon" value="modArmorSaintFloydsBlessing"/>
+	<property name="Stacknumber" value="1"/> 
+	<property name="SellableToTrader" value="false"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffSaintFloydsBlessing1">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffSaintFloydsBlessing1">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffSaintFloydsBlessing2">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modArmorPlatingBig" installable_tags="armor" modifier_tags="resistance,thermaladv,temperatureadv,thermal,temperature,ammo,movement" blocked_tags="noMods" type="attachment">
+	<property name="CustomIcon" value="modArmorPlatingBig"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="DescriptionKey" value="modArmorPlatingBigDesc"/>
+	<effect_group tiered="false">
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="3"/>
+		<passive_effect name="HyperthermalResist" operation="base_add" value="250"/>
+		<passive_effect name="HypothermalResist" operation="base_add" value="250"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="10" tags="heat,electrical"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="0" />
+		
+		<passive_effect name="BuffResistance" operation="base_add" value="100" tags="buffNearDeathTraumaTrigger,buffNearDeathTrauma"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="100" tags="buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffLaceration,buffInfectionCatch,buffInjuryBleedingBarbedWire,buffInjuryStunned01,buffInfection01Untreated,buffInfection02Untreated,buffInfection03Untreated"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="100" tags="buffInjuryBleeding,buffInjuryAbrasion,buffLegSprained,buffLegBroken,buffArmSprained,buffArmBroken,buffFatigued,buffLaceration,buffInjuryConcussion"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHead"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffShawArmorPlatingBig1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffShawArmorPlatingBig1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorChest"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffShawArmorPlatingBig2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffShawArmorPlatingBig2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHands"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffShawArmorPlatingBig3"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffShawArmorPlatingBig3"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorLegs"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffShawArmorPlatingBig4"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffShawArmorPlatingBig4"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorFeet"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffShawArmorPlatingBig5"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffShawArmorPlatingBig5"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modArmorPlatingBigger" installable_tags="armor" modifier_tags="resistance,thermaladv,temperatureadv,thermal,temperature,ammo" blocked_tags="noMods" type="attachment">
+	<property name="CustomIcon" value="modArmorPlatingBigger"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="DescriptionKey" value="modArmorPlatingBiggerDesc"/>
+	<property name="UnlockedBy" value="perkBiggestArmorRecipes"/>
+	<effect_group tiered="false">
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="7.8"/>
+		<passive_effect name="HyperthermalResist" operation="base_add" value="40"/>
+		<passive_effect name="HypothermalResist" operation="base_add" value="40"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="19.8" tags="heat,electrical"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="0" />
+		
+		<passive_effect name="BuffResistance" operation="base_add" value="100" tags="buffNearDeathTraumaTrigger,buffNearDeathTrauma"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="100" tags="buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffLaceration,buffInfectionCatch,buffInjuryBleedingBarbedWire,buffInjuryStunned01,buffInfection01Untreated,buffInfection02Untreated,buffInfection03Untreated"/>
+		<passive_effect name="BuffResistance" operation="base_add" value="100" tags="buffInjuryBleeding,buffInjuryAbrasion,buffLegSprained,buffLegBroken,buffArmSprained,buffArmBroken,buffFatigued,buffLaceration,buffInjuryConcussion"/>
+		<passive_effect name="BuffResistance" operation="base_add" value=".08" tags="buffBurningBig,buffInjuryBleedingBig,buffInjuryBurnBig,buffInjuryLegBrokenBig,buffInjuryArmBrokenBig,buffInjuryHeadBig,buffInjuryHexedBig"/>
+		<passive_effect name="BuffResistance" operation="base_add" value=".025" tags="buffShawWellnessLossBase1,buffShawWellnessLossBase2,buffShawWellnessLossBoss1,buffShawWellnessLossBoss2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHead"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffShawArmorPlatingBigger1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffShawArmorPlatingBigger1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorChest"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffShawArmorPlatingBigger2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffShawArmorPlatingBigger2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHands"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffShawArmorPlatingBigger3"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffShawArmorPlatingBigger3"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorLegs"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffShawArmorPlatingBigger4"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffShawArmorPlatingBigger4"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorFeet"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffShawArmorPlatingBigger5"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffShawArmorPlatingBigger5"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modArmorPlatingBiggest" installable_tags="armor" modifier_tags="resistance,thermaladv,temperatureadv,thermal,temperature,ammo" blocked_tags="noMods" type="attachment">
+	<property name="CustomIcon" value="modArmorPlatingBiggest"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="DescriptionKey" value="modArmorPlatingBiggestDesc"/>
+	<property name="UnlockedBy" value="perkBiggestArmorRecipes"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$wellnessMaxBonus" operation="add" value="70"/>
+		<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$wellnessMaxBonus" operation="subtract" value="70"/>
+		
+		<passive_effect name="PhysicalDamageResist" operation="base_add" value="5"/>
+		<passive_effect name="HyperthermalResist" operation="base_add" value="55"/>
+		<passive_effect name="HypothermalResist" operation="base_add" value="55"/>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="15" tags="heat,electrical"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="0" />
+		
+		<passive_effect name="BuffResistance" operation="base_add" value=".25" tags="buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffInjuryBleedingTwo,buffLaceration,buffInfectionCatch,buffInjuryBleedingBarbedWire,buffInjuryStunned01,buffInfection01Untreated,buffInfection02Untreated,buffInfection03Untreated"/>
+		<passive_effect name="BuffResistance" operation="base_add" value=".25" tags="buffInjuryBleeding,buffInjuryAbrasion,buffLegSprained,buffLegBroken,buffArmSprained,buffArmBroken,buffFatigued,buffLaceration,buffInjuryConcussion"/>
+		<passive_effect name="BuffResistance" operation="base_add" value=".12" tags="buffBurningBig,buffBurningBigger,buffBurningBiggest,buffInjuryBleedingBig,buffInjuryBurnBig,buffInjuryLegBrokenBig,buffInjuryArmBrokenBig,buffInjuryHeadBig,buffInjuryHexedBig"/>
+	</effect_group>
+</item_modifier>
+	<!--OverClocks-->
+<item_modifier name="modMotorToolV8" installable_tags="motorTool" modifier_tags="damageIron,damageStone,damageDirt,damageWood,fuel,durability" type="attachment">
+	<property name="CustomIcon" value="V8Engine"/>
+	<property name="DescriptionKey" value="modMotorToolV8Desc"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Hydraulic_Press" />
+	<effect_group tiered="false">
+		<passive_effect name="RoundsPerMinute" operation="perc_add" value=".25"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="1"/>
+		<passive_effect name="MagazineSize" operation="perc_add" value="1"/>
+		<passive_effect name="HarvestCount" operation="perc_add" value="1.5" tags="oreWoodHarvest"/>
+	</effect_group>
+	<item_property_overrides name="DFmeleeToolAugerTitanium">
+		<property name="Sound_start" value="Auger_Fire_StartV8"/>
+		<property name="Sound_repeat" value="Auger_Fire_StartV8"/>
+		<property name="Sound_end" value="Auger_Fire_StartV8"/>
+	</item_property_overrides>
+	<effect_group name="Sound">
+		<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffV8Start">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffV8Start">
+			<requirement name="IsFPV"/>
+		</triggered_effect>
+	</effect_group>
+</item_modifier>	
+<item_modifier name="modHeadCoreTool" installable_tags="motorTool" modifier_tags="overclock" type="attachment">
+	<property name="CustomIcon" value="BiggestHeadOverclock"/>
+	<property name="CustomIconTint" value="00ff00"/>
+	<property name="DescriptionKey" value="modHeadCoreToolDesc"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Bigger_Catalyst" />
+	<effect_group tiered="false">
+		<passive_effect name="RoundsPerMinute" operation="perc_add" value=".75"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="4"/>
+		<passive_effect name="MagazineSize" operation="perc_add" value="5"/>
+		<passive_effect name="HarvestCount" operation="perc_add" value="5" tags="oreWoodHarvest"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="0" />
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHeadCore" installable_tags="perkCraftFutureTech" modifier_tags="overcharged,barrelAttachment,accuracy,grips,fireRate,drumMagazine,magazine,crippling,trigger,muzzle,armorshredder,blessedmetal,laserBattery,radRemover,specialDamage,sideAttachment,elemental" type="attachment">
+	<property name="CustomIcon" value="BiggestHeadOverclock" />
+	<property name="DescriptionKey" value="modHeadCoreDesc"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffBigWeapon">
+			<requirement name="EntityTagCompare" target="other" tags="bigzed"/>
+		</triggered_effect>	
+		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffBigWeapon">
+			<requirement name="EntityTagCompare" target="other" tags="bigzed"/>
+		</triggered_effect>
+		
+		<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffHeadCore"/>
+		
+		<passive_effect name="EntityDamage" operation="perc_add" value="3.5"/>
+		<passive_effect name="MagazineSize" operation="perc_add" value="2.5"/>
+		<passive_effect name="RoundsPerMinute" operation="perc_add" value=".5"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="0" />
+		
+		<passive_effect name="DamageFalloffRange" operation="perc_add" value=".5"/>
+		<passive_effect name="MaxRange" operation="perc_add" value=".5"/>
+		<passive_effect name="SpreadMultiplierHip" operation="perc_add" value=".1"/>
+		<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.05"/>
+		<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value=".1"/>
+		<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value=".1"/>
+		<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value=".05"/>
+		<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value=".05"/>
+		<passive_effect name="WeaponHandling" operation="perc_add" value="-.08">
+			<requirement name="NotHasBuff" buff="buffHoldBreathAiming01"/>
+		</passive_effect>
+	</effect_group>
+	<item_property_overrides name="DFgunLaserM60">
+		<property name="Sound_start" value="lasercarbineLH_fire"/>
+		<property name="Sound_end" value="silencefiller"/>
+		<property name="Sound_loop" value="lasercarbineLH_fire"/>
+	</item_property_overrides>
+	<effect_group tiered="false" name="Mesh">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="70Overclock"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHeadCoreV2" installable_tags="perkCraftFutureTech" modifier_tags="overclock" type="attachment">
+	<property name="CustomIcon" value="BiggestHeadOverclock" />
+	<property name="CustomIconTint" value="0000ff"/>
+	<property name="DescriptionKey" value="modHeadCoreV2Desc"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<effect_group tiered="false">
+		<passive_effect name="EntityDamage" operation="perc_add" value="2"/>
+		<passive_effect name="RoundsPerMinute" operation="perc_add" value=".25"/>
+	</effect_group>
+</item_modifier>
+	<!--Hyperchromes-->
+<item_modifier name="modHyperRed1" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper1Desc"/>
+	<property name="CustomIcon" value="modHyperRed"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+	<item_property_overrides name="*">
+		<property name="TintColor" value="212,84,84"/>
+		<property name="CustomIconTint" value="149,52,54"/>
+		<property name="UMA.Overlay0Tint" value="180,52,54"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHead"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper1T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper1T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorChest"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper2T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper2T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHands"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper3T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper3T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorLegs"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper4T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper4T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorFeet"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper5T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper5T1"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperRed2" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper2Desc"/>
+	<property name="CustomIcon" value="modHyperRed"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+		<property name="TintColor" value="212,84,84"/>
+		<property name="CustomIconTint" value="149,52,54"/>
+		<property name="UMA.Overlay0Tint" value="180,52,54"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHead"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper1T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper1T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorChest"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper2T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper2T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHands"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper3T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper3T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorLegs"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper4T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper4T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorFeet"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper5T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper5T2"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperRed3" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper3Desc"/>
+	<property name="CustomIcon" value="modHyperRed"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+		<property name="TintColor" value="212,84,84"/>
+		<property name="CustomIconTint" value="149,52,54"/>
+		<property name="UMA.Overlay0Tint" value="180,52,54"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="add" value="3"/>
+		<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="subtract" value="3"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperRed4" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper4Desc"/>
+	<property name="CustomIcon" value="modHyperRed"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+		<property name="TintColor" value="212,84,84"/>
+		<property name="CustomIconTint" value="149,52,54"/>
+		<property name="UMA.Overlay0Tint" value="180,52,54"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="add" value="4"/>
+		<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="subtract" value="4"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperRed5" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper5Desc"/>
+	<property name="CustomIcon" value="modHyperRed"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+		<property name="TintColor" value="212,84,84"/>
+		<property name="CustomIconTint" value="149,52,54"/>
+		<property name="UMA.Overlay0Tint" value="180,52,54"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="add" value="5"/>
+		<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="subtract" value="5"/>
+	</effect_group>
+</item_modifier> 
+
+<item_modifier name="modHyperYellow1" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper1Desc"/>
+	<property name="CustomIcon" value="modHyperYellow"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+		<property name="TintColor" value="218,200,135"/>
+		<property name="CustomIconTint" value="218,200,135"/>
+		<property name="UMA.Overlay0Tint" value="218,200,135"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHead"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper1T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper1T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorChest"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper2T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper2T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHands"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper3T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper3T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorLegs"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper4T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper4T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorFeet"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper5T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper5T1"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperYellow2" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper2Desc"/>
+	<property name="CustomIcon" value="modHyperYellow"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+		<property name="TintColor" value="218,200,135"/>
+		<property name="CustomIconTint" value="218,200,135"/>
+		<property name="UMA.Overlay0Tint" value="218,200,135"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHead"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper1T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper1T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorChest"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper2T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper2T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHands"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper3T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper3T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorLegs"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper4T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper4T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorFeet"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper5T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper5T2"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperYellow3" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper3Desc"/>
+	<property name="CustomIcon" value="modHyperYellow"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+		<property name="TintColor" value="218,200,135"/>
+		<property name="CustomIconTint" value="218,200,135"/>
+		<property name="UMA.Overlay0Tint" value="218,200,135"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="add" value="3"/>
+		<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="subtract" value="3"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperYellow4" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper4Desc"/>
+	<property name="CustomIcon" value="modHyperYellow"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+		<property name="TintColor" value="218,200,135"/>
+		<property name="CustomIconTint" value="218,200,135"/>
+		<property name="UMA.Overlay0Tint" value="218,200,135"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="add" value="4"/>
+		<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="subtract" value="4"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperYellow5" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper5Desc"/>
+	<property name="CustomIcon" value="modHyperYellow"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+		<property name="TintColor" value="218,200,135"/>
+		<property name="CustomIconTint" value="218,200,135"/>
+		<property name="UMA.Overlay0Tint" value="218,200,135"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="add" value="5"/>
+		<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="subtract" value="5"/>
+	</effect_group>
+</item_modifier>
+
+<item_modifier name="modHyperGreen1" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper1Desc"/>
+	<property name="CustomIcon" value="modHyperGreen"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+		<property name="TintColor" value="74,130,74"/>
+		<property name="CustomIconTint" value="128,152,120"/>
+		<property name="UMA.Overlay0Tint" value="128,152,120"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHead"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper1T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper1T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorChest"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper2T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper2T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHands"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper3T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper3T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorLegs"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper4T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper4T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorFeet"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper5T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper5T1"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperGreen2" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper2Desc"/>
+	<property name="CustomIcon" value="modHyperGreen"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+		<property name="TintColor" value="74,130,74"/>
+		<property name="CustomIconTint" value="128,152,120"/>
+		<property name="UMA.Overlay0Tint" value="128,152,120"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHead"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper1T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper1T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorChest"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper2T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper2T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHands"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper3T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper3T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorLegs"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper4T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper4T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorFeet"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper5T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper5T2"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperGreen3" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper3Desc"/>
+	<property name="CustomIcon" value="modHyperGreen"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+		<property name="TintColor" value="74,130,74"/>
+		<property name="CustomIconTint" value="128,152,120"/>
+		<property name="UMA.Overlay0Tint" value="128,152,120"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="add" value="3"/>
+		<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="subtract" value="3"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperGreen4" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper4Desc"/>
+	<property name="CustomIcon" value="modHyperGreen"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+		<property name="TintColor" value="74,130,74"/>
+		<property name="CustomIconTint" value="128,152,120"/>
+		<property name="UMA.Overlay0Tint" value="128,152,120"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="add" value="4"/>
+		<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="subtract" value="4"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperGreen5" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper5Desc"/>
+	<property name="CustomIcon" value="modHyperGreen"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+		<property name="TintColor" value="74,130,74"/>
+		<property name="CustomIconTint" value="128,152,120"/>
+		<property name="UMA.Overlay0Tint" value="128,152,120"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="add" value="5"/>
+		<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="subtract" value="5"/>
+	</effect_group>
+</item_modifier>
+
+<item_modifier name="modHyperDiamond1" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper1Desc"/>
+	<property name="CustomIcon" value="modHyperDiamond"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+			<property name="TintColor" value="70,89,127"/>
+			<property name="CustomIconTint" value="74,93,134"/>
+			<property name="UMA.Overlay0Tint" value="74,93,134"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHead"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper1T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper1T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorChest"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper2T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper2T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHands"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper3T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper3T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorLegs"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper4T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper4T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorFeet"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper5T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper5T1"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperDiamond2" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper2Desc"/>
+	<property name="CustomIcon" value="modHyperDiamond"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+			<property name="TintColor" value="70,89,127"/>
+			<property name="CustomIconTint" value="74,93,134"/>
+			<property name="UMA.Overlay0Tint" value="74,93,134"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="add" value="2"/>
+		<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="subtract" value="2"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperDiamond3" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper3Desc"/>
+	<property name="CustomIcon" value="modHyperDiamond"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+			<property name="TintColor" value="70,89,127"/>
+			<property name="CustomIconTint" value="74,93,134"/>
+			<property name="UMA.Overlay0Tint" value="74,93,134"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHead"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper1T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper1T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorChest"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper2T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper2T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHands"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper3T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper3T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorLegs"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper4T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper4T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorFeet"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper5T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper5T2"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperDiamond4" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper4Desc"/>
+	<property name="CustomIcon" value="modHyperDiamond"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+			<property name="TintColor" value="70,89,127"/>
+			<property name="CustomIconTint" value="74,93,134"/>
+			<property name="UMA.Overlay0Tint" value="74,93,134"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="add" value="4"/>
+		<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="subtract" value="4"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperDiamond5" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper5Desc"/>
+	<property name="CustomIcon" value="modHyperDiamond"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+			<property name="TintColor" value="70,89,127"/>
+			<property name="CustomIconTint" value="74,93,134"/>
+			<property name="UMA.Overlay0Tint" value="74,93,134"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="add" value="5"/>
+		<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="subtract" value="5"/>
+	</effect_group>
+</item_modifier>
+
+<item_modifier name="modHyperOrange1" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper1Desc"/>
+	<property name="CustomIcon" value="modHyperOrange"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+		<property name="TintColor" value="255,128,0"/>
+		<property name="CustomIconTint" value="255,128,0"/>
+		<property name="UMA.Overlay0Tint" value="255,128,0"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHead"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper1T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper1T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorChest"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper2T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper2T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHands"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper3T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper3T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorLegs"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper4T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper4T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorFeet"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper5T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper5T1"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperOrange2" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper2Desc"/>
+	<property name="CustomIcon" value="modHyperOrange"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+		<property name="TintColor" value="255,128,0"/>
+		<property name="CustomIconTint" value="255,128,0"/>
+		<property name="UMA.Overlay0Tint" value="255,128,0"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHead"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper1T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper1T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorChest"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper2T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper2T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHands"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper3T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper3T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorLegs"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper4T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper4T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorFeet"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper5T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper5T2"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperOrange3" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper3Desc"/>
+	<property name="CustomIcon" value="modHyperOrange"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+		<property name="TintColor" value="255,128,0"/>
+		<property name="CustomIconTint" value="255,128,0"/>
+		<property name="UMA.Overlay0Tint" value="255,128,0"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="add" value="3"/>
+		<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="subtract" value="3"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperOrange4" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper4Desc"/>
+	<property name="CustomIcon" value="modHyperOrange"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+		<property name="TintColor" value="255,128,0"/>
+		<property name="CustomIconTint" value="255,128,0"/>
+		<property name="UMA.Overlay0Tint" value="255,128,0"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="add" value="4"/>
+		<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="subtract" value="4"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperOrange5" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper5Desc"/>
+	<property name="CustomIcon" value="modHyperOrange"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+		<property name="TintColor" value="255,128,0"/>
+		<property name="CustomIconTint" value="255,128,0"/>
+		<property name="UMA.Overlay0Tint" value="255,128,0"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="add" value="5"/>
+		<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="subtract" value="5"/>
+	</effect_group>
+</item_modifier>
+
+<item_modifier name="modHyperBlue1" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper1Desc"/>
+	<property name="CustomIcon" value="modHyperBlue"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+		<property name="TintColor" value="74,130,74"/>
+		<property name="CustomIconTint" value="128,152,120"/>
+		<property name="UMA.Overlay0Tint" value="128,152,120"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHead"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper1T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper1T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorChest"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper2T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper2T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHands"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper3T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper3T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorLegs"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper4T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper4T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorFeet"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper5T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper5T1"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperBlue2" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper2Desc"/>
+	<property name="CustomIcon" value="modHyperBlue"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+		<property name="TintColor" value="74,130,74"/>
+		<property name="CustomIconTint" value="128,152,120"/>
+		<property name="UMA.Overlay0Tint" value="128,152,120"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHead"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper1T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper1T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorChest"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper2T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper2T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHands"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper3T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper3T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorLegs"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper4T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper4T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorFeet"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper5T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper5T2"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperBlue3" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper3Desc"/>
+	<property name="CustomIcon" value="modHyperBlue"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+		<property name="TintColor" value="74,130,74"/>
+		<property name="CustomIconTint" value="128,152,120"/>
+		<property name="UMA.Overlay0Tint" value="128,152,120"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="add" value="3"/>
+		<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="subtract" value="3"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperBlue4" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper4Desc"/>
+	<property name="CustomIcon" value="modHyperBlue"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+		<property name="TintColor" value="74,130,74"/>
+		<property name="CustomIconTint" value="128,152,120"/>
+		<property name="UMA.Overlay0Tint" value="128,152,120"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="add" value="4"/>
+		<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="subtract" value="4"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperBlue5" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper5Desc"/>
+	<property name="CustomIcon" value="modHyperBlue"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+		<property name="TintColor" value="74,130,74"/>
+		<property name="CustomIconTint" value="128,152,120"/>
+		<property name="UMA.Overlay0Tint" value="128,152,120"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="add" value="5"/>
+		<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="subtract" value="5"/>
+	</effect_group>
+</item_modifier>
+
+<item_modifier name="modHyperPurple1" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper1Desc"/>
+	<property name="CustomIcon" value="modHyperPurple"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+			<property name="TintColor" value="113,97,129"/>
+			<property name="CustomIconTint" value="113,97,129"/>
+			<property name="UMA.Overlay0Tint" value="113,97,129"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHead"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper1T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper1T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorChest"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper2T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper2T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHands"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper3T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper3T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorLegs"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper4T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper4T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorFeet"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper5T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper5T1"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperPurple2" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper2Desc"/>
+	<property name="CustomIcon" value="modHyperPurple"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+			<property name="TintColor" value="113,97,129"/>
+			<property name="CustomIconTint" value="113,97,129"/>
+			<property name="UMA.Overlay0Tint" value="113,97,129"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHead"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper1T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper1T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorChest"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper2T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper2T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHands"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper3T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper3T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorLegs"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper4T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper4T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorFeet"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper5T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper5T2"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperPurple3" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper3Desc"/>
+	<property name="CustomIcon" value="modHyperPurple"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+			<property name="TintColor" value="113,97,129"/>
+			<property name="CustomIconTint" value="113,97,129"/>
+			<property name="UMA.Overlay0Tint" value="113,97,129"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="add" value="3"/>
+		<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="subtract" value="3"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperPurple4" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper4Desc"/>
+	<property name="CustomIcon" value="modHyperPurple"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+			<property name="TintColor" value="113,97,129"/>
+			<property name="CustomIconTint" value="113,97,129"/>
+			<property name="UMA.Overlay0Tint" value="113,97,129"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="add" value="4"/>
+		<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="subtract" value="4"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperPurple5" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper5Desc"/>
+	<property name="CustomIcon" value="modHyperPurple"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+		<item_property_overrides name="*">
+			<property name="TintColor" value="113,97,129"/>
+			<property name="CustomIconTint" value="113,97,129"/>
+			<property name="UMA.Overlay0Tint" value="113,97,129"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="add" value="5"/>
+		<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="subtract" value="5"/>
+	</effect_group>
+</item_modifier>
+
+<item_modifier name="modHyperPink1" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper1Desc"/>
+	<property name="CustomIcon" value="modHyperPink"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+	<item_property_overrides name="*">
+		<property name="TintColor" value="188,148,188"/>
+		<property name="CustomIconTint" value="188,148,188"/>
+		<property name="UMA.Overlay0Tint" value="188,148,188"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHead"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper1T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper1T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorChest"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper2T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper2T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHands"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper3T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper3T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorLegs"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper4T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper4T1"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorFeet"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper5T1"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper5T1"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperPink2" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper2Desc"/>
+	<property name="CustomIcon" value="modHyperPink"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+	<item_property_overrides name="*">
+		<property name="TintColor" value="188,148,188"/>
+		<property name="CustomIconTint" value="188,148,188"/>
+		<property name="UMA.Overlay0Tint" value="188,148,188"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHead"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper1T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper1T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorChest"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper2T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper2T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorHands"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper3T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper3T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorLegs"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper4T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper4T2"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<requirement name="ItemHasTags" tags="armorFeet"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHyper5T2"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHyper5T2"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperPink3" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper3Desc"/>
+	<property name="CustomIcon" value="modHyperPink"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+	<item_property_overrides name="*">
+		<property name="TintColor" value="188,148,188"/>
+		<property name="CustomIconTint" value="188,148,188"/>
+		<property name="UMA.Overlay0Tint" value="188,148,188"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="add" value="3"/>
+		<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="subtract" value="3"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperPink4" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper4Desc"/>
+	<property name="CustomIcon" value="modHyperPink"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+	<item_property_overrides name="*">
+		<property name="TintColor" value="188,148,188"/>
+		<property name="CustomIconTint" value="188,148,188"/>
+		<property name="UMA.Overlay0Tint" value="188,148,188"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="add" value="4"/>
+		<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="subtract" value="4"/>
+	</effect_group>
+</item_modifier>
+<item_modifier name="modHyperPink5" installable_tags="armor" modifier_tags="dye" type="attachment">
+	<property name="Extends" value="modGeneralMaster"/>
+	<property name="DescriptionKey" value="modHyper5Desc"/>
+	<property name="CustomIcon" value="modHyperPink"/>
+	<property name="Material" value="Morganic"/>
+	<property name="SellableToTrader" value="false"/>
+	<item_property_overrides name="*">
+		<property name="TintColor" value="188,148,188"/>
+		<property name="CustomIconTint" value="188,148,188"/>
+		<property name="UMA.Overlay0Tint" value="188,148,188"/>
+	</item_property_overrides>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="add" value="5"/>
+		<triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="$ShawStaminaRegen" operation="subtract" value="5"/>
+	</effect_group>
+</item_modifier>
+</append>
+<setattribute xpath="/item_modifiers/item_modifier[@name='modMeleeDiamondTip']" name="installable_tags">tool,perkBrawler,perkJavelinMaster,perkDeepCuts,diamondTipBlade</setattribute>
+	<!--TODO Remove-->
+<setattribute xpath="/item_modifiers/item_modifier[@name='modOverchargedPowerSource']" name="blocked_tags">ranged</setattribute>
+<setattribute xpath="/item_modifiers/item_modifier[@name='modArmorImprovedFittings']" name="blocked_tags">noMods</setattribute>
+<setattribute xpath="/item_modifiers/item_modifier[@name='modArmorCustomizedFittings']" name="blocked_tags">noMods</setattribute>
+</config>

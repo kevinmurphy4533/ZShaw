@@ -1,0 +1,85 @@
+<configs>
+<append xpath="/worldglobal">
+	<microsplat-voxel name="voxelCookie0">
+		<texture name="Cookie0" weight="1"/>
+	</microsplat-voxel>
+	<microsplat-texture name="Cookie0">
+		<property name="Diffuse" value="#@modfolder:Resources/ShawTerra.unity3d?CookieTextures_diff_tarray[0]"/>
+		<property name="Normal" value="#@modfolder:Resources/ShawTerra.unity3d?CookieTextures_normal_tarray[0]"/>
+		<property name="Specular" value="#@modfolder:Resources/ShawTerra.unity3d?CookieTextures_specular_tarray[0]"/>
+		<property name="SwitchNormal" value="false"/>
+		<property name="SplatUVScale" value="1.5,1.5"/>
+	</microsplat-texture>
+	
+	<microsplat-voxel name="voxelCookie1">
+		<texture name="Cookie1" weight="1"/>
+	</microsplat-voxel>
+	<microsplat-texture name="Cookie1">
+		<property name="Diffuse" value="#@modfolder:Resources/ShawTerra.unity3d?CookieTextures_diff_tarray[1]"/>
+		<property name="Normal" value="#@modfolder:Resources/ShawTerra.unity3d?CookieTextures_normal_tarray[1]"/>
+		<property name="Specular" value="#@modfolder:Resources/ShawTerra.unity3d?CookieTextures_specular_tarray[1]"/>
+		<property name="SwitchNormal" value="false"/>
+		<property name="SplatUVScale" value="1.5,1.5"/>
+	</microsplat-texture>
+	
+	<microsplat-voxel name="voxelCookie2">
+		<texture name="Cookie2" weight="1"/>
+	</microsplat-voxel>
+	<microsplat-texture name="Cookie2">
+		<property name="Diffuse" value="#@modfolder:Resources/ShawTerra.unity3d?CookieTextures_diff_tarray[2]"/>
+		<property name="Normal" value="#@modfolder:Resources/ShawTerra.unity3d?CookieTextures_normal_tarray[2]"/>
+		<property name="Specular" value="#@modfolder:Resources/ShawTerra.unity3d?CookieTextures_specular_tarray[2]"/>
+		<property name="SwitchNormal" value="false"/>
+		<property name="SplatUVScale" value="1.5,1.5"/>
+	</microsplat-texture>
+	
+	<microsplat-voxel name="voxelCookie3">
+		<texture name="Cookie3" weight="1"/>
+	</microsplat-voxel>
+	<microsplat-texture name="Cookie3">
+		<property name="Diffuse" value="#@modfolder:Resources/ShawTerra.unity3d?CookieTextures_diff_tarray[3]"/>
+		<property name="Normal" value="#@modfolder:Resources/ShawTerra.unity3d?CookieTextures_normal_tarray[3]"/>
+		<property name="Specular" value="#@modfolder:Resources/ShawTerra.unity3d?CookieTextures_specular_tarray[3]"/>
+		<property name="SwitchNormal" value="false"/>
+		<property name="SplatUVScale" value="10,10"/>
+	</microsplat-texture>
+	
+	<biomes-config world="*">
+	<!-- instruct mod to paint these into the biome masks -->
+	<!-- this maps back to how shader biome layers are setup -->
+	<!-- corresponds to data found in splat3 and splat4 images -->
+	<biome-color name="test_biome_dirt" color1="0,0,0,0" color2="0,1,0,0"/>
+
+	<!-- update cliff to show also for Biome 6 to 8 -->
+<!--	<biome-layer name="Layer0">
+		<!{1}** Reuse snow biome cliff layer to reuse **{1}>
+		<property name="biome-weight-6" value="1.0"/>
+	</biome-layer>-->
+
+	<biome-layer name="biome6a">
+		<!-- Main/Absolute layer weight -->
+		<property name="weight" value="1.0"/>
+		<!-- Enable/Disable/Configure noise -->
+		<property name="noise-active" value="false"/>
+		<property name="noise-frequency" value="1.0"/>
+		<property name="noise-offset" value="0.0"/>
+		<property name="noise-range" value="0.0,1.0"/>
+		<!-- Disable/Enable certain features -->
+		<property name="height-active" value="false"/>
+		<property name="slope-active" value="false"/>
+		<property name="erosion-active" value="false"/>
+		<property name="cavity-active" value="false"/>
+		<!-- Index into MicroSplat Texture2DArray -->
+		<property name="microsplat-texture" value="Cookie0"/>
+		<!-- Defines what biome color layer reacts to -->
+		<property name="biome-weight-6" value="1.0"/>
+		<!-- Curve, BoostFilter, HighPass, LowPass, CutFilter -->
+		<property name="height-curve-mode" value="Curve"/>
+		<property name="slope-curve-mode" value="Curve"/>
+		<property name="erosion-curve-mode" value="Curve"/>
+		<property name="cavity-curve-mode" value="Curve"/>
+	</biome-layer>
+</biomes-config>
+</append>
+</configs>
+

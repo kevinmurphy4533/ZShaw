@@ -1,0 +1,2872 @@
+<config>
+	<!--Brodcast Config-->
+<append xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedRecipes']">
+	<property name="bindtoWorkstation" value="workbench,cementMixer,chemistryStation,DFBigForge,DFAdvForge,DFworkingOven,DFworkingWallOven,DFLathe,DFMandP,DFworkstationMetal,DFworkstationTailor,DFwritingDesk,DFoilPump,DFVehicleWorkstation,ScifiBench,SciFiForge,BiggerCatalyst,BiggestBench,HydraulicPress,BigHeadForge,BigAssembler,BigFoodMaker:storageCrateBroadcast,DFPlayerStorageBroadcast,GoldChest,GoldChest2,MCChest"/>
+	<property name="Distance" value="50" />
+</append>
+	<!--Block Changes-->
+<append xpath="/blocks/block[@name='titaniumShapes']">
+<property name="CustomUpgradeSound" value="DOIT"/>
+<property class="UpgradeBlock">
+	<property name="ToBlock" value="ShawCookieShapes"/>
+	<property name="Item" value="CookieProcessed1"/>
+	<property name="ItemCount" value="10"/>
+	<property name="UpgradeHitCount" value="4"/>
+</property>
+</append>
+<append xpath="/blocks/block[@name='cntCar03SedanDamage0Master']">
+	<property name="Tags" value="carHarvest"/>
+</append>
+<append xpath="/blocks/block[@name='cntCar03SedanDamage1Master']">
+	<property name="Tags" value="carHarvest"/>
+</append>
+<append xpath="/blocks/block[@name='cntShippingCrateShamway']">
+	<property name="DowngradeBlock" value="LootCrateShamwayHelper"/>
+</append>
+<append xpath="/blocks/block[@name='pictureVariantHelper']">
+	<property name="PlaceAltBlockValue" value="pictureCanvas_01a,pictureCanvas_01b,pictureCanvas_01c,pictureCanvas_01d,pictureCanvas_01e,pictureCanvas_01f,pictureCanvas_01g,pictureCanvas_01h,pictureCanvas_01i,pictureCanvas_01j,pictureFrame_01a,pictureFrame_01b,pictureFrame_01c,pictureFrame_01e,pictureFrame_01h,pictureFrame_01j,pictureFrame_01k,pictureFrame_01n,pictureFrame_01o,pictureFrame_01q,pictureFrame_01s,pictureFrame_01t,pictureFrame_01u,pictureFrame_01v,pictureFrame_01w,pictureFrame_01d,pictureFrame_01f,pictureFrame_01l,pictureFrame_01i,pictureFrame_01m,pictureFrame_01p,pictureFrame_01r,pictureFrame_01g,pictureFrameCarrier,pictureFrameTank,pictureFrameGunSchematic,pictureFrameJetGirls,paintingBen,paintingLorien,paintingDerek,paintingNoah,paintingDuke,paintingKen,pictureFramedMedalsLrg,pictureFramedMedalsMed,pictureFramedMedalsSml"/>
+</append>
+
+<append xpath="/blocks/block[@name='forge']">
+	<property name="TakeDelay" value="3"/>
+</append>
+<append xpath="/blocks/block[@name='workbench']">
+	<property name="TakeDelay" value="3"/>
+</append>
+<append xpath="/blocks/block[@name='cementMixer']">
+	<property name="TakeDelay" value="3"/>
+</append>
+<append xpath="/blocks/block[@name='chemistryStation']">
+	<property name="TakeDelay" value="3"/>
+</append>
+<append xpath="/blocks/block[@name='DFBigForge']">
+	<property name="TakeDelay" value="3"/>
+</append>
+<append xpath="/blocks/block[@name='DFAdvForge']">
+	<property name="TakeDelay" value="3"/>
+</append>
+<append xpath="/blocks/block[@name='DFworkingOven']">
+	<property name="TakeDelay" value="3"/>
+</append>
+<append xpath="/blocks/block[@name='DFworkingWallOven']">
+	<property name="TakeDelay" value="3"/>
+</append>
+<append xpath="/blocks/block[@name='DFLathe']">
+	<property name="TakeDelay" value="3"/>
+</append>
+<append xpath="/blocks/block[@name='DFMandP']">
+	<property name="TakeDelay" value="3"/>
+</append>
+<append xpath="/blocks/block[@name='DFworkstationMetal']">
+	<property name="TakeDelay" value="3"/>
+</append>
+<append xpath="/blocks/block[@name='DFworkstationTailor']">
+	<property name="TakeDelay" value="3"/>
+</append>
+<append xpath="/blocks/block[@name='DFwritingDesk']">
+	<property name="TakeDelay" value="3"/>
+</append>
+<append xpath="/blocks/block[@name='DFoilPump']">
+	<property name="TakeDelay" value="3"/>
+</append>
+<append xpath="/blocks/block[@name='DFVehicleWorkstation']">
+	<property name="TakeDelay" value="3"/>
+</append>
+<append xpath="/blocks/block[@name='ScifiBench']">
+	<property name="TakeDelay" value="3"/>
+</append>
+<append xpath="/blocks/block[@name='SciFiForge']">
+	<property name="TakeDelay" value="3"/>
+</append>
+
+<append xpath="/blocks/block[@name='steelShapes']">
+	<property name="Group" value="Building,advBuilding,Hydraulic_Press"/>
+</append>
+<append xpath="/blocks/block[@name='stainlessSteelShapes']">
+	<property name="Group" value="Building,advBuilding,Hydraulic_Press"/>
+</append>
+<append xpath="/blocks/block[@name='titaniumShapes']">
+	<property name="Group" value="Building,advBuilding,Hydraulic_Press"/>
+</append>
+
+<append xpath="/blocks">
+	<!--Templates-->
+<block name="DecorTemplate">
+	<property name="DescriptionKey" value="CustomDecoration"/>
+	<property name="Collide" value="movement,melee,rocket,bullet"/> 
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Path" value="solid"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?TrollBricks.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="1000"/>
+	<drop event="Destroy" count="0"/>
+	<property name="SellableToTrader" value="false"/>
+</block>
+<block name="GodTemplate">
+	<property name="DescriptionKey" value="CustomDecoration"/>
+	<property name="Collide" value="movement,melee,rocket,bullet"/> 
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Path" value="solid"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawOldGodXS.prefab"/>
+	<property name="DisplayInfo" value="Name"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="7500"/>
+	<drop event="Destroy" count="0"/>
+</block>
+	<!--Helpers-->
+<block name="LootCrateShamwayHelper">
+	<property name="Extends" value="cntWastelandRandomLootHelper"/>
+	<property name="CreativeMode" value="Dev"/>
+</block>
+<block name="WoodenItemStumpHelper">
+	<property name="Extends" value="cntWastelandRandomLootHelper"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/ShawLoot.unity3d?ShawWoodenBoardStump.prefab"/>
+	<property name="CustomIcon" value="WoodenSwordStump"/>
+	<property name="CustomIconTint" value="ff00ff"/>
+	<property name="CreativeMode" value="Dev"/>
+</block>
+<block name="CrateShawHelper">
+	<property name="Extends" value="cntWastelandRandomLootHelper"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/ShawLoot.unity3d?ShawPopeyesCrate.prefab"/>
+	<property name="CustomIcon" value="PopeyesCrate"/>
+	<property name="CustomIconTint" value="ff00ff"/>
+	<property name="CreativeMode" value="Dev"/>
+</block>
+<block name="CookieFactoryLootHelper">
+	<property name="Extends" value="cntWastelandRandomLootHelper"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/ShawLoot.unity3d?ShawGoldChest.prefab"/>
+	<property name="CustomIcon" value="GoldChest"/>
+	<property name="CustomIconTint" value="ff00ff"/>
+	<property name="CreativeMode" value="Dev"/>
+</block>
+	<!--Gods-->
+<block name="OldDemiGod">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="OldDemiGodDesc"/>
+	<property name="CustomIcon" value="OldGod"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawOldGodXS.prefab"/>
+	<property name="MaxDamage" value="7500"/>
+</block>
+<block name="OldGodXS">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="OldGodDesc"/>
+	<property name="CustomIcon" value="OldGod"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawOldGodXS.prefab"/>
+	<property name="MaxDamage" value="12500"/>
+</block>
+<block name="OldGodS">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="OldGodDesc"/>
+	<property name="CustomIcon" value="OldGod"/>
+	<property name="MultiBlockDim" value="2,3,2"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawOldGodS.prefab"/>
+	<drop event="Harvest" name="Essence" count="4" tag="allHarvest"/>
+	<property name="MaxDamage" value="25000"/>
+</block>
+<block name="OldGodM">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="OldGodDesc"/>
+	<property name="CustomIcon" value="OldGod"/>
+	<property name="MultiBlockDim" value="3,4,3"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawOldGodM.prefab"/>
+	<property name="MaxDamage" value="50000"/>
+	<drop event="Harvest" name="Essence" count="6" tag="allHarvest"/>
+</block>
+<block name="OldGodL">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="OldGodDesc"/>
+	<property name="CustomIcon" value="OldGod"/>
+	<property name="MultiBlockDim" value="5,6,5"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawOldGodL.prefab"/>
+	<property name="MaxDamage" value="50000"/>
+	<drop event="Harvest" name="Essence" count="8" tag="allHarvest"/>
+</block>
+<block name="OldGodXL">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="OldGodDesc"/>
+	<property name="CustomIcon" value="OldGod"/>
+	<property name="MultiBlockDim" value="10,12,10"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawOldGodXL.prefab"/>
+	<property name="MaxDamage" value="50000"/>
+	<drop event="Harvest" name="Essence" count="10" tag="allHarvest"/>
+</block>
+<block name="WealthyGodXS">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="WealthyGodDesc"/>
+	<property name="CustomIcon" value="WealthyGod"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawWealthyGodXS.prefab"/>
+	<drop event="Harvest" name="Essence" count="1" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceGoldNugget" count="100" tag="allHarvest"/>
+	<property name="MaxDamage" value="12500"/>
+</block>
+<block name="WealthyGodS">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="WealthyGodDesc"/>
+	<property name="CustomIcon" value="WealthyGod"/>
+	<property name="MultiBlockDim" value="2,3,2"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawWealthyGodS.prefab"/>
+	<drop event="Harvest" name="Essence" count="2" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceGoldNugget" count="200" tag="allHarvest"/>
+	<property name="MaxDamage" value="25000"/>
+</block>
+<block name="WealthyGodM">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="WealthyGodDesc"/>
+	<property name="CustomIcon" value="WealthyGod"/>
+	<property name="MultiBlockDim" value="3,4,3"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawWealthyGodM.prefab"/>
+	<property name="MaxDamage" value="50000"/>
+	<drop event="Harvest" name="Essence" count="2" tag="allHarvest"/>
+</block>
+<block name="WealthyGodL">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="WealthyGodDesc"/>
+	<property name="CustomIcon" value="WealthyGod"/>
+	<property name="MultiBlockDim" value="5,6,5"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawWealthyGodL.prefab"/>
+	<property name="MaxDamage" value="50000"/>
+	<drop event="Harvest" name="Essence" count="3" tag="allHarvest"/>
+</block>
+<block name="WealthyGodXL">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="WealthyGodDesc"/>
+	<property name="CustomIcon" value="WealthyGod"/>
+	<property name="MultiBlockDim" value="10,12,10"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawWealthyGodXL.prefab"/>
+	<property name="MaxDamage" value="50000"/>
+	<drop event="Harvest" name="Essence" count="5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceGoldNugget" count="750" tag="allHarvest"/>
+</block>
+<block name="HatefulGodXS">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="HatefulGodDesc"/>
+	<property name="CustomIcon" value="HatefulGod"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawHatefulGodXS.prefab"/>
+	<drop event="Harvest" name="Essence" count="1" tag="allHarvest"/>
+	<drop event="Harvest" name="FutCoin" count="100" tag="allHarvest"/>
+	<property name="MaxDamage" value="12500"/>
+</block>
+<block name="HatefulGodS">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="HatefulGodDesc"/>
+	<property name="CustomIcon" value="HatefulGod"/>
+	<property name="MultiBlockDim" value="2,3,2"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawHatefulGodS.prefab"/>
+	<drop event="Harvest" name="Essence" count="2" tag="allHarvest"/>
+	<drop event="Harvest" name="FutCoin" count="200" tag="allHarvest"/>
+	<property name="MaxDamage" value="25000"/>
+</block>
+<block name="HatefulGodM">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="HatefulGodDesc"/>
+	<property name="CustomIcon" value="HatefulGod"/>
+	<property name="MultiBlockDim" value="3,4,3"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawHatefulGodM.prefab"/>
+	<property name="MaxDamage" value="50000"/>
+	<drop event="Harvest" name="Essence" count="3" tag="allHarvest"/>
+	<drop event="Harvest" name="FutCoin" count="300" tag="allHarvest"/>
+</block>
+<block name="HatefulGodL">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="HatefulGodDesc"/>
+	<property name="CustomIcon" value="HatefulGod"/>
+	<property name="MultiBlockDim" value="5,6,5"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawHatefulGodL.prefab"/>
+	<property name="MaxDamage" value="50000"/>
+	<drop event="Harvest" name="Essence" count="4" tag="allHarvest"/>
+	<drop event="Harvest" name="FutCoin" count="400" tag="allHarvest"/>
+</block>
+<block name="HatefulGodXL">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="HatefulGodDesc"/>
+	<property name="CustomIcon" value="HatefulGod"/>
+	<property name="MultiBlockDim" value="10,12,10"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawHatefulGodXL.prefab"/>
+	<property name="MaxDamage" value="50000"/>
+	<drop event="Harvest" name="Essence" count="5" tag="allHarvest"/>
+	<drop event="Harvest" name="FutCoin" count="750" tag="allHarvest"/>
+</block>
+<block name="LonelyGodXS">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="LonelyGodDesc"/>
+	<property name="CustomIcon" value="LonelyGod"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawLonelyGodXS.prefab"/>
+	<drop event="Harvest" name="Essence" count="1" tag="allHarvest"/>
+	<drop event="Harvest" name="CookieProcessed1" count="10" tag="allHarvest"/>
+	<property name="MaxDamage" value="12500"/>
+</block>
+<block name="LonelyGodS">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="LonelyGodDesc"/>
+	<property name="CustomIcon" value="LonelyGod"/>
+	<property name="MultiBlockDim" value="2,3,2"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawLonelyGodS.prefab"/>
+	<drop event="Harvest" name="Essence" count="2" tag="allHarvest"/>
+	<drop event="Harvest" name="CookieProcessed1" count="20" tag="allHarvest"/>
+	<property name="MaxDamage" value="25000"/>
+</block>
+<block name="LonelyGodM">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="LonelyGodDesc"/>
+	<property name="CustomIcon" value="LonelyGod"/>
+	<property name="MultiBlockDim" value="3,4,3"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawLonelyGodM.prefab"/>
+	<property name="MaxDamage" value="50000"/>
+	<drop event="Harvest" name="Essence" count="3" tag="allHarvest"/>
+	<drop event="Harvest" name="CookieProcessed1" count="30" tag="allHarvest"/>
+</block>
+<block name="LonelyGodL">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="LonelyGodDesc"/>
+	<property name="CustomIcon" value="LonelyGod"/>
+	<property name="MultiBlockDim" value="5,6,5"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawLonelyGodL.prefab"/>
+	<property name="MaxDamage" value="50000"/>
+	<drop event="Harvest" name="Essence" count="4" tag="allHarvest"/>
+	<drop event="Harvest" name="CookieProcessed1" count="40" tag="allHarvest"/>
+</block>
+<block name="LonelyGodXL">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="LonelyGodDesc"/>
+	<property name="CustomIcon" value="LonelyGod"/>
+	<property name="MultiBlockDim" value="10,12,10"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawLonelyGodXL.prefab"/>
+	<property name="MaxDamage" value="50000"/>
+	<drop event="Harvest" name="Essence" count="5" tag="allHarvest"/>
+	<drop event="Harvest" name="CookieProcessed1" count="75" tag="allHarvest"/>
+</block>
+<block name="MiserableGodXS">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="MiserableGodDesc"/>
+	<property name="CustomIcon" value="MiserableGod"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawMiserableGodXS.prefab"/>
+	<drop event="Harvest" name="Essence" count="1" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceRawDiamond" count="25" tag="allHarvest"/>
+	<property name="MaxDamage" value="12500"/>
+</block>
+<block name="MiserableGodS">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="MiserableGodDesc"/>
+	<property name="CustomIcon" value="MiserableGod"/>
+	<property name="MultiBlockDim" value="2,3,2"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawMiserableGodS.prefab"/>
+	<drop event="Harvest" name="Essence" count="2" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceRawDiamond" count="50" tag="allHarvest"/>
+	<property name="MaxDamage" value="25000"/>
+</block>
+<block name="MiserableGodM">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="MiserableGodDesc"/>
+	<property name="CustomIcon" value="MiserableGod"/>
+	<property name="MultiBlockDim" value="3,4,3"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawMiserableGodM.prefab"/>
+	<property name="MaxDamage" value="50000"/>
+	<drop event="Harvest" name="Essence" count="3" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceRawDiamond" count="75" tag="allHarvest"/>
+</block>
+<block name="MiserableGodL">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="MiserableGodDesc"/>
+	<property name="CustomIcon" value="MiserableGod"/>
+	<property name="MultiBlockDim" value="5,6,5"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawMiserableGodL.prefab"/>
+	<property name="MaxDamage" value="50000"/>
+	<drop event="Harvest" name="Essence" count="4" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceRawDiamond" count="100" tag="allHarvest"/>
+</block>
+<block name="MiserableGodXL">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="MiserableGodDesc"/>
+	<property name="CustomIcon" value="MiserableGod"/>
+	<property name="MultiBlockDim" value="10,12,10"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawMiserableGodXL.prefab"/>
+	<property name="MaxDamage" value="50000"/>
+	<drop event="Harvest" name="Essence" count="5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceRawDiamond" count="187" tag="allHarvest"/>
+</block>
+<block name="SleepingGodXS">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="SleepingGodDesc"/>
+	<property name="CustomIcon" value="SleepingGod"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawSleepingGodXS.prefab"/>
+	<drop event="Harvest" name="Essence" count="1" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceSilverNugget" count="100" tag="allHarvest"/>
+	<property name="MaxDamage" value="12500"/>
+</block>
+<block name="SleepingGodS">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="SleepingGodDesc"/>
+	<property name="CustomIcon" value="SleepingGod"/>
+	<property name="MultiBlockDim" value="2,3,2"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawSleepingGodS.prefab"/>
+	<drop event="Harvest" name="Essence" count="2" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceSilverNugget" count="200" tag="allHarvest"/>
+	<property name="MaxDamage" value="25000"/>
+</block>
+<block name="SleepingGodM">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="SleepingGodDesc"/>
+	<property name="CustomIcon" value="SleepingGod"/>
+	<property name="MultiBlockDim" value="3,4,3"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawSleepingGodM.prefab"/>
+	<property name="MaxDamage" value="50000"/>
+	<drop event="Harvest" name="Essence" count="3" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceSilverNugget" count="300" tag="allHarvest"/>
+</block>
+<block name="SleepingGodL">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="SleepingGodDesc"/>
+	<property name="CustomIcon" value="SleepingGod"/>
+	<property name="MultiBlockDim" value="5,6,5"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawSleepingGodL.prefab"/>
+	<property name="MaxDamage" value="50000"/>
+	<drop event="Harvest" name="Essence" count="4" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceSilverNugget" count="400" tag="allHarvest"/>
+</block>
+<block name="SleepingGodXL">
+	<property name="Extends" value="GodTemplate"/>
+	<property name="DescriptionKey" value="SleepingGodDesc"/>
+	<property name="CustomIcon" value="SleepingGod"/>
+	<property name="MultiBlockDim" value="10,12,10"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Model" value="#@modfolder:Resources/ShawGods.unity3d?ShawSleepingGodXL.prefab"/>
+	<property name="MaxDamage" value="50000"/>
+	<drop event="Harvest" name="Essence" count="5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceSilverNugget" count="750" tag="allHarvest"/>
+</block>
+	<!--Bedrocks-->
+		<!--These have two each one is for poi creation other is for gameplay-->
+<block name="OldBricks">
+	<property name="DescriptionKey" value="testBlockDesc"/>
+	<property name="CustomIcon" value="Bedrock"/>
+	<property name="Path" value="solid"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube"/>
+	<property name="Material" value="Mbedrock"/> 
+	<property name="MaxDamage" value="1000"/>
+	<property name="Texture" value="BiggestHead"/>
+	<property name="UiBackgroundTexture" value="BiggestHead"/>
+	<property name="SellableToTrader" value="false"/>
+</block>
+<!--<block name="OldBricks">
+	<property name="DescriptionKey" value="testBlockDesc"/>
+	<property name="CustomIcon" value="Bedrock"/>
+	<property name="Path" value="solid"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube"/>
+	<property name="Material" value="Mstone"/> 
+	<property name="MaxDamage" value="1000"/>
+	<property name="Texture" value="BiggestHead"/>
+	<property name="UiBackgroundTexture" value="BiggestHead"/>
+	<property name="SellableToTrader" value="false"/>
+</block>-->
+<block name="Barrier">
+	<property name="Material" value="Mbedrock"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="CustomIcon" value="Barrier"/>
+	<property name="Shape" value="New"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Model" value="cube_glass"/>
+	<property name="Mesh" value="transparent"/>
+	<property name="Texture" value="285"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="DescriptionKey" value="glassGroupDesc"/>
+	<property name="SellableToTrader" value="false"/>
+</block>
+<!--<block name="Barrier">
+	<property name="Material" value="Mglass"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="CustomIcon" value="Barrier"/>
+	<property name="Shape" value="New"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Model" value="cube"/>
+	<property name="Texture" value="Trump"/> 
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="DescriptionKey" value="glassGroupDesc"/>
+	<property name="SellableToTrader" value="false"/>
+</block>-->
+	<!--Loot-->
+<block name="GoldChestEssenceKey">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="DescriptionKey" value="GoldChestEssenceKeyDesc"/>
+	<property name="CustomIcon" value="GoldChestOther"/>
+	<property name="Model" value="#@modfolder:Resources/ShawLoot.unity3d?ShawGoldChest.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="5000"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="10"/>
+	</property>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="GoldChestEssenceKey"/>
+	<drop event="Destroy" name="GoldChest" count="1"/>
+</block>
+<block name="GoldChestBlessing">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="DescriptionKey" value="GoldChestBlessingDesc"/>
+	<property name="CustomIcon" value="GoldChestOther"/>
+	<property name="Model" value="#@modfolder:Resources/ShawLoot.unity3d?ShawGoldChest.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="5000"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="10"/>
+	</property>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="GoldChestBlessing"/>
+	<drop event="Destroy" name="GoldChest" count="1"/>
+</block>
+<block name="GoldChestBlessing2">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="DescriptionKey" value="GoldChestBlessingDesc"/>
+	<property name="CustomIcon" value="GoldChestOther"/>
+	<property name="Model" value="#@modfolder:Resources/ShawLoot.unity3d?ShawGoldChest.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="5000"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="10"/>
+	</property>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="GoldChestBlessing2"/>
+	<drop event="Destroy" name="GoldChest" count="1"/>
+</block>
+<block name="GoldChest">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="GoldChest"/>
+	<property name="Model" value="#@modfolder:Resources/ShawLoot.unity3d?ShawGoldChest.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="5000"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="10"/>
+	</property>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="GoldChest"/>
+	<drop event="Destroy" name="GoldChest" count="1"/>
+</block>
+<block name="GoldChest2">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="GoldChest2"/>
+	<property name="Model" value="#@modfolder:Resources/ShawLoot.unity3d?ShawGoldChest2.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="5000"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="10"/>
+	</property>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="GoldChest2"/>
+	<drop event="Destroy" name="GoldChest2" count="1"/>
+</block>
+<block name="GoldChestCookieFactoryBase">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="GoldChest"/>
+	<property name="Model" value="#@modfolder:Resources/ShawLoot.unity3d?ShawGoldChest.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="5000"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="10"/>
+	</property>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="GoldChestCookieFactoryBase"/>
+	<drop event="Destroy" name="GoldChest" count="1"/>
+</block>
+<block name="GoldChestCookieFactoryHarambeWorkstation">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="GoldChest"/>
+	<property name="Model" value="#@modfolder:Resources/ShawLoot.unity3d?ShawGoldChest.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="5000"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="10"/>
+	</property>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="GoldChestCookieFactoryHarambeWorkstation"/>
+	<drop event="Destroy" name="GoldChest" count="1"/>
+</block>
+<block name="GoldChestCookieFactoryRuinsWorkstation">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="GoldChest"/>
+	<property name="Model" value="#@modfolder:Resources/ShawLoot.unity3d?ShawGoldChest.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="5000"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="10"/>
+	</property>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="GoldChestCookieFactoryRuinsWorkstation"/>
+	<drop event="Destroy" name="GoldChest" count="1"/>
+</block>
+<block name="GoldChestCookieFactorySakuraGardenWorkstation">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="GoldChest"/>
+	<property name="Model" value="#@modfolder:Resources/ShawLoot.unity3d?ShawGoldChest.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="5000"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="10"/>
+	</property>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="GoldChestCookieFactorySakuraGardenWorkstation"/>
+	<drop event="Destroy" name="GoldChest" count="1"/>
+</block>
+<block name="GoldChestCookieFactoryOilWorkstation">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="GoldChest"/>
+	<property name="Model" value="#@modfolder:Resources/ShawLoot.unity3d?ShawGoldChest.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="5000"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="10"/>
+	</property>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="GoldChestCookieFactoryOilWorkstation"/>
+	<drop event="Destroy" name="GoldChest" count="1"/>
+</block>
+
+<block name="ShawsCoffin">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="Material" value="MwoodReinforced"/>
+	<property name="Model" value="Entities/OutdoorDecor/coffinWildWestPrefab"/>
+	<property name="MultiBlockDim" value="1,1,2"/>
+	<property name="CustomIcon" value="cntCoffinWildWestClosed"/>
+	<property name="CustomIconTint" value="ff8080"/>
+	<property name="MaxDamage" value="25000"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="ShawsCoffin"/>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="MCChest">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="MCChest"/>
+	<property name="MultiBlockDim" value="1,1,2"/>
+	<property name="Model" value="#@modfolder:Resources/ShawLoot.unity3d?ShawMCChest.prefab"/>
+	<property name="Material" value="MwoodReinforced"/>
+	<property name="MaxDamage" value="7500"/>
+	<property class="RepairItems">
+		<property name="resourceWood" value="10"/>
+	</property>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="MCChest"/>
+	<drop event="Destroy" name="MCChest" count="1"/>
+</block>
+<block name="WoodenSwordStump">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="WoodenSwordStump"/>
+	<property name="Model" value="#@modfolder:Resources/ShawLoot.unity3d?ShawWoodenSwordStump.prefab"/>
+	<property name="Material" value="MwoodReinforced"/>
+	<property name="MaxDamage" value="300"/>
+	<drop event="Harvest" name="resourceWood" count="20,30" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="foodHoney" count="1" prob=".2"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="WoodenSwordStump"/>
+</block>
+<block name="WoodenBoardStump">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="WoodenBoardStump"/>
+	<property name="Model" value="#@modfolder:Resources/ShawLoot.unity3d?ShawWoodenBoardStump.prefab"/>
+	<property name="Material" value="MwoodReinforced"/>
+	<property name="MaxDamage" value="300"/>
+	<drop event="Harvest" name="resourceWood" count="20,30" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="foodHoney" count="1" prob=".2"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="WoodenBoardStump"/>
+</block>
+		<!--Crates-->
+<block name="PopeyesCrate">
+	<property name="DescriptionKey" value="cntShippingCrateGroupDesc"/>
+	<property name="CustomIcon" value="PopeyesCrate"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/ShawLoot.unity3d?ShawPopeyesCrate.prefab"/>
+	<property name="DisplayInfo" value="Name"/>
+	<property name="Material" value="Mwood_regular"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" count="0"/>
+	<property name="DowngradeBlock" value="PopeyesBox"/>
+</block>
+<block name="PopeyesBox">
+	<property name="Extends" value="cntGarageStorage"/>
+	<property name="MaxDamage" value="2500"/>
+	<property name="LootList" value="PopeyesBox"/>
+</block>
+<block name="RonaldoCrate">
+	<property name="Extends" value="PopeyesCrate"/>
+	<property name="CustomIcon" value="RonaldoCrate"/>
+	<property name="Model" value="#@modfolder:Resources/ShawLoot.unity3d?ShawRonaldoCrate.prefab"/>
+	<property name="DowngradeBlock" value="RonaldoBox"/>
+</block>
+<block name="RonaldoBox">
+	<property name="Extends" value="PopeyesBox"/>
+	<property name="LootList" value="RonaldoBox"/>
+</block>
+<block name="EDPCrate">
+	<property name="Extends" value="PopeyesCrate"/>
+	<property name="CustomIcon" value="EDPCrate"/>
+	<property name="Model" value="#@modfolder:Resources/ShawLoot.unity3d?ShawEDPCrate.prefab"/>
+	<property name="DowngradeBlock" value="EDPBox"/>
+</block>
+<block name="EDPBox">
+	<property name="Extends" value="PopeyesBox"/>
+	<property name="LootList" value="EDPBox"/>
+</block>
+<block name="TrumpCrate">
+	<property name="Extends" value="PopeyesCrate"/>
+	<property name="CustomIcon" value="TrumpCrate"/>
+	<property name="Model" value="#@modfolder:Resources/ShawLoot.unity3d?ShawTrumpCrate.prefab"/>
+	<property name="DowngradeBlock" value="TrumpBox"/>
+</block>
+<block name="TrumpBox">
+	<property name="Extends" value="PopeyesBox"/>
+	<property name="LootList" value="TrumpBox"/>
+</block>
+<block name="CardriverCrate">
+	<property name="Extends" value="PopeyesCrate"/>
+	<property name="CustomIcon" value="CardriverCrate"/>
+	<property name="Model" value="#@modfolder:Resources/ShawLoot.unity3d?ShawCardriverCrate.prefab"/>
+	<property name="DowngradeBlock" value="CardriverBox"/>
+</block>
+<block name="CardriverBox">
+	<property name="Extends" value="PopeyesBox"/>
+	<property name="LootList" value="CardriverBox"/>
+</block>
+<block name="GavinCrate">
+	<property name="Extends" value="PopeyesCrate"/>
+	<property name="CustomIcon" value="GavinCrate"/>
+	<property name="Model" value="#@modfolder:Resources/ShawLoot.unity3d?ShawGavinCrate.prefab"/>
+	<property name="DowngradeBlock" value="GavinBox"/>
+</block>
+<block name="GavinBox">
+	<property name="Extends" value="PopeyesBox"/>
+	<property name="LootList" value="GavinBox"/>
+</block>
+<block name="GusCrate">
+	<property name="Extends" value="PopeyesCrate"/>
+	<property name="CustomIcon" value="GusCrate"/>
+	<property name="Model" value="#@modfolder:Resources/ShawLoot.unity3d?ShawGusCrate.prefab"/>
+	<property name="DowngradeBlock" value="GusBox"/>
+</block>
+<block name="GusBox">
+	<property name="Extends" value="PopeyesBox"/>
+	<property name="LootList" value="GusBox"/>
+</block>
+<block name="MukyCrate">
+	<property name="Extends" value="PopeyesCrate"/>
+	<property name="CustomIcon" value="MukyCrate"/>
+	<property name="Model" value="#@modfolder:Resources/ShawLoot.unity3d?ShawMukyCrate.prefab"/>
+	<property name="DowngradeBlock" value="MukyBox"/>
+</block>
+<block name="MukyBox">
+	<property name="Extends" value="PopeyesBox"/>
+	<property name="LootList" value="MukyBox"/>
+</block>
+<block name="KGBCrate">
+	<property name="Extends" value="PopeyesCrate"/>
+	<property name="CustomIcon" value="KGBCrate"/>
+	<property name="Model" value="#@modfolder:Resources/ShawLoot.unity3d?ShawKGBCrate.prefab"/>
+	<property name="DowngradeBlock" value="KGBBox"/>
+</block>
+<block name="KGBBox">
+	<property name="Extends" value="PopeyesBox"/>
+	<property name="LootList" value="KGBBox"/>
+</block>
+<block name="JohnaCrate">
+	<property name="Extends" value="PopeyesCrate"/>
+	<property name="CustomIcon" value="JohnaCrate"/>
+	<property name="Model" value="#@modfolder:Resources/ShawLoot.unity3d?ShawJohnaCrate.prefab"/>
+	<property name="DowngradeBlock" value="JohnaBox"/>
+</block>
+<block name="JohnaBox">
+	<property name="Extends" value="PopeyesBox"/>
+	<property name="LootList" value="JohnaBox"/>
+</block>
+<block name="PeterCrate">
+	<property name="Extends" value="PopeyesCrate"/>
+	<property name="CustomIcon" value="PeterCrate"/>
+	<property name="Model" value="#@modfolder:Resources/ShawLoot.unity3d?ShawPeterCrate.prefab"/>
+	<property name="DowngradeBlock" value="PeterBox"/>
+</block>
+<block name="PeterBox">
+	<property name="Extends" value="PopeyesBox"/>
+	<property name="LootList" value="PeterBox"/>
+</block>
+
+<block name="LegendaryCrate">
+	<property name="DescriptionKey" value="LegendaryCrateDesc"/>
+	<property name="CustomIcon" value="ManEgg"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawManEgg.prefab"/>
+	<property name="DisplayInfo" value="Name"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="25000"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Bigger_Catalyst" />
+	<drop event="Destroy" count="0"/>
+	<property name="DowngradeBlock" value="LegendaryBox"/>
+</block>
+<block name="LegendaryBox">
+	<property name="Extends" value="cntGarageStorage"/>
+	<property name="MaxDamage" value="5000"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawManEgg.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="LootList" value="LegendaryBox"/>
+	<property name="SellableToTrader" value="false"/>
+</block>
+<block name="LegendaryCrate2">
+	<property name="DescriptionKey" value="LegendaryCrate2Desc"/>
+	<property name="CustomIcon" value="ManEgg"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawManEgg.prefab"/>
+	<property name="DisplayInfo" value="Name"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="500"/>
+	<property name="SellableToTrader" value="false"/>
+	<drop event="Destroy" count="0"/>
+	<property name="DowngradeBlock" value="LegendaryBox2"/>
+</block>
+<block name="LegendaryBox2">
+	<property name="Extends" value="cntGarageStorage"/>
+	<property name="MaxDamage" value="500"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawManEgg.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="LootList" value="LegendaryBox2"/>
+	<property name="SellableToTrader" value="false"/>
+</block>
+	<!--Doors-->
+<block name="OldGodDoor">
+	<property name="CustomIcon" value="OldGodDoor"/>
+	<property name="DescriptionKey" value="OldGodDoorDesc"/>
+	<property name="Class" value="DoorSecure"/>
+	<property name="Pickable" value="false" />
+	<property name="Material" value="Mbedrock"/>
+	<property name="MaxDamage" value="25000"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Tag" value="Door"/>
+	<property name="Place" value="Door"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="Model" value="#@modfolder:Resources/ShawDoors.unity3d?ShawOldGodDoor.prefab"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="ModelOffset" value="0,1.1,0"/>
+	<property name="ImposterExchange" value="imposterCTRPlate" param1="9"/>  
+	<property name="OpenSound" value="StoneSlide"/>
+	<property name="CloseSound" value="StoneSlide"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="OldGodDoorUnlock"/>
+		<property name="Item" value="EssenceKey"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Destroy" count="0"/>
+	<property name="CustomUpgradeSound" value="DOIT"/>
+</block>
+<block name="OldGodDoorHard">
+	<property name="CustomIcon" value="OldGodDoor"/>
+	<property name="DescriptionKey" value="OldGodDoorHard"/>
+	<property name="Class" value="DoorSecure"/>
+	<property name="Pickable" value="false" />
+	<property name="Material" value="Mbedrock"/>
+	<property name="MaxDamage" value="25000"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Tag" value="Door"/>
+	<property name="Place" value="Door"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="Model" value="#@modfolder:Resources/ShawDoors.unity3d?ShawOldGodDoor.prefab"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="ModelOffset" value="0,1.1,0"/>
+	<property name="ImposterExchange" value="imposterCTRPlate" param1="9"/>  
+	<property name="OpenSound" value="StoneSlide"/>
+	<property name="CloseSound" value="StoneSlide"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="OldGodDoorUnlock"/>
+		<property name="Item" value="EssenceKey2"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Destroy" count="0"/>
+	<property name="CustomUpgradeSound" value="DOIT"/>
+</block>
+<block name="OldGodDoorWealthTemple">
+	<property name="CustomIcon" value="OldGodDoor"/>
+	<property name="DescriptionKey" value="OldGodDoorWealthTemple"/>
+	<property name="Class" value="DoorSecure"/>
+	<property name="Pickable" value="false" />
+	<property name="Material" value="Mbedrock"/>
+	<property name="MaxDamage" value="25000"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Tag" value="Door"/>
+	<property name="Place" value="Door"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="Model" value="#@modfolder:Resources/ShawDoors.unity3d?ShawOldGodDoor.prefab"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="ModelOffset" value="0,1.1,0"/>
+	<property name="ImposterExchange" value="imposterCTRPlate" param1="9"/>  
+	<property name="OpenSound" value="StoneSlide"/>
+	<property name="CloseSound" value="StoneSlide"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="OldGodDoorUnlock"/>
+		<property name="Item" value="EssenceKeyWealth"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Destroy" count="0"/>
+	<property name="CustomUpgradeSound" value="DOIT"/>
+</block>
+<block name="OldGodDoorWealthTempleEntrance">
+	<property name="CustomIcon" value="OldGodDoor"/>
+	<property name="DescriptionKey" value="OldGodDoorWealthTemple"/>
+	<property name="Class" value="DoorSecure"/>
+	<property name="Pickable" value="false" />
+	<property name="Material" value="Mbedrock"/>
+	<property name="MaxDamage" value="25000"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Tag" value="Door"/>
+	<property name="Place" value="Door"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="Model" value="#@modfolder:Resources/ShawDoors.unity3d?ShawOldGodDoor.prefab"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="ModelOffset" value="0,1.1,0"/>
+	<property name="ImposterExchange" value="imposterCTRPlate" param1="9"/>  
+	<property name="OpenSound" value="StoneSlide"/>
+	<property name="CloseSound" value="StoneSlide"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="OldGodDoorUnlock"/>
+		<property name="Item" value="EssenceKeyWealthEnter"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Destroy" count="0"/>
+	<property name="CustomUpgradeSound" value="DOIT"/>
+</block>
+
+<block name="OldGodDoorNoKey">
+	<property name="CustomIcon" value="OldGodDoor"/>
+	<property name="DescriptionKey" value="OldGodDoorNoKeyDesc"/>
+	<property name="Class" value="DoorSecure"/>
+	<property name="Pickable" value="false" />
+	<property name="Material" value="Mbedrock"/>
+	<property name="MaxDamage" value="25000"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Tag" value="Door"/>
+	<property name="Place" value="Door"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="Model" value="#@modfolder:Resources/ShawDoors.unity3d?ShawOldGodDoor.prefab"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="ModelOffset" value="0,1.1,0"/>
+	<property name="ImposterExchange" value="imposterCTRPlate" param1="9"/>  
+	<property name="OpenSound" value="StoneSlide"/>
+	<property name="CloseSound" value="StoneSlide"/>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="OldGodDoorUnlock">
+	<property name="CustomIcon" value="OldGodDoor"/>
+	<property name="DescriptionKey" value="OldGodDoorUnlockDesc"/>
+	<property name="Class" value="Door"/>
+	<property name="Pickable" value="false" />
+	<property name="Material" value="Mbedrock"/>
+	<property name="MaxDamage" value="25000"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Tag" value="Door"/>
+	<property name="Place" value="Door"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="Model" value="#@modfolder:Resources/ShawDoors.unity3d?ShawOldGodDoor.prefab"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="ModelOffset" value="0,1.1,0"/>
+	<property name="ImposterExchange" value="imposterCTRPlate" param1="9"/>  
+	<property name="OpenSound" value="StoneSlide"/>
+	<property name="CloseSound" value="StoneSlide"/>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="TempleDoor">
+	<property name="CustomIcon" value="TempleDoor"/>
+	<property name="DescriptionKey" value="TempleDoorDesc"/>
+	<property name="Class" value="DoorSecure"/>
+	<property name="Pickable" value="false" />
+	<property name="Material" value="Mbedrock"/>
+	<property name="MaxDamage" value="25000"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Tag" value="Door"/>
+	<property name="Place" value="Door"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="Model" value="#@modfolder:Resources/ShawDoors.unity3d?ShawTempleDoor.prefab"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="ModelOffset" value="0,1,0"/>
+	<property name="ImposterExchange" value="imposterCTRPlate" param1="9"/>  
+	<property name="OpenSound" value="StoneSlide"/>
+	<property name="CloseSound" value="StoneSlide"/>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="TempleDoorUnlocked">
+	<property name="CustomIcon" value="TempleDoor"/>
+	<property name="DescriptionKey" value="TempleDoorUnlockedDesc"/>
+	<property name="Class" value="Door"/>
+	<property name="Pickable" value="false" />
+	<property name="Material" value="Mbedrock"/>
+	<property name="MaxDamage" value="25000"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Tag" value="Door"/>
+	<property name="Place" value="Door"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="Model" value="#@modfolder:Resources/ShawDoors.unity3d?ShawTempleDoor.prefab"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="ModelOffset" value="0,1,0"/>
+	<property name="ImposterExchange" value="imposterCTRPlate" param1="9"/>  
+	<property name="OpenSound" value="StoneSlide"/>
+	<property name="CloseSound" value="StoneSlide"/>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="TempleDoorLocked">
+	<property name="CustomIcon" value="TempleDoor"/>
+	<property name="DescriptionKey" value="TempleDoorLockedDesc"/>
+	<property name="Class" value="DoorSecure"/>
+	<property name="Pickable" value="false" />
+	<property name="Material" value="Mbedrock"/>
+	<property name="MaxDamage" value="25000"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Tag" value="Door"/>
+	<property name="Place" value="Door"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="Model" value="#@modfolder:Resources/ShawDoors.unity3d?ShawTempleDoor.prefab"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="ModelOffset" value="0,1,0"/>
+	<property name="ImposterExchange" value="imposterCTRPlate" param1="9"/>  
+	<property name="OpenSound" value="StoneSlide"/>
+	<property name="CloseSound" value="StoneSlide"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="TempleDoorUnlocked"/>
+		<property name="Item" value="CookieKey1"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="1"/>
+	</property>
+	<drop event="Destroy" count="0"/>
+</block>
+	<!--Workstations-->
+<block name="BiggerCatalyst">
+	<property name="Class" value="Workstation"/>
+	<property name="DescriptionKey" value="BiggerCatalystDesc"/>
+	<property name="CustomIcon" value="BiggerCatalyst"/>
+	<property name="UnlockedBy" value="perkMonkeyFruit"/>
+	<property name="Collide" value="movement,melee,rocket,bullet"/> 
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Path" value="solid"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/ShawWorkstations.unity3d?ShawBiggerCatalyst.prefab"/>
+	<property name="Material" value="Mbedrock"/>
+	<property class="Workstation">
+		<property name="Modules" value="output"/>
+		<property name="CraftingAreaRecipes" value="BiggerCatalystCraft,BiggerCatalystPOI"/>
+	</property>
+	<property name="OpenSound" value="PowerUp"/>
+	<property name="CloseSound" value="close_workbench"/>
+	<property name="CraftCompleteSound" value="DOIT"/>
+	<property name="WorkstationIcon" value="BigHead" />
+	<property name="CraftIcon" value="BigHead"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="TakeDelay" value="3"/>
+	<property name="EconomicValue" value="50000"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Hydraulic_Press,Bigger_Catalyst" />
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="BiggerCatalystPOI">
+	<property name="Class" value="Workstation"/>
+	<property name="DescriptionKey" value="BiggerCatalystPOIDesc"/>
+	<property name="CustomIcon" value="BiggerCatalyst"/>
+	<property name="Collide" value="movement,melee,rocket,bullet"/> 
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Path" value="solid"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/ShawWorkstations.unity3d?ShawBiggerCatalyst.prefab"/>
+	<property name="Material" value="Mbedrock"/>
+	<property class="Workstation">
+		<property name="Modules" value="output"/>
+		<property name="CraftingAreaRecipes" value="BiggerCatalystPOI"/>
+	</property>
+	<property name="OpenSound" value="PowerUp"/>
+	<property name="CloseSound" value="close_workbench"/>
+	<property name="CraftCompleteSound" value="DOIT"/>
+	<property name="WorkstationIcon" value="BiggestHead" />
+	<property name="CraftIcon" value="BiggestHead"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="TakeDelay" value="3"/>
+	<property name="EconomicValue" value="50000"/>
+	<property name="SellableToTrader" value="false"/>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="BiggestBench">
+	<property name="Class" value="Workstation"/>
+	<property name="DescriptionKey" value="BiggestBenchDesc"/>
+	<property name="CustomIcon" value="BiggestBench"/>
+	<property name="UnlockedBy" value="perkCraftShaw"/>
+	<property name="MultiBlockDim" value="1,2,3"/>
+	<property name="Collide" value="movement,melee,rocket,bullet"/> 
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Path" value="solid"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/ShawWorkstations.unity3d?ShawBiggestBench.prefab"/>
+	<property name="Material" value="Mbedrock"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output"/>
+		<property name="CraftingAreaRecipes" value="BiggestBenchCraft,BiggestBenchPOI,BiggerCatalystCraft,BiggerCatalystPOI"/>
+	</property>
+	<property name="OpenSound" value="PowerUp"/>
+	<property name="CloseSound" value="PowerDown"/>
+	<property name="CraftCompleteSound" value="DOIT"/>
+	<property name="WorkstationIcon" value="BiggestHead" />
+	<property name="CraftIcon" value="BiggestHead"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="TakeDelay" value="3"/>
+	<property name="EconomicValue" value="50000"/>
+	<property name="SellableToTrader" value="false"/>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="BiggestBenchPOI">
+	<property name="Class" value="Workstation"/>
+	<property name="DescriptionKey" value="BiggestBenchPOIDesc"/>
+	<property name="CustomIcon" value="BiggestBench"/>
+	<property name="MultiBlockDim" value="1,2,3"/>
+	<property name="Collide" value="movement,melee,rocket,bullet"/> 
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Path" value="solid"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/ShawWorkstations.unity3d?ShawBiggestBench.prefab"/>
+	<property name="Material" value="Mbedrock"/>
+	<property class="Workstation">
+		<property name="Modules" value="output"/>
+		<property name="CraftingAreaRecipes" value="BiggestBenchPOI"/>
+	</property>
+	<property name="OpenSound" value="PowerUp"/>
+	<property name="CloseSound" value="PowerDown"/>
+	<property name="CraftCompleteSound" value="DOIT"/>
+	<property name="WorkstationIcon" value="BiggestHead" />
+	<property name="CraftIcon" value="BiggestHead"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="TakeDelay" value="3"/>
+	<property name="EconomicValue" value="50000"/>
+	<property name="SellableToTrader" value="false"/>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="GingerbreadManCell">
+	<property name="CustomIcon" value="GingerbreadManCell"/>
+	<property name="Class" value="PassiveCollectorV2, IDCCoreV2"/>
+	<property name="UnlockedBy" value="perkCraftShaw"/>
+	<property name="WorkstationIcon" value="GingerbreadMan"/>
+	<property name="DescriptionKey" value="GingerbreadManCellDesc"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/ShawWorkstations.unity3d?ShawGingerbreadManCell.prefab"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="Path" value="solid"/>
+	<property name="OpenSound" value="PowerUp"/>
+	<property name="CloseSound" value="PowerDown"/>
+	<property name="ConvertSound" value="DOIT,1"/>
+	<property name="MinConvertTime" value="28800"/>
+	<property name="MaxConvertTime" value="28800"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="MaxDamage" value="2500"/>
+	<property name="HeatMapStrength" value="1"/>
+	<property name="NeedsSkyAccess" value="false"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="50"/>
+	</property>
+	<drop event="Destroy" name="GingerbreadManCell" count="1"/>
+	
+	<property name="HasModifiers" value="true"/>
+	<property name="HasItemConversions" value="true"/>
+	
+	<property name="ContColumns" value="3"/>
+	<property name="ContRows" value="3"/>
+	<property name="NumRolls" value="1"/>
+	
+	<item_conversion item="GingerbreadMan" lower_range="2" upper_range="3"/>
+	
+	<modifier name="BiggestCore" effect="Speed" value="-0.8"/>
+</block>
+<block name="TrollJuiceCell">
+	<property name="CustomIcon" value="TrollJuiceCell"/>
+	<property name="Class" value="PassiveCollectorV2, IDCCoreV2"/>
+	<property name="UnlockedBy" value="perkCraftShaw"/>
+	<property name="WorkstationIcon" value="TrollJuice"/>
+	<property name="DescriptionKey" value="TrollJuiceCellDesc"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/ShawWorkstations.unity3d?ShawTrollJuiceCell.prefab"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="Path" value="solid"/>
+	<property name="OpenSound" value="PowerUp"/>
+	<property name="CloseSound" value="PowerDown"/>
+	<property name="ConvertSound" value="DOIT,1"/>
+	<property name="MinConvertTime" value="28800"/>
+	<property name="MaxConvertTime" value="28800"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="MaxDamage" value="2500"/>
+	<property name="HeatMapStrength" value="1"/>
+	<property name="NeedsSkyAccess" value="false"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="50"/>
+	</property>
+	<drop event="Destroy" name="TrollJuiceCell" count="1"/>
+	
+	<property name="HasModifiers" value="true"/>
+	<property name="HasItemConversions" value="true"/>
+	
+	<property name="ContColumns" value="3"/>
+	<property name="ContRows" value="3"/>
+	<property name="NumRolls" value="1"/>
+	
+	<item_conversion item="TrollJuice" lower_range="1" upper_range="1"/>
+	
+	<modifier name="BiggestCore" effect="Speed" value="-0.8"/>
+</block>
+<block name="HarambeWorkstation">
+	<property name="Class" value="Workstation"/>
+	<property name="Tags" value="HarambeWorkstation"/>
+	<property name="UnlockedBy" value="perkCraftShaw"/>
+	<property name="DescriptionKey" value="HarambeWorkstationDesc"/>
+	<property name="CustomIcon" value="MHHarambe"/>
+	<property name="MultiBlockDim" value="2,1,3"/>
+	<property name="Collide" value="movement,melee,rocket,bullet"/> 
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Path" value="solid"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawMHHarambe.prefab"/>
+	<property name="Material" value="Mbedrock"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output"/>
+		<property name="CraftingAreaRecipes" value="HarambeWorkstationCraft"/>
+	</property>
+	<property name="OpenSound" value="PowerUp"/>
+	<property name="CloseSound" value="PowerDown"/>
+	<property name="CraftCompleteSound" value="DOIT"/>
+	<property name="WorkstationIcon" value="FutCoin" />
+	<property name="CraftIcon" value="FutCoin"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="TakeDelay" value="3"/>
+	<property name="EconomicValue" value="50000"/>
+	<property name="SellableToTrader" value="false"/>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="RuinsWorkstation">
+	<property name="Class" value="Workstation"/>
+	<property name="Tags" value="RuinsWorkstation"/>
+	<property name="UnlockedBy" value="perkCraftShaw"/>
+	<property name="DescriptionKey" value="RuinsWorkstationDesc"/>
+	<property name="CustomIcon" value="MHRuins"/>
+	<property name="MultiBlockDim" value="2,2,3"/>
+	<property name="Collide" value="movement,melee,rocket,bullet"/> 
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Path" value="solid"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawMHRuins.prefab"/>
+	<property name="Material" value="Mbedrock"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output"/>
+		<property name="CraftingAreaRecipes" value="RuinsWorkstationCraft"/>
+	</property>
+	<property name="OpenSound" value="PowerUp"/>
+	<property name="CloseSound" value="PowerDown"/>
+	<property name="CraftCompleteSound" value="DOIT"/>
+	<property name="WorkstationIcon" value="Essence" />
+	<property name="CraftIcon" value="Essence"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="TakeDelay" value="3"/>
+	<property name="EconomicValue" value="50000"/>
+	<property name="SellableToTrader" value="false"/>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="SakuraGardenWorkstation">
+	<property name="Class" value="Workstation"/>
+	<property name="Tags" value="RuinsWorkstation"/>
+	<property name="UnlockedBy" value="perkCraftShaw"/>
+	<property name="DescriptionKey" value="SakuraGardenWorkstationDesc"/>
+	<property name="CustomIcon" value="MHSakuraGarden"/>
+	<property name="MultiBlockDim" value="3,2,3"/>
+	<property name="Collide" value="movement,melee,rocket,bullet"/> 
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Path" value="solid"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawMHSakuraGarden.prefab"/>
+	<property name="Material" value="Mbedrock"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output"/>
+		<property name="CraftingAreaRecipes" value="SakuraGardenWorkstationCraft"/>
+	</property>
+	<property name="OpenSound" value="PowerUp"/>
+	<property name="CloseSound" value="PowerDown"/>
+	<property name="CraftCompleteSound" value="DOIT"/>
+	<property name="WorkstationIcon" value="TurkeyLeg" />
+	<property name="CraftIcon" value="TurkeyLeg"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="TakeDelay" value="3"/>
+	<property name="EconomicValue" value="50000"/>
+	<property name="SellableToTrader" value="false"/>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="OilWorkstation">
+	<property name="Class" value="Workstation"/>
+	<property name="Tags" value="OilWorkstation"/>
+	<property name="UnlockedBy" value="perkCraftShaw"/>
+	<property name="DescriptionKey" value="OilWorkstationDesc"/>
+	<property name="CustomIcon" value="MHOil"/>
+	<property name="MultiBlockDim" value="2,2,3"/>
+	<property name="Collide" value="movement,melee,rocket,bullet"/> 
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Path" value="solid"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawMHOil.prefab"/>
+	<property name="Material" value="Mbedrock"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output"/>
+		<property name="CraftingAreaRecipes" value="OilWorkstationCraft"/>
+	</property>
+	<property name="OpenSound" value="PowerUp"/>
+	<property name="CloseSound" value="PowerDown"/>
+	<property name="CraftCompleteSound" value="DOIT"/>
+	<property name="WorkstationIcon" value="CookieProcessed1" />
+	<property name="CraftIcon" value="CookieProcessed1"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="TakeDelay" value="3"/>
+	<property name="EconomicValue" value="50000"/>
+	<property name="SellableToTrader" value="false"/>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="HydroponicsBasinShaw">
+	<property name="Class" value="Workstation"/>
+	<property name="Tags" value="HydroponicsBasinShaw"/>
+	<property name="UnlockedBy" value="perkYeahScience"/>
+	<property name="DescriptionKey" value="HydroponicsBasinShawDesc"/>
+	<property name="CustomIcon" value="plantHydroponicAloe"/>
+	<property name="MultiBlockDim" value="2,2,1"/>
+	<property name="Collide" value="movement,melee,rocket,bullet"/> 
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Path" value="solid"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Plants/plantHydroponicAloePrefab"/>
+	<property name="Material" value="MFuelBarrelPolymer"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output"/>
+		<property name="CraftingAreaRecipes" value="HydroponicsBasinShawCraft"/>
+	</property>
+	<property name="OpenSound" value="bucketfill_water"/>
+	<property name="CloseSound" value="close_workbench"/>
+	<property name="CraftCompleteSound" value="bucketfill_water"/>
+	<property name="WorkstationIcon" value="ui_game_symbol_water" />
+	<property name="CraftIcon" value="ui_game_symbol_water"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="TakeDelay" value="3"/>
+	<property name="EconomicValue" value="50000"/>
+	<property name="SellableToTrader" value="false"/>
+	<drop event="Destroy" name="HydroponicsBasinShaw" count="1"/>
+</block>
+<block name="HydraulicPress">
+	<property name="Class" value="Workstation"/>
+	<property name="DescriptionKey" value="HydraulicPressDesc"/>
+	<property name="CustomIcon" value="HydraulicPress"/>
+	<property name="Collide" value="movement,melee,rocket,bullet"/> 
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Path" value="solid"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/ShawWorkstations.unity3d?ShawHydraulicPress.prefab"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Material" value="Mmetal"/>
+	<property class="Workstation">
+		<property name="Modules" value="output"/>
+		<property name="CraftingAreaRecipes" value="HydraulicPressCraft"/>
+	</property>
+	<property name="OpenSound" value="Anvil"/>
+	<property name="CloseSound" value="close_workbench"/>
+	<property name="CraftCompleteSound" value="AnvilSingle"/>
+	<property name="WorkstationIcon" value="HydraulicPressIcon" />
+	<property name="CraftIcon" value="HydraulicPressIcon"/>
+	<property name="MaxDamage" value="5000"/>
+	<property name="TakeDelay" value="3"/>
+	<property name="EconomicValue" value="50000"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Hydraulic_Press" />
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="50"/>
+	</property>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="BigHeadForge">
+	<property name="Class" value="Workstation"/>
+	<property name="DescriptionKey" value="BigHeadForgeDesc"/>
+	<property name="CustomIcon" value="BigHeadForge"/>
+	<property name="Collide" value="movement,melee,rocket,bullet"/> 
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Path" value="solid"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/ShawWorkstations.unity3d?ShawBigForge.prefab"/>
+	<property name="MultiBlockDim" value="3,5,3"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Material" value="Mbedrock"/>
+	<property class="Workstation">
+		<property name="Modules" value="output"/>
+		<property name="CraftingAreaRecipes" value="BigHeadForgeCraft"/>
+	</property>
+	<property name="OpenSound" value="BlastFurnace"/>
+	<property name="CloseSound" value="close_workbench"/>
+	<property name="CraftCompleteSound" value="AnvilSingle"/>
+	<property name="WorkstationIcon" value="BigHead" />
+	<property name="CraftIcon" value="BigHead"/>
+	<property name="MaxDamage" value="5000"/>
+	<property name="TakeDelay" value="3"/>
+	<property name="EconomicValue" value="50000"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Bigger_Catalyst" />
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="50"/>
+	</property>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="BigAssembler">
+	<property name="Class" value="Workstation"/>
+	<property name="DescriptionKey" value="BigAssemblerDesc"/>
+	<property name="CustomIcon" value="BigAssembler"/>
+	<property name="Collide" value="movement,melee,rocket,bullet"/> 
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Path" value="solid"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/ShawWorkstations.unity3d?ShawBigAssembler.prefab"/>
+	<property name="MultiBlockDim" value="6,5,3"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Material" value="Mbedrock"/>
+	<property class="Workstation">
+		<property name="Modules" value="output"/>
+		<property name="CraftingAreaRecipes" value="BigAssemblerCraft"/>
+	</property>
+	<property name="OpenSound" value="Anvil"/>
+	<property name="CloseSound" value="close_workbench"/>
+	<property name="CraftCompleteSound" value="AnvilSingle"/>
+	<property name="WorkstationIcon" value="BigAssembler" />
+	<property name="CraftIcon" value="BigAssembler"/>
+	<property name="MaxDamage" value="5000"/>
+	<property name="TakeDelay" value="3"/>
+	<property name="EconomicValue" value="50000"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Bigger_Catalyst" />
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="50"/>
+	</property>
+	<drop event="Destroy" count="0"/>
+</block>
+<block name="BigFoodMaker">
+	<property name="Class" value="Workstation"/>
+	<property name="DescriptionKey" value="BigFoodMakerDesc"/>
+	<property name="CustomIcon" value="BigFoodMaker"/>
+	<property name="Collide" value="movement,melee,rocket,bullet"/> 
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Path" value="solid"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/ShawWorkstations.unity3d?ShawBigFoodMaker.prefab"/>
+	<property name="MultiBlockDim" value="2,4,1"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Material" value="Mbedrock"/>
+	<property class="Workstation">
+		<property name="Modules" value="output"/>
+		<property name="CraftingAreaRecipes" value="BigFoodMakerCraft"/>
+	</property>
+	<property name="OpenSound" value="Anvil"/>
+	<property name="CloseSound" value="close_workbench"/>
+	<property name="CraftCompleteSound" value="AnvilSingle"/>
+	<property name="WorkstationIcon" value="BigFoodMaker" />
+	<property name="CraftIcon" value="BigFoodMaker"/>
+	<property name="MaxDamage" value="5000"/>
+	<property name="TakeDelay" value="3"/>
+	<property name="EconomicValue" value="50000"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Bigger_Catalyst" />
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="50"/>
+	</property>
+	<drop event="Destroy" count="0"/>
+</block>
+	<!--Traders-->
+<block name="BiggestSeller">
+	<property name="DescriptionKey" value="BiggestSellerDesc"/>
+	<property name="CustomIcon" value="BiggestSeller"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="Class" value="VendingMachine"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/ShawWorkstations.unity3d?ShawBiggestSeller.prefab"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="143"/>
+	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="50"/>
+	</property>
+	<property name="TraderID" value="70"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="MaxDamage" value="25000"/>
+	<property name="EconomicValue" value="70"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Group" value="Hydraulic_Press" />
+	<drop event="Destroy" name="BiggestSeller" count="1"/>
+</block>
+<block name="BiggestSellerPOI">
+	<property name="DescriptionKey" value="BiggestSellerPOIDesc"/>
+	<property name="CustomIcon" value="BiggestSeller"/>
+	<property name="Material" value="Mbedrock"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="Class" value="VendingMachine"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/ShawWorkstations.unity3d?ShawBiggestSeller.prefab"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="143"/>
+	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="50"/>
+	</property>
+	<property name="TraderID" value="70"/>
+	<property name="Stacknumber" value="25"/>
+	<property name="MaxDamage" value="25000"/>
+	<property name="EconomicValue" value="70"/>
+	<property name="SellableToTrader" value="false"/>
+	<drop event="Destroy" name="BiggestSeller" count="1"/>
+</block>
+	<!--Mines-->
+<block name="ChimpMine">
+	<property name="Class" value="Mine"/>
+	<property name="Tags" value="Mine"/>
+	<property name="ItemTypeIcon" value="explosion"/>
+	<property name="CustomIcon" value="ChimpMine"/>
+	<property name="Material" value="MLandMine"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawChimpMine.prefab"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="Stacknumber" value="500"/>
+	<property name="MaxDamage" value="5"/>
+	<property name="TriggerDelay" value="0.5"/>
+	<property name="TriggerSound" value="Chimp"/>
+	<property name="Explosion.ParticleIndex" value="5"/>
+	<property name="Explosion.RadiusBlocks" value="10"/>
+	<property name="Explosion.RadiusEntities" value="10"/>
+	<property name="Explosion.BlockDamage" value="9001"/>
+	<property name="Explosion.EntityDamage" value="9001"/>
+	<property name="CanPickup" value="false"/>
+	<drop event="Destroy" count="0"/>
+	<property name="EconomicValue" value="21"/>
+</block>
+	<!--Buttons-->
+<block name="OldGodButton">
+	<property name="DescriptionKey" value="OldGodButtonDesc"/>
+	<property name="CustomIcon" value="OldGodButton"/>
+	<property name="SingleUse" value="true"/>
+	<property name="Class" value="ActivateSwitch"/>
+	<property name="ActivateSound" value="DOIT"/>
+	<property name="Material" value="Mbedrock"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/ShawDoors.unity3d?ShawOldGodButton.prefab"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<drop event="Destroy" count="0"/>
+</block>
+	<!--Boss Spawners-->
+<block name="TrollBricksBossT1">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="TrollBricks"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawTrollBricks.prefab"/>
+	<property name="Material" value="Mbedrock"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="BuffsWhenWalkedOn" value="buffBigZombieBossSpawn"/>
+	<drop event="Destroy" name="TrollBricks" count="1"/>
+</block>
+	<!--Decor-->
+<block name="TrollBricks">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="TrollBricks"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawTrollBricks.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="1000"/>
+	<drop event="Destroy" name="TrollBricks" count="1"/>
+</block>
+<block name="RedSparkleTime">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="RedSparkleTime"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawRedSparkleTime.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="1000"/>
+	<drop event="Destroy" name="RedSparkleTime" count="1"/>
+</block>
+<block name="BlueSparkleTime">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="BlueSparkleTime"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawBlueSparkleTime.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="1000"/>
+	<drop event="Destroy" name="BlueSparkleTime" count="1"/>
+</block>
+<block name="ClassicFedora">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="ClassicFedora"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawClassicFedora.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="1000"/>
+	<drop event="Destroy" name="ClassicFedora" count="1"/>
+</block>
+<block name="RipleysSign">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="RipleysSign"/>
+	<property name="MultiBlockDim" value="1,3,8"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawRipleysSign.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="10000"/>
+	<drop event="Destroy" name="RipleysSign" count="1"/>
+</block>
+<block name="BadCC">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="BadCC"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawBadCC.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="BadCC" count="1"/>
+</block>
+<block name="ManEgg">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="ManEgg"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawManEgg.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="ManEgg" count="1"/>
+</block>
+<block name="VoltBike">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="VoltBike"/>
+	<property name="MultiBlockDim" value="1,2,3"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawVoltBike.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="7500"/>
+	<drop event="Destroy" name="VoltBike" count="1"/>
+</block>
+<block name="JewBox">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="JewBox"/>
+	<property name="MultiBlockDim" value="1,2,3"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawJewBox.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="JewBox" count="1"/>
+</block>
+<block name="ArtMan">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="ArtMan"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawArtMan.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="1500"/>
+	<drop event="Destroy" name="ArtMan" count="1"/>
+</block>
+<block name="Boomer">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="Boomer"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawBoomer.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="1000"/>
+	<drop event="Destroy" name="Boomer" count="1"/>
+</block>
+<block name="Idol">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="Idol"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawIdol.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="Idol" count="1"/>
+</block>
+<block name="Bee">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="Bee"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawBee.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="1000"/>
+	<drop event="Destroy" name="Bee" count="1"/>
+</block>
+<block name="BoomBox">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="BoomBox"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawBoomBox.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="1500"/>
+	<drop event="Destroy" name="BoomBox" count="1"/>
+</block>
+<block name="TacoDoge">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="TacoDoge"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawTacoDoge.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="1500"/>
+	<drop event="Destroy" name="TacoDoge" count="1"/>
+</block>
+<block name="DababyCar">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="DababyCar"/>
+	<property name="MultiBlockDim" value="3,3,5"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawDababyCar.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="7500"/>
+	<drop event="Destroy" name="DababyCar" count="1"/>
+</block>
+<block name="SusTroll">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="SusTroll"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawSusTroll.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="SusTroll" count="1"/>
+</block>
+<block name="Shark">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="Shark"/>
+	<property name="MultiBlockDim" value="3,3,15"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawShark.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="10000"/>
+	<drop event="Destroy" name="Shark" count="1"/>
+</block>
+<block name="TrumpWall">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="TrumpWall"/>
+	<property name="MultiBlockDim" value="1,3,3"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawTrumpWall.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="50000"/>
+	<drop event="Destroy" name="TrumpWall" count="1"/>
+</block>
+<block name="ValkStone">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="ValkStone"/>
+	<property name="MultiBlockDim" value="6,14,6"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawValkStone.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="50000"/>
+	<drop event="Destroy" name="ValkStone" count="1"/>
+</block>
+<block name="MHCube">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="MHCube"/>
+	<property name="MultiBlockDim" value="2,2,3"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawMHCube.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="10000"/>
+	<drop event="Destroy" name="MHCube" count="1"/>
+</block>
+<block name="MHHarambe">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="DescriptionKey" value="HarambeWorkstationDesc"/>
+	<property name="CustomIcon" value="MHHarambe"/>
+	<property name="MultiBlockDim" value="2,1,3"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawMHHarambe.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="10000"/>
+	<drop event="Destroy" name="MHHarambe" count="1"/>
+</block>
+<block name="MHOil">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="DescriptionKey" value="OilWorkstationDesc"/>
+	<property name="CustomIcon" value="MHOil"/>
+	<property name="MultiBlockDim" value="2,2,3"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawMHOil.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="10000"/>
+	<drop event="Destroy" name="MHOil" count="1"/>
+</block>
+<block name="MHRuins">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="DescriptionKey" value="RuinsWorkstationDesc"/>
+	<property name="CustomIcon" value="MHRuins"/>
+	<property name="MultiBlockDim" value="2,2,3"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawMHRuins.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="10000"/>
+	<drop event="Destroy" name="MHRuins" count="1"/>
+</block>
+<block name="MHBanHammer">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="MHBanHammer"/>
+	<property name="MultiBlockDim" value="2,2,3"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawMHBanHammer.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="10000"/>
+	<drop event="Destroy" name="MHBanHammer" count="1"/>
+</block>
+<block name="MHSakuraGarden">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="DescriptionKey" value="SakuraGardenWorkstationDesc"/>
+	<property name="CustomIcon" value="MHSakuraGarden"/>
+	<property name="MultiBlockDim" value="3,2,3"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawMHSakuraGarden.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="10000"/>
+	<drop event="Destroy" name="MHSakuraGarden" count="1"/>
+</block>
+<block name="MHSwordStone">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="MHSwordStone"/>
+	<property name="MultiBlockDim" value="2,2,2"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawMHSwordStone.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="10000"/>
+	<drop event="Destroy" name="MHSwordStone" count="1"/>
+</block>
+<block name="EmpyreanGeneral">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="EmpyreanGeneral"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawEmpyreanGeneral.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="5000"/>
+	<drop event="Destroy" name="EmpyreanGeneral" count="1"/>
+</block>
+<block name="EmpyreanKing">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="EmpyreanKing"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawEmpyreanKing.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="5000"/>
+	<drop event="Destroy" name="EmpyreanKing" count="1"/>
+</block>
+<block name="KorbloxGeneral">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="KorbloxGeneral"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawKorbloxGeneral.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="5000"/>
+	<drop event="Destroy" name="KorbloxGeneral" count="1"/>
+</block>
+<block name="KorbloxDeathspeaker">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="KorbloxDeathspeaker"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawKorbloxDeathspeaker.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="5000"/>
+	<drop event="Destroy" name="KorbloxDeathspeaker" count="1"/>
+</block>
+<block name="OverseerGeneral">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="OverseerGeneral"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawOverseerGeneral.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="5000"/>
+	<drop event="Destroy" name="OverseerGeneral" count="1"/>
+</block>
+<block name="OverseerKing">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="OverseerKing"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawOverseerKing.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="5000"/>
+	<drop event="Destroy" name="OverseerKing" count="1"/>
+</block>
+<block name="RedcliffGeneral">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="RedcliffGeneral"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawRedcliffGeneral.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="5000"/>
+	<drop event="Destroy" name="RedcliffGeneral" count="1"/>
+</block>
+<block name="RedcliffKing">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="RedcliffKing"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawRedcliffKing.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="5000"/>
+	<drop event="Destroy" name="RedcliffKing" count="1"/>
+</block>
+<block name="Gus">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="Gus"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawGus.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="Gus" count="1"/>
+</block>
+<block name="Horse1">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="Horse1"/>
+	<property name="MultiBlockDim" value="6,6,3"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawHorse1.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="15000"/>
+	<drop event="Destroy" name="Horse1" count="1"/>
+</block>
+<block name="Horse2">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="Horse2"/>
+	<property name="MultiBlockDim" value="6,6,3"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawHorse2.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="15000"/>
+	<drop event="Destroy" name="Horse2" count="1"/>
+</block>
+<block name="RobloxLogo">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="RobloxLogo"/>
+	<property name="MultiBlockDim" value="4,6,4"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawRobloxLogo.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="25000"/>
+	<drop event="Destroy" name="RobloxLogo" count="1"/>
+</block>
+<block name="WalterSponge">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="WalterSponge"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawWalterSponge.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="WalterSponge" count="1"/>
+</block>
+<block name="WhiteManStone">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="WhiteManStone"/>
+	<property name="MultiBlockDim" value="2,6,2"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawWhiteManStone.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="25000"/>
+	<drop event="Destroy" name="WhiteManStone" count="1"/>
+</block>
+<block name="WhiteRV">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="WhiteRV"/>
+	<property name="MultiBlockDim" value="1,1,2"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawWhiteRV.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="WhiteRV" count="1"/>
+</block>
+<block name="Baller">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="Baller"/>
+	<property name="MultiBlockDim" value="3,5,3"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawBaller.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="25000"/>
+	<drop event="Destroy" name="Baller" count="1"/>
+</block>
+<block name="DarkHeart">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="ShawMHDarkHeart"/>
+	<property name="MultiBlockDim" value="2,2,2"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawMHDarkHeart.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="5000"/>
+	<drop event="Destroy" name="DarkHeart" count="1"/>
+</block>
+<block name="EternalVoyage">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="EternalVoyage"/>
+	<property name="MultiBlockDim" value="5,3,7"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawMHEternalVoyage.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="15000"/>
+	<drop event="Destroy" name="EternalVoyage" count="1"/>
+</block>
+<block name="EyeShrine">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="EyeShrine"/>
+	<property name="MultiBlockDim" value="3,3,3"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawMHEyeShrine.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="10000"/>
+	<drop event="Destroy" name="EyeShrine" count="1"/>
+</block>
+<block name="TechShrine">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="TechShrine"/>
+	<property name="MultiBlockDim" value="2,3,3"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawMHTechShrine.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="10000"/>
+<drop event="Destroy" name="TechShrine" count="1"/>
+</block>
+<block name="Venomshank">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="VenomshankShrine"/>
+	<property name="MultiBlockDim" value="2,2,2"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawMHVenomshank.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="5000"/>
+	<drop event="Destroy" name="Venomshank" count="1"/>
+</block>
+<block name="GermanyStatue">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="GermanyStatue"/>
+	<property name="MultiBlockDim" value="3,5,3"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawGermanyStatue.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="10000"/>
+	<drop event="Destroy" name="GermanyStatue" count="1"/>
+</block>
+<block name="GoldStatue">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="GoldStatue"/>
+	<property name="MultiBlockDim" value="2,3,2"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawGoldStatue.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="7500"/>
+	<drop event="Destroy" name="GoldStatue" count="1"/>
+</block>
+<block name="LeninStatue">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="LeninStatue"/>
+	<property name="MultiBlockDim" value="3,5,3"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawLeninStatue.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="10000"/>
+	<drop event="Destroy" name="LeninStatue" count="1"/>
+</block>
+<block name="NoobStatue">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="NoobStatue"/>
+	<property name="MultiBlockDim" value="4,5,4"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawNoobStatue.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="20000"/>
+	<drop event="Destroy" name="NoobStatue" count="1"/>
+</block>
+<block name="SaulGoodman">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="SaulGoodman"/>
+	<property name="MultiBlockDim" value="3,3,2"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawSaulGoodman.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="5000"/>
+	<drop event="Destroy" name="SaulGoodman" count="1"/>
+</block>
+<block name="TitanSub">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="TitanSub"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawTitanSub.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="5000"/>
+	<drop event="Destroy" name="TitanSub" count="1"/>
+</block>
+<block name="CookieChicken">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="CookieChicken"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawCookieChicken.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="1000"/>
+	<drop event="Destroy" name="CookieChicken" count="1"/>
+</block>
+<block name="CookieGift">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="CookieGift"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawCookieGift.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="1000"/>
+	<drop event="Destroy" name="CookieGift" count="1"/>
+</block>
+<block name="CookieHair">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="CookieHair"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawCookieHair.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="1000"/>
+	<drop event="Destroy" name="CookieHair" count="1"/>
+</block>
+<block name="CookieHood">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="CookieHood"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawCookieHood.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="1000"/>
+	<drop event="Destroy" name="CookieHood" count="1"/>
+</block>
+<block name="CookieSunGlasses">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="CookieSunGlasses"/>
+	<property name="MultiBlockDim" value="1,1,1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawCookieSunGlasses.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="1000"/>
+	<drop event="Destroy" name="CookieSunGlasses" count="1"/>
+</block>
+<block name="MHAxeShrine">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="MHAxeShrine"/>
+	<property name="MultiBlockDim" value="2,3,3"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawMHAxeShrine.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="5000"/>
+	<drop event="Destroy" name="MHAxeShrine" count="1"/>
+</block>
+<block name="KanyeSign">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="KanyeSign"/>
+	<property name="MultiBlockDim" value="4,1,1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawKanyeSign.prefab"/>
+	<property name="Material" value="Mstone"/>
+	<property name="MaxDamage" value="5000"/>
+	<drop event="Destroy" name="KanyeSign" count="1"/>
+</block>
+<block name="BigHeadBlock">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="BigHead"/>
+	<property name="MultiBlockDim" value="4,4,4"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawBigHeadBlock.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="25000"/>
+	<drop event="Destroy" name="BigHeadBlock" count="1"/>
+</block>
+<block name="BiggerHeadBlock">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="BiggerHead"/>
+	<property name="MultiBlockDim" value="5,5,5"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawBiggerHeadBlock.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="35000"/>
+	<drop event="Destroy" name="BiggerHeadBlock" count="1"/>
+</block>
+<block name="BiggestHeadBlock">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="BiggestHead"/>
+	<property name="MultiBlockDim" value="6,6,6"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawBiggestHeadBlock.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="50000"/>
+	<drop event="Destroy" name="BiggestHeadBlock" count="1"/>
+</block>
+<block name="KingThrone">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="KingThrone"/>
+	<property name="MultiBlockDim" value="2,4,2"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?ShawThrone.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="50000"/>
+	<drop event="Destroy" name="KingThrone" count="1"/>
+</block>
+	<!--Signs-->
+<block name="Black">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="Black"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawBlackSign.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="Black" count="1"/>
+</block>
+<block name="GavinSign1024">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="GavinSign"/>
+	<property name="MultiBlockDim" value="2,1,2"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawGavinSign1024.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="GavinSign1024" count="1"/>
+</block>
+<block name="ShawSign1024">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="ShawSign"/>
+	<property name="MultiBlockDim" value="2,1,2"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawBshawSign1024.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="ShawSign1024" count="1"/>
+</block>
+<block name="ShawSign512">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="ShawSign"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawBshawSign512.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="ShawSign512" count="1"/>
+</block>
+<block name="GusSign1024X512">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="GusSign"/>
+	<property name="MultiBlockDim" value="2,1,1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawGusSign1024X512.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="GusSign1024X512" count="1"/>
+</block>
+<block name="KGBSign1024X512">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="KGBSign1024X512"/>
+	<property name="MultiBlockDim" value="2,1,1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawKGBSign1024X512.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="KGBSign1024X512" count="1"/>
+</block>
+<block name="KGBMenu512X1024">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="KGBMenu512X1024"/>
+	<property name="MultiBlockDim" value="1,1,2"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawKGBMenu512X1024.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="KGBMenu512X1024" count="1"/>
+</block>
+<block name="KGBLogo512">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="KGBLogo512"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawKGBLogo512.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="KGBLogo512" count="1"/>
+</block>
+<block name="KGBMenu512">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="KGBMenu512"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawKGBMenu512.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="KGBMenu512" count="1"/>
+</block>
+<block name="V2KGBMenu512">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="V2KGBMenu512"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawV2KGBMenu512.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="V2KGBMenu512" count="1"/>
+</block>
+<block name="V3KGBMenu512">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="V3KGBMenu512"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawV3KGBMenu512.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="V3KGBMenu512" count="1"/>
+</block>
+<block name="KGBSign512">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="KGBSign512"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawKGBSign512.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="KGBSign512" count="1"/>
+</block>
+<block name="V2KGBSign512">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="V2KGBSign512"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawV2KGBSign512.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="V2KGBSign512" count="1"/>
+</block>
+<block name="PeterMenu512">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="PeterMenu512"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawPeterMenu512.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="PeterMenu512" count="1"/>
+</block>
+<block name="BurgerSign512">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="BurgerSign512"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawBurgerSign512.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="BurgerSign512" count="1"/>
+</block>
+<block name="PeterSign1024X512">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="PeterSign1024X512"/>
+	<property name="MultiBlockDim" value="2,1,1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawPeterSign1024X512.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="PeterSign1024X512" count="1"/>
+</block>
+<block name="MukySign1024X512">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="MukySign1024X512"/>
+	<property name="MultiBlockDim" value="2,1,1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawMukySign1024X512.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="MukySign1024X512" count="1"/>
+</block>
+<block name="MukySign512">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="MukySign512"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawMukySign512.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="MukySign512" count="1"/>
+</block>
+<block name="JohnaSign1024X512">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="JohnaSign1024X512"/>
+	<property name="MultiBlockDim" value="2,1,1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawJohnaSign1024X512.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="JohnaSign1024X512" count="1"/>
+</block>
+<block name="PeterSign4096X2048">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="PeterSign1024X512"/>
+	<property name="MultiBlockDim" value="8,1,4"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawPeterSign4096X2048.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="PeterSign4096X2048" count="1"/>
+</block>
+<block name="MukySign4096X2048">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="MukySign1024X512"/>
+	<property name="MultiBlockDim" value="8,1,4"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawMukySign4096X2048.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="MukySign4096X2048" count="1"/>
+</block>
+<block name="PeterSign2048X1024">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="PeterSign1024X512"/>
+	<property name="MultiBlockDim" value="4,1,2"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawPeterSign2048X1024.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="PeterSign2048X1024" count="1"/>
+</block>
+<block name="MukySign2048X1024">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="MukySign1024X512"/>
+	<property name="MultiBlockDim" value="4,1,2"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawMukySign2048X1024.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="MukySign2048X1024" count="1"/>
+</block>
+		<!--Slants-->
+<block name="BlackSlant">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="Black"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawBlackSignSlant.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="BlackSlant" count="1"/>
+</block>
+<block name="ShawSign512Slant">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="ShawSign"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawBshawSign512Slant.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="ShawSign512Slant" count="1"/>
+</block>
+<block name="GusSign1024X512Slant">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="GusSign"/>
+	<property name="MultiBlockDim" value="2,1,1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawGusSign1024X512Slant.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="GusSign1024X512Slant" count="1"/>
+</block>
+<block name="KGBSign1024X512Slant">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="KGBSign1024X512"/>
+	<property name="MultiBlockDim" value="2,1,1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawKGBSign1024X512Slant.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="KGBSign1024X512Slant" count="1"/>
+</block>
+<block name="KGBLogo512Slant">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="KGBLogo512"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawKGBLogo512Slant.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="KGBLogo512Slant" count="1"/>
+</block>
+<block name="KGBMenu512Slant">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="KGBMenu512"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawKGBMenu512Slant.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="KGBMenu512Slant" count="1"/>
+</block>
+<block name="V2KGBMenu512Slant">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="V2KGBMenu512"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawV2KGBMenu512Slant.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="V2KGBMenu512Slant" count="1"/>
+</block>
+<block name="V3KGBMenu512Slant">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="V3KGBMenu512"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawV3KGBMenu512Slant.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="V3KGBMenu512Slant" count="1"/>
+</block>
+<block name="KGBSign512Slant">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="KGBSign512"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawKGBSign512Slant.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="KGBSign512Slant" count="1"/>
+</block>
+<block name="V2KGBSign512Slant">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="V2KGBSign512"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawV2KGBSign512Slant.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="V2KGBSign512Slant" count="1"/>
+</block>
+<block name="PeterMenu512Slant">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="PeterMenu512"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawPeterMenu512Slant.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="PeterMenu512Slant" count="1"/>
+</block>
+<block name="BurgerSign512Slant">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="BurgerSign512"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawBurgerSign512Slant.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="BurgerSign512Slant" count="1"/>
+</block>
+<block name="PeterSign1024X512Slant">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="PeterSign1024X512"/>
+	<property name="MultiBlockDim" value="2,1,1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawPeterSign1024X512Slant.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="PeterSign1024X512Slant" count="1"/>
+</block>
+<block name="MukySign1024X512Slant">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="MukySign1024X512"/>
+	<property name="MultiBlockDim" value="2,1,1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawMukySign1024X512Slant.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="MukySign1024X512Slant" count="1"/>
+</block>
+<block name="MukySign512Slant">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="MukySign512"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawMukySign512Slant.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="MukySign512Slant" count="1"/>
+</block>
+<block name="JohnaSign1024X512Slant">
+	<property name="Extends" value="DecorTemplate"/>
+	<property name="CustomIcon" value="JohnaSign1024X512"/>
+	<property name="MultiBlockDim" value="2,1,1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawSigns.unity3d?ShawJohnaSign1024X512Slant.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="2500"/>
+	<drop event="Destroy" name="JohnaSign1024X512Slant" count="1"/>
+</block>
+	<!--Cookie Blocks-->
+<block name="ShawCookieShapes" shapes="All">
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="DescriptionKey" value="ShawCookieShapesDesc"/>
+	<property name="Material" value="ShawCookie_shapes"/>
+	<property name="MaxDamage" value="50000"/>
+	<property name="DisplayType" value="blockHardened"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="Texture" value="Cookie1"/>
+	<property name="UiBackgroundTexture" value="Cookie1"/>
+	<property class="RepairItems"> <property name="CookieProcessed1" value="100"/> </property>
+	<property name="CustomUpgradeSound" value="DOIT"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="EconomicValue" value="160"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Shape" value="New"/>
+	<property name="DowngradeBlock" value="titaniumShapes"/>
+	<property name="FilterTags" value="MC_Shapes,MC_building,fbuilding"/>
+</block>
+	<!--Cookie Terra-->
+<block name="ShawCookieDirt">
+	<property name="Material" value="Mdirt"/>
+	<property name="CanMobsSpawnOn" value="true"/>
+	<property name="MaxDamage" value="2500" />
+	<property name="Shape" value="Terrain"/>
+	<property name="Mesh" value="terrain"/>
+	<property name="Texture" value="Cookie1"/>
+	<property name="TerrainIndex" value="23"/>
+	<property name="MicroSplatVoxel" value="voxelCookie0"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="Map.Color" value="255,0,0"/>
+	<drop event="Harvest" name="CookieRaw1" count="25" tag="oreShawHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="CanMobsSpawnOn" value="true"/>
+	<property name="FilterTags" value="fterrain"/>
+	<property name="SortOrder1" value="d0l0"/>
+	<property name="SortOrder2" value="0050"/>
+	<property name="DisplayType" value="blockTerrain" />
+	<property name="SellableToTrader" value="false"/>
+</block>
+<block name="ShawCookieStone">
+	<property name="Material" value="Mstone"/>
+	<property name="CanMobsSpawnOn" value="true"/>
+	<property name="MaxDamage" value="5000" />
+	<property name="Shape" value="Terrain"/>
+	<property name="Mesh" value="terrain"/>
+	<property name="Texture" value="Cookie1"/>
+	<property name="TerrainIndex" value="23"/>
+	<property name="MicroSplatVoxel" value="voxelCookie0"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="Map.Color" value="255,0,0"/>
+	<drop event="Harvest" name="CookieRaw1" count="50" tag="oreShawHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="CanMobsSpawnOn" value="true"/>
+	<property name="FilterTags" value="fterrain"/>
+	<property name="SortOrder1" value="d0l0"/>
+	<property name="SortOrder2" value="0050"/>
+	<property name="DisplayType" value="blockTerrain" />
+	<property name="SellableToTrader" value="false"/>
+</block>
+<block name="ShawCookieGravel">
+	<property name="Material" value="MoreMetal"/>
+	<property name="MaxDamage" value="2500" />
+	<property name="Shape" value="Terrain"/>
+	<property name="Mesh" value="terrain"/>
+	<property name="Texture" value="Cookie1"/>
+	<property name="TerrainIndex" value="23"/>
+	<property name="MicroSplatVoxel" value="voxelCookie2"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="Map.Color" value="255,0,0"/>
+	<drop event="Harvest" name="CookieRaw2" count="250" tag="oreShawHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="CanMobsSpawnOn" value="true"/>
+	<property name="FilterTags" value="fterrain"/>
+	<property name="SortOrder1" value="d0l0"/>
+	<property name="SortOrder2" value="0050"/>
+	<property name="DisplayType" value="blockTerrain" />
+	<property name="SellableToTrader" value="false"/>
+</block>
+<block name="ShawCookieOreAlex">
+	<property name="Tags" value="shawOre"/>
+	<property name="Material" value="MoreMetal"/>
+	<property name="MaxDamage" value="44444" />
+	<property name="Shape" value="Terrain"/>
+	<property name="Mesh" value="terrain"/>
+	<property name="Texture" value="Cookie1"/>
+	<property name="TerrainIndex" value="23"/>
+	<property name="MicroSplatVoxel" value="voxelCookie3"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="Map.Color" value="255,0,0"/>
+	<drop event="Harvest" name="CookieRaw1" count="12500" tag="oreShawHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="CanMobsSpawnOn" value="true"/>
+	<property name="FilterTags" value="fterrain"/>
+	<property name="SortOrder1" value="d0l0"/>
+	<property name="SortOrder2" value="0050"/>
+	<property name="DisplayType" value="blockTerrain" />
+	<property name="SellableToTrader" value="false"/>
+</block>
+<block name="ShawCookieOre1">
+	<property name="Tags" value="shawOre"/>
+	<property name="Material" value="MoreMetal"/>
+	<property name="MaxDamage" value="50000" />
+	<property name="Shape" value="Terrain"/>
+	<property name="Mesh" value="terrain"/>
+	<property name="Texture" value="Cookie1"/>
+	<property name="TerrainIndex" value="23"/>
+	<property name="MicroSplatVoxel" value="voxelCookie1"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="Map.Color" value="255,0,0"/>
+	<drop event="Harvest" name="CookieRaw1" count="1250" tag="oreShawHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="CanMobsSpawnOn" value="true"/>
+	<property name="FilterTags" value="fterrain"/>
+	<property name="SortOrder1" value="d0l0"/>
+	<property name="SortOrder2" value="0050"/>
+	<property name="DisplayType" value="blockTerrain" />
+	<property name="SellableToTrader" value="false"/>
+</block>
+<block name="ShawCookieStone2">
+	<property name="Material" value="Mstone"/>
+	<property name="CanMobsSpawnOn" value="true"/>
+	<property name="MaxDamage" value="10000" />
+	<property name="Shape" value="Terrain"/>
+	<property name="Mesh" value="terrain"/>
+	<property name="Texture" value="Cookie1"/>
+	<property name="TerrainIndex" value="23"/>
+	<property name="MicroSplatVoxel" value="voxelCookie0"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="Map.Color" value="255,0,0"/>
+	<drop event="Harvest" name="CookieRaw1" count="100" tag="oreShawHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="CanMobsSpawnOn" value="true"/>
+	<property name="FilterTags" value="fterrain"/>
+	<property name="SortOrder1" value="d0l0"/>
+	<property name="SortOrder2" value="0050"/>
+	<property name="DisplayType" value="blockTerrain" />
+	<property name="SellableToTrader" value="false"/>
+</block>
+	<!--Stump Hack-->
+<block name="ShawtreeStump">
+	<property name="Material" value="MtreeWoodSmall"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="IsPlant" value="true"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Trees/Prefabs/Stump.prefab"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Path" value="solid"/>
+	<property name="BigDecorationRadius" value="3"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="StabilitySupport" value="false"/>
+	<drop event="Harvest" name="resourceWood" count="20,30" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="foodHoney" count="1" prob=".2"/>
+	<property name="SortOrder1" value="B907"/>
+	<property name="SortOrder2" value="0000"/>
+	<property name="Tags" value="wood"/>
+	<property name="FilterTags" value="MC_outdoor,SC_trees"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="treeStump"/>
+</block>
+<block name="ShawtreeStumpPOI">
+	<property name="Material" value="MtreeWoodSmall"/>
+	<property name="IsPlant" value="true"/>
+	<property name="CustomIcon" value="treeStump"/>
+	<property name="CustomIconTint" value="996600"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="@:Entities/Trees/Prefabs/Stump.prefab"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Path" value="solid"/>
+	<property name="BigDecorationRadius" value="3"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<drop event="Harvest" name="resourceWood" count="20,30" tag="oreWoodHarvest"/>
+	<drop event="Destroy" name="foodHoney" count="1" prob=".2"/>
+	<property name="SortOrder1" value="B907"/>
+	<property name="SortOrder2" value="0001"/>
+	<property name="Tags" value="wood"/>
+	<property name="FilterTags" value="MC_outdoor,SC_trees"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="treeStump"/>
+</block>
+</append>
+	<!--Paintings-->
+<append xpath="/blocks/block[@name='paintingBen']">
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_Kobe1.prefab"/>
+</append>
+<append xpath="/blocks/block[@name='paintingLorien']">
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_Peter1.prefab"/>
+</append>
+<append xpath="/blocks/block[@name='paintingDerek']">
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_Peter2.prefab"/>
+</append>
+<append xpath="/blocks/block[@name='paintingNoah']">
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_Shaw1.prefab"/>
+</append>
+<append xpath="/blocks/block[@name='paintingDuke']">
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_Shaw2.prefab"/>
+</append>
+<append xpath="/blocks/block[@name='paintingKen']">
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_Shaw3.prefab"/>
+</append>
+<append xpath="/blocks">
+<block name="ShawpaintingKobe1">
+	<property name="CreativeMode" value="Player"/>
+	<property name="Material" value="Mglass"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_Kobe1.prefab"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="IsDecoration" value="true"/>
+	<property name="StabilitySupport" value="false"/>
+	<drop event="Destroy" name="resourceWood" count="1,2"/>
+	<property name="SortOrder1" value="B259"/>
+	<property name="SortOrder2" value="0000"/>
+	<property name="FilterTags" value="MC_building,SC_decor"/>
+</block>
+<block name="Shawpainting_Black1">
+	<property name="Extends" value="ShawpaintingKobe1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_Black1.prefab"/>
+</block>
+<block name="Shawpainting_Black2">
+	<property name="Extends" value="ShawpaintingKobe1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_Black2.prefab"/>
+</block>
+<block name="Shawpainting_Black3">
+	<property name="Extends" value="ShawpaintingKobe1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_Black3.prefab"/>
+</block>
+<block name="Shawpainting_Black4">
+	<property name="Extends" value="ShawpaintingKobe1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_Black4.prefab"/>
+</block>
+<block name="Shawpainting_Black5">
+	<property name="Extends" value="ShawpaintingKobe1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_Black5.prefab"/>
+</block>
+<block name="Shawpainting_Black6">
+	<property name="Extends" value="ShawpaintingKobe1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_Black6.prefab"/>
+</block>
+<block name="Shawpainting_Black7">
+	<property name="Extends" value="ShawpaintingKobe1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_Black7.prefab"/>
+</block>
+<block name="Shawpainting_Black8">
+	<property name="Extends" value="ShawpaintingKobe1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_Black8.prefab"/>
+</block>
+<block name="Shawpainting_Brick1">
+	<property name="Extends" value="ShawpaintingKobe1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_Brick1.prefab"/>
+</block>
+<block name="Shawpainting_Feed1">
+	<property name="Extends" value="ShawpaintingKobe1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_Feed1.prefab"/>
+</block>
+<block name="Shawpainting_Hitler1">
+	<property name="Extends" value="ShawpaintingKobe1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_Hitler1.prefab"/>
+</block>
+<block name="Shawpainting_King1">
+	<property name="Extends" value="ShawpaintingKobe1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_King1.prefab"/>
+</block>
+<block name="Shawpainting_King2">
+	<property name="Extends" value="ShawpaintingKobe1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_King2.prefab"/>
+</block>
+<block name="Shawpainting_King3">
+	<property name="Extends" value="ShawpaintingKobe1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_King3.prefab"/>
+</block>
+<block name="Shawpainting_Ninja1">
+	<property name="Extends" value="ShawpaintingKobe1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_Ninja1.prefab"/>
+</block>
+<block name="Shawpainting_Peter1">
+	<property name="Extends" value="ShawpaintingKobe1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_Peter1.prefab"/>
+</block>
+<block name="Shawpainting_Peter2">
+	<property name="Extends" value="ShawpaintingKobe1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_Peter2.prefab"/>
+</block>
+<block name="Shawpainting_Shaw1">
+	<property name="Extends" value="ShawpaintingKobe1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_Shaw1.prefab"/>
+</block>
+<block name="Shawpainting_Shaw2">
+	<property name="Extends" value="ShawpaintingKobe1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_Shaw2.prefab"/>
+</block>
+<block name="Shawpainting_Shaw3">
+	<property name="Extends" value="ShawpaintingKobe1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_Shaw3.prefab"/>
+</block>
+<block name="Shawpainting_Trump1">
+	<property name="Extends" value="ShawpaintingKobe1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_Trump1.prefab"/>
+</block>
+<block name="Shawpainting_Jew1">
+	<property name="Extends" value="ShawpaintingKobe1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_Jew1.prefab"/>
+</block>
+<block name="Shawpainting_Jew2">
+	<property name="Extends" value="ShawpaintingKobe1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_Jew2.prefab"/>
+</block>
+<block name="Shawpainting_Jew3">
+	<property name="Extends" value="ShawpaintingKobe1"/>
+	<property name="Model" value="#@modfolder:Resources/ShawBlocks.unity3d?Shawpainting_Jew3.prefab"/>
+</block>
+
+<block name="ShawPaintingVariantHelper">
+	<property name="Extends" value="paintingBen"/>
+	<property name="CustomIcon" value="paintingBen"/>
+	<property name="DescriptionKey" value="ShawPaintingVariantHelperDesc"/>
+	<property name="ItemTypeIcon" value="all_blocks"/>
+	<property name="SelectAlternates" value="true"/>
+	<property name="PlaceAltBlockValue" value="paintingBen,paintingLorien,paintingDerek,paintingNoah,paintingDuke,paintingKen,ShawpaintingKobe1,Shawpainting_Black1,Shawpainting_Black2,Shawpainting_Black3,Shawpainting_Black4,Shawpainting_Black5,Shawpainting_Black6,Shawpainting_Black7,Shawpainting_Black8,Shawpainting_Brick1,Shawpainting_Feed1,Shawpainting_Hitler1,Shawpainting_King1,Shawpainting_King2,Shawpainting_King3,Shawpainting_Ninja1,Shawpainting_Peter1,Shawpainting_Peter2,Shawpainting_Shaw1,Shawpainting_Shaw2,Shawpainting_Shaw3,Shawpainting_Trump1,Shawpainting_Jew1,Shawpainting_Jew2,Shawpainting_Jew3"/>
+</block>
+</append>
+</config>

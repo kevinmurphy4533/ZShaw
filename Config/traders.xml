@@ -1,0 +1,15 @@
+<config>
+<append xpath="/traders">
+<trader_info id="70" override_buy_markup="1.0" min_inventory="70" max_inventory="70" full_reset="true" reset_interval="1">
+	<trader_items count="all">
+		<!--<item name="BigHead" count="10"/>
+		<item name="BiggerHead" count="10"/>
+		<item name="BiggestHead" count="10"/>
+		<item name="LegendaryShard" count="10"/>-->
+	</trader_items>
+</trader_info>
+</append>
+</config>
+
+
+

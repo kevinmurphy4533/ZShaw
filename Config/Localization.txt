@@ -1,0 +1,1617 @@
+Key,english
+PopeyesBiscuit,Popeyes Biscuit
+PopeyesBiscuitDesc,"Made from cement and salt."
+PopeyesChicken,Popeyes Chicken
+PopeyesChickenDesc,"Made from cement and salt."
+PopeyesBiscuitNoDrink,Two Popeyes Biscuits (no drink)
+PopeyesBiscuitNoDrinkDesc,"Made up of almost entirely salt, will cause extreme loss of water and a chimpout."
+buffPopeyesMealName,Chimp Strength
+buffPopeyesMealDesc,"White pepo bad!!!!"
+buffPopeyesBiscuitName,Two Popeyes Biscuits (no drink)
+buffPopeyesBiscuitDesc,"White pepo bad!!!!"
+buffPopeyesBiscuitCDName,Biscuit Cooldown
+buffPopeyesBiscuitCDDesc,"You must wait some time before eating more biscuits to regain your strength"
+BiggestGun,The Biggest Minigun
+BiggestGunDesc,"The Biggest Minigun, rated for a level five chimp out."
+BiggestHammer,The 70 Smasher 
+BiggestHammerDesc,"An otherworldly weapon created from sacred heads, a single blow can affect a massive radius. It feels as it is somehow connected to Cardriver70."
+BiggestBaton,The 70 Shocker
+BiggestBatonDesc,"An otherworldly weapon created from sacred heads, every swing is charged with unstable energy. It feels as it is somehow connected to Cardriver70."
+BiggestFist,The 70 Slamers
+BiggestFistDesc,"An otherworldly weapon created from sacred heads, punch with the force of 70000 cookies. It feels as it is somehow connected to Cardriver70."
+BiggestSword,The 70 Slasher
+BiggestSwordDesc,"An otherworldly weapon created from sacred heads, a colossal blade with a razor sharp edge. It feels as it is somehow connected to Cardriver70."
+DevBiggestHammer,True 70 Smasher 
+DevBiggestGun,The Cookie Cannon
+DevBiggestGL,The Chimpout
+DevChimpoutTester,Flash Mobs
+xuiGingerbreadMan,"Gingerbread Man Foundry"
+xuiTrollJuice,"Troll Juice Foundry"
+BiggestHeadOverclock,Overclocking Core
+BiggestHeadOverclockDesc,"A more stable 70 Overclock that is able to be used on crafting"
+ShawAK,[FFCC01]Chimp Repellent
+ShawAKDesc,"Repel the Chimpout."
+ShawMartiniHenry,[FFCC01]Martini Henry
+ShawMartiniHenryDesc,"Civilize the Savages."
+ShawRevolver,[FFCC01]Jailbreak Revolver
+ShawRevolverDesc,"Fry Some Bacon."
+ShawDoubleBarrelShotgun,[FFCC01]Sudra Slayer
+ShawDoubleBarrelShotgunDesc,"Straight To Africa."
+ShawAKGolden,[FFCC01]Chimp Repellent Golden[-]
+ShawAKGoldenDesc,"Repel the Chimpout\n\nNow with gold!"
+ShawMartiniHenryGolden,[FFCC01]Martini Henry Golden[-]
+ShawMartiniHenryGoldenDesc,"Civilize the Savages\n\nNow with gold!"
+ShawRevolverGolden,[FFCC01]Jailbreak Revolver Golden[-]
+ShawRevolverGoldenDesc,"Fry Some Bacon\n\nNow with gold!"
+ShawDoubleBarrelShotgunGolden,[FFCC01]Sudra Slayer Golden[-]
+ShawDoubleBarrelShotgunGoldenDesc,"Straight To Africa\n\nNow with gold!"
+ShawAKMLG,[00ff00]Chimp Repellent MLG[-]
+ShawAKMLGDesc,"Repel the Chimpout\n\nNow MLG!"
+ShawMartiniHenryMLG,[00ff00]Martini Henry MLG[-]
+ShawMartiniHenryMLGDesc,"Civilize the Savages\n\nNow MLG!"
+ShawRevolverMLG,[00ff00]Jailbreak Revolver MLG[-]
+ShawRevolverMLGDesc,"Fry Some Bacon\n\nNow MLG!"
+ShawDoubleBarrelShotgunMLG,[00ff00]Sudra Slayer MLG[-]
+ShawDoubleBarrelShotgunMLGDesc,"Straight To Africa\n\nNow MLG!"
+40mmGL,[FF0000]Grenade Assault Rifle[-]
+40mmGLDesc,"What are you doing?\nUses Trolls for ammo."
+40mmGLGolden,[FFCC01]Grenade Assault Rifle Golden[-]
+40mmGLGoldenDesc,"What are you doing?\nUses Trolls for ammo.\n\nNow with gold!"
+40mmGLMLG,[00ff00]Grenade Assault Rifle MLG[-]
+40mmGLMLGDesc,"What are you doing?\nUses Trolls for ammo.\n\nNow MLG!"
+FutCoin,FUT Coin
+FutCoinDesc,"FUT Coins can be used to make stuff."
+TreasureQuestDuke,Duke's Treasure Map
+TreasureQuestEdp,Farts's Treasure Map
+TreasureQuestTrump,Orange Man's Treasure Map
+TreasureQuestBiggestHead,Cardriver70's Treasure Map
+ShapeShifterMessi,Shape Shifter Messi
+ShapeShifterMessiDesc,"Shape Shifter Messi\nShapeshifter cards are both extremely rare and valuable."
+ShapeShifterRonaldo,Shape Shifter Ronaldo
+ShapeShifterRonaldoDesc,"Shape Shifter Ronaldo\nShapeshifter cards are both extremely rare and valuable."
+test_biome_dirt,Cookie Land
+ShawtreeStump,Tree Stump
+ShawtreeStumpPOI,Tree Stump
+BigHead,[FFCC01]Big Head[-]
+BigHeadDesc,":)"
+BiggerHead,Bigger Head
+BiggerHeadDesc,"OMG WAT THE HECK IS DAT??"
+BiggestHead,Biggest Head
+BiggestHeadDesc,"Nothing Bigger. Nothing Better."
+DevExcavator,Excavator
+DevTestDig,Dev Test Digger
+DevItemDesc,"Dev item used for testing/fucking about."
+Essence,"[FFCC01]Essence[-]"
+EssenceDesc,"Massive amounts of knowledge condensed into solid form"
+EssenceKey,"[FFCC01]Essence Key[-]"
+EssenceKeyDesc,"A powerful key that can be used to open doors."
+EssenceKey2,Holy Essence Key
+EssenceKey2Desc,"A blessed essence key that can open the strongest doors."
+CookieKey1,Shaw's Cookie Works Production Access Card
+CookieKey1Desc,"A key that allows access into the output section of the factory."
+Cross,Holy Cross
+CrossDesc,"Gives you a holy sheild that will last one day or untill it breaks."
+GingerbreadMan,Gingerbread Man
+GingerbreadManDesc,"Spazz out combo."
+buffGingerBreadmanName,Gingerbread Man
+buffGingerBreadmanDesc,"Spazz out combo"
+TrollJuice,Troll Juice
+TrollJuiceDesc,"Take trolling to another level."
+buffTrollJuiceName,Troll Juice
+buffTrollJuiceDesc,"U MAD BRO?"
+buffTrollJuiceCooldownName,Troll Juice Cooldown
+buffTrollJuiceCooldownDesc,"Too much trolling :("
+buffCrossName,Holy Cross
+buffCrossDesc,"Holy Shield"
+modHyperRed1,HyperRed 1
+modHyperRed1Desc,"Level 1 HyperRed\nIncreases damage by 5%"
+modHyperRed2,HyperRed 2
+modHyperRed2Desc,"Level 2 HyperRed\nIncreases damage by 10%"
+modHyperRed3,HyperRed 3
+modHyperRed3Desc,"Level 3 HyperRed\nIncreases damage by 20%"
+modHyperRed4,HyperRed 4
+modHyperRed4Desc,"Level 4 HyperRed\nIncreases damage by 30%"
+modHyperRed5,HyperRed 5
+modHyperRed5Desc,"Level 5 HyperRed\nIncreases damage by 50%"
+modHyperYellow1,HyperYellow 1
+modHyperYellow1Desc,"Level 1 HyperYellow\nIncreases melee speed by 5%"
+modHyperYellow2,HyperYellow 2
+modHyperYellow2Desc,"Level 2 HyperYellow\nIncreases melee speed by 10%"
+modHyperYellow3,HyperYellow 3
+modHyperYellow3Desc,"Level 3 HyperYellow\nIncreases melee speed by 20%"
+modHyperYellow4,HyperYellow 4
+modHyperYellow4Desc,"Level 4 HyperYellow\nIncreases melee speed by 30%"
+modHyperYellow5,HyperYellow 5
+modHyperYellow5Desc,"Level 5 HyperYellow\nIncreases melee speed by 50%"
+modHyperGreen1,HyperGreen 1
+modHyperGreen1Desc,"Level 1 HyperGreen\nIncreases run speed by 5%"
+modHyperGreen2,HyperGreen 2
+modHyperGreen2Desc,"Level 2 HyperGreen\nIncreases run speed by 10%"
+modHyperGreen3,HyperGreen 3
+modHyperGreen3Desc,"Level 3 HyperGreen\nIncreases run speed by 20%"
+modHyperGreen4,HyperGreen 4
+modHyperGreen4Desc,"Level 4 HyperGreen\nIncreases run speed by 30%"
+modHyperGreen5,HyperGreen 5
+modHyperGreen5Desc,"Level 5 HyperGreen\nIncreases run speed by 50%"
+modHyperDiamond1,HyperDiamond 1
+modHyperDiamond1Desc,"Level 1 HyperDiamond\nIncreases firerate by 5%"
+modHyperDiamond2,HyperDiamond 2
+modHyperDiamond2Desc,"Level 2 HyperDiamond\nIncreases firerate by 10%"
+modHyperDiamond3,HyperDiamond 3
+modHyperDiamond3Desc,"Level 3 HyperDiamond\nIncreases firerate by 20%"
+modHyperDiamond4,HyperDiamond 4
+modHyperDiamond4Desc,"Level 4 HyperDiamond\nIncreases firerate by 30%"
+modHyperDiamond5,HyperDiamond 5
+modHyperDiamond5Desc,"Level 5 HyperDiamond\nIncreases firerate by 50%"
+modHyperOrange1,HyperOrange 1
+modHyperOrange1Desc,"Level 1 HyperOrange\nIncreases block damage by 5%"
+modHyperOrange2,HyperOrange 2
+modHyperOrange2Desc,"Level 2 HyperOrange\nIncreases block damage by 10%"
+modHyperOrange3,HyperOrange 3
+modHyperOrange3Desc,"Level 3 HyperOrange\nIncreases block damage by 20%"
+modHyperOrange4,HyperOrange 4
+modHyperOrange4Desc,"Level 4 HyperOrange\nIncreases block damage by 30%"
+modHyperOrange5,HyperOrange 5
+modHyperOrange5Desc,"Level 5 HyperOrange\nIncreases block damage by 50%"
+modHyperBlue1,HyperBlue 1
+modHyperBlue1Desc,"Level 1 HyperBlue\nIncreases stamina regain by 5%"
+modHyperBlue2,HyperBlue 2
+modHyperBlue2Desc,"Level 2 HyperBlue\nIncreases stamina regain by 10%"
+modHyperBlue3,HyperBlue 3
+modHyperBlue3Desc,"Level 3 HyperBlue\nIncreases stamina regain by 20%"
+modHyperBlue4,HyperBlue 4
+modHyperBlue4Desc,"Level 4 HyperBlue\nIncreases stamina regain by 30%"
+modHyperBlue5,HyperBlue 5
+modHyperBlue5Desc,"Level 5 HyperBlue\nIncreases stamina regain by 50%"
+modHyperPurple1,HyperPurple 1
+modHyperPurple1Desc,"Level 1 HyperPurple\nIncreases ammo capacity by 5%"
+modHyperPurple2,HyperPurple 2
+modHyperPurple2Desc,"Level 2 HyperPurple\nIncreases ammo capacity by 10%"
+modHyperPurple3,HyperPurple 3
+modHyperPurple3Desc,"Level 3 HyperPurple\nIncreases ammo capacity by 20%"
+modHyperPurple4,HyperPurple 4
+modHyperPurple4Desc,"Level 4 HyperPurple\nIncreases ammo capacity by 30%"
+modHyperPurple5,HyperPurple 5
+modHyperPurple5Desc,"Level 5 HyperPurple\nIncreases ammo capacity by 50%"
+modHyperPink1,HyperPink 1
+modHyperPink1Desc,"Level 1 HyperPink\nDecreases degradation by 5%"
+modHyperPink2,HyperPink 2
+modHyperPink2Desc,"Level 2 HyperPink\nDecreases degradation by 10%"
+modHyperPink3,HyperPink 3
+modHyperPink3Desc,"Level 3 HyperPink\nDecreases degradation by 20%"
+modHyperPink4,HyperPink 4
+modHyperPink4Desc,"Level 4 HyperPink\nDecreases degradation by 30%"
+modHyperPink5,HyperPink 5
+modHyperPink5Desc,"Level 5 HyperPink\nDecreases degradation by 50%"
+modHyper1Desc,"A Level 1 Hyperchrome not only looks great but also provides 10 stamina regen."
+modHyper2Desc,"A Level 2 Hyperchrome not only looks great but also provides 10 stamina/second"
+modHyper3Desc,"A Level 3 Hyperchrome not only looks great but also provides 3 stamina/second"
+modHyper4Desc,"A Level 4 Hyperchrome not only looks great but also provides 4 stamina/second"
+modHyper5Desc,"A Level 5 Hyperchrome not only looks great but also provides 5 stamina/second"
+loadingShaw1,"Uncuffable, the only one strong enough to wield the golden cuffs."
+loadingShaw1_title,Bshaw
+loadingShaw2,"Shaw used to have an Iphone 12 pro before Bruno threw it in a dumpster."
+loadingShaw2_title,SHAW'S OWN PHONE
+loadingShaw3,"Nobody knows if he was Shaw himself but he introduced Shaw's invention of cookies to Australia."
+loadingShaw3_title,B Antonio
+loadingShaw4,"ORANGE MAN BAD! ORANGE MAN BAD! ORANGE MAN BAD! ORANGE MAN BAD! ORANGE MAN BAD!"
+loadingShaw4_title,Orange Man
+loadingShaw5,"Habibi-Muckeen the first has the power to connect to Shaw's computer via Anydesk to end the world."
+loadingShaw5_title,THE ONE ABOVE
+loadingShaw6,"Nobody has ever been there, most people don't even think it's real, but CP_PILLOWFORT is in fact real. The creator, John's Breastcage, made it in secret, very few know about it's true existence."
+loadingShaw6_title,CP_PILLOWFORT
+loadingShaw7,"The Biggest Head, the creator of all heads"
+loadingShaw7_title,CARDRIVER70
+loadingShaw8,"Neva play Kike Game!"
+loadingShaw8_title,The Kike Game
+loadingShaw9,"Level 1: Individual Attacks\nLevel 2: Flash Mobs\nLevel 3: LA Riots\nLevel 4: South Africa\nLevel 5: Planet of the Apes"
+loadingShaw9_title,National Chimpout Advisory Guide
+OldDemiGod,Old Demigod
+OldDemiGodDesc,"Old Demigod used in shrines has less hp and gives less essence use for decor."
+BleachName,Bleach
+KeemstarAlex,"[FF0000]Keemstar[-]"
+KeemstarAlexDesc,"Live on BlogTv"
+OldGodXS,Old God
+OldGodS,Old God
+OldGodM,Old God
+OldGodL,Old God
+OldGodXL,Old God
+OldGodDesc,"Old God used in shrines."
+WealthyGodXS,Wealthy God
+WealthyGodS,Wealthy God
+WealthyGodM,Wealthy God
+WealthyGodL,Wealthy God
+WealthyGodXL,Wealthy God
+WealthyGodDesc,"Wealthy God used in shrines."
+HatefulGodXS,Hateful God
+HatefulGodS,Hateful God
+HatefulGodM,Hateful God
+HatefulGodL,Hateful God
+HatefulGodXL,Hateful God
+HatefulGodDesc,"Hateful God used in shrines."
+LonelyGodXS,Lonely God
+LonelyGodS,Lonely God
+LonelyGodM,Lonely God
+LonelyGodL,Lonely God
+LonelyGodXL,Lonely God
+LonelyGodDesc,"Lonely God used in shrines."
+MiserableGodXS,Miserable God
+MiserableGodS,Miserable God
+MiserableGodM,Miserable God
+MiserableGodL,Miserable God
+MiserableGodXL,Miserable God
+MiserableGodDesc,"Miserable God used in shrines."
+SleepingGodXS,Sleeping God
+SleepingGodS,Sleeping God
+SleepingGodM,Sleeping God
+SleepingGodL,Sleeping God
+SleepingGodXL,Sleeping God
+SleepingGodDesc,"Sleeping God used in shrines."
+GoldChest,Golden Chest
+GoldChest2,Angus Chest
+GoldChestCookieFactoryBase,Golden Chests
+GoldChestCookieFactoryHarambeWorkstation,Golden Chests
+GoldChestCookieFactoryRuinsWorkstation,Golden Chests
+GoldChestCookieFactorySakuraGardenWorkstation,Golden Chests
+GoldChestCookieFactoryOilWorkstation,Golden Chests
+MCChest,Old Chest
+GoldChestEssenceKey,Golden Chest
+TrollBricks,Troll Bricks
+RedSparkleTime,Red Sparkle Time Fedora
+BlueSparkleTime,Blue Sparkle Time Fedora
+ClassicFedora,Classic Fedora
+RipleysSign,Ripley's Believe it or Not Sign
+ManEgg,Man Egg
+VoltBike,Volt Bike
+JewBox,Jew Box
+ArtMan,Man Art
+BoomBox,Golden BoomBox
+TacoDoge,Taco Doge
+DababyCar,Dababy Car
+SusTroll,Sus Troll
+TrumpWall,Orange Man Wall
+ValkStone,Valkyrie Statue
+MHCube,Cube Shrine
+MHHarambe,Damaged Harambe Shrine
+MHOil,Damaged Industry Shrine
+MHRuins,Damaged Runis Shrine
+MHBanHammer,Ban Hammer Shrine
+MHSakuraGarden,Damaged Nature Shrine
+MHSwordStone,Excalibur
+EmpyreanGeneral,Empyrean General
+EmpyreanKing,Empyrean King
+KorbloxGeneral,Korblox General
+KorbloxDeathspeaker,Korblox Deathspeaker
+OverseerGeneral,Overseer General
+OverseerKing,Overseer King
+RedcliffGeneral,Redcliff General
+RedcliffKing,Redcliff King
+OldGodDoor,Old God
+OldGodDoorDesc,"Old God door locked (set as locked in poi, needs essence key to open)"
+OldGodDoorHard,Old God
+OldGodDoorHardDesc,"Old God door locked needs a better key to open (set as locked in poi, needs essence key to open)"
+OldGodDoorNoKey,Old God
+OldGodDoorNoKeyDesc,"Old God door locked no key (set as locked in poi, needs a button to open)"
+OldGodDoorUnlock,Old God
+OldGodDoorUnlockDesc,"Old God door unlocked."
+TrollBricks,Troll Bricks
+RipleysSign,Ripley's Sign
+CustomDecoration,"Just decor not used for gameplay."
+ShawsCoffin,Ancient Tomb
+RonaldoName,Ronaldo
+RonaldoLoot,Ronaldo
+RonaldoLootCrate,Sealed Ronaldo Crate
+EdpName,EDP
+EdpLoot,EDP
+EdpLootCrate,Sealed EDP Crate
+TrumpName,Orange Man
+TrumpLoot,Orange Man
+TrumpLootCrate,Sealed Orange Man Crate
+BiggestHeadCrate,Sealed Biggest Head Crate
+BiggestHeadName,Biggest Head
+BiggestHeadLoot,Biggest Head
+MarbleName,Marble
+MarbleEName,Exotic Marble
+MarbleTilesBrownName,Marble Tiles Brown
+GraniteRName,Granite Red
+RedWoodName,Redwood
+BlueWoodName,Bluewood
+TrollFaceName,Troll Face
+TrollFace2Name,Soldier Troll Face
+LimestoneBricksName,Limestone Bricks 2
+LimestoneTilesName,Limestone Tiles
+MagmaName,Magma
+LimestoneBricks2Name,Limestone Bricks Small
+LimestoneBricks3Name,Limestone Bricks Large
+CobbleStoneName,Cobble Stone
+treasure_Duke,Duke's Treasure
+treasure_Duke_offer,"Dear Survivor,\n\nIf your reading this note, then the worst has probably happened, and the odds are I'm cuffed. But, rather than let all my stashes of FUT coins go to waste, I'd like you to have one of them. I've marked the location on this map for you.\n\nDon't Get Cuffed,\nDuke"
+treasure_Edp,Farts's Treasure
+treasure_Edp_offer,"Dear Survivor,\n\nIf your reading this note, then the worst has probably happened, and the odds are I'm cuffed. But, rather than let all my stashes of HyperRomes go to waste, I'd like you to have one of them. I've marked the location on this map for you.\n\nDon't Get Cuffed,\nFart"
+treasure_Trump,Orange Man's Treasure
+treasure_Trump_offer,"Dear Survivor,\n\nIf your reading this note, then your WRONG!"
+treasure_BiggestHead,Cardriver70's Treasure
+treasure_BiggestHead_offer,"Dear Prisoner,\n\nIf your reading this note, then i'd like you to have one of my stashes of Heads. I've marked the location on this map for you.\n\nGood Luck,\nCardriver70"
+buffStewDesc,"Increases food and water by 60 over time."
+buffPearToastDesc,"Increases food by 9 over time."
+buffPizzaDesc,"Increases food by 120 over time."
+buffPearSmoothieDesc,"Increases water by 9 over time."
+buffSmoothieDesc,"Increases water by 15 over time."
+40mmGLAmmo,[FF0000]Standard Trolls[-]
+40mmGLAmmoDesc,"4/10 troll face"
+40mmGLAmmo2,Bigger Trolls
+40mmGLAmmo2Desc,"6.5/10 troll face\nA good upgrade"
+40mmGLAmmoBiggest,Biggest Trolls 
+40mmGLAmmoBiggestDesc,"8.5/10 troll face\nBig radius big damage"
+40mmGLAmmoHyper,Hyper Trolls
+40mmGLAmmoHyperDesc,"9.5/10 troll face\nSmall radius biggest damage"
+BiggestBench,The 70 Fabricator
+BiggestBenchDesc,"Created from sacred heads though unknown means"
+BiggestBenchPOI,Damaged 70 Fabricator
+BiggestBenchPOIDesc,"placed in poi, can only craft a real fabricator (used for progression)"
+BiggerCatalyst,70 Catalyst
+BiggerCatalystDesc,"Created from sacred heads though unknown means"
+BiggerCatalystPOI,Damaged 70 Catalyst
+BiggerCatalystPOIDesc,"placed in poi, can only craft a real catalyst (used for progression)"
+BigKit,Big Head Mender
+BigKitDesc,"Used to repair lesser exotic items."
+BiggerKit,Bigger Head Mender
+BiggerKitDesc,"Used to repair the majority of exotic items."
+BiggestKit,Biggest Head Mender
+BiggestKitDesc,"Used to repair the strongest exotic items."
+SaintFloydsNewport,Saint Floyd's Newports
+SaintFloydsNewportDesc,"Carried by Saint Floyd before the counterfeit 20 incident.\nUpon inhalation you cease to feel pain.\nFunctions as a cigar (15% barter)."
+buffSaintFloydsNewportDesc,Chimp Rage
+buffSaintFloydsNewportLongDesc,"Rage builds on every melee attack, every 9th hit will unleash your rage"
+Butter,Stick of Butter
+ButterDesc,"Jona Wyatt.\nRegen 25hp/second"
+buffButterDesc,Stick of Butter
+buffButterLongDesc,"Regen 25hp/second\nRegen 25Stamina/second\nHelps heal strong debuffs."
+WyattButter,Stick of Wyatt Butter
+WyattButterDesc,"Jona Wyatt (Obese).\nRegen 50hp/second"
+buffWyattButterDesc,Stick of Wyatt Butter
+buffWyattButterLongDesc,"Eating butter temporary increases health regeneration.\nRegen 50hp/second"
+Narcan,Narcan
+NarcanDesc,"Regen 10hp/second\nRegen 10Stamina/second\nGain partial immunity to weak debuffs and heal strong ones"
+buffNarcanDesc,Narcan
+buffNarcanLongDesc,"Narcan helps you breef"
+buffPopeyesChickenName,Popeyes Chicken
+buffPopeyesChickenDesc,"A chimp's favorite meal, greatly increases aggression."			
+Gus,Gustavo
+Horse1,Horse Statue Flag
+Horse2,Horse Statue Glave
+MC_Chest,Old Chest
+RobloxLogo,Roblox Statue
+WalterSponge,White Sponge
+WhiteManStone,Freedom Statue
+WhiteRV,White RV
+ChiseledSandstoneName,Chiseled Sandstone
+CobblestoneMCName,Cobblestone
+EndStoneBricksName,Endstone Bricks
+NetherrackName,Netherrack
+NetherrackTrollName,Netherrack Troll
+ObsidianName,Obsidian
+SandstoneName,Sandstone
+SmoothStoneName,SmoothStone
+OakLogName,Oak Log
+OakPlanksName,Oak Planks
+modArmorSaintFloydsBlessing,Saint Floyd's Blessing
+modArmorSaintFloydsBlessingDesc,"Gives you the strength to resist the white man.\nWill not save you from spam"
+buffSaintFloydsBlessing1Desc,Saint Floyd's Blessing (Strength)
+buffSaintFloydsBlessing1LongDesc,"Increases combat abilities to fight the white man"
+buffSaintFloydsBlessing2Desc,Saint Floyd's Blessing (Resistance)
+buffSaintFloydsBlessing2LongDesc,"When in critical condition your lungs double in size greatly increasing athletic abilities"
+buffSaintFloydsBlessingCooldownDesc,Saint Floyd's Blessing Cooldown
+buffSaintFloydsBlessingCooldownLongDesc,"You must recover before being saved again."
+buffCookieFactoryDesc,Shaws Cookie Works
+buffCookieFactoryLongDesc,"Survive untill time runs out\nWill not start untill quest is started"
+AlexName,Alex
+Pessi1Name,Pessi
+Pessi2Name,Pessi
+FloydName,Floyd
+KGBLogoName,KGB Logo
+KGBSignName,KGB Sign
+MenuName,KGB Menu
+SignName,KGB Sign
+HunterName,Hunter Biden Mirror
+HunterTubName,Hunter Biden Tub
+HunterTileName,Hunter Biden Mirror
+BurgerSignName,Johna Sign
+PeterMenuName,Peter Menu
+PeterSignName,Peter Sign
+MukySignName,Muky Sign
+DarkheartShrine,Darkheart
+EternalVoyage,Eternal Voyage
+EyeShrine,Eye Shrine
+TechShrine,Tech Shrine
+VenomshankShrine,Venomshank
+WoodenSwordStump,Stump
+WoodenBoardStump,Stump
+GermanyStatue,Germany Statue
+GoldStatue,Golden Statue
+LeninStatue,Lenin Statue
+NoobStatue,Noob Statue
+SaulGoodman,Saul Badman
+TitanSub,Titan Sub
+BiggestSeller,"[DECEA3]70 Exchange[-]"
+BiggestSellerDesc,"Dump your trash for something better."
+LegendaryShard,[FF0000]Legendary Shard[-]
+LegendaryShardDesc,"An unending flame that burns bright in your hands."
+LegendaryShardWeak,Weak Legendary Shard
+LegendaryShardWeakDesc,"A tiny ember that glows warmly in your hands."
+LegendaryShardDF,"[FF0000]Damaged Legendary Shard[-]"
+LegendaryShardDFDesc,"Can be reused to create new legendary items"
+BiggestCore,Biggest Core
+BiggestCoreDesc,"A source of great power."
+CounterfeitCore,Counterfeit Core
+CounterfeitCoreDesc,"A source of great wealth."
+FutCore,FUT Core
+FutCoreDesc,"A source of great goals."
+JewCore,Happy Merchant Core
+JewCoreDesc,"A source of overwhelming wealth."
+IndustryCore,Industry Core
+IndustryCoreDesc,"A source of great progress."
+FoodCore,Calorie Core
+FoodCoreDesc,"A source of great hunger."
+OilWorkstationPart,Industry Fragment
+OilWorkstationPartDesc,"The heart of an Industry Shrine that had its assembly cut short."
+SakuraGardenPart,"Nature Fragment"
+SakuraGardenPartDesc,"The heart of a Nature Shrine that had its assembly cut short."
+OldGodButton,Old God
+OldGodButtonDesc,"Bedrock single use button used for pois"
+LinkedSword,[DECEA3]Linked Sword[-]
+LinkedSwordDesc,"With blood and iron."
+Firebrand,[FF0000]Firebrand[-]
+FirebrandDesc,"O! for a muse of fire, that would ascend the brightest heaven of invention."
+Venomshank,[00FF00]Venomshank[-]
+VenomshankDesc,"Because doesn't he deserve the most painful bloxxing possible?"
+Darkheart,[000000]Darkheart[-]
+DarkheartDesc,"It's darker than RGB(0,0,0) and it steals life from your enemies. What more is there to say."
+Illumina,[A6ECF8]Illumina[-]
+IlluminaDesc,"Telamon's favorite weapon from Sword Fight on the Heights. It is light, agile, and deadly."
+Icedagger,[0000FF]Icedagger[-]
+IcedaggerDesc,"Is this a dagger which I see before me,The handle toward my hand? Come, let me clutch thee. /I have thee not, and yet I see thee still. /Art thou not, fatal vision, sensible / To feeling as to sight? or art thou but /A dagger of the mind, a false creation, /Proceeding from the heat-oppressed brain?"
+Windforce,[0000FF]Windforce[-]
+WindforceDesc,"She's like the wind."
+Ghostwalker,[A6ECF8]Ghostwalker[-]
+GhostwalkerDesc,"The boast of heraldry, the pomp of power, / And all that beauty, all that wealth e'er gave, / Awaits alike th' inevitable hour:- / The paths of glory lead but to the grave."
+WoodenSword,Wooden Sword
+WoodenSwordDesc,"Wooden swords and painted wings and ephemeral treasured things"
+WoodenBoard,Board With a Nail in It
+WoodenBoardDesc,"Did they? That board with a nail in it may have defeated us. But the humans won't stop there. They'll make bigger boards and bigger nails, and soon, they will make a board with a nail so big, it will destroy them all!"
+buffGhostwalkerDesc,Ghostwalker Combo
+buffGhostwalkerLongDesc,"pwned = power"
+BiggestGL,The Biggest Bazooka
+BiggestGLDesc,"Shoots Mega Trolls."
+BiggestGLAmmo,Mega Trolls
+BiggestGLAmmoDesc,"Administers Das Knee"
+BiggestGLAmmoHyper,Mega Hyper Trolls
+BiggestGLAmmoHyperDesc,"Administers Das Knee"
+modArmorPlatingBig,[DECEA3]Big Armor Plating
+modArmorPlatingBigDesc,"Good quality armor plating made from big heads also makes you more healthy.\nIncreases max wellness by 5 and defense and fire defense by 2."
+modArmorPlatingBigger,Bigger Armor Plating
+modArmorPlatingBiggerDesc,"Great quality armor plating made from bigger heads also makes you more healthy.\nIncreases max wellness by 40."
+modArmorPlatingBiggest,Biggest Armor Plating
+modArmorPlatingBiggestDesc,"Flawless quality armor plating made from biggest that also makes you more healthy.\nIncreases max wellness by 70."
+modHeadCoreDesc,"An extremely unstable overclock created by Cardriver70 before the Biggest Guns"
+modHeadCore,70 Overclock
+modHeadCoreV2Desc,"An extremely unstable overclock created by Cardriver70 before the Biggest Guns"
+modHeadCoreV2,Enhanced 70 Overclock
+modHeadCoreToolDesc,"An extremely unstable overclock created by Cardriver70 before the 70 Harvester"
+modHeadCoreTool,[0000FF]70 Harvesting Overclock[-]
+buffBurningBigDesc,Big Head Inferno
+buffBurningBigLongDesc,"Once ignited there is little you can do to extinguish the flames"
+buffBurningBiggerDesc,Bigger Head Inferno
+buffBurningBiggerLongDesc,"Once ignited there is little you can do to extinguish the flames"
+buffBurningBiggestDesc,Biggest Head Inferno
+buffBurningBiggestLongDesc,"Once ignited there is little you can do to extinguish the flames"
+buffBurningBigTooltip,You are engulfed in flames
+GingerbreadManCell,Gingerbread Man Foundry
+GingerbreadManCellDesc,"Make Gingerbread Man"
+TrollJuiceCell,Troll Juice Foundry
+TrollJuiceCellDesc,"Make Troll Juice"
+MHAxeShrine,Axe Shrine
+materialShawCookie_shapes,Cookie Shapes
+ShawCookie_shapesDesc,"Shaws favorite"
+ShawUpgradeTool,[00ff00]70 Multitool
+ShawUpgradeToolDesc,"Upgrade all to cookies and make shaw proud"
+QuestEssenceKey1,Strange Note
+QuestEssenceKey1Desc,"A note signed by Cardriver70."
+CookieName,Cookies
+CookieBricksName,Cookie Bricks
+QuestCookieHouse,Cookie Map
+CookieHouseDesc,"This map contains the location of a cookie outpost."
+CookieHouse_name,Cookie Outpost
+CookieHouse_subtitle,Cookie Outpost
+CookieHouse_offer,"Make your way to my old home there may still be some of my original tools left behind.\nMake sure to bring an essence key.\n\n-Cardriver70"
+CookieHouse_description,"Make your way to my old home there may still be some of my original tools left behind.\nMake sure to bring an essence key.\n\n-Cardriver70"
+QuestCookieFactory,Shaw's Cookie Works Access Card
+QuestCookieFactoryDesc,"An access card to Shaws Cookie Works containing a note on the back.\nGo down to the abandoned Cookie Works and restart production\n-Cardriver70"
+CookieFactory_name,Restart Shaw's Cookie Works
+CookieFactory_subtitle,Restart Shaw's Cookie Works
+CookieFactory_offer,"Restart Shaw's Cookie Works to produce important items"
+QuestCookieFactoryHarambeWorkstation,Shaw's Cookie Works Access Card Harambe Shrine
+QuestCookieFactoryHarambeWorkstationDesc,"An access card to Shaws Cookie Works that is configured to assemble the Harambe Shrine"
+QuestCookieFactoryRuinsWorkstation,Shaw's Cookie Works Access Card Ruins Shrine
+QuestCookieFactoryRuinsWorkstationDesc,"An access card to Shaws Cookie Works that is configured to assemble the Ruins Shrine"
+QuestCookieFactorySakuraGardenWorkstation,Shaw's Cookie Works Access Card Nature Shrine
+QuestCookieFactorySakuraGardenWorkstationDesc,"An access card to Shaws Cookie Works that is configured to assemble the Nature Shrine"
+QuestCookieFactoryOilWorkstation,Shaw's Cookie Works Access Card Industry Shrine
+QuestCookieFactoryOilWorkstationDesc,"An access card to Shaws Cookie Works that is configured to assemble the Industry Shrine"
+CookieFactoryWorkstation_name,Shaw's Cookie Works Shrine Assembly
+CookieFactoryWorkstation_subtitle,Shaw's Cookie Works Shrine Assembly
+CookieFactoryWorkstation_offer,"Start Shaw's Cookie Works to produce a new Shrine."
+CookieFactoryWorkstation_description,"Start Shaw's Cookie Works to produce a new Shrine."
+CookieRaw1,[DECEA3]Unrefined Cookietonium[-]
+CookieRaw1Desc,"Extremely difficult to process due to shaws unstable energy."
+CookieRaw2,[DECEA3]Condensed Chocolate Chips[-]
+CookieRaw2Desc,"Cookietonium exerts large forces on its surroundings creating the chocolate chips that encase Cookietonium"
+CookieProcessed1,[000000]Cookietonium Ingot[-]
+CookieProcessed1Desc,"It will take over 100000 ingots to equal 1% of Shaws power."
+BiggestBundle,Biggest Box
+BiggestBundleDesc,"Gives you a new melee weapon"
+BiggestBundle2,Biggest Box
+BiggestBundle2Desc,"Gives you a new ranged weapon"
+KanyeSign,Kanye Sign
+attshaw,Shaw's Blessing
+attShawDescRank1,Requires level 150 then use Shaw's Blessing
+attShawName,Shaw's Blessing
+attShawDesc,"Learn to use shaws powers"
+attshawrecipes,Shaw's Blessing
+attShawRecipesName,Shaw's Blessing
+attShawRecipesDesc,"Learn about chimps."
+skillShawName,Cookie Knowledge
+skillShawDesc,"Learn how to make use of cookietonium and heads"
+skillShaw2Name,Cookie Combat
+skillShaw2Desc,"Learn how to fight with legendary weapons."
+skillShaw3Name,Cookie Enhancements
+skillShaw3Desc,"Upgrade your body to withstand heavy damage."
+skillShaw4Name,Cookie Perks
+skillShaw4Desc,"Gain powerful perks to enhance various items."
+skillShawRecipesName,Chimpout Advisory
+skillShawRecipesDesc,"Current chimpout level"
+perkCraftShawName,Cookie Creation
+perkCraftShawDesc,"Create things from cookietonium and heads"
+perkMeleeShawName,Cookie Melee
+perkMeleeShawDesc,"Learn Shaw's lost melee techniques"
+perkEndlessHungerName,Endless Hunger
+perkEndlessHungerDesc,"Learn to eat more"
+perkBiggestMeleeRecipesName,Biggest Melee Weapons
+perkBiggestMeleeRecipesDesc,"Create the Biggest melee weapons"
+perkBiggestMeleeRecipesRank1Desc,"Craft The 70 Shocker"
+perkBiggestMeleeRecipesRank2Desc,"Craft The 70 Slamers"
+perkBiggestMeleeRecipesRank3Desc,"Craft The 70 Slasher"
+perkBiggestMeleeRecipesRank4Desc,"Craft The 70 Smasher"
+perkBiggestGunsRecipesName,Biggest Guns
+perkBiggestGunsRecipesDesc,"Create the Biggest guns"
+perkBiggestGunsRecipesRank1Desc,"Craft The Biggest Pistol"
+perkBiggestGunsRecipesRank2Desc,"Craft The Biggest Shotgun"
+perkBiggestGunsRecipesRank3Desc,"Craft The Biggest Rifle"
+perkBiggestGunsRecipesRank4Desc,"Craft The Biggest Assault Rifle"
+perkBiggestGunsRecipesRank5Desc,"Craft The Biggest Minigun"
+perkBiggestToolsRecipesName,Biggest Tools
+perkBiggestToolsRecipesDesc,"Create the Biggest tools"
+perkBiggestToolsRecipesRank1Desc,"Craft The 70 Multitool"
+perkBiggestToolsRecipesRank2Desc,"Craft The 70 Harvester"
+perkBiggestArmorRecipesName,Biggest Armor
+perkBiggestArmorRecipesDesc,"Create the Biggest armor"
+perkBiggestArmorRecipesRank1Desc,"Craft Big Armor Plating"
+perkBiggestArmorRecipesRank2Desc,"Craft Bigger Armor Plating"
+perkBiggestArmorRecipesRank3Desc,"Craft Biggest Armor Plating"
+perkBiggestArmorRecipesRank4Desc,"Craft The Biggest Armor"
+perkBiggestBombsRecipesName,Biggest Explosives
+perkBiggestBombsRecipesDesc,"Create the Biggest explosives"
+perkBiggestBombsRecipesRank1Desc,"Craft The Grenade Assault Rifle and Standard Trolls"
+perkBiggestBombsRecipesRank2Desc,"Craft Bigger Trolls"
+perkBiggestBombsRecipesRank3Desc,"Craft Biggest Trolls "
+perkBiggestBombsRecipesRank4Desc,"Craft Hyper Trolls"
+perkBiggestBombsRecipesRank5Desc,"Craft The Biggest Bazooka and Mega Trolls"
+perkQuestRecipesName,Cookie Production
+perkQuestRecipesDesc,"Craft Cookie Works Access Cards"
+perkQuestRecipesRank1Desc,"Craft Basic Cards"
+perkEndlessHunger1Desc,"Take less damage from all head flames at the cost of food and water, increases max food and water, allows binge eating, immune to the effects of hunger and thirst, immune to food poisoning and dysentery, unlocks Wyatt Butter"
+reqPlayerLevel150,Player Level 150
+reqPlayerLevel175,Player Level 175
+reqPlayerLevel200,Player Level 200
+reqPlayerLevel250,Player Level 250
+reqPlayerLevel300,Player Level 300
+reqPlayerLevel350,Player Level 350
+reqattShaw,Shaw's Blessing
+reqMaxBlunt,All Blunt Weapons Skills Maxed
+reqMaxBladed,All Bladed Weapons Skills Maxed
+reqMaxTools,All Harvesting Tools Skills Maxed
+reqperkPummelPete,Pummel Pete Maxed
+reqperkBreakingAndEntering,Breaking And Entering Maxed
+reqperkBarBrawling,Bar Brawling Maxed
+reqperkKnifeGuy,Knife Guy Maxed
+reqperkBladeMaster,Blade Master Maxed
+reqperkSpearMaster,Spear Master Maxed
+reqperkMiner69r,Miner 69'er Maxed
+reqperkFlurryOfBlows,Flurry Of Blows Maxed
+reqperkWellMaintained,Well Maintained Maxed
+reqperkSalvageOperations,Salvage Operations Maxed
+reqTheCompletionist,The Completionist Perk
+reqperkASAthletics,All Athletics Skills Maxed
+reqattFortitude,Health Nut Maxed
+reqperkSexualTrex,Sexual Tyrannosaurus Maxed
+reqperkParkour,Parkour Maxed
+reqperkFromTheShadows,From The Shadows Maxed
+reqperkSlowMetabolism,Iron Gut Maxed
+reqperkSousChef,Sous Chef Maxed
+reqperkPainTolerance,Pain Tolerance Maxed
+perkCraftShawRank1Desc,"Craft the 70 Catalyst"
+perkCraftShawRank2Desc,"Craft Shrines and Foundries"
+perkCraftShawRank3Desc,"Craft the 70 Fabricator"
+perkMeleeShawRank1Desc,"Learn Shaw's lost melee techniques"
+ShawsBlessing,Riot Blessing
+ShawsBlessingDesc,"Increases Chimpout Levels."
+ShawsBlessing2,Shaw's Blessing
+ShawsBlessing2Desc,"Shaw's Blessing will cleanse you and grant you new knowledge."
+ShawsBlessing3,Shaw's Blessing
+ShawsBlessing3Desc,"Shaw's Blessing will cleanse you and grant you new knowledge."
+ShawsBlessing4,Shaw's Blessing
+ShawsBlessing4Desc,"Shaw's Blessing will cleanse you and grant you new knowledge."
+ShawsBlessing5,Shaw's Blessing
+ShawsBlessing5Desc,"Shaw's Blessing will cleanse you and grant you new knowledge."
+attShawRank1Desc,"Requires you to begin eating fruits."
+GoldChestBlessing,Golden Chest
+GoldChestBlessing2,Golden Chest
+GoldChestEssenceKeyDesc,"POI EssenceKey"
+GoldChestBlessingDesc,"POI Blessing"
+buffShawRegenDesc,Cookie Regen
+BiggestSellerPOI,70 Exchange
+LegendaryCrate,"[0000FF]Locked Man Egg[-]"
+LegendaryCrateDesc,"Open to get a legendary gun."
+LegendaryCrate2,"Locked Man Egg (Melee)"
+LegendaryCrate2Desc,"Craft and open to get a legendary melee item."
+LegendaryBox,Unlocked Man Egg
+BiggestSellerPOIDesc,"Use in POI"
+BiggestShotgun,Biggest Shotgun
+BiggestShotgunDesc,"An otherworldly weapon created from sacred heads, fires a dense barrage of cookies that tear through flesh and bone. It feels as it is somehow connected to Cardriver70."
+BiggestAssaultRifle,Biggest Assault Rifle
+BiggestAssaultRifleDesc,"An otherworldly weapon created from sacred heads, fires a hail of cookies that tear through flesh and bone. It feels as it is somehow connected to Cardriver70."
+BiggestPistol,Biggest Pistol
+BiggestPistolDesc,"An otherworldly weapon created from sacred heads, fires unstable cookies that tear through flesh and bone. It feels as it is somehow connected to Cardriver70."
+BiggestSniper,Biggest Rifle
+BiggestSniperDesc,"An otherworldly weapon created from sacred heads, fires long range cookies that tear through flesh and bone. It feels as it is somehow connected to Cardriver70."
+CookieAmmo1,Cookietonium Round
+CookieAmmo1Desc,"Cookietonium rounds travel at extreme speeds and weaken all head zombies"
+CookieAmmo2,Bigger Cookietonium Round
+CookieAmmo2Desc,"Cookietonium rounds travel at extreme speeds and weaken all head zombies"
+CookieAmmo3,Biggest Cookietonium Round
+CookieAmmo3Desc,"Cookietonium rounds travel at extreme speeds and weaken all head zombies"
+PopeyesCrate,Sealed Popeyes Crate
+LootCratePopeyes,Popeyes Box
+HarambeWorkstation,Harambe Shrine
+HarambeWorkstationDesc,"Harambe gives you rare materials."
+RuinsWorkstation,Ruins Shrine
+RuinsWorkstationDesc,"Ruins give you knowledge."
+SakuraGardenWorkstation,Nature Shrine
+SakuraGardenWorkstationDesc,"Nature gives you food."
+OilWorkstation,Industry Shrine
+OilWorkstationDesc,"Industry gives you materials."
+ShawSignName,Shaw Sign
+buffMeleeShawDesc,Shaw's Rage
+buffMeleeShawLongDesc,"Charge by attacking with big weapons and unleash Shaw's rage"
+armorBiggestGroupDesc,"Nothing Bigger. Nothing Better.\nIncreases max wellness by 110."
+armorBiggestHelmet,Biggest Helmet
+armorBiggestVest,Biggest Vest
+armorBiggestGloves,Biggest Gloves
+armorBiggestLegs,Biggest Legs
+armorBiggestBoots,Biggest Boots
+TempleDoorDesc,"Normal Temple Door Set as locked and use button to open"
+TempleDoorLockedDesc,"Has key to open dont use with button"
+TempleDoorUnlockedDesc,"Unlocked"
+TempleDoorUnlocked,Temple Door
+BlackName,Pure Black
+GavinSign1024,Gavin Sign
+ShawSign1024,Shaw Sign
+ShawSign512,Shaw Sign Small
+GusSign1024X512,Angus Sign
+KGBSign1024X512,KGB Sign
+KGBMenu512X1024,KGB Menu
+KGBLogo512,KGB Sign
+KGBMenu512,KGB Menu
+V2KGBMenu512,KGB Menu
+V3KGBMenu512,KGB Menu
+KGBSign512,KGB Sign
+V2KGBSign512,KGB Sign
+PeterSign1024X512,Peter Sign
+MukySign1024X512,Muky Sign
+PeterSign2048X1024,Medium Peter Sign
+MukySign2048X1024,Medium Muky Sign
+PeterSign4096X2048,Big Peter Sign
+MukySign4096X2048,Big Muky Sign
+MukySign1024X512,Muky Sign
+JohnaSign1024X512,Johna Sign
+JohnaSign1024X512Slant,Slanted Johna Sign
+Black,Pure Black
+GavinSign1024Slant,Slanted Gavin Sign
+ShawSign1024Slant,Slanted Shaw Sign
+ShawSign512Slant,Slanted Shaw Sign Small
+GusSign1024X512Slant,Slanted Angus Sign
+KGBSign1024X512Slant,Slanted KGB Sign
+KGBMenu512X1024Slant,Slanted KGB Menu
+KGBLogo512Slant,Slanted KGB Sign
+KGBMenu512Slant,Slanted KGB Menu
+V2KGBMenu512Slant,Slanted KGB Menu
+V3KGBMenu512Slant,Slanted KGB Menu
+KGBSign512Slant,Slanted KGB Sign
+V2KGBSign512Slant,Slanted KGB Sign
+PeterSign1024X512Slant,Slanted Peter Sign
+MukySign1024X512Slant,Slanted Muky Sign
+MukySign512Slant,Slanted Muky Sign
+BlackSlant,Slanted Pure Black
+tutorialTipQuest01,"This mod was made as a Darkness Falls addon and requires Darkness Falls to run. This mod was made only for insane difficulty. This mod will not fare well on lower end systems.\n\nDon't get cuffed, make Shaw proud!!!"
+tutorialTipQuest01_title,Welcome To Z Shaw
+tutorialTipQuest02,"One day after falling sick from an unknown disease Shaw began to lose his mind and control of his vast power. In the coming days the area was evacuated as Shaw became more unstable losing more and more control. After being corrupted Shaw began to spread his infection creating a wasteland where people mutated into strange beings with huge heads. You will not be able to defeat Shaw on your own and will need the assistance of Cardriver70. Cardriver70 doesn't just help anyone and will only associate those who have proven their strength."
+tutorialTipQuest02_title,The Cookie Apocalypse
+PopeyesCrate,Sealed Popeyes Crate
+PopeyesBox,Popeyes Box
+RonaldoCrate,Sealed Ronaldo Crate
+RonaldoBox,Ronaldo Box
+EDPCrate,Sealed EDP Crate
+EDPBox,EDP Box
+TrumpCrate,Sealed Orange Man Crate
+TrumpBox,Orange Man Box
+CardriverCrate,Sealed Cardriver70 Crate
+CardriverBox,Cardriver70 Box
+GavinCrate,Sealed GJacobs Crate
+GavinBox,GJacobs Box
+GusCrate,Sealed Angus Crate
+GusBox,Angus Box
+MukyCrate,Sealed Muckeen Crate
+MukyBox,Muckeen Box
+KGBCrate,Sealed KGB Crate
+KGBBox,KGB Box
+JohnaCrate,Sealed Johna Crate
+JohnaBox,Johna Box
+PeterCrate,Sealed Peter Crate
+PeterBox,Peter Box
+buffInjuryBurnBigDesc,"Head Burn"
+buffInjuryBurnBigLongDesc,"Your flesh still radiates heat from the burn doing more damage and making you vulnerable.\nTake more physical damage.\nLose 1hp/second."
+buffInjuryBurnBigTooltip,"The flames singe your flesh!"
+buffInjuryBleedingBigDesc,"Head Bleeding"
+buffInjuryBleedingBigLongDesc,"Thats one big wound you better do something fast.\nLose health at a fast rate"
+buffInjuryBleedingBigTooltip,"Blood gushes from your wounds!"
+buffInjuryLegBrokenBigDesc,"Head Leg Break"
+buffInjuryLegBrokenBigLongDesc,"I dont think your leg should bend that way.\nSevere mobility loss."
+buffInjuryLegBrokenBigTooltip,"Your leg shatters under the impact!"
+buffInjuryArmBrokenBigDesc,"Head Arm Break"
+buffInjuryArmBrokenBigLongDesc,"I dont think your arm should bend that way.\nSevere dexterity loss."
+buffInjuryArmBrokenBigTooltip,"Your arm shatters under the impact!"
+buffInjuryHeadBigDesc,"Head Skull Fracture"
+buffInjuryHeadBigLongDesc,"Your head is ringing from the impact.\nRandomly lose a large amount of health."
+buffInjuryHeadBigTooltip,"Your head begins to spin!"
+buffInjuryHexedBigDesc,"Head Hex"
+buffInjuryHexedBigLongDesc,"You have been hexed by unstable energy so act quick.\nYou will die if you do nothing"
+buffInjuryHexedBigTooltip,"You are overcome with dread!"
+ShawTomsBeans,Tom's Beans
+ShawTomsBeansDesc,"Quality you can count on!\n125 Food\n10 Wellness"
+buffShawTomsBeansDesc,"Tom's Beans"
+buffShawTomsBeansLongDesc,"Heals you 2hp/second"
+ShawTurkeyLeg,Turkey Leg
+ShawTurkeyLegDesc,"Gobble Gobble Yum Yum! Forks are lame...\n125 Food\n10 Wellness"
+buffShawTurkeyLegDesc,"Turkey Leg"
+buffShawTurkeyLegLongDesc,"Heals you 2hp/second"
+ShawSpaceSandwich,Space Sandwich
+ShawSpaceSandwichDesc,"I want a space sandwich! And NO SPACE MAYONAISE!\n125 Food\n10 Wellness"
+buffShawSpaceSandwichDesc,"Space Sandwich"
+buffShawSpaceSandwichLongDesc,"Heals you 2hp/second"
+ShawWaffle,ROFL Waffle
+ShawWaffleDesc,"You can't have ROFL Waffles and pancaiks for breakfast. You have to choose. I'm on team waffle!\n125 Food\n10 Wellness"
+buffShawWaffleDesc,"ROFL Waffle"
+buffShawWaffleLongDesc,"Heals you 3hp/second"
+ShawHam,Holiday Ham
+ShawHamDesc,"Best way to stay healthy and strong this holiday season? Enjoy some of this holiday ham!\n125 Food\n10 Wellness"
+buffShawHamDesc,"Holiday Ham"
+buffShawHamLongDesc,"Heals you 2hp/second"
+ShawGoalaCola,Goala Cola
+ShawGoalaColaDesc,"GGOOOOOOOAAAAAAAALLLLLL!\n250 Water\n20 Wellness"
+buffShawGoalaColaDesc,"Goala Cola"
+buffShawGoalaColaLongDesc,"Heals you 2hp/second"
+ShawPirateJuice,Pirate Juice
+ShawPirateJuiceDesc,"Taking a pirate's juice cup is the surest way to get a sword through yer belly!\n250 Water\n20 Wellness"
+buffShawPirateJuiceDesc,"Pirate Juice"
+buffShawPirateJuiceLongDesc,"Heals you 2hp/second"
+ShawChocolateMilk,Chocolate Milk
+ShawChocolateMilkDesc,"Yes, there is an irritating slurping noise.\n125 Water\n10 Wellness"
+buffShawChocolateMilkDesc,"Chocolate Milk"
+buffShawChocolateMilkLongDesc,"Heals you 2hp/second"
+ShawDrBob,Dr. Bob
+ShawDrBobDesc,"Warning: Dr. Bob may be habit-forming.\n125 Water\n10 Wellness"
+buffShawDrBobDesc,"Dr. Bob"
+buffShawDrBobLongDesc,"Heals you 2hp/second"
+ShawFoodBundle,Food Package
+ShawFoodBundleDesc,"While theres no way to know what food you just made you can be assured it will be delicious"
+ShawDrinkBundle,Drink Package
+ShawDrinkBundleDesc,"While theres no way to know what drink you just made you can be assured it will be delicious"
+ShawChurro,Brother Muckeen's Churros
+ShawChurroDesc,"Brother Muckeen's Famous Churros\nRun 25% faster\n250 Food\n25 Wellness"
+buffShawChurroDesc,"Brother Muckeen's Churros"
+buffShawChurroLongDesc,"Run 25% faster\nHeals you 5hp/second\nHeals you 10Stamina/second"
+ShawPopeyesMeal,$6 Popeyes Meal Deal
+ShawPopeyesMealDesc,"A chimp's favorite meal, greatly increases agression."
+ShawKFCBucket,$20 KFC Big Bucket
+ShawKFCBucketDesc,"A chimp's favorite meal, greatly increases agression."
+buffShawKFCBucketDesc,"Chimpout Chicken"
+buffShawKFCBucketLongDesc,"Move 25% faster."
+ShawGoatCheese,Gus's Goatcheese
+ShawGoatCheeseDesc,"Gus's goatcheese contains over 10% real gold!\n25% barter bonus\n250 Food\n25 Wellness"
+buffShawGoatCheeseDesc,"Gus's Goatcheese"
+buffShawGoatCheeseLongDesc,"25% barter bonus\nHeals you 5hp/second\nHeals you 10Stamina/second"
+ShawPizza,Pepperoni Pizza
+ShawPizzaDesc,"Nom nom nom. Pizza = delicious.\n250 Food\n25 Wellness"
+buffShawPizzaDesc,"Pepperoni Pizza"
+buffShawPizzaLongDesc,"\nHeals you 5hp/second\nHeals you 15Stamina/second"
+ShawMarijuana,GJacobs Premium Blunt
+ShawMarijuanaDesc,"May cause unknown side effects\n50 Wellness"
+ShawWhiskey,Old Whiskey
+ShawWhiskeyDesc,"Older than your mom.\nGives three wellness up to 550."
+ShawCoffee,Cuff Coffee
+ShawCoffeeDesc,"English teacher approved.\nGives three wellness up to 550."
+HeadEssenceT1,[DECEA3]Big Head Essence[-]
+HeadEssenceT1Desc,"A fragment of the power of a big head zombie."
+HeadEssenceT1V2,Big Head Essence
+HeadEssenceT1V2Desc,"A fragment of the power of a big head zombie"
+HeadEssenceT2,Weak Bigger Head Essence
+HeadEssenceT2Desc,"A fragment of the power of a bigger head zombie"
+buffShawHealthRegenDesc,"Shaw Health Regeneration"
+buffShawHealthRegenLongDesc,"The amount of health you are gaining per second from various effects."
+buffShawStaminaRegenDesc,"Shaw Stamina Regeneration"
+buffShawStaminaRegenLongDesc,"The amount of stamina you are gaining per second from various effects."
+buffShawGSDesc,"Shaw Gamestage"
+buffShawGSLongDesc,"Your game stage can be increased with knowledge to unlock new items"
+buffShawGSTempDownDesc,"Riots Incoming"
+buffShawGSTempDownLongDesc,"A count down untill stronger enemies spawn."
+buffShawWellnessTrackerDesc,"Shaw Wellness Max"
+buffShawWellnessTrackerLongDesc,"Displays your max wellness."
+buffShawDefenseTrackerDesc,"Shaw Defense"
+buffShawDefenseTrackerLongDesc,"Displays your defense against big damage."
+buffShawFireDefenseTrackerDesc,"Shaw Fire Defense"
+buffShawFireDefenseTrackerLongDesc,"Displays your defense against fire damage."
+buffBiggestMelee2ComboReadyDesc,"Biggest Combo"
+buffBiggestMelee2ComboReadyLongDesc,"Power attack to do big damage!"
+BigHeadBlock,Big Head Statue
+BiggerHeadBlock,Bigger Head Statue
+BiggestHeadBlock,Biggest Head Statue
+reqShawRecipes,"Use Shaw's Knowledge"
+ShawKnowledgeGroupDesc,"Gives you the knowledge to create more items"
+ShawKnowledgeBiggestBaton,"Shaw's Knowledge The 70 Shocker"
+ShawKnowledgeBiggestFist,"Shaw's Knowledge The 70 Slamers"
+ShawKnowledgeBiggestSword,"Shaw's Knowledge The 70 Slasher"
+ShawKnowledgeBiggestHammer,"Shaw's Knowledge The 70 Smasher"
+ShawKnowledgeBiggestPistol,"Shaw's Knowledge The Biggest Pistol"
+ShawKnowledgeBiggestShotgun,"Shaw's Knowledge The Biggest Shotgun"
+ShawKnowledgeBiggestSniper,"Shaw's Knowledge The Biggest Rifle"
+ShawKnowledgeBiggestAssaultRifle,"Shaw's Knowledge Biggest Assault Rifle"
+ShawKnowledgeBiggestGun,"Shaw's Knowledge The Biggest Minigun"
+ShawKnowledgeShawUpgradeTool,"Shaw's Knowledge The 70 Multitool"
+ShawKnowledgeBiggestPickaxe,"Shaw's Knowledge The 70 Harvester"
+ShawKnowledgemodArmorPlatingBig,"Shaw's Knowledge Big Armor Plating"
+ShawKnowledgemodArmorPlatingBigger,"Shaw's Knowledge Bigger Armor Plating"
+ShawKnowledgemodArmorPlatingBiggest,"Shaw's Knowledge Biggest Armor Plating"
+ShawKnowledgearmorBiggest,"Shaw's Knowledge The Biggest Armor"
+ShawKnowledge40mmGLAmmo,"Shaw's Knowledge The Grenade Assault Rifle"
+ShawKnowledge40mmGLAmmo2,"Shaw's Knowledge Bigger Trolls"
+ShawKnowledge40mmGLAmmoBiggest,"Shaw's Knowledge Biggest Trolls"
+ShawKnowledge40mmGLAmmoHyper,"Shaw's Knowledge Hyper Trolls"
+ShawKnowledgeBiggestGLAmmo,"Shaw's Knowledge The Biggest Bazooka"
+ShawKnowledgeQuestRecipes,"Shaw's Knowledge The Cookie Works"
+ScoutKillZeds,"White River Training"
+ScoutKillZeds_offer,"Listen up Fucker,\nThe only reason you're not dead is because I like you. That's right we've been watching you. We could use someone with your talents so if you can handle this little tiny task you might just survive around here.\n\nKill 750 Zombies"
+ScoutQuestAskText,Can i help?
+ScoutQuestOfferText,Sure. but it wont be easy.
+ScoutQuestOne,Quest - White River Training
+ShawSugar,"Shaw Sugar"
+ShawSugarDesc,"Sugar that gives off radiation."
+ShawWater,"Shaw Water"
+ShawWaterDesc,"Looks and smells of sewage."
+ShawCarbon,"Shaw Carbon Gas"
+ShawCarbonDesc,"An old rusty tank of mostly carbon gas."
+ShawMeat,"Shaw Meat"
+ShawMeatDesc,"Meat exposed to big flames."
+ShawBread,"Shaw Bread"
+ShawBreadDesc,"Bread that is stronger than steel."
+ShawCheese,"Shaw Cheese"
+ShawCheeseDesc,"A block of cheese created from unknown ingredients."
+ShawNeedle,"Used Needle"
+ShawNeedleDesc,"Can probably be reused."
+ShawEgg,"Shaw Egg"
+ShawEggDesc,"A huge egg with an unusual glow."
+ShawMinerals,"Shaw Metals"
+ShawMineralsDesc,"An assortment of heavy metals grinded into a powder."
+EyeballT1,"Eyeball"
+EyeballT1Desc,"MAMA EYEBALL"
+HydroponicsBasinShaw,Hydroponics Basin
+HydroponicsBasinShawDesc,"A hydroponics basin. Will grow crops in a compact space."
+HydroponicsGrowLights,Grow Lights
+HydroponicsGrowLightsDesc,Growing lights. Increases speed of hydroponic basins.
+perkYeahScienceRank3LongDesc,"You can craft advanced firearm ammunition and stun batons.\nUnlocks the Hydroponics recipes.\nIncreases damage for all batons by 30%"
+perkYeahScienceRank5LongDesc,"You can craft battery banks and the Broadcast Upgrade for containers.\nUnlocks the Grow Lights for Hydroponics recipe.\nIncreases damage for all batons by 50%"
+ShawAmmoHeavy,"[DECEA3]Compressed Heavy Ammo[-]"
+ShawAmmoHeavyDesc,"Specialized Ammo used in legendary weapons."
+ShawAmmo762,"[DECEA3]Compressed Rifle Ammo[-]"
+ShawAmmo762Desc,"Specialized Ammo used in legendary weapons."
+ShawAmmo44,"[DECEA3]Compressed Magnum Ammo[-]"
+ShawAmmo44Desc,"Specialized Ammo used in legendary weapons."
+ShawAmmoShell,"[DECEA3]Compressed Shotgun Shell[-]"
+ShawAmmoShellDesc,"Specialized Ammo used in legendary weapons."
+ShawAmmoHeavyCharged,"[DECEA3]Charged Heavy Ammo[-]"
+ShawAmmoHeavyChargedDesc,"Charged ammo provides double damage over compressed ammo."
+ShawAmmo762Charged,"[DECEA3]Charged Rifle Ammo[-]"
+ShawAmmo762ChargedDesc,"Charged ammo provides double damage over compressed ammo."
+ShawAmmo44Charged,"[DECEA3]Charged Magnum Ammo[-]"
+ShawAmmo44ChargedDesc,"Charged ammo provides double damage over compressed ammo."
+ShawAmmoShellCharged,"[DECEA3]Charged Shotgun Shell[-]"
+ShawAmmoShellChargedDesc,"Charged ammo provides double damage over compressed ammo."
+buffCampfireAOEEffectDesc,"The fire heals you over time."
+HydraulicPress,"[DECEA3]Hydraulic Press[-]"
+HydraulicPressDesc,"Compress things."
+perkASMeleeShawName,"Sword Mastery"
+perkASMeleeShawDesc,"Increased by using swords.\n\nCurrent XP/XP to Next Level: {cvar($AS_ShawMelee_XP:0)}/{cvar($AS_ShawMelee_LvlNextTotal:0)}"
+skillShawBaseGameMelee,"Exotic Weapons"
+skillShawBaseGameMeleeName,"Exotic Weapons"
+skillShawBaseGameMeleeDesc,"Increase your exotic weapons skill."
+perkASMeleeShaw1Desc,"Noob"
+perkASMeleeShaw1LongDesc,"Prevents you from hurting yourself.\nIncreased swing speed, damage and reduces stamina cost."
+perkASMeleeShaw2Desc,"Pro"
+perkASMeleeShaw2LongDesc,"Hit up to three zombies at once.\nIncreased swing speed, damage and reduces stamina cost."
+perkASMeleeShaw3Desc,"Bloxxer"
+perkASMeleeShaw3LongDesc,"Unlocks power attacks.\nIncreased swing speed, damage and reduces stamina cost."
+perkASMeleeShaw4Desc,"Hacker"
+perkASMeleeShaw4LongDesc,"Move faster while holding a sword and hit up to five zombies at once.\nAble to reforge and use some swords.\nIncreased swing speed, damage and reduces stamina cost."
+perkASMeleeShaw5Desc,"God"
+perkASMeleeShaw5LongDesc,"Gain the swordmaster skill that allows you to build up power on every slash and kill.\nPower attacks require five power but are empowered.\nAble to reforge and use all swords.\nIncreased swing speed, damage and reduces stamina cost.\nRequires you to eat a Monkey Fruit."
+buffShawRevolverComboDesc,"Jailbreak Combo"
+buffShawRevolverComboLongDesc,"Increase reload speed with every hit resets on reload.\nGetting over six gives additional speed and damage."
+buffShawMartiniHenryComboDesc,"Martini Henry Combo"
+buffShawMartiniHenryComboLongDesc,"Gain combo on every shot and double on kills.\nCombo increases damage and reload speed but fades over time.\nHigh combos also give firerate."
+lblCategoryShawAmmo,"Hydraulic Press"
+lblCategoryGunParts,"Gun Parts"
+lblCategoryShawMats,"Advanced Materials"
+buffLinkedSwordPowerAtkCooldownDesc,"Linked Sword Power Attack Cooldown"
+buffLinkedSwordPowerAtkCooldownLongDesc,"Cooldown for using a power attack.\nReduced by getting kills."
+perkUnleashHellName,"Unleash Hell"
+perkUnleashHellDesc,"Gained by drinking unleash hell."
+perkUnleashHell1Desc,"Increases your game stage by 25%.\nRequired to eat a miracle fruit."
+DFdrinkJarUnleashHellDesc,"Increases your game stage by 25%."
+reqperkUnleashHell,"Requires Unleash Hell"
+BloodOrange,"[FE9900]Blood Orange[-]"
+BloodOrangeDesc,"Makes you stronger when eaten increasing blood flow.\nRequires Health Nut 5 to eat."
+perkBloodOrangeName,"Blood Orange"
+perkBloodOrangeDesc,"Gained by eating a blood orange."
+perkBloodOrange1Desc,"Increase max wellness by 25.\nGrants 5 stamina per second regardless of your condition.\nGain immunity to radiation."
+MericleFruit,"[5DE2E7]Miracle Fruit[-]"
+MericleFruitDesc,"Makes you stronger when eaten hardening your skin.\nRequires you to have consumed a blood orange."
+perkMericleFruitName,"Miracle Fruit"
+perkMericleFruitDesc,"Gained by eating a miracle fruit."
+perkMericleFruit1Desc,"Increase max wellness by 25.\nGrants 5 stamina per second regardless of your condition."
+reqperkMericleFruit,"Requires Miracle Fruit"
+Elderberry,"[C501FC]Elderberry[-]"
+ElderberryDesc,"Makes you stronger when eaten increasing your intelligence.\nRequires you to have consumed a miracle fruit."
+perkElderberryName,"Elderberry"
+perkElderberryDesc,"Gained by eating an elderberry."
+perkElderberry1Desc,"Increase max wellness by 50.\nGrants 5 stamina per second regardless of your condition.\nIncreases your game stage by 25%."
+reqperkElderberry,"Requires Elderberry"
+MonkeyFruit,"[FFCC01]Monkey Fruit[-]"
+MonkeyFruitDesc,"Makes you stronger when eaten by showing you the light.\nRequires you to have consumed a elderberry."
+perkMonkeyFruitName,"Monkey Fruit"
+perkMonkeyFruitDesc,"Gained by eating a monkey fruit."
+perkMonkeyFruit1Desc,"Increase max wellness by 100.\nGrants 5 stamina per second regardless of your condition.\nStarts a chimpout."
+reqperkMonkeyFruit,"Requires Monkey Fruit"
+buffKnightVenomshankPlayerDebuffName,"Venomshank Venom"
+buffKnightVenomshankPlayerDebuffDesc,"Slows you down and deals damage over time."
+MountainDewMagic,"[FF0000]MLG Mountain Dew[-]"
+MountainDewMagicDesc,"A can of mountain dew used by the most mlg players.\nCan be attached to guns to harness its power."
+GoldBarMagic,"[FF0000]Magical Gold Bar[-]"
+GoldBarMagicDesc,"A bar of gold with a dim glow.\nCan be worked into your guns to make them stronger."
+RedcliffChestArmor,"[FF0000]Redcliff Chestplate[-]"
+RedcliffChestArmorDesc,"A chestplate issued to high ranking soldiers of the redcliff kingdom."
+PurpleHeadCharm,"[C501FC]Purple Head Charm[-]"
+PurpleHeadCharmDesc,"A magical charm worn by behemoths that holds great power."
+perkPurpleHeadCharmName,"Purple Head Charm"
+perkPurpleHeadCharmDesc,"Gained by wearing a purple head charm."
+perkPurpleHeadCharm1Desc,"Increase wellness max by 50.\nIncreases defense and fire defense by 5."
+HydraulicPressCraft,"Hydraulic Press"
+BiggerCatalystPOI,"70 Catalyst"
+BiggerCatalystCraft,"70 Catalyst"
+modMotorToolV8,"[DECEA3]V8 Engine Conversion[-]"
+modMotorToolV8Desc,"Upgrade your auger or chainsaw with a V8 engine."
+HealthShot,"[DECEA3]Filled Needle[-]"
+HealthShotDesc,"Probably filled with health."
+buffHealthShotDesc,"Filled Needle"
+buffHealthShotLongDesc,"Regen 15 hp/second"
+ShawBurger,[DECEA3]Cheezburger[-]
+ShawBurgerDesc,"U can has cheezburger!\nT1 Food 10 Wellness 550 Cap."
+buffShawBurgerDesc,"Cheezburger"
+buffShawBurgerLongDesc,"10 Stamina Regen 5 Defense 5 Fire Defense."
+ShawBloxyCola,[DECEA3]Bloxy Cola[-]
+ShawBloxyColaDesc,"Warning: Bloxy Cola may be habit-forming.\nT1 Drink 10 Wellness 550 Cap."
+buffShawBloxyColaDesc,"Bloxy Cola"
+buffShawBloxyColaLongDesc,"10 Stamina Regen 5 Defense 5 Fire Defense."
+ShawCake,[DECEA3]Cake[-]
+ShawCakeDesc,"The cake is the truth.\nT2 Food 20 Wellness 700 Cap."
+buffShawCakeDesc,"Cake"
+buffShawCakeLongDesc,"30 Stamina Regen 15 Defense 15 Fire Defense 5 Health Regen."
+ShawBloxiade,[DECEA3]Bloxiade[-]
+ShawBloxiadeDesc,"As a Robloxian athlete, I know how important it is to stay hydrated. I like to stay hydrated with Bloxiade. I think it makes me run faster, and my coach does too!\nT2 Drink 20 Wellness 700 Cap."
+buffShawBloxiadeDesc,"Bloxiade"
+buffShawBloxiadeLongDesc,"30 Stamina Regen 15 Defense 15 Fire Defense 5 Health Regen."
+ShawTaco,[DECEA3]Taco[-]
+ShawTacoDesc,"ROBLOX is built on tacos from Chavez. Also Pancho Villa!\nT2 Food 20 Wellness 700 Cap."
+buffShawTacoDesc,"Taco"
+buffShawTacoLongDesc,"20 Stamina Regen 10 Defense 10 Fire Defense 1 Health Regen."
+ShawWitchesBrew,[DECEA3]Witches Brew[-]
+ShawWitchesBrewDesc,"Do the Brew! Shipped direct from the Haunted Hill soda company. Warning: may cause freakish deformities. Warning: may contain actual witches.\nT2 Drink 20 Wellness 700 Cap."
+buffShawWitchesBrewDesc,"Witches Brew"
+buffShawWitchesBrewLongDesc,"20 Stamina Regen 10 Defense 10 Fire Defense 1 Health Regen."
+buffSwordMasterShreadDesc,"Swordmaster Power"
+buffSwordMasterShreadLongDesc,"Every hit gives power and kills give three.\nUse five power for one power attack.\n\nGod Swords give four power on kill.\nCookie Blade gives five power on kill."
+perkShawGamestage1Name,"Big Heads"
+perkShawGamestage1Desc,"Starts after eating a monkey fruit."
+perkShawGamestage1Desc2,"Make the 70 Catalyst to create things."
+perkShawGamestage2Name,"Enraged Big Heads"
+perkShawGamestage2Desc,"Starts after defeating the Riot Commander."
+perkShawGamestage2Desc2,"Collect sheckles and mine cookietonium."
+ShawSkillBookAll,"[DECEA3]Shaws Mastery[-]"
+ShawSkillBookAllDesc,"Learn how to do basic things fast.\nSets all DF action skills to level 100."
+lblCategoryBiggerCatalyst,"Catalyst"
+EssenceKeyWealth,"Shekelstein Key"
+EssenceKeyWealthDesc,"Used to get sheckles."
+buffBigZombieBossSpawnName,"Head Power"
+buffBigZombieBossSpawnDesc,"Can be used to summon mega chimps."
+EssenceBossT1,"[DECEA3]Riot Orb"
+EssenceBossT1Desc,"Summons the Riot Commander"
+EssenceKeyWealthEnter,"Shekelstein Master Key"
+EssenceKeyWealthEnterDesc,"Used to enter Shekelstein's house."
+Sheckle,"[FFCC01]Sheckle[-]"
+SheckleDesc,"Used by happy merchant."
+CookieBlade,"[0000ff]Cookie Blade[-]"
+CookieBladeDesc,"A razor sharp blade made from cookietonium. Holding this blade will increase your defense and fire defense."
+BigHeadForge,"[FFCC01]Big Blast Furnace"
+BigHeadForgeDesc,"Burns hot enough to melt cookietonium."
+BigHeadForgeCraft,"Big Head Blast Furnace"
+BigAssembler,"[FFCC01]Big Assembler"
+BigAssemblerDesc,"Assembles complex materials."
+BigAssemblerCraft,"Big Assembler"
+BigFoodMaker,"[FFCC01]Big Laser Cooker"
+BigFoodMakerDesc,"Cooks breathtaking foods and other powerful consumables."
+BigFoodMakerCraft,"Big Laser Cooker"
+KingThrone,Throne
+ShawPaintingVariantHelper,Shaw Paintings
+ShawPaintingVariantHelperDesc,"Used to place paintings"
+ShawCannon,"[FE9900]Cannon"
+ShawCannonDesc,"Cannons are awesome!\nFires Cannon Balls."
+CannonBall1,"[DECEA3]25 LB Cannonball"
+CannonBall1Desc,"The smallest and cheapest cannonball."
+CannonBall2,"[DECEA3]50 LB Cannonball"
+CannonBall2Desc,"A decent-size cannonball."
+CannonBall3,"[DECEA3]100 LB Cannonball"
+CannonBall3Desc,"The largest and most expensive cannonball."
+CannonBall4,"[FF0000]Redcliff 300 LB Cannonball"
+CannonBall4Desc,"A rare cannonball created from the redcliff kingdom."
+CannonBall5,"[0000FF]Shaw's Heavy Shot"
+CannonBall5Desc,"An extremely large cannonball created by Shaw."
+modGunRechargableBatteryV2,"[DECEA3]Overcharged Battery"
+modGunRechargableBatteryV2Desc,"An attachable battery that not only recharges your energy cells but also over charges them.\nIncreases weapon firerate by 25%."
+DoomwoodClub,"[FE9900]Darkie Demolisher"
+DoomwoodClubDesc,"An extremely large wooden club with spikes fit into it, enchanted with the power of the redcliff kingdom. Able to harvest energy from those it kills to perform empowered attacks. Wielding this club requires immense strength and skill."
+buffDoomwoodClubDesc,"[FE9900]Darkie Demolisher Energy"
+buffDoomwoodClubLongDesc,"Power attacks require atleast 10 energy but become stronger at 25, 50, and 100 energy.\nHitting power attacks recharges a large amount of stamina."
+buffDoomwoodClubCharge50PlayerDesc,"[FE9900]Darkie Demolisher Rage"
+buffDoomwoodClubCharge50PlayerLongDesc,"Your next few attacks are empowered."
+perkASDoomwoodClubName,"Darkie Demolisher"
+perkASDoomwoodClubDesc,"Increased by using the Darkie Demolisher.\n\nCurrent XP/XP to Next Level: {cvar($PerkDoomwoodClubXP:0)}/{cvar($PerkDoomwoodClubXPTarget:0)}"
+perkASDoomwoodClub1Desc,"Initial Training"
+perkASDoomwoodClub1LongDesc,"A basic familiarity with the Darkie Demolisher allows you to harvest energy from every hit and reduces stamina cost by 33%.\n\nCompletion of this training will leave you unable to use other legendary weapons."
+perkASDoomwoodClub2Desc,"Crippling Blows"
+perkASDoomwoodClub2LongDesc,"An advanced swing technique allows you to cripple zombies.\nBasic attacks cause bleeding that deals damage over time and causes targets take 10% more damage.\nPower attacks cripple zombies causing them take 50% more damage."
+perkASDoomwoodClub3Desc,"Redcliff Warrior"
+perkASDoomwoodClub3LongDesc,"Learn the combat techniques of the Redcliff Kingdom's Warriors.\nIncrease the damage of basic attacks by 25%.\nWhen a bleeding or crippled zombie dies near you gain one energy.\nHolding the Darkie Demolisher reduces melee damage taken by 30%.\nGain the ability to build up rage, every power attack kill gives five, normal attacks give one, when you take melee damage gain five.\nRage increases swing speed, base damage, fire defense, and grants healing on direct power attack kills."
+perkASDoomwoodClub4Desc,"Redcliff Knight"
+perkASDoomwoodClub4LongDesc,"TODO"
+perkASDoomwoodClub5Desc,"Redcliff Champion"
+perkASDoomwoodClub5LongDesc,"TODO"
+perkASCannonName,"Cannoneer"
+perkASCannonDesc,"Increased by using the Cannon.\n\nCurrent XP/XP to Next Level: {cvar($PerkASCannonXP:0)}/{cvar($PerkASCannonXPTarget:0)}"
+perkASCannon1Desc,"Rapid Reload"
+perkASCannon1LongDesc,"Increases your base reload speed by 10%.\nTaking damage increases your reload speed by 50%."
+perkASCannon2Desc,"Cannon Fury"
+perkASCannon2LongDesc,"Gain fury from every kill while holding a cannon.\nGain fury from every hit you take while holding a cannon.\nFury increases reload speed and movespeed, but fades over time, more fury causes faster decay.\nFury buffs cap at double speed but can be stacked further for a buffer."
+perkASCannon3Desc,"Artillery Commander"
+perkASCannon3LongDesc,"Gain power from every kill while holding a cannon.\nWhen you reach 25 power inspire your allies.\nNearbye allies gain increased stamina regen, defense, fire defense, and movespeeed.\nWhile inspired cannonballs deal 50% more damage, cannon fury quickly builds, and gain 10 health regen."
+perkASCannon4Desc,"Redcliff General"
+perkASCannon4LongDesc,"TODO"
+perkASCannon5Desc,"Redcliff King"
+perkASCannon5LongDesc,"TODO"
+buffShawCannonReloadBuffDesc,"[FE9900]Rapid Reload"
+buffShawCannonReloadBuffLongDesc,"Reload faster."
+buffShawCannonRageBuffDesc,"[FE9900]Cannon Fury"
+buffShawCannonRageBuffLongDesc,"Fury increases reload speed and movespeed."
+buffShawCannonCommanderBuffDesc,"[FE9900]Artillery Commander Charge"
+buffShawCannonCommanderBuffLongDesc,"At 25 charge buff your allies."
+buffShawCannonCommanderBuffEffectDesc,"[FE9900]Artillery Commander Inspire"
+buffShawCannonCommanderBuffEffectLongDesc,"Your inspired by an artillery commander granting you 10 defense, fire defense, 50 stamina regen, and 25% increased movespeed."
+TechMinigun,"[FE9900]Behemoth Blaster"
+TechMinigunDesc,"A huge rotary cannon capable of extreme firepower and ammo consumption. Built to be wielded by a behemoth the huge weight and recoil makes it difficult to use at your size."
+perkASTechMinigunName,"Commando"
+perkASTechMinigunDesc,"Increased by using the Behemoth Blaster.\n\nCurrent XP/XP to Next Level: {cvar($PerkASTechMinigunXP:0)}/{cvar($PerkASTechMinigunXPTarget:0)}"
+perkASTechMinigun1Desc,"Minigun Mastery"
+perkASTechMinigun1LongDesc,"A basic mastery of the Behemoth Blaster increases magazine size by 50% and increases damage by 25%.\n\nCompletion of this training will leave you unable to use other legendary weapons."
+perkASTechMinigun2Desc,"Overcharged Reactor"
+perkASTechMinigun2LongDesc,"Greatly increases the velocity of rounds fired allowing them to pierce three zombies at once."
+perkASTechMinigun3Desc,"Heavy Artillery"
+perkASTechMinigun3LongDesc,"Become stronger while holding the Behemoth Blaster.\nHolding the Behemoth Blaster increases defense, fire defense, and reduces melee damage taken by 20%.\nDecreases recoil by 33% and increases damage by 25% and magazine size by an additional 50%.\nEvery hit gives you one stamina.\nIncreases wellness max by 50."
+perkASTechMinigun4Desc,"Nitroglycerin Additive"
+perkASTechMinigun4LongDesc,"TODO"
+perkASTechMinigun5Desc,"Fusion Reactor"
+perkASTechMinigun5LongDesc,"TODO"
+perkASFoodDrinkName,"Gluttony"
+perkASFoodDrinkDesc,"Increased by eating or drinking special foods.\n\nCurrent XP/XP to Next Level: {cvar($PerkASFoodDrinkXP:0)}/{cvar($PerkASFoodDrinkXPTarget:0)}"
+perkASFoodDrink1Desc,"High Calorie"
+perkASFoodDrink1LongDesc,"As you become familiar with eating these foods your body can extract more energy from them making them last 25% longer.\n\nTo gain xp for this perk you must eat Gluttony Essence."
+perkASFoodDrink2Desc,"All You Can Eat"
+perkASFoodDrink2LongDesc,"Every food you eat will proc Gluttony buff with a 10 second cooldown. Gluttony buff reduces the cooldown of all abilities (except for the ability itself), gives 30 sword power, and gives 15 defense and fire defense for 20 seconds."
+perkASMedsName,"Addict"
+perkASMedsDesc,"Increased by using speical healing items.\n\nCurrent XP/XP to Next Level: {cvar($PerkASMedsXP:0)}/{cvar($PerkASMedsXPTarget:0)}"
+perkASMeds1Desc,"Junkie"
+perkASMeds1LongDesc,"While your healing methods are unconventional they allow for a 25% stronger effect.\n\nTo gain xp for this perk you must use Addict Essence."
+perkASMeds2Desc,"Needle Sharing"
+perkASMeds2LongDesc,"When under the effect of a filled needle every kill extends the duration by 10.\nNutrient needles can increase your wellness to 565."
+ASFoodDrinkEssence,"[DECEA3]Gluttony Essence"
+ASFoodDrinkEssenceDesc,"Allows you to gain XP in the Gluttony perk.\n\nEating the Gluttony Essence prevents you from eating the Addict Essence."
+ASMedsEssence,"[DECEA3]Addict Essence"
+ASMedsEssenceDesc,"Allows you to gain XP in the Addict perk.\n\nEating the Addict Essence prevents you from eating the Gluttony Essence."
+WellnessShot,"[DECEA3]Nutrient Needle[-]"
+WellnessShotDesc,"Probably filled with nutrients."
+buffWellnessShotDesc,"Nutrient Needle"
+buffWellnessShotLongDesc,"Gain 1 wellness every 10 seconds up to 550."
+KeemstarAlexV2,"[FF0000]Keemstar Core"
+KeemstarAlexV2Desc,"A more stable form of keemstar that produces more power."
+Steven,"[FF0000]Steven"
+StevenDesc,"Steven here"
+GoldCoin,"Blank Sheckle"
+GoldCoinDesc,"A gold coin that is ready to be processed into a sheckle."
+BigHeadBlessed,[FFCC01]Blessed Big Head[-]
+BigHeadBlessedDesc,"A bighead that has increased in size after absorbing essence."
+GoldDewKit,"[FF0000]Gun Upgrade Kit"
+GoldDewKitDesc,"A kit of parts used to upgrade a gun."
+BiggestPickaxe,[0000FF]70 Harvester
+BiggestPickaxeDesc,"Created by Cardriver70 to quickly harvest cookietonium but can be still be used with other types of resources."
+BiggestPickaxeGolden,[FFCC01]Golden 70 Harvester
+BiggestPickaxeGoldenDesc,"A 70 Harvester enchanted with the power of a magical gold bar."
+buffBiggestPickaxeDesc,"70 Harvester Heat"
+buffBiggestPickaxeLongDesc,"As you mine ores heat builds up calling in a chimpout."
+RedcliffChestArmorT1,"[FF0000]Redcliff Chestplate"
+RedcliffChestArmorDesc,"Increases defense, fire defense, and wellness max by 10."
+perkRedcliffChestArmorName,"Redcliff Chestplate"
+perkRedcliffChestArmorDesc,"Gained by wearing a Redcliff Chestplate."
+perkRedcliffChestArmor1Desc,"Increases defense, fire defense, and wellness max by 10."
+perkASBiggestPickaxeName,"70 Harvester"
+perkASBiggestPickaxeDesc,"Increased by using the 70 Harvester.\n\nCurrent XP/XP to Next Level: {cvar($PerkASBiggestPickaxeXP:0)}/{cvar($PerkASBiggestPickaxeXPTarget:0)}"
+perkASBiggestPickaxe1Desc,"Dough Miner"
+perkASBiggestPickaxe1LongDesc,"Your an experienced dough miner and can swing the 70 Harvester 25% faster with 50% less stamina."
+perkASBiggestPickaxe2Desc,"Chocolate Strike"
+perkASBiggestPickaxe2LongDesc,"Each swing has a 10% chance to do 5x damage and give 5x materials."
+perkASBiggestPickaxe3Desc,"Cookie Rush"
+perkASBiggestPickaxe3LongDesc,"Every Chocolate Strike builds up cookie power and starts a Cookie Rush at 20.\nCookie Rush lasts 10 seconds and gives guaranteed Chocolate Strikes and unlimited stamina."
+ShawAK47GoldenMLG,[00FF00]M[-][0000FF]L[-][FF0000]G[-] [FFCC01]Chimp Repellent
+ShawAK47GoldenMLGDesc,"Quickscope The Chimpout."
+ShawMartiniHenryGoldenMLG,[00FF00]M[-][0000FF]L[-][FF0000]G[-] [FFCC01]Martini Henry
+ShawMartiniHenryGoldenMLGDesc,"Quickscope The Savages."
+ShawRevolverGoldenMLG,[00FF00]M[-][0000FF]L[-][FF0000]G[-] [FFCC01]Jailbreak Revolver
+ShawRevolverGoldenMLGDesc,"Quickscope Some Bacon."
+ShawDoubleBarrelShotgunGoldenMLG,[00FF00]M[-][0000FF]L[-][FF0000]G[-] [FFCC01]Sudra Slayer
+ShawDoubleBarrelShotgunGoldenMLGDesc,"Quickscope Straight To Africa."
+buffBiggestPickaxeT3Desc,"Cookie Charge"
+buffBiggestPickaxeT3LongDesc,"Your current charge towards a cookie rush."
+buffBiggestPickaxeT3ReadyDesc,"Cookie Rush"
+buffBiggestPickaxeT3ReadyLongDesc,"Gain guaranteed Chocolate Strikes and unlimited stamina."
+CommanderFlag,"[FFCC01]Commanders Flag"
+CommanderFlagDesc,"A flag droped by a redcliff commander.\nYou could use it to lead your allies."
+perkCommanderFlagName,"Commanders Flag"
+perkCommanderFlagDesc,"Inspire your allies with the flag."
+perkCommanderFlag1Desc,"Gained by planting a flag onto your back.\nWhen hurt under 50% hp inspire all allies near you.\nInspire lasts for 15 seconds and has a 2.5 minute cooldown.\nInspire grants 25% movespeed 15 health regen and charges any item your holding.\nIncreases stamina regen by 10."
+buffCommanderFlagEffectDesc,"[FFCC01]Commanders Flag"
+buffCommanderFlagEffectLongDesc,"Inspired by a commander for a short time."
+buffCommanderFlagCooldownDesc,"Commanders Flag Recharge"
+buffCommanderFlagCooldownLongDesc,"You must wait before using the Commanders Flag again."
+HealthAutoInjector,"[C501FC]Fentanyl Reactor"
+HealthAutoInjectorDesc,"The reactor core that powers riot droids."
+perkHealthAutoInjectorName,"Fentanyl Reactor"
+perkHealthAutoInjectorDesc,"Injects you with fent when hurt."
+perkHealthAutoInjector1Desc,"Gained by implating a Fentanyl Reactor in your heart.\nWhen hurt under 75% hp or 25% hp will proc reactor buff that heals you quickly and gives stamina.Both buffs also quickly charge any item your holding.\n2.5 minute cooldown on 75% proc and 10 minute cooldown on 25% proc.\nIncreases wellness max by 15 and health regen by 1."
+buffHealthAutoInjectorHealDesc,"[C501FC]Fentanyl Reactor"
+buffHealthAutoInjectorHealLongDesc,"Repairs damage to your body and gives you energy."
+buffHealthAutoInjectorCooldownDesc,"Fentanyl Reactor Recharge"
+buffHealthAutoInjectorCooldownLongDesc,"The Fentanyl Reactor must recharge before assisting you again."
+buffHealthAutoInjectorHealV2Desc,"[C501FC]Overcharged Fentanyl Reactor"
+buffHealthAutoInjectorHealV2LongDesc,"Extremely quickly repairs damage to your body and gives you energy."
+buffHealthAutoInjectorCooldownV2Desc,"Overcharged Fentanyl Reactor Recharge"
+buffHealthAutoInjectorCooldownV2LongDesc,"The Fentanyl Reactor must recharge before assisting you again."
+buffDoomwoodClubRageDesc,"[FE9900]Darkie Demolisher Rage"
+buffDoomwoodClubRageLongDesc,"Rage increases stats but fades over time."
+buffDoomwoodClubRageHealingDesc,"[00FF00]Darkie Demolisher Healing"
+buffDoomwoodClubRageHealingLongDesc,"Your healing from enraged kills.\nFades at 10/s when at full hp."
+DewCanReactor,"[00FF00]Tactical Mountain Dew"
+DewCanReactorDesc,"Take a drink when you need it most."
+perkDewCanReactorName,"Tactical Mountain Dew"
+perkDewCanReactorDesc,"Mountain Dew keeps you fighting longer."
+perkDewCanReactor1Desc,"Every hit you take has a 25% chance to proc Mountain Dew buff with a 30 second cooldown.\nRegens health and stamina and charges the item your holding over time.\nIncreases wellness max by 25."
+buffDewCanReactorEffectDesc,"[00FF00]Tactical Mountain Dew"
+buffDewCanReactorEffectLongDesc,"Mountain Dew flows through your body making you stronger."
+buffDewCanReactorCooldownDesc,"Tactical Mountain Dew Recharge"
+buffDewCanReactorCooldownLongDesc,"You must wait before using the Mountain Dew again."
+buffASFoodDrinkT2EffectDesc,"[DECEA3]Gluttony"
+buffASFoodDrinkT2EffectLongDesc,"All the eating is making your stronger."
+buffASFoodDrinkT2CooldownDesc,"Gluttony Recharge"
+buffASFoodDrinkT2CooldownLongDesc,"You must wait before Gluttony can proc again."
+ShawAmmoMinigunT1,"[DECEA3]Compressed Minigun Rounds"
+ShawAmmoMinigunT1Desc,"Specialized Ammo used created for the Behemoth Blaster."
+
+EntityLootContainerZedBig,Robuxs Bag
+EntityLootContainerZedBigVet,Robuxs Bag
+EntityLootContainerZedBehemoth1Big,Behemoth Robuxs Bag
+EntityLootContainerZedBigGolden,Golden Robuxs Bag
+EntityLootContainerZedBigKnight,Knight Robuxs Bag
+EntityLootContainerZedBigMLG,MLG Robuxs Bag
+EntityLootContainerZedBoss1,Huge Golden Robuxs Bag
+
+EntityLootContainerZedBigEnraged,Robuxs Bag
+EntityLootContainerZedBigVetEnraged,Robuxs Bag
+EntityLootContainerZedBehemoth1BigEnraged,Behemoth Robuxs Bag
+EntityLootContainerZedBehemoth2BigEnraged,Titan Robuxs Bag
+EntityLootContainerZedBigGoldenEnraged,Golden Robuxs Bag
+EntityLootContainerZedBigKnightEnraged,Knight Robuxs Bag
+EntityLootContainerZedBigMLGEnraged,MLG Robuxs Bag
+EntityLootContainerZedBigDroidEnraged,Metal Robuxs Bag
+EntityLootContainerZedBigCommanderEnraged,Commander Robuxs Bag
+
+zombieBusinessWomanBig,Big Rioter
+zombieCheerleaderBig,Big Rioter
+zombieOldTimerBig,Big Rioter
+zombieWightBig,Big Rioter
+zombieDemolitionBig,Big Rioter
+zombieBoeBig,Big Rioter
+zombieFemaleFatBig,Big Rioter
+zombieJoeBig,Big Rioter
+zombieMoeBig,Big Rioter
+zombieArleneBig,Big Rioter
+zombieLabBig,Big Lab Rioter
+zombieDarleneBig,Big Rioter
+zombieMarleneBig,Big Rioter
+zombieYoBig,Big Rioter
+zombieSteveBig,Big Riotere
+zombieBusinessManBig,Big Rioter
+zombieSpiderBig,Big Rioter
+zombieNurseBig,Big Rioter
+zombieFatHawaiianBig,Big Rioter
+zombieFatCopBig,Big Rioter
+zombieMaleHazmatBig,Big Rioter
+zombieUtilityWorkerBig,Big Rioter
+zombieSoldierBig,Big Rioter
+zombieSkateboarderBig,Big Rioter
+zombieJanitorBig,Big Rioter
+zombieBikerBig,Big Rioter
+zombiePartyGirlBig,Big Party Rioter
+zombieLumberjackBig,Big Rioter
+zombieDoctorFemaleBig,Big Rioter
+zombieDoctorMaleBig,Big Rioter
+zombieLabMaleBig,Big Lab Rioter
+zombieFootballPlayerBig,Big Rioter
+zombieBehemoth1Big,Big Behemoth
+zombieBehemoth2Big,Big Behemoth
+zombieBehemoth3Big,Big Behemoth
+zombieBehemoth4Big,Big Behemoth
+zombieFemaleFatBigLeader,Big Riot Leader
+zombieFemaleFatBigRanger,Big Riot Ranger
+zombieMoeBigLeader,Big Riot Leader
+zombieMoeBigRanger,Big Riot Ranger
+zombieFatHawaiianBigLeader,Big Riot Leader
+zombieFatHawaiianBigRanger,Big Riot Ranger
+zombieSoldierBigLeader,Big Riot Leader
+zombieSoldierBigRanger,Big Riot Ranger
+zombieBikerBigLeader,Big Riot Leader
+zombieBikerBigRanger,Big Riot Ranger
+zombieLumberjackBigLeader,Big Riot Leader
+zombieLumberjackBigRanger,Big Riot Ranger
+zombieWightBigLeader,Big Riot Leader
+zombieFatCopBigRanger,Big Riot Ranger
+zombieBusinessManBigGolden,Goldberg Shacklestein
+zombieWightBigKnight,Redcliff Knight
+zombieMoeBigMLG,MLG Rioter
+zombieWightScout,Riot Scout
+zombieWightScoutSleeper,Riot Scout
+zombieWightBossT1,Riot Comander
+
+zombieBusinessWomanBigEnraged,Enraged Big Rioter
+zombieCheerleaderBigEnraged,Enraged Big Rioter
+zombieOldTimerBigEnraged,Enraged Big Rioter
+zombieWightBigEnraged,Enraged Big Rioter
+zombieDemolitionBigEnraged,Enraged Big Rioter
+zombieBoeBigEnraged,Enraged Big Rioter
+zombieFemaleFatBigEnraged,Enraged Big Rioter
+zombieJoeBigEnraged,Enraged Big Rioter
+zombieMoeBigEnraged,Enraged Big Rioter
+zombieArleneBigEnraged,Enraged Big Rioter
+zombieLabBigEnraged,Enraged Big Rioter
+zombieDarleneBigEnraged,Enraged Big Rioter
+zombieMarleneBigEnraged,Enraged Big Rioter
+zombieYoBigEnraged,Enraged Big Rioter
+zombieSteveBigEnraged,Enraged Big Rioter
+zombieBusinessManBigEnraged,Enraged Big Rioter
+zombieSpiderBigEnraged,Enraged Big Rioter
+zombieNurseBigEnraged,Enraged Big Rioter
+zombieFatHawaiianBigEnraged,Enraged Big Rioter
+zombieFatCopBigEnraged,Enraged Big Rioter
+zombieMaleHazmatBigEnraged,Enraged Big Rioter
+zombieUtilityWorkerBigEnraged,Enraged Big Rioter
+zombieSoldierBigEnraged,Enraged Big Rioter
+zombieSkateboarderBigEnraged,Enraged Big Rioter
+zombieJanitorBigEnraged,Enraged Big Rioter
+zombieBikerBigEnraged,Enraged Big Rioter
+zombiePartyGirlBigEnraged,Enraged Big Rioter
+zombieLumberjackBigEnraged,Enraged Big Rioter
+zombieDoctorFemaleBigEnraged,Enraged Big Rioter
+zombieDoctorMaleBigEnraged,Enraged Big Rioter
+zombieLabMaleBigEnraged,Enraged Big Rioter
+zombieFootballPlayerBigEnraged,Enraged Big Rioter
+zombieBehemoth1BigEnraged,Enraged Big Behemoth
+zombieBehemoth2BigEnraged,Enraged Big Titan
+zombieFemaleFatBigLeaderEnraged,Big Enraged Riot Leader
+zombieFemaleFatBigRangerEnraged,Big Enraged Riot Ranger
+zombieMoeBigLeaderEnraged,Big Enraged Riot Leader
+zombieMoeBigRangerEnraged,Big Enraged Riot Ranger
+zombieFatHawaiianBigLeaderEnraged,Big Enraged Riot Leader
+zombieFatHawaiianBigRangerEnraged,Big Enraged Riot Ranger
+zombieSoldierBigLeaderEnraged,Big Enraged Riot Leader
+zombieSoldierBigRangerEnraged,Big Enraged Riot Ranger
+zombieBikerBigLeaderEnraged,Big Enraged Riot Leader
+zombieBikerBigRangerEnraged,Big Enraged Riot Ranger
+zombieLumberjackBigLeaderEnraged,Big Enraged Riot Leader
+zombieLumberjackBigRangerEnraged,Big Enraged Riot Ranger
+zombieWightBigLeaderEnraged,Big Enraged Riot Leader
+zombieFatCopBigRangerEnraged,Big Enraged Riot Ranger
+zombieBusinessManBigGoldenEnraged,Enraged Goldberg Shacklestein
+zombieWightBigKnightEnraged,Enraged Redcliff Knight
+zombieBikerBigDroidEnraged,Enraged Riot Droid
+zombieWightBigCommanderEnraged,Enraged Redcliff Commander
+zombieMoeBigMLGEnraged,Enraged MLG Rioter
+zombieWightScoutEnraged,Enraged Riot Scout
+zombieWightScoutSleeperEnraged,Enraged Riot Scout
+zombieJanitorBigWarriorEnraged,Enraged Redcliff Warrior
+
+
+EntityLootContainerBehemoth2Big,Big Head
+EntityLootContainerZedBigEmpowered,Empowered Big Head
+EntityLootContainerBehemoth1BigEmpowered,Empowered Big Head
+EntityLootContainerBehemoth2BigEmpowered,Empowered Big Head
+EntityLootContainerZedBigger,Bigger Head
+EntityLootContainerBehemoth1Bigger,Bigger Head
+EntityLootContainerBehemoth2Bigger,Bigger Head
+EntityLootContainerZedBiggerEmpowered,Empowered Bigger Head
+EntityLootContainerBehemoth1BiggerEmpowered,Empowered Bigger Head
+EntityLootContainerBehemoth2BiggerEmpowered,Empowered Bigger Head
+EntityLootContainerZedBiggest,Biggest Head
+EntityLootContainerBehemoth1Biggest,Biggest Head
+EntityLootContainerBehemoth2Biggest,Biggest Head
+EntityLootContainerZedBiggestEmpowered,Empowered Biggest Head
+EntityLootContainerBehemoth1BiggestEmpowered,Empowered Biggest Head
+EntityLootContainerBehemoth2BiggestEmpowered,Empowered Biggest Head
+EntityLootContainerBigSuper,Rare Big Head
+EntityLootContainerBigBehemothSuper,Rare Big Head
+EntityLootContainerScout1,Eyeball
+
+
+zombieWightScoutScreamer,Eye Scout
+zombieWightScoutBoss,Eye Commander
+zombieWightScoutBossGuard,Eye Guard
+zombieWightScoutBossGuardSmall,Eye Scout
+
+zombieWightBigSuper,Blessed Big Rioter
+zombieFemaleFatBigSuper,Blessed Big Rioter
+zombieMoeBigSuper,Blessed Big Rioter
+zombieFatHawaiianBigSuper,Blessed Big Rioter
+zombieSoldierBigSuper,Blessed Big Rioter
+zombieBikerBigSuper,Blessed Big Rioter
+zombieLumberjackBigSuper,Blessed Big Rioter
+
+zombieWightBigSuper2,Divine Big Rioter
+zombieFemaleFatBigSuper2,Divine Big Rioter
+zombieMoeBigSuper2,Divine Big Rioter
+zombieFatHawaiianBigSuper2,Divine Big Rioter
+zombieSoldierBigSuper2,Divine Big Rioter
+zombieBikerBigSuper2,Divine Big Rioter
+zombieLumberjackBigSuper2,Divine Big Rioter
+
+zombieBehemoth4BigSuper,King Of The Rioters
+
+zombieBusinessWomanBigger,Bigger Rioter
+zombieCheerleaderBigger,Bigger Rioter
+zombieOldTimerBigger,Bigger Rioter
+zombieWightBigger,Bigger Rioter
+zombieDemolitionBigger,Bigger Rioter
+zombieBoeBigger,Bigger Rioter
+zombieFemaleFatBigger,Bigger Rioter
+zombieJoeBigger,Bigger Rioter
+zombieMoeBigger,Bigger Rioter
+zombieArleneBigger,Bigger Rioter
+zombieLabBigger,Bigger Rioter
+zombieDarleneBigger,Bigger Rioter
+zombieMarleneBigger,Bigger Rioter
+zombieYoBigger,Bigger Rioter
+zombieSteveBigger,Bigger Rioter
+zombieBusinessManBigger,Bigger Rioter
+zombieSpiderBigger,Bigger Rioter
+zombieNurseBigger,Bigger Rioter
+zombieFatHawaiianBigger,Bigger Rioter
+zombieFatCopBigger,Bigger Rioter
+zombieMaleHazmatBigger,Bigger Rioter
+zombieUtilityWorkerBigger,Bigger Rioter
+zombieSoldierBigger,Bigger Rioter
+zombieSkateboarderBigger,Bigger Rioter
+zombieJanitorBigger,Bigger Rioter
+zombieBikerBigger,Bigger Rioter
+zombiePartyGirlBigger,Bigger Rioter
+zombieLumberjackBigger,Bigger Rioter
+zombieDoctorFemaleBigger,Bigger Rioter
+zombieDoctorMaleBigger,Bigger Rioter
+zombieLabMaleBigger,Bigger Rioter
+zombieFootballPlayerBigger,Bigger Rioter
+zombieBehemoth1Bigger,Bigger Behemoth
+zombieBehemoth2Bigger,Bigger Behemoth
+zombieBehemoth3Bigger,Bigger Behemoth
+zombieBehemoth4Bigger,Bigger Behemoth
+
+zombieBusinessWomanBiggerEmpowered,Empowered Bigger Businesswoman
+zombieCheerleaderBiggerEmpowered,Empowered Bigger Stripper
+zombieOldTimerBiggerEmpowered,Empowered Bigger Stripper
+zombieWightBiggerEmpowered,Empowered Bigger Wight
+zombieDemolitionBiggerEmpowered,Empowered Bigger Demolition Zombie
+zombieBoeBiggerEmpowered,Empowered Bigger Infected Survivor
+zombieFemaleFatBiggerEmpowered,Empowered Bigger Hungry Zombie
+zombieJoeBiggerEmpowered,Empowered Bigger Cadaver
+zombieMoeBiggerEmpowered,Empowered Bigger Bloated Walker
+zombieArleneBiggerEmpowered,Empowered Bigger Putrid Girl
+zombieLabBiggerEmpowered,Empowered Bigger Lab Technician
+zombieDarleneBiggerEmpowered,Empowered Bigger Mother
+zombieMarleneBiggerEmpowered,Empowered Bigger Departed Woman
+zombieYoBiggerEmpowered,Empowered Bigger Rotting Carcass
+zombieSteveBiggerEmpowered,Empowered Bigger Reanimated Corpse
+zombieBusinessManBiggerEmpowered,Empowered Bigger Businessman
+zombieSpiderBiggerEmpowered,Empowered Bigger Spider
+zombieNurseBiggerEmpowered,Empowered Bigger Plagued Nurse
+zombieFatHawaiianBiggerEmpowered,Empowered Bigger Disturbed Tourist
+zombieFatCopBiggerEmpowered,Empowered Bigger Policeman
+zombieMaleHazmatBiggerEmpowered,Empowered Bigger Hazardous Worker
+zombieUtilityWorkerBiggerEmpowered,Empowered Bigger Utility Worker
+zombieSoldierBiggerEmpowered,Empowered Bigger Soldier
+zombieSkateboarderBiggerEmpowered,Empowered Bigger Thug
+zombieJanitorBiggerEmpowered,Empowered Bigger Janitor
+zombieBikerBiggerEmpowered,Empowered Bigger Biker
+zombiePartyGirlBiggerEmpowered,Empowered Bigger Party Girl
+zombieLumberjackBiggerEmpowered,Empowered Bigger Lumberjack
+zombieDoctorFemaleBiggerEmpowered,Empowered Bigger Doctor
+zombieDoctorMaleBiggerEmpowered,Empowered Bigger Doctor
+zombieLabMaleBiggerEmpowered,Empowered Bigger Lab Zombie
+zombieFootballPlayerBiggerEmpowered,Empowered Bigger Football Player
+zombieBehemoth1BiggerEmpowered,Empowered Bigger Behemoth
+zombieBehemoth2BiggerEmpowered,Empowered Bigger Behemoth
+zombieBehemoth3BiggerEmpowered,Empowered Bigger Behemoth
+zombieBehemoth4BiggerEmpowered,Empowered Bigger Behemoth
+
+zombieBusinessWomanBiggest,Biggest Businesswoman
+zombieCheerleaderBiggest,Biggest Stripper
+zombieOldTimerBiggest,Biggest Stripper
+zombieWightBiggest,Biggest Wight
+zombieDemolitionBiggest,Biggest Demolition Zombie
+zombieBoeBiggest,Biggest Infected Survivor
+zombieFemaleFatBiggest,Biggest Hungry Zombie
+zombieJoeBiggest,Biggest Cadaver
+zombieMoeBiggest,Biggest Bloated Walker
+zombieArleneBiggest,Biggest Putrid Girl
+zombieLabBiggest,Biggest Lab Technician
+zombieDarleneBiggest,Biggest Mother
+zombieMarleneBiggest,Biggest Departed Woman
+zombieYoBiggest,Biggest Rotting Carcass
+zombieSteveBiggest,Biggest Reanimated Corpse
+zombieBusinessManBiggest,Biggest Businessman
+zombieSpiderBiggest,Biggest Spider
+zombieNurseBiggest,Biggest Plagued Nurse
+zombieFatHawaiianBiggest,Biggest Disturbed Tourist
+zombieFatCopBiggest,Biggest Policeman
+zombieMaleHazmatBiggest,Biggest Hazardous Worker
+zombieUtilityWorkerBiggest,Biggest Utility Worker
+zombieSoldierBiggest,Biggest Soldier
+zombieSkateboarderBiggest,Biggest Thug
+zombieJanitorBiggest,Biggest Janitor
+zombieBikerBiggest,Biggest Biker
+zombiePartyGirlBiggest,Biggest Party Girl
+zombieLumberjackBiggest,Biggest Lumberjack
+zombieDoctorFemaleBiggest,Biggest Doctor
+zombieDoctorMaleBiggest,Biggest Doctor
+zombieLabMaleBiggest,Biggest Lab Zombie
+zombieFootballPlayerBiggest,Biggest Football Player
+zombieBehemoth1Biggest,Biggest Behemoth
+zombieBehemoth2Biggest,Biggest Behemoth
+zombieBehemoth3Biggest,Biggest Behemoth
+zombieBehemoth4Biggest,Biggest Behemoth
+
+zombieBusinessWomanBiggestEmpowered,Empowered Biggest Businesswoman
+zombieCheerleaderBiggestEmpowered,Empowered Biggest Stripper
+zombieOldTimerBiggestEmpowered,Empowered Biggest Stripper
+zombieWightBiggestEmpowered,Empowered Biggest Wight
+zombieDemolitionBiggestEmpowered,Empowered Biggest Demolition Zombie
+zombieBoeBiggestEmpowered,Empowered Biggest Infected Survivor
+zombieFemaleFatBiggestEmpowered,Empowered Biggest Hungry Zombie
+zombieJoeBiggestEmpowered,Empowered Biggest Cadaver
+zombieMoeBiggestEmpowered,Empowered Biggest Bloated Walker
+zombieArleneBiggestEmpowered,Empowered Biggest Putrid Girl
+zombieLabBiggestEmpowered,Empowered Biggest Lab Technician
+zombieDarleneBiggestEmpowered,Empowered Biggest Mother
+zombieMarleneBiggestEmpowered,Empowered Biggest Departed Woman
+zombieYoBiggestEmpowered,Empowered Biggest Rotting Carcass
+zombieSteveBiggestEmpowered,Empowered Biggest Reanimated Corpse
+zombieBusinessManBiggestEmpowered,Empowered Biggest Businessman
+zombieSpiderBiggestEmpowered,Empowered Biggest Spider
+zombieNurseBiggestEmpowered,Empowered Biggest Plagued Nurse
+zombieFatHawaiianBiggestEmpowered,Empowered Biggest Disturbed Tourist
+zombieFatCopBiggestEmpowered,Empowered Biggest Policeman
+zombieMaleHazmatBiggestEmpowered,Empowered Biggest Hazardous Worker
+zombieUtilityWorkerBiggestEmpowered,Empowered Biggest Utility Worker
+zombieSoldierBiggestEmpowered,Empowered Biggest Soldier
+zombieSkateboarderBiggestEmpowered,Empowered Biggest Thug
+zombieJanitorBiggestEmpowered,Empowered Biggest Janitor
+zombieBikerBiggestEmpowered,Empowered Biggest Biker
+zombiePartyGirlBiggestEmpowered,Empowered Biggest Party Girl
+zombieLumberjackBiggestEmpowered,Empowered Biggest Lumberjack
+zombieDoctorFemaleBiggestEmpowered,Empowered Biggest Doctor
+zombieDoctorMaleBiggestEmpowered,Empowered Biggest Doctor
+zombieLabMaleBiggestEmpowered,Empowered Biggest Lab Zombie
+zombieFootballPlayerBiggestEmpowered,Empowered Biggest Football Player
+zombieBehemoth1BiggestEmpowered,Empowered Biggest Behemoth
+zombieBehemoth2BiggestEmpowered,Empowered Biggest Behemoth
+zombieBehemoth3BiggestEmpowered,Empowered Biggest Behemoth
+zombieBehemoth4BiggestEmpowered,Empowered Biggest Behemoth
+
+
+
+perkMobileGunnerName,Mobile Gunner
+perkMobileGunnerDesc,Sometimes you just need more Dakka. This perk line is dedicated to increasing the accuracy and magazine size of automatic weapons.
+perkMobileGunnerRank1Desc,Amateur
+perkMobileGunnerRank2Desc,Militia
+perkMobileGunnerRank3Desc,Soldier
+perkMobileGunnerRank4Desc,Ranger
+perkMobileGunnerRank5Desc,Spec Ops
+perkMobileGunnerRank1LongDesc,Increases magazine size of auto weapons by 5%\nDecreases the kick and spread of auto weapons by 5% for greater accuracy.
+perkMobileGunnerRank2LongDesc,Increases magazine size of auto weapons by 10%\nDecreases the kick and spread of auto weapons by 10% for greater accuracy.
+perkMobileGunnerRank3LongDesc,Increases magazine size of auto weapons by 15%\nDecreases the kick and spread of auto weapons by 15% for greater accuracy.
+perkMobileGunnerRank4LongDesc,Increases magazine size of auto weapons by 20%\nDecreases the kick and spread of auto weapons by 20% for greater accuracy.
+perkMobileGunnerRank5LongDesc,Increases magazine size of auto weapons by 25%\nDecreases the kick and spread of auto weapons by 25% for greater accuracy.
+perkArmorSpecialistName,Martial Training
+perkArmorSpecialistDesc,Specialize in all armor to decrease mobility and stamina penalties and learn how to roll with the punches.
+perkArmorSpecialistRank1Desc,Door Security
+perkArmorSpecialistRank2Desc,Militia
+perkArmorSpecialistRank3Desc,Cop
+perkArmorSpecialistRank4Desc,Army Reserves
+perkArmorSpecialistRank5Desc,Soldier
+perkArmorSpecialistRank1LongDesc,"Decrease mobility penalty of worn armor by 1% per worn piece.\nDecrease stamina regen penalty of worn armor by 1.2% per worn piece while walking.\nDecrease stamina regen penalty of worn armor by 2.5% per worn piece while running.\nReduce HP loss by 5%. 20% reduced chance to get stunned, become fatigued, suffer sprained or broken arms, or suffer concussion."
+perkArmorSpecialistRank2LongDesc,"Decrease mobility penalty of worn armor by 1% per worn piece.\nDecrease stamina regen penalty of worn armor by 1.4% per worn piece while walking.\nDecrease stamina regen penalty of worn armor by 3% per worn piece while running.\nReduce HP loss by 10%. 40% reduced chance to get stunned, become fatigued, suffer sprained or broken arms, or suffer concussion."
+perkArmorSpecialistRank3LongDesc,"Decrease mobility penalty of worn armor by 2% per worn piece.\nDecrease stamina regen penalty of worn armor by 1.6% per worn piece while walking.\nDecrease stamina regen penalty of worn armor by 3.5% per worn piece while running.\nReduce HP loss by 15%. 60% reduced chance to get stunned, become fatigued, suffer sprained or broken arms, or suffer concussion."
+perkArmorSpecialistRank4LongDesc,"Decrease mobility penalty of worn armor by 2% per worn piece.\nDecrease stamina regen penalty of worn armor by 1.8% per worn piece while walking.\nDecrease stamina regen penalty of worn armor by 4% per worn piece while running.\nReduce HP loss by 20%. 80% reduced chance to get stunned, become fatigued, suffer sprained or broken arms, or suffer concussion."
+perkArmorSpecialistRank5LongDesc,Decrease mobility penalty of worn armor by 3% per worn piece.\nDecrease stamina regen penalty of worn armor by 2% per worn piece while walking.\nDecrease stamina regen penalty of worn armor by 4.5% per worn piece while running.\nReduce HP loss by 25%. Iron Chin: No chance to get stunned, become fatigued, suffer sprained or broken arms, or suffer concussion."
+perkBreakingAndEnteringName,Breaking And Entering
+perkBreakingAndEnteringDesc,...but mostly breaking. Get better at smashing doors or walls with a blunt weapon.
+perkBreakingAndEnteringRank1Desc,"Increase block damage of blunt weapons by 40%.\nIncreases crowbar damage vs doors, safes, treasure chests and wood by 100%\nSledgehammers ignore 5% of armor on the target."
+perkBreakingAndEnteringRank2Desc,"Increase block damage of blunt weapons by 80%\nIncreases crowbar damage vs doors, safes, treasure chests and wood by 200%\nSledgehammers ignore 10% of armor on the target."
+perkBreakingAndEnteringRank3Desc,"Increase block damage of blunt weapons by 120%\nIncreases crowbar damage vs doors, safes, treasure chests and wood by 300%\nSledgehammers ignore 15% of armor on the target.\nAttacks with sledgehammers grant 2 points of stamina."
+perkBreakingAndEnteringRank4Desc,"Increase block damage of blunt weapons by 160%\nIncreases crowbar damage vs doors, safes, treasure chests and wood by 400%\nSledgehammers ignore 20% of armor on the target."
+perkBreakingAndEnteringRank5Desc,"Increase block damage of blunt weapons by 200%. Decreases protection of land claims by 20%\nIncreases crowbar damage vs doors, safes, treasure chests and wood by 500%\nSledgehammers ignore 25% of armor on the target.\nPower attacks with sledgehammers have a 50% chance to knockdown targets."
+EntityLootContainerBehemothRegular,Dropped Loot
+EntityLootContainerBehemothRadiated,Dropped Loot
+EntityLootContainerBehemothDemon,Dropped Loot
+EntityLootContainerIncubus,Dropped Loot
+EntityLootContainerIncubusEmpowered,Dropped Loot
+EntityLootContainerSuccubus,Dropped Loot
+EntityLootContainerSuccubusEmpowered,Dropped Loot

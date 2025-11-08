@@ -1,0 +1,233 @@
+<config>
+<append xpath="/entitygroups">
+<entitygroup name="CookieLand">
+	<entity name="zombieWightScoutSleeper"/>
+</entitygroup>
+<!--POI Groups-->
+<entitygroup name="CardriverHouse1">
+	<entity name="zombieWightBig" prob="3.125"/>
+	<entity name="zombieFatCopBig" prob="3.125" />
+	<entity name="zombieDemolitionBig" prob="3.125" />
+	<entity name="zombieFemaleFatBig" prob="3.125" />
+	<entity name="zombieMoeBig" prob="3.125" />
+	<entity name="zombieFatHawaiianBig" prob="3.125" />
+	<entity name="zombieSoldierBig" prob="3.125" />
+	<entity name="zombieBikerBig" prob="3.125" />
+	<entity name="zombieLumberjackBig" prob="3.125" />
+	<entity name="zombieBoeBig" prob="3.125" />
+	<entity name="zombieJoeBig" prob="3.125" />
+	<entity name="zombieArleneBig" prob="3.125" />
+	<entity name="zombieDarleneBig" prob="3.125" />
+	<entity name="zombieMarleneBig" prob="3.125" />
+	<entity name="zombieYoBig" prob="3.125" />
+	<entity name="zombieSteveBig" prob="3.125" />
+	<entity name="zombieBusinessManBig" prob="3.125" />
+	<entity name="zombieSpiderBig" prob="3.125" />
+	<entity name="zombieNurseBig" prob="3.125" />
+	<entity name="zombieMaleHazmatBig" prob="3.125" />
+	<entity name="zombieUtilityWorkerBig" prob="3.125" />
+	<entity name="zombieSkateboarderBig" prob="3.125" />
+	<entity name="zombieJanitorBig" prob="3.125" />
+	<entity name="zombiePartyGirlBig" prob="3.125" />
+</entitygroup>
+<entitygroup name="CardriverHouse2">
+	<entity name="zombieBehemoth1Big" prob="1" />
+</entitygroup>
+<entitygroup name="BigBehemoths1">
+	<entity name="zombieBehemoth1Big" prob="60"/>
+	<entity name="zombieBehemoth2BigEnraged" prob="40"/>
+</entitygroup>
+<entitygroup name="BigBehemoths2">
+	<entity name="zombieBehemoth1Big" prob="40"/>
+	<entity name="zombieBehemoth2BigEnraged" prob="30"/>
+</entitygroup>
+<entitygroup name="BigBehemoths3">
+	<entity name="zombieBehemoth1Big" prob="30"/>
+	<entity name="zombieBehemoth2BigEnraged" prob="25"/>
+</entitygroup>
+<!--Horde-->
+	<!--53% Big 25% Ranged 10% Scouts 5% Behemoth 5% Leader 2% Rare-->
+<entitygroup name="BigHorde1">
+	<entity name="zombieWightBig" prob="2.208"/>
+	<entity name="zombieFatCopBig" prob="2.208" />
+	<entity name="zombieDemolitionBig" prob="2.208" />
+	<entity name="zombieFemaleFatBig" prob="2.208" />
+	<entity name="zombieMoeBig" prob="2.208" />
+	<entity name="zombieFatHawaiianBig" prob="2.208" />
+	<entity name="zombieSoldierBig" prob="2.208" />
+	<entity name="zombieBikerBig" prob="2.208" />
+	<entity name="zombieLumberjackBig" prob="2.208" />
+	<entity name="zombieBoeBig" prob="2.208" />
+	<entity name="zombieJoeBig" prob="2.208" />
+	<entity name="zombieArleneBig" prob="2.208" />
+	<entity name="zombieDarleneBig" prob="2.208" />
+	<entity name="zombieMarleneBig" prob="2.208" />
+	<entity name="zombieYoBig" prob="2.208" />
+	<entity name="zombieSteveBig" prob="2.208" />
+	<entity name="zombieBusinessManBig" prob="2.208" />
+	<entity name="zombieSpiderBig" prob="2.208" />
+	<entity name="zombieNurseBig" prob="2.208" />
+	<entity name="zombieMaleHazmatBig" prob="2.208" />
+	<entity name="zombieUtilityWorkerBig" prob="2.208" />
+	<entity name="zombieSkateboarderBig" prob="2.208" />
+	<entity name="zombieJanitorBig" prob="2.208" />
+	<entity name="zombiePartyGirlBig" prob="2.208" />
+	
+	<entity name="zombieWightScoutSleeper" prob="10" />
+	
+	<entity name="zombieFatCopBigRanger" prob="2.708" />
+	<entity name="zombieFemaleFatBigRanger" prob="2.708" />
+	<entity name="zombieMoeBigRanger" prob="2.708" />
+	<entity name="zombieFatHawaiianBigRanger" prob="2.708" />
+	<entity name="zombieSoldierBigRanger" prob="2.708" />
+	<entity name="zombieBikerBigRanger" prob="2.708" />
+	<entity name="zombieLumberjackBigRanger" prob="2.708" />
+	
+	<entity name="zombieWightBigLeader" prob="0.714"/>
+	<entity name="zombieFemaleFatBigLeader" prob="0.714" />
+	<entity name="zombieMoeBigLeader" prob="0.714" />
+	<entity name="zombieFatHawaiianBigLeader" prob="0.714" />
+	<entity name="zombieSoldierBigLeader" prob="0.714" />
+	<entity name="zombieBikerBigLeader" prob="0.714" />
+	<entity name="zombieLumberjackBigLeader" prob="0.714" />
+	
+	<entity name="zombieBehemoth1Big" prob="5" />
+	
+	<entity name="zombieBusinessManBigGolden" prob="0.667" />
+	<entity name="zombieWightBigKnight" prob="0.667" />
+	<entity name="zombieMoeBigMLG" prob="0.667" />
+</entitygroup>
+	<!--TODO Remove-->
+<entitygroup name="BigHorde1Weak">
+	<entity name="zombieWightBig" prob="2.667"/>
+	<entity name="zombieFatCopBig" prob="2.667" />
+	<entity name="zombieDemolitionBig" prob="2.667" />
+	<entity name="zombieFemaleFatBig" prob="2.667" />
+	<entity name="zombieMoeBig" prob="2.667" />
+	<entity name="zombieFatHawaiianBig" prob="2.667" />
+	<entity name="zombieSoldierBig" prob="2.667" />
+	<entity name="zombieBikerBig" prob="2.667" />
+	<entity name="zombieLumberjackBig" prob="2.667" />
+	<entity name="zombieBoeBig" prob="2.667" />
+	<entity name="zombieJoeBig" prob="2.667" />
+	<entity name="zombieArleneBig" prob="2.667" />
+	<entity name="zombieDarleneBig" prob="2.667" />
+	<entity name="zombieMarleneBig" prob="2.667" />
+	<entity name="zombieYoBig" prob="2.667" />
+	<entity name="zombieSteveBig" prob="2.667" />
+	<entity name="zombieBusinessManBig" prob="2.667" />
+	<entity name="zombieSpiderBig" prob="2.667" />
+	<entity name="zombieNurseBig" prob="2.667" />
+	<entity name="zombieMaleHazmatBig" prob="2.667" />
+	<entity name="zombieUtilityWorkerBig" prob="2.667" />
+	<entity name="zombieSkateboarderBig" prob="2.667" />
+	<entity name="zombieJanitorBig" prob="2.667" />
+	<entity name="zombiePartyGirlBig" prob="2.667" />
+</entitygroup>
+	<!--50% Big Enraged 25% Ranged 10% Scouts 6% Behemoth 5% Leader 3% Rare 1% Commander-->
+<entitygroup name="BigHorde2">
+	<entity name="zombieJanitorBigWarriorEnraged" prob="2"/>
+	<entity name="zombieWightBigEnraged" prob="2"/>
+	<entity name="zombieFatCopBigEnraged" prob="2" />
+	<entity name="zombieDemolitionBigEnraged" prob="2" />
+	<entity name="zombieFemaleFatBigEnraged" prob="2" />
+	<entity name="zombieMoeBigEnraged" prob="2" />
+	<entity name="zombieFatHawaiianBigEnraged" prob="2" />
+	<entity name="zombieSoldierBigEnraged" prob="2" />
+	<entity name="zombieBikerBigEnraged" prob="2" />
+	<entity name="zombieLumberjackBigEnraged" prob="2" />
+	<entity name="zombieBoeBigEnraged" prob="2" />
+	<entity name="zombieJoeBigEnraged" prob="2" />
+	<entity name="zombieArleneBigEnraged" prob="2" />
+	<entity name="zombieDarleneBigEnraged" prob="2" />
+	<entity name="zombieMarleneBigEnraged" prob="2" />
+	<entity name="zombieYoBigEnraged" prob="2" />
+	<entity name="zombieSteveBigEnraged" prob="2" />
+	<entity name="zombieBusinessManBigEnraged" prob="2" />
+	<entity name="zombieSpiderBigEnraged" prob="2" />
+	<entity name="zombieNurseBigEnraged" prob="2" />
+	<entity name="zombieMaleHazmatBigEnraged" prob="2" />
+	<entity name="zombieUtilityWorkerBigEnraged" prob="2" />
+	<entity name="zombieSkateboarderBigEnraged" prob="2" />
+	<entity name="zombieJanitorBigEnraged" prob="2" />
+	<entity name="zombiePartyGirlBigEnraged" prob="2" />
+	
+	<entity name="zombieWightScoutSleeperEnraged" prob="10" />
+	
+	<entity name="zombieBikerBigDroidEnraged" prob="3.125" />
+	<entity name="zombieFatCopBigRangerEnraged" prob="3.125" />
+	<entity name="zombieFemaleFatBigRangerEnraged" prob="3.125" />
+	<entity name="zombieMoeBigRangerEnraged" prob="3.125" />
+	<entity name="zombieFatHawaiianBigRangerEnraged" prob="3.125" />
+	<entity name="zombieSoldierBigRangerEnraged" prob="3.125" />
+	<entity name="zombieBikerBigRangerEnraged" prob="3.125" />
+	<entity name="zombieLumberjackBigRangerEnraged" prob="3.125" />
+	
+	<entity name="zombieWightBigLeaderEnraged" prob="0.714"/>
+	<entity name="zombieFemaleFatBigLeaderEnraged" prob="0.714" />
+	<entity name="zombieMoeBigLeaderEnraged" prob="0.714" />
+	<entity name="zombieFatHawaiianBigLeaderEnraged" prob="0.714" />
+	<entity name="zombieSoldierBigLeaderEnraged" prob="0.714" />
+	<entity name="zombieBikerBigLeaderEnraged" prob="0.714" />
+	<entity name="zombieLumberjackBigLeaderEnraged" prob="0.714" />
+	
+	<entity name="zombieBehemoth1BigEnraged" prob="3" />
+	<entity name="zombieBehemoth2BigEnraged" prob="3" />
+	
+	<entity name="zombieBusinessManBigGoldenEnraged" prob="1" />
+	<entity name="zombieWightBigKnightEnraged" prob="1" />
+	<entity name="zombieMoeBigMLGEnraged" prob="1" />
+	
+	<entity name="zombieWightBigCommanderEnraged" prob="1" />
+</entitygroup>
+	<!--TODO-->
+<entitygroup name="BigHorde3">
+	<entity name="zombieWightBig" prob="3.125"/>
+	<entity name="zombieFatCopBig" prob="3.125" />
+	<entity name="zombieDemolitionBig" prob="3.125" />
+	<entity name="zombieFemaleFatBig" prob="3.125" />
+	<entity name="zombieMoeBig" prob="3.125" />
+	<entity name="zombieFatHawaiianBig" prob="3.125" />
+	<entity name="zombieSoldierBig" prob="3.125" />
+	<entity name="zombieBikerBig" prob="3.125" />
+	<entity name="zombieLumberjackBig" prob="3.125" />
+	<entity name="zombieBoeBig" prob="3.125" />
+	<entity name="zombieJoeBig" prob="3.125" />
+	<entity name="zombieArleneBig" prob="3.125" />
+	<entity name="zombieDarleneBig" prob="3.125" />
+	<entity name="zombieMarleneBig" prob="3.125" />
+	<entity name="zombieYoBig" prob="3.125" />
+	<entity name="zombieSteveBig" prob="3.125" />
+	<entity name="zombieBusinessManBig" prob="3.125" />
+	<entity name="zombieSpiderBig" prob="3.125" />
+	<entity name="zombieNurseBig" prob="3.125" />
+	<entity name="zombieMaleHazmatBig" prob="3.125" />
+	<entity name="zombieUtilityWorkerBig" prob="3.125" />
+	<entity name="zombieSkateboarderBig" prob="3.125" />
+	<entity name="zombieJanitorBig" prob="3.125" />
+	<entity name="zombiePartyGirlBig" prob="3.125" />
+	
+	<entity name="zombieFatCopBigRanger" prob="2.708" />
+	<entity name="zombieFemaleFatBigRanger" prob="2.708" />
+	<entity name="zombieMoeBigRanger" prob="2.708" />
+	<entity name="zombieFatHawaiianBigRanger" prob="2.708" />
+	<entity name="zombieSoldierBigRanger" prob="2.708" />
+	<entity name="zombieBikerBigRanger" prob="2.708" />
+	<entity name="zombieLumberjackBigRanger" prob="2.708" />
+	
+	<entity name="zombieWightBigLeader" prob="0.571"/>
+	<entity name="zombieFemaleFatBigLeader" prob="0.571" />
+	<entity name="zombieMoeBigLeader" prob="0.571" />
+	<entity name="zombieFatHawaiianBigLeader" prob="0.571" />
+	<entity name="zombieSoldierBigLeader" prob="0.571" />
+	<entity name="zombieBikerBigLeader" prob="0.571" />
+	<entity name="zombieLumberjackBigLeader" prob="0.571" />
+	
+	<entity name="zombieBehemoth1Big" prob="4" />
+	
+	<entity name="zombieBusinessManBigGolden" prob="0.333" />
+	<entity name="zombieWightBigKnight" prob="0.333" />
+	<entity name="zombieMoeBigMLG" prob="0.333" />
+</entitygroup>
+</append>
+</config>

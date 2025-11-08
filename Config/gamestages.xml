@@ -1,0 +1,700 @@
+<config>
+<!--GS Config-->
+<set xpath="/gamestages/config/@daysAliveChangeWhenKilled">0</set>
+<set xpath="/gamestages/config/@difficultyBonus">1</set>
+<set xpath="/gamestages/config/@startingWeight">1</set>
+<set xpath="/gamestages/config/@diminishingReturns">0.001</set>
+<set xpath="/gamestages/config/@lootBonusEvery">1000</set>
+<set xpath="/gamestages/config/@lootBonusMaxCount">1</set>
+<set xpath="/gamestages/config/@lootBonusScale">1</set>
+<!--Base Game Spawners-->
+<append xpath="/gamestages/spawner[@name='SleeperTestChamberGSList']">
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="18000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="90000"><spawn group="BigHorde3" num="1" maxAlive="1" duration="1" /></gamestage>
+</append>	
+<set xpath="/gamestages/spawner[@name='WanderingHorde']">
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1" maxAlive="256" duration="2" /></gamestage>
+	<gamestage stage="18000"><spawn group="BigHorde2" num="1" maxAlive="256" duration="2" /></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1" maxAlive="256" duration="2" /></gamestage>
+</set>
+<append xpath="/gamestages/spawner[@name='AbandonedHouseHorde']">
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="18000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="90000"><spawn group="BigHorde3" num="1" maxAlive="1" duration="1" /></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='ZombieBikerBarHorde']">
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="18000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="90000"><spawn group="BigHorde3" num="1" maxAlive="1" duration="1" /></gamestage>
+</append>	
+<append xpath="/gamestages/spawner[@name='ZombieGhostTownHorde']">
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="18000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="90000"><spawn group="BigHorde3" num="1" maxAlive="1" duration="1" /></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='HospitalHorde']">
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="18000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="90000"><spawn group="BigHorde3" num="1" maxAlive="1" duration="1" /></gamestage>
+</append>	
+<append xpath="/gamestages/spawner[@name='LabWorkerHorde']">
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="18000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="90000"><spawn group="BigHorde3" num="1" maxAlive="1" duration="1" /></gamestage>
+</append>	
+<append xpath="/gamestages/spawner[@name='ZombieSpiderOnlyHorde']">
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="18000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="90000"><spawn group="BigHorde3" num="1" maxAlive="1" duration="1" /></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='ZombieSoldierHorde']">
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="18000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="90000"><spawn group="BigHorde3" num="1" maxAlive="1" duration="1" /></gamestage>
+</append>	
+<append xpath="/gamestages/spawner[@name='ZombieUtilityWorkerHorde']">
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="18000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="90000"><spawn group="BigHorde3" num="1" maxAlive="1" duration="1" /></gamestage>
+</append>	
+<append xpath="/gamestages/spawner[@name='ZombieJanitorOnlyHorde']">
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="18000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="90000"><spawn group="BigHorde3" num="1" maxAlive="1" duration="1" /></gamestage>
+</append>	
+<append xpath="/gamestages/spawner[@name='ZombieBusinessManHorde']">
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="18000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="90000"><spawn group="BigHorde3" num="1" maxAlive="1" duration="1" /></gamestage>
+</append>	
+<append xpath="/gamestages/spawner[@name='ZombieFatCopHorde']">
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="18000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="90000"><spawn group="BigHorde3" num="1" maxAlive="1" duration="1" /></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='ZombieHazMatOnlyHorde']">
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="18000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="90000"><spawn group="BigHorde3" num="1" maxAlive="1" duration="1" /></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='ZombieNightClubHorde']">
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="18000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="90000"><spawn group="BigHorde3" num="1" maxAlive="1" duration="1" /></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='ZombieSpecialInfectedHorde']">
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="18000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="90000"><spawn group="BigHorde3" num="1" maxAlive="1" duration="1" /></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='ZombieLumberjackHorde']">
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="18000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="90000"><spawn group="BigHorde3" num="1" maxAlive="1" duration="1" /></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='ZombieFootballStadiumHorde']">
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="18000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="90000"><spawn group="BigHorde3" num="1" maxAlive="1" duration="1" /></gamestage>
+</append>	
+<append xpath="/gamestages/spawner[@name='SnowZombieHorde']">
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="18000"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="90000"><spawn group="BigHorde3" num="1" maxAlive="1" duration="1" /></gamestage>
+</append>		
+<append xpath="/gamestages/spawner[@name='SleeperGSList']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="25" maxAlive="64" duration="1" /></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="25" maxAlive="64" duration="1" /></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="25" maxAlive="64" duration="1" /></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='ZombieBadassGSHorde']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="25" maxAlive="64" duration="1" /></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="25" maxAlive="64" duration="1" /></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="25" maxAlive="64" duration="1" /></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='ZombieBadassOnlyHorde']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="25" maxAlive="64" duration="1" /></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="25" maxAlive="64" duration="1" /></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="25" maxAlive="64" duration="1" /></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='ScoutGSList']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="175" maxAlive="256" duration="1" /></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="175" maxAlive="256" duration="1" /></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="175" maxAlive="256" duration="1" /></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='BloodMoonHorde']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+	<!--Other Groups-->
+<append xpath="/gamestages/spawner[@name='zombieArlene']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieArleneFeral']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieArleneRadiated']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieMarlene']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieMarleneFeral']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieMarleneRadiated']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombiePartyGirl']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombiePartyGirlFeral']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombiePartyGirlRadiated']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieNurse']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieNurseFeral']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieNurseRadiated']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieJoe']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieJoeFeral']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieJoeRadiated']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieSteve']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieSteveFeral']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieSteveRadiated']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieSpider']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieSpiderFeral']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieSpiderRadiated']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieTomClark']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieTomClarkFeral']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieTomClarkRadiated']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieBusinessMan']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieBusinessManFeral']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieBusinessManRadiated']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieBurnt']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieBurntFeral']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieBurntRadiated']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieBoe']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieBoeFeral']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieBoeRadiated']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieJanitor']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieJanitorFeral']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieJanitorRadiated']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieMoe']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieMoeFeral']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieMoeRadiated']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieLab']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieLabFeral']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieLabRadiated']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieDarlene']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieDarleneFeral']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieDarleneRadiated']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieYo']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieYoFeral']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieYoRadiated']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieUtilityWorker']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieUtilityWorkerFeral']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieUtilityWorkerRadiated']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieBiker']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieBikerFeral']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieBikerRadiated']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieLumberjack']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieLumberjackFeral']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieLumberjackRadiated']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieFemaleFat']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieFemaleFatFeral']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieFemaleFatRadiated']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieFatHawaiian']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieFatHawaiianFeral']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieFatHawaiianRadiated']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieMaleHazmat']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieMaleHazmatFeral']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieMaleHazmatRadiated']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieFatCop']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieFatCopFeral']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieFatCopRadiated']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieSkateboarder']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieSkateboarderFeral']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieSkateboarderRadiated']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieSoldier']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieSoldierFeral']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieSoldierRadiated']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieWightFeral']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieWightRadiated']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieScreamer']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieScreamerFeral']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieScreamerRadiated']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieMutated']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieMutatedFeral']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieMutatedRadiated']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieDemolition']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieSteveCrawler']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='zombieSteveCrawlerFeral']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='animalBear']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='animalBoar']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='animalChicken']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='animalCoyote']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='animalDireWolf']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='animalDoe']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='animalMountainLion']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='animalRabbit']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='animalSnake']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='animalStag']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='animalWolf']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='animalZombieBear']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='animalZombieDog']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<append xpath="/gamestages/spawner[@name='animalZombieVulture']">
+	<gamestage stage="5000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde3" num="1500" maxAlive="256" duration="9" interval="30"/></gamestage>
+</append>
+<!--Shaw Spawners-->
+<append xpath="/gamestages">
+<!--<spawner name="ScoutGamestagedSpawner">
+	<gamestage stage="1">
+		<spawn group="scoutZombiesGS1" num="1" maxAlive="1" duration="1"/>
+	</gamestage>
+	<gamestage stage="50">
+		<spawn group="scoutZombiesGS50" num="1" maxAlive="1" duration="1"/>
+	</gamestage>
+	<gamestage stage="100">
+		<spawn group="scoutZombiesGS100" num="1" maxAlive="1" duration="1"/>
+	</gamestage>
+	<gamestage stage="200">
+		<spawn group="scoutZombiesGS200" num="1" maxAlive="1" duration="1"/>
+	</gamestage>
+	<gamestage stage="300">
+		<spawn group="scoutZombiesGS300" num="1" maxAlive="1" duration="1"/>
+	</gamestage>
+	<gamestage stage="400">
+		<spawn group="scoutZombiesGS400" num="1" maxAlive="1" duration="1"/>
+	</gamestage>
+	<gamestage stage="500">
+		<spawn group="scoutZombiesGS500" num="1" maxAlive="1" duration="1"/>
+	</gamestage>
+	<gamestage stage="600">
+		<spawn group="scoutZombiesGS600" num="1" maxAlive="1" duration="1"/>
+	</gamestage>
+	<gamestage stage="8000">
+		<spawn group="BigScoutZombies1" num="1" maxAlive="1" duration="1"/>
+	</gamestage>
+</spawner>-->
+<spawner name="SleeperCardriverHouse1">
+	<gamestage stage="1"><spawn group="CardriverHouse1" num="1" maxAlive="1" duration="1" /></gamestage>
+</spawner>
+<group name="CookieHouse1" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+	<spawner name="SleeperCardriverHouse1" count="1" />
+</group>
+
+<spawner name="SleeperCardriverHouse2">
+	<gamestage stage="1"><spawn group="CardriverHouse2" num="1" maxAlive="1" duration="1" /></gamestage>
+</spawner>
+<group name="CookieHouse2" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+	<spawner name="SleeperCardriverHouse2" count="1" />
+</group>
+
+<spawner name="BigHordeBehemoth">
+	<gamestage stage="5000"><spawn group="BigBehemoths1" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="8000"><spawn group="BigBehemoths2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="20000"><spawn group="BigBehemoths3" num="1" maxAlive="1" duration="1" /></gamestage>
+</spawner>
+<spawner name="BigHordeWeak">
+	<gamestage stage="5000"><spawn group="BigHorde2Weak" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="8000"><spawn group="BigHorde2Weak" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="20000"><spawn group="BigHorde2Weak" num="1" maxAlive="1" duration="1" /></gamestage>
+</spawner>
+<group name="BigBehemoths1" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+	<spawner name="BigHordeBehemoth" count="1" />
+</group>
+
+<spawner name="SleeperBigHordeT2">
+	<gamestage stage="1"><spawn group="BigHorde2" num="1" maxAlive="1" duration="1" /></gamestage>
+	<gamestage stage="90000"><spawn group="BigHorde3" num="1" maxAlive="1" duration="1" /></gamestage>
+</spawner>
+<group name="BigHordeT2" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+	<spawner name="SleeperBigHordeT2" count="1" />
+</group>
+
+</append>
+</config>

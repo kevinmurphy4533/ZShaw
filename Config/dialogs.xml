@@ -1,0 +1,3203 @@
+<config>
+<set xpath="/dialogs/dialog[@id='traderRekt']">
+	<!-- Statements -->
+	<statement id="start" text="dialog_trader_statement_start">
+		<response_entry id="shop" />
+		<response_entry id="jobsnone" />
+		<response_entry id="jobshave1" />
+		<response_entry id="jobshave2" />
+		<response_entry id="jobshave3" />
+		<response_entry id="jobshave4" />
+		<response_entry id="jobshave5" />
+		<response_entry id="jobshave6" />
+		<response_entry id="responseID_-519706824Rekt" ref_text="Can you teach me to be a better crafter?" />
+		<response_entry id="responseID_-1931532968" ref_text="Can you teach me any new recipes?" />
+		<response_entry id="OpenTradeRoutesRekt" ref_text="Do you have any other work?" />
+		<response_entry id="admin" />
+		<response_entry id="done" />
+	</statement>
+
+	<statement id="background" text="dialog_trader_statement_background">
+		<response_entry id="navezgane" />
+		<response_entry id="theduke" />
+		<response_entry id="cassadores" />
+		<response_entry id="noah" />
+
+		<response_entry id="nevermind" />
+	</statement>
+
+	<statement id="navezgane" text="dialog_trader_statement_navezgane" nextstatementid="background" />
+	<statement id="theduke" text="dialog_trader_statement_theduke" nextstatementid="background" />
+	<statement id="cassadores" text="dialog_trader_statement_cassadores" nextstatementid="background" />
+	<statement id="noah" text="dialog_trader_statement_noah" nextstatementid="background" />
+
+	<statement id="statement_-142346460" text="statement_-142346460">
+		<response_entry id="TraderRektMasterFarmer" ref_text="Master Farmer (100000)" />
+		<response_entry id="nevermind" />
+	</statement>
+	<statement id="statement_1491868662" text="statement_1491868662">
+		<response_entry id="response_1135977891" ref_text="Basic Farming (1000)" />
+		<response_entry id="response_1135977892" ref_text="Basic Farming (2000)" />
+		<response_entry id="response_1135977893" ref_text="Basic Farming (3000)" />
+		<response_entry id="response_1135977894" ref_text="Basic Farming (3000)" />
+		<response_entry id="response_1135977895" ref_text="Basic Farming (3000)" />
+		<response_entry id="response_-113720744" ref_text="Goldenrod Tea (200)" />
+		<response_entry id="response_-113720745" ref_text="Goldenrod Seed (200)" />
+		<response_entry id="response_-113720746" ref_text="Red Tea (200)" />
+		<response_entry id="response_-113720747" ref_text="Chrysanthemum Seed (200)" />
+		<response_entry id="response_-113720748" ref_text="Blueberry Pie (200)" />
+		<response_entry id="response_-113720749" ref_text="Apple Pie (200)" />
+		<response_entry id="response_-113720750" ref_text="Meat Stew (200)" />
+		<response_entry id="response_-113720751" ref_text="Vegetable Stew (200)" />
+		<response_entry id="response_-113720752" ref_text="Fish Tacos (200)" />
+		<response_entry id="response_-113720753" ref_text="Steak and Potato (200)" />
+		<response_entry id="response_-113720754" ref_text="Beer (200)" />
+		<response_entry id="response_-113720755" ref_text="Corn Bread (200)" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<statement id="currentjobs1" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="1" />
+		<response_entry id="jobsnext2" uniqueid="next" />
+		<response_entry id="jobsnext3" uniqueid="next" />
+		<response_entry id="jobsnext4" uniqueid="next" />
+		<response_entry id="jobsnext5" uniqueid="next" />
+		<response_entry id="jobsnext6" uniqueid="next" />
+		<response_entry id="nevermind" />
+	</statement>
+	
+	<statement id="currentjobs2" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="2" />
+		<response_entry id="jobsprev1" uniqueid="prev" />
+		
+		<response_entry id="jobsnext3" uniqueid="next" />
+		<response_entry id="jobsnext4" uniqueid="next" />
+		<response_entry id="jobsnext5" uniqueid="next" />
+		<response_entry id="jobsnext6" uniqueid="next" />
+		<response_entry id="nevermind" />
+	</statement>
+	
+	<statement id="currentjobs3" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="3" />
+		<response_entry id="jobsprev2" uniqueid="prev" />
+		<response_entry id="jobsprev1" uniqueid="prev" />
+		
+		<response_entry id="jobsnext4" uniqueid="next" />
+		<response_entry id="jobsnext5" uniqueid="next" />
+		<response_entry id="jobsnext6" uniqueid="next" />
+		<response_entry id="nevermind" />
+	</statement>
+	
+	<statement id="currentjobs4" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="4" />
+		<response_entry id="jobsprev3" uniqueid="prev" />
+		<response_entry id="jobsprev2" uniqueid="prev" />
+		<response_entry id="jobsprev1" uniqueid="prev" />
+		
+		<response_entry id="jobsnext5" uniqueid="next" />
+		<response_entry id="jobsnext6" uniqueid="next" />
+		<response_entry id="nevermind" />
+	</statement>
+	
+	<statement id="currentjobs5" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="5" />
+		<response_entry id="jobsprev4" uniqueid="prev" />
+		<response_entry id="jobsprev3" uniqueid="prev" />
+		<response_entry id="jobsprev2" uniqueid="prev" />
+		<response_entry id="jobsprev1" uniqueid="prev" />
+		
+		<response_entry id="jobsnext6" uniqueid="next" />
+		
+		<response_entry id="nevermind" />
+	</statement>
+	
+	<statement id="currentjobs6" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="6" />
+		<response_entry id="jobsprev5" uniqueid="prev" />
+		<response_entry id="jobsprev4" uniqueid="prev" />
+		<response_entry id="jobsprev3" uniqueid="prev" />
+		<response_entry id="jobsprev2" uniqueid="prev" />
+		<response_entry id="jobsprev1" uniqueid="prev" />
+		
+		<response_entry id="nevermind" />
+	</statement>
+
+	<statement id="currentjobsspecial" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry type="special" listindex="0" />
+		<quest_entry type="special" listindex="1" />
+		<quest_entry type="special" listindex="2" />
+		<quest_entry type="special" listindex="3" />
+		<quest_entry type="special" listindex="4" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<statement id="nojobs" text="dialog_trader_statement_nojobs" nextstatementid="start" />
+
+	<statement id="admin" text="dialog_trader_statement_admin">
+		<response_entry id="restock" />
+		<response_entry id="resetquests" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<!-- Responses -->
+	<response id="shop" text="dialog_trader_response_shop">
+		<action type="Trader" id="trade" />
+	</response>
+
+	<response id="jobsnone" text="dialog_trader_response_jobsnone" nextstatementid="nojobs" >
+		<requirement type="QuestStatus" value="InProgress" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobshave1" text="dialog_trader_response_jobshave" nextstatementid="currentjobs1" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="1" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+	
+	<response id="jobshave2" text="dialog_trader_response_jobshave" nextstatementid="currentjobs2" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="2" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+	
+	<response id="jobshave3" text="dialog_trader_response_jobshave" nextstatementid="currentjobs3" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="3" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+	
+	<response id="jobshave4" text="dialog_trader_response_jobshave" nextstatementid="currentjobs4" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="4" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+	
+	<response id="jobshave5" text="dialog_trader_response_jobshave" nextstatementid="currentjobs5" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="5" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+	
+	<response id="jobshave6" text="dialog_trader_response_jobshave" nextstatementid="currentjobs6" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="6" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+	
+	<response id="jobsprev1" text="dialog_trader_response_prevtier" nextstatementid="currentjobs1" >
+		<requirement type="QuestTier" value="1" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsprev2" text="dialog_trader_response_prevtier" nextstatementid="currentjobs2" >
+		<requirement type="QuestTier" value="2" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsprev3" text="dialog_trader_response_prevtier" nextstatementid="currentjobs3" >
+		<requirement type="QuestTier" value="3" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsprev4" text="dialog_trader_response_prevtier" nextstatementid="currentjobs4" >
+		<requirement type="QuestTier" value="4" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsprev5" text="dialog_trader_response_prevtier" nextstatementid="currentjobs5" >
+		<requirement type="QuestTier" value="5" requirementtype="Hide" />
+	</response>
+		
+	<response id="jobsnext2" text="dialog_trader_response_nexttier" nextstatementid="currentjobs2" >
+		<requirement type="QuestTier" value="2" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsnext3" text="dialog_trader_response_nexttier" nextstatementid="currentjobs3" >
+		<requirement type="QuestTier" value="3" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsnext4" text="dialog_trader_response_nexttier" nextstatementid="currentjobs4" >
+		<requirement type="QuestTier" value="4" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsnext5" text="dialog_trader_response_nexttier" nextstatementid="currentjobs5" >
+		<requirement type="QuestTier" value="5" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsnext6" text="dialog_trader_response_nexttier" nextstatementid="currentjobs6" >
+		<requirement type="QuestTier" value="6" requirementtype="Hide" />
+	</response>
+
+	<response id="background" text="dialog_trader_response_background" nextstatementid="background"/>
+
+	<response id="navezgane" text="dialog_trader_response_navezgane" nextstatementid="navezgane" />
+	<response id="theduke" text="dialog_trader_response_theduke" nextstatementid="theduke" />
+	<response id="cassadores" text="dialog_trader_response_cassadores" nextstatementid="cassadores" />
+	<response id="noah" text="dialog_trader_response_noah" nextstatementid="noah" />
+	<response id="whiteriveroutposts" text="dialog_trader_response_whiteriveroutposts" nextstatementid="whiteriveroutposts" />
+	<response id="nevermind" text="dialog_trader_response_nevermind" nextstatementid="start" />
+
+	<response id="admin" text="dialog_trader_response_admin" nextstatementid="admin" >
+		<requirement type="Admin" requirementtype="Hide" />
+	</response>
+
+	<response id="restock" text="dialog_trader_response_restock">
+		<action type="Trader" id="restock" />
+	</response>
+
+	<response id="resetquests" text="dialog_trader_response_resetquests">
+		<action type="Trader" id="reset_quests" />
+	</response>
+
+	<response id="done" text="dialog_trader_response_nevermind" />
+
+	<response id="responseID_-519706824Rekt" text="responseID_-519706824Rekt" nextstatementid="MasteryOffer">
+	</response>
+	
+	<statement id="MasteryOffer" text="MasteryOffer">
+		<response_entry id="TraderRektMasterFarmer" ref_text="Master Farmer" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<response id="responseID_-1931532968" text="responseID_-1931532968" nextstatementid="statement_1491868662">
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="GTE" id="traderRektFaction" Hash="Requirement_292948548" />
+	</response>
+
+	<response id="response_1135977891" text="response_1135977891" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="FarmingTipsTracking" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="3000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="3000" />
+		<action type="AddBuff" id="perkBasicFarmingLvltrader" />
+		<action type="AddCVar, SCore" id="FarmingTipsTracking" value="1" operator="set" />
+	</response>
+
+	<response id="response_1135977892" text="response_1135977892" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="10" requirementtype="Hide" operator="GTE" id="traderRektFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="Equals" id="FarmingTipsTracking" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="LT" id="FarmingTipsTracking" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="6000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="6000" />
+		<action type="AddBuff" id="perkBasicFarmingLvltrader" />
+		<action type="AddCVar, SCore" id="FarmingTipsTracking" value="2" operator="set" />
+	</response>
+
+	<response id="response_1135977893" text="response_1135977893" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="15" requirementtype="Hide" operator="GTE" id="traderRektFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="Equals" id="FarmingTipsTracking" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="LT" id="FarmingTipsTracking" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="FarmingTips" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="9000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="9000" />
+		<action type="AddBuff" id="perkBasicFarmingLvltrader" />
+		<action type="AddCVar, SCore" id="FarmingTipsTracking" value="3" operator="set" />
+	</response>
+
+	<response id="response_1135977894" text="response_1135977894" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="10" requirementtype="Hide" operator="GTE" id="traderRektFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkSinkCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="3000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="3000" />
+		<action type="AddBuff" id="perkWorkingSinkLevel" />
+		<action type="AddCVar, SCore" id="perkSinkCrafting" value="1" operator="set" />
+	</response>
+
+	<response id="response_1135977895" text="response_1135977895" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="10" requirementtype="Hide" operator="GTE" id="traderRektFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkOvenCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="3000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="3000" />
+		<action type="AddBuff" id="perkWorkingOvenLvl" />
+		<action type="AddCVar, SCore" id="perkOvenCrafting" value="1" operator="set" />
+	</response>
+
+	<response id="TraderRektMasterFarmer" text="TraderRektMasterFarmer" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkMasterFarmer" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="100000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="100000" />
+		<action type="AddBuff" id="perkMasterFarmerLvl" />
+		<action type="AddCVar, SCore" id="perkMasterFarmer" value="1" operator="set" />
+	</response>
+
+	<response id="response_-113720744" text="response_-113720744" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="drinkJarGoldenRodTea" Hash="Requirement_-1770646073" />
+		<requirement type="HasItemSDX, SCore" value="200" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="200" />
+		<action type="AddCVar, SCore" id="drinkJarGoldenRodTea" value="1" operator="set" />
+		<action type="AddBuff" id="perkPerkLvlNotification" />
+	</response>
+
+	<response id="response_-113720745" text="response_-113720745" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="plantedGoldenrod1" Hash="Requirement_-1770646073" />
+		<requirement type="HasItemSDX, SCore" value="200" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="200" />
+		<action type="AddCVar, SCore" id="plantedGoldenrod1" value="1" operator="set" />
+		<action type="AddBuff" id="perkPerkLvlNotification" />
+	</response>
+
+	<response id="response_-113720755" text="response_-113720755" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="foodCornBread" Hash="Requirement_-1770646073" />
+		<requirement type="HasItemSDX, SCore" value="200" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="200" />
+		<action type="AddCVar, SCore" id="foodCornBread" value="1" operator="set" />
+		<action type="AddBuff" id="perkPerkLvlNotification" />
+	</response>
+
+	<response id="response_-113720746" text="response_-113720746" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="GTE" id="traderRektFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="drinkJarRedTea" Hash="Requirement_-1770646073" />
+		<requirement type="HasItemSDX, SCore" value="200" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="200" />
+		<action type="AddCVar, SCore" id="drinkJarRedTea" value="1" operator="set" />
+		<action type="AddBuff" id="perkPerkLvlNotification" />
+	</response>
+
+	<response id="response_-113720747" text="response_-113720747" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="GTE" id="traderRektFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="plantedChrysanthemum1" Hash="Requirement_-1770646073" />
+		<requirement type="HasItemSDX, SCore" value="200" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="200" />
+		<action type="AddCVar, SCore" id="plantedChrysanthemum1" value="1" operator="set" />
+		<action type="AddBuff" id="perkPerkLvlNotification" />
+	</response>
+
+	<response id="response_-113720748" text="response_-113720748" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="10" requirementtype="Hide" operator="GTE" id="traderRektFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="foodBlueberryPie" Hash="Requirement_-1770646073" />
+		<requirement type="HasItemSDX, SCore" value="200" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="200" />
+		<action type="AddCVar, SCore" id="foodBlueberryPie" value="1" operator="set" />
+		<action type="AddBuff" id="perkPerkLvlNotification" />
+	</response>
+
+	<response id="response_-113720749" text="response_-113720749" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="10" requirementtype="Hide" operator="GTE" id="traderRektFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="DFapplePie" Hash="Requirement_-1770646073" />
+		<requirement type="HasItemSDX, SCore" value="200" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="200" />
+		<action type="AddCVar, SCore" id="DFapplePie" value="1" operator="set" />
+		<action type="AddBuff" id="perkPerkLvlNotification" />
+	</response>
+
+	<response id="response_-113720750" text="response_-113720750" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="15" requirementtype="Hide" operator="GTE" id="traderRektFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="foodMeatStew" Hash="Requirement_-1770646073" />
+		<requirement type="HasItemSDX, SCore" value="200" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="200" />
+		<action type="AddCVar, SCore" id="foodMeatStew" value="1" operator="set" />
+		<action type="AddBuff" id="perkPerkLvlNotification" />
+	</response>
+
+	<response id="response_-113720751" text="response_-113720751" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="15" requirementtype="Hide" operator="GTE" id="traderRektFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="foodVegetableStew" Hash="Requirement_-1770646073" />
+		<requirement type="HasItemSDX, SCore" value="200" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="200" />
+		<action type="AddCVar, SCore" id="foodVegetableStew" value="1" operator="set" />
+		<action type="AddBuff" id="perkPerkLvlNotification" />
+	</response>
+
+	<response id="response_-113720752" text="response_-113720752" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="20" requirementtype="Hide" operator="GTE" id="traderRektFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="foodFishTacos" Hash="Requirement_-1770646073" />
+		<requirement type="HasItemSDX, SCore" value="200" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="200" />
+		<action type="AddCVar, SCore" id="foodFishTacos" value="1" operator="set" />
+		<action type="AddBuff" id="perkPerkLvlNotification" />
+	</response>
+
+	<response id="response_-113720753" text="response_-113720753" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="20" requirementtype="Hide" operator="GTE" id="traderRektFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="foodSteakAndPotato" Hash="Requirement_-1770646073" />
+		<requirement type="HasItemSDX, SCore" value="200" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="200" />
+		<action type="AddCVar, SCore" id="foodSteakAndPotato" value="1" operator="set" />
+		<action type="AddBuff" id="perkPerkLvlNotification" />
+	</response>
+
+	<response id="response_-113720754" text="response_-113720754" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="25" requirementtype="Hide" operator="GTE" id="traderRektFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="drinkJarBeer" Hash="Requirement_-1770646073" />
+		<requirement type="HasItemSDX, SCore" value="200" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="200" />
+		<action type="AddCVar, SCore" id="drinkJarBeer" value="1" operator="set" />
+		<action type="AddBuff" id="perkPerkLvlNotification" />
+	</response>
+
+	<response id="OpenTradeRoutesRekt" text="responseID_-1931532973" nextstatementid="OpenTradeRoutesRektList">
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="GTE" id="traderRektFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="tier5_nexttrader_rekt_complete" Hash="Requirement_292948548" />
+	</response>
+
+	<statement id="OpenTradeRoutesRektList" text="statement_1491868663">
+		<response_entry id="TraderRektTradeRouteOne" ref_text="Open Trade Routes (Tier 1)" />
+		<response_entry id="TraderRektTradeRouteTwo" ref_text="Open Trade Routes (Tier 2)" />
+		<response_entry id="TraderRektTradeRouteThree" ref_text="Open Trade Routes (Tier 3)" />
+		<response_entry id="TraderRektTradeRouteFour" ref_text="Open Trade Routes (Tier 4)" />
+		<response_entry id="TraderRektTradeRouteFive" ref_text="Open Trade Routes (Tier 5)" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<response id="TraderRektTradeRouteOne" text="response_-113720860" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="GTE" id="traderRektFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="tier1_nexttrader_rekt_complete" Hash="Requirement_292948548" />
+		<action type="GiveQuestSDX, SCore" id="tier1_nexttrader_rekt" />
+		<action type="AddCVar, SCore" id="tier1_nexttrader_rekt_complete" value="1" operator="set" />
+	</response>
+
+	<response id="TraderRektTradeRouteTwo" text="response_-113720861" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="15" requirementtype="Hide" operator="GTE" id="traderRektFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="tier2_nexttrader_rekt_complete" Hash="Requirement_292948548" />
+		<action type="GiveQuestSDX, SCore" id="tier2_nexttrader_rekt" />
+		<action type="AddCVar, SCore" id="tier2_nexttrader_rekt_complete" value="1" operator="set" />
+	</response>
+
+	<response id="TraderRektTradeRouteThree" text="response_-113720862" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="25" requirementtype="Hide" operator="GTE" id="traderRektFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="tier3_nexttrader_rekt_complete" Hash="Requirement_292948548" />
+		<action type="GiveQuestSDX, SCore" id="tier3_nexttrader_rekt" />
+		<action type="AddCVar, SCore" id="tier3_nexttrader_rekt_complete" value="1" operator="set" />
+	</response>
+
+	<response id="TraderRektTradeRouteFour" text="response_-113720863" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="35" requirementtype="Hide" operator="GTE" id="traderRektFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="tier4_nexttrader_rekt_complete" Hash="Requirement_292948548" />
+		<action type="GiveQuestSDX, SCore" id="tier4_nexttrader_rekt" />
+		<action type="AddCVar, SCore" id="tier4_nexttrader_rekt_complete" value="1" operator="set" />
+	</response>
+
+	<response id="TraderRektTradeRouteFive" text="response_-113720864" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="45" requirementtype="Hide" operator="GTE" id="traderRektFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="tier5_nexttrader_rekt_complete" Hash="Requirement_292948548" />
+		<action type="GiveQuestSDX, SCore" id="tier5_nexttrader_rekt" />
+		<action type="AddCVar, SCore" id="tier5_nexttrader_rekt_complete" value="1" operator="set" />
+	</response>
+</set>
+
+<set xpath="/dialogs/dialog[@id='traderJoel']">
+	<!-- Statements -->
+	<statement id="start" text="dialog_trader_statement_start">
+		<response_entry id="shop" />
+		<response_entry id="jobsnone" />
+		<response_entry id="jobshave1" />
+		<response_entry id="jobshave2" />
+		<response_entry id="jobshave3" />
+		<response_entry id="jobshave4" />
+		<response_entry id="jobshave5" />
+		<response_entry id="jobshave6" />
+		<response_entry id="responseID_-519706824Joel" ref_text="Can you teach me to be a better crafter?" /> 
+		<response_entry id="responseID_-1931532969" ref_text="Can you teach me any new recipes?" />
+		<response_entry id="OpenTradeRoutesJoel" ref_text="Do you have any other work?" />
+		<response_entry id="admin" />
+		<response_entry id="done" />
+	</statement>
+
+	<statement id="background" text="dialog_trader_statement_background">
+		<response_entry id="navezgane" />
+		<response_entry id="theduke" />
+		<response_entry id="cassadores" />
+		<response_entry id="noah" />
+
+		<response_entry id="nevermind" />
+	</statement>
+
+	<statement id="navezgane" text="dialog_trader_statement_navezgane" nextstatementid="background" />
+	<statement id="theduke" text="dialog_trader_statement_theduke" nextstatementid="background" />
+	<statement id="cassadores" text="dialog_trader_statement_cassadores" nextstatementid="background" />
+	<statement id="noah" text="dialog_trader_statement_noah" nextstatementid="background" />
+
+	<statement id="currentjobs1" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="1" />
+		
+		<response_entry id="jobsnext2" uniqueid="next" />
+		<response_entry id="jobsnext3" uniqueid="next" />
+		<response_entry id="jobsnext4" uniqueid="next" />
+		<response_entry id="jobsnext5" uniqueid="next" />
+		<response_entry id="jobsnext6" uniqueid="next" />
+		<response_entry id="nevermind" />
+	</statement>
+	
+	<statement id="currentjobs2" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="2" />
+		
+		<response_entry id="jobsprev1" uniqueid="prev" />
+		
+		<response_entry id="jobsnext3" uniqueid="next" />
+		<response_entry id="jobsnext4" uniqueid="next" />
+		<response_entry id="jobsnext5" uniqueid="next" />
+		<response_entry id="jobsnext6" uniqueid="next" />
+		<response_entry id="nevermind" />
+	</statement>
+	
+	<statement id="currentjobs3" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="3" />
+		
+		<response_entry id="jobsprev2" uniqueid="prev" />
+		<response_entry id="jobsprev1" uniqueid="prev" />
+		
+		<response_entry id="jobsnext4" uniqueid="next" />
+		<response_entry id="jobsnext5" uniqueid="next" />
+		<response_entry id="jobsnext6" uniqueid="next" />
+		<response_entry id="nevermind" />
+	</statement>
+	
+	<statement id="currentjobs4" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="4" />
+		
+		<response_entry id="jobsprev3" uniqueid="prev" />
+		<response_entry id="jobsprev2" uniqueid="prev" />
+		<response_entry id="jobsprev1" uniqueid="prev" />
+		
+		<response_entry id="jobsnext5" uniqueid="next" />
+		<response_entry id="jobsnext6" uniqueid="next" />
+		<response_entry id="nevermind" />
+	</statement>
+	
+	<statement id="currentjobs5" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="5" />
+		
+		<response_entry id="jobsprev4" uniqueid="prev" />
+		<response_entry id="jobsprev3" uniqueid="prev" />
+		<response_entry id="jobsprev2" uniqueid="prev" />
+		<response_entry id="jobsprev1" uniqueid="prev" />
+		
+		<response_entry id="jobsnext6" uniqueid="next" />
+		
+		<response_entry id="nevermind" />
+	</statement>
+	
+	<statement id="currentjobs6" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="6" />
+		
+		<response_entry id="jobsprev5" uniqueid="prev" />
+		<response_entry id="jobsprev4" uniqueid="prev" />
+		<response_entry id="jobsprev3" uniqueid="prev" />
+		<response_entry id="jobsprev2" uniqueid="prev" />
+		<response_entry id="jobsprev1" uniqueid="prev" />
+		
+		<response_entry id="nevermind" />
+	</statement>
+
+	<statement id="nojobs" text="dialog_trader_statement_nojobs" nextstatementid="start" />
+
+	<statement id="admin" text="dialog_trader_statement_admin">
+		<response_entry id="restock" />
+		<response_entry id="resetquests" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<!-- Responses -->
+	<statement id="statement_-142346460" text="statement_-142346460">
+		<response_entry id="TraderJoelMasterSecurity" ref_text="Master Security (100000)" />
+		<response_entry id="TraderJoelMasterSurvivalist" ref_text="Master Survivalist (100000)" />
+		<response_entry id="nevermind" />
+	</statement>
+	<statement id="statement_1491868662" text="statement_1491868662">
+		<response_entry id="response_1135977901" ref_text="Ammo Crafting (1000)" />
+		<response_entry id="response_1135977902" ref_text="Ammo Crafting (2000)" />
+		<response_entry id="response_1135977903" ref_text="Ammo Crafting (3000)" />
+		<response_entry id="response_1135977904" ref_text="Ammo Crafting (3000)" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<response id="shop" text="dialog_trader_response_shop">
+		<action type="Trader" id="trade" />
+	</response>
+
+	<response id="jobsnone" text="dialog_trader_response_jobsnone" nextstatementid="nojobs" >
+		<requirement type="QuestStatus" value="InProgress" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobshave1" text="dialog_trader_response_jobshave" nextstatementid="currentjobs1" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="1" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+	
+	<response id="jobshave2" text="dialog_trader_response_jobshave" nextstatementid="currentjobs2" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="2" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+	
+	<response id="jobshave3" text="dialog_trader_response_jobshave" nextstatementid="currentjobs3" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="3" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+	
+	<response id="jobshave4" text="dialog_trader_response_jobshave" nextstatementid="currentjobs4" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="4" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+	
+	<response id="jobshave5" text="dialog_trader_response_jobshave" nextstatementid="currentjobs5" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="5" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+	
+	<response id="jobshave6" text="dialog_trader_response_jobshave" nextstatementid="currentjobs6" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="6" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+	
+	<response id="jobsprev1" text="dialog_trader_response_prevtier" nextstatementid="currentjobs1" >
+		<requirement type="QuestTier" value="1" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsprev2" text="dialog_trader_response_prevtier" nextstatementid="currentjobs2" >
+		<requirement type="QuestTier" value="2" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsprev3" text="dialog_trader_response_prevtier" nextstatementid="currentjobs3" >
+		<requirement type="QuestTier" value="3" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsprev4" text="dialog_trader_response_prevtier" nextstatementid="currentjobs4" >
+		<requirement type="QuestTier" value="4" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsprev5" text="dialog_trader_response_prevtier" nextstatementid="currentjobs5" >
+		<requirement type="QuestTier" value="5" requirementtype="Hide" />
+	</response>
+		
+	<response id="jobsnext2" text="dialog_trader_response_nexttier" nextstatementid="currentjobs2" >
+		<requirement type="QuestTier" value="2" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsnext3" text="dialog_trader_response_nexttier" nextstatementid="currentjobs3" >
+		<requirement type="QuestTier" value="3" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsnext4" text="dialog_trader_response_nexttier" nextstatementid="currentjobs4" >
+		<requirement type="QuestTier" value="4" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsnext5" text="dialog_trader_response_nexttier" nextstatementid="currentjobs5" >
+		<requirement type="QuestTier" value="5" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsnext6" text="dialog_trader_response_nexttier" nextstatementid="currentjobs6" >
+		<requirement type="QuestTier" value="6" requirementtype="Hide" />
+	</response>
+
+	<response id="background" text="dialog_trader_response_background" nextstatementid="background">
+	</response>
+
+	<response id="navezgane" text="dialog_trader_response_navezgane" nextstatementid="navezgane" />
+	<response id="theduke" text="dialog_trader_response_theduke" nextstatementid="theduke" />
+	<response id="cassadores" text="dialog_trader_response_cassadores" nextstatementid="cassadores" />
+	<response id="noah" text="dialog_trader_response_noah" nextstatementid="noah" />
+	<response id="whiteriveroutposts" text="dialog_trader_response_whiteriveroutposts" nextstatementid="whiteriveroutposts" />
+	<response id="nevermind" text="dialog_trader_response_nevermind" nextstatementid="start" />
+
+	<response id="admin" text="dialog_trader_response_admin" nextstatementid="admin" >
+		<requirement type="Admin" requirementtype="Hide" />
+	</response>
+
+	<response id="restock" text="dialog_trader_response_restock">
+		<action type="Trader" id="restock" />
+	</response>
+
+	<response id="resetquests" text="dialog_trader_response_resetquests">
+		<action type="Trader" id="reset_quests" />
+	</response>
+
+	<response id="done" text="dialog_trader_response_nevermind" />
+
+	<response id="responseID_-519706824Joel" text="responseID_-519706821" nextstatementid="statement_-142346460">
+	</response>
+
+	<response id="responseID_-1931532969" text="responseID_-1931532969" nextstatementid="statement_1491868662">
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="GTE" id="traderJoelFaction" Hash="Requirement_292948548" />
+	</response>
+
+	<response id="response_1135977901" text="response_1135977901" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="GTE" id="traderJoelFaction" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="ammo9mmBulletBall" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="500" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="500" />
+		<action type="AddBuff" id="perkAmmoCraftLvl1" />
+	</response>
+
+	<response id="response_1135977902" text="response_1135977902" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="GTE" id="traderJoelFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="ammo762mmBulletBall" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="500" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="500" />
+		<action type="AddBuff" id="perkAmmoCraftLvl2" />
+	</response>
+
+	<response id="response_1135977903" text="response_1135977903" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="GTE" id="traderJoelFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="ammo44MagnumBulletBall" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="500" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="500" />
+		<action type="AddBuff" id="perkAmmoCraftLvl3" />
+	</response>
+
+	<response id="response_1135977904" text="response_1135977904" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="GTE" id="traderJoelFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="ammoShotgunShell" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="500" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="500" />
+		<action type="AddBuff" id="perkAmmoCraftLvl4" />
+	</response>
+
+	<response id="TraderJoelMasterSecurity" text="TraderJoelMasterSecurity" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkMasterSecurity" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="100000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="100000" />
+		<action type="AddBuff" id="perkMasterSecurityLvl" />
+		<action type="AddCVar, SCore" id="perkMasterSecurity" value="1" operator="set" />
+	</response>
+
+	<response id="TraderJoelMasterSurvivalist" text="TraderJoelMasterSurvivalist" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkMasterSurvivalist" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="100000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="100000" />
+		<action type="AddBuff" id="perkMasterSurvivalistLvl" />
+		<action type="AddCVar, SCore" id="perkMasterSurvivalist" value="1" operator="set" />
+	</response>
+
+	<response id="OpenTradeRoutesJoel" text="responseID_-1931532973" nextstatementid="OpenTradeRoutesJoelList">
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="GTE" id="traderJoelFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="tier5_nexttrader_joel_complete" Hash="Requirement_292948548" />
+	</response>
+
+	<statement id="OpenTradeRoutesJoelList" text="statement_1491868663">
+		<response_entry id="TraderJoelTradeRouteOne" ref_text="Open Trade Routes (Tier 1)" />
+		<response_entry id="TraderJoelTradeRouteTwo" ref_text="Open Trade Routes (Tier 2)" />
+		<response_entry id="TraderJoelTradeRouteThree" ref_text="Open Trade Routes (Tier 3)" />
+		<response_entry id="TraderJoelTradeRouteFour" ref_text="Open Trade Routes (Tier 4)" />
+		<response_entry id="TraderJoelTradeRouteFive" ref_text="Open Trade Routes (Tier 5)" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<response id="TraderJoelTradeRouteOne" text="response_-113720860" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="GTE" id="traderJoelFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="tier1_nexttrader_joel_complete" Hash="Requirement_292948548" />
+		<action type="GiveQuestSDX, SCore" id="tier1_nexttrader_joel" />
+		<action type="AddCVar, SCore" id="tier1_nexttrader_joel_complete" value="1" operator="set" />
+	</response>
+
+	<response id="TraderJoelTradeRouteTwo" text="response_-113720861" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="15" requirementtype="Hide" operator="GTE" id="traderJoelFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="tier2_nexttrader_joel_complete" Hash="Requirement_292948548" />
+		<action type="GiveQuestSDX, SCore" id="tier2_nexttrader_joel" />
+		<action type="AddCVar, SCore" id="tier2_nexttrader_joel_complete" value="1" operator="set" />
+	</response>
+
+	<response id="TraderJoelTradeRouteThree" text="response_-113720862" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="25" requirementtype="Hide" operator="GTE" id="traderJoelFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="tier3_nexttrader_joel_complete" Hash="Requirement_292948548" />
+		<action type="GiveQuestSDX, SCore" id="tier3_nexttrader_joel" />
+		<action type="AddCVar, SCore" id="tier3_nexttrader_joel_complete" value="1" operator="set" />
+	</response>
+
+	<response id="TraderJoelTradeRouteFour" text="response_-113720863" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="35" requirementtype="Hide" operator="GTE" id="traderJoelFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="tier4_nexttrader_joel_complete" Hash="Requirement_292948548" />
+		<action type="GiveQuestSDX, SCore" id="tier4_nexttrader_joel" />
+		<action type="AddCVar, SCore" id="tier4_nexttrader_joel_complete" value="1" operator="set" />
+	</response>
+
+	<response id="TraderJoelTradeRouteFive" text="response_-113720864" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="45" requirementtype="Hide" operator="GTE" id="traderJoelFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="tier5_nexttrader_joel_complete" Hash="Requirement_292948548" />
+		<action type="GiveQuestSDX, SCore" id="tier5_nexttrader_joel" />
+		<action type="AddCVar, SCore" id="tier5_nexttrader_joel_complete" value="1" operator="set" />
+	</response>
+</set>
+
+<set xpath="/dialogs/dialog[@id='traderHugh']">
+	<!-- Statements -->
+	<statement id="start" text="dialog_trader_statement_start">
+		<response_entry id="shop" />
+		<response_entry id="jobsnone" />
+		<response_entry id="jobshave1" />
+		<response_entry id="jobshave2" />
+		<response_entry id="jobshave3" />
+		<response_entry id="jobshave4" />
+		<response_entry id="jobshave5" />
+		<response_entry id="jobshave6" />
+		<response_entry id="responseID_-519706824Hugh" ref_text="Can you teach me to be a better crafter?" /> 
+		<response_entry id="responseID_-1931532970" ref_text="Can you teach me any new recipes?" />
+		<response_entry id="OpenTradeRoutesHugh" ref_text="Do you have any other work?" />
+		<response_entry id="admin" />
+		<response_entry id="done" />
+	</statement>
+
+	<statement id="background" text="dialog_trader_statement_background">
+		<response_entry id="navezgane" />
+		<response_entry id="theduke" />
+		<response_entry id="cassadores" />
+		<response_entry id="noah" />
+
+		<response_entry id="nevermind" />
+	</statement>
+
+	<statement id="navezgane" text="dialog_trader_statement_navezgane" nextstatementid="background" />
+	<statement id="theduke" text="dialog_trader_statement_theduke" nextstatementid="background" />
+	<statement id="cassadores" text="dialog_trader_statement_cassadores" nextstatementid="background" />
+	<statement id="noah" text="dialog_trader_statement_noah" nextstatementid="background" />
+
+	<statement id="currentjobs1" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="1" />
+		<response_entry id="jobsnext2" uniqueid="next" />
+		<response_entry id="jobsnext3" uniqueid="next" />
+		<response_entry id="jobsnext4" uniqueid="next" />
+		<response_entry id="jobsnext5" uniqueid="next" />
+		<response_entry id="jobsnext6" uniqueid="next" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<statement id="currentjobs2" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="2" />
+		
+		<response_entry id="jobsprev1" uniqueid="prev" />
+		
+		<response_entry id="jobsnext3" uniqueid="next" />
+		<response_entry id="jobsnext4" uniqueid="next" />
+		<response_entry id="jobsnext5" uniqueid="next" />
+		<response_entry id="jobsnext6" uniqueid="next" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<statement id="currentjobs3" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="3" />
+		
+		<response_entry id="jobsprev2" uniqueid="prev" />
+		<response_entry id="jobsprev1" uniqueid="prev" />
+		
+		<response_entry id="jobsnext4" uniqueid="next" />
+		<response_entry id="jobsnext5" uniqueid="next" />
+		<response_entry id="jobsnext6" uniqueid="next" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<statement id="currentjobs4" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="4" />
+		
+		<response_entry id="jobsprev3" uniqueid="prev" />
+		<response_entry id="jobsprev2" uniqueid="prev" />
+		<response_entry id="jobsprev1" uniqueid="prev" />
+		
+		<response_entry id="jobsnext5" uniqueid="next" />
+		<response_entry id="jobsnext6" uniqueid="next" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<statement id="currentjobs5" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="5" />
+		
+		<response_entry id="jobsprev4" uniqueid="prev" />
+		<response_entry id="jobsprev3" uniqueid="prev" />
+		<response_entry id="jobsprev2" uniqueid="prev" />
+		<response_entry id="jobsprev1" uniqueid="prev" />
+		
+		<response_entry id="jobsnext6" uniqueid="next" />
+		
+		<response_entry id="nevermind" />
+	</statement>
+
+	<statement id="currentjobs6" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="6" />
+		
+		<response_entry id="jobsprev5" uniqueid="prev" />
+		<response_entry id="jobsprev4" uniqueid="prev" />
+		<response_entry id="jobsprev3" uniqueid="prev" />
+		<response_entry id="jobsprev2" uniqueid="prev" />
+		<response_entry id="jobsprev1" uniqueid="prev" />
+		
+		<response_entry id="nevermind" />
+	</statement>
+
+	<statement id="nojobs" text="dialog_trader_statement_nojobs" nextstatementid="start" />
+
+	<statement id="admin" text="dialog_trader_statement_admin">
+		<response_entry id="restock" />
+		<response_entry id="resetquests" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<!-- Responses -->
+	<statement id="statement_-142346460" text="statement_-142346460">
+		<response_entry id="TraderHughMasterLaborer" ref_text="Master Laborer (100000)" />
+		<response_entry id="TraderHughMasterHunter" ref_text="Master Hunter (100000)" />
+		<response_entry id="nevermind" />
+	</statement>
+	<statement id="statement_1491868662" text="statement_1491868662">
+		<response_entry id="response_-113720774" ref_text="Meat Stew (200)" />
+		<response_entry id="response_1135977910" ref_text="Forge Ahead (1000)" />
+		<response_entry id="response_1135977911" ref_text="Forge Ahead (2000)" />
+		<response_entry id="response_1135977912" ref_text="Workbenches (1000)" />
+		<response_entry id="response_1135977913" ref_text="Workbenches (2000)" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<response id="shop" text="dialog_trader_response_shop">
+		<action type="Trader" id="trade" />
+	</response>
+
+	<response id="jobsnone" text="dialog_trader_response_jobsnone" nextstatementid="nojobs" >
+		<requirement type="QuestStatus" value="InProgress" requirementtype="Hide" />
+	</response>
+
+	<response id="jobshave1" text="dialog_trader_response_jobshave" nextstatementid="currentjobs1" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="1" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+
+	<response id="jobshave2" text="dialog_trader_response_jobshave" nextstatementid="currentjobs2" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="2" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+
+	<response id="jobshave3" text="dialog_trader_response_jobshave" nextstatementid="currentjobs3" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="3" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+
+	<response id="jobshave4" text="dialog_trader_response_jobshave" nextstatementid="currentjobs4" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="4" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+
+	<response id="jobshave5" text="dialog_trader_response_jobshave" nextstatementid="currentjobs5" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="5" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+
+	<response id="jobshave6" text="dialog_trader_response_jobshave" nextstatementid="currentjobs6" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="6" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+
+	<response id="jobsprev1" text="dialog_trader_response_prevtier" nextstatementid="currentjobs1" >
+		<requirement type="QuestTier" value="1" requirementtype="Hide" />
+	</response>
+
+	<response id="jobsprev2" text="dialog_trader_response_prevtier" nextstatementid="currentjobs2" >
+		<requirement type="QuestTier" value="2" requirementtype="Hide" />
+	</response>
+
+	<response id="jobsprev3" text="dialog_trader_response_prevtier" nextstatementid="currentjobs3" >
+		<requirement type="QuestTier" value="3" requirementtype="Hide" />
+	</response>
+
+	<response id="jobsprev4" text="dialog_trader_response_prevtier" nextstatementid="currentjobs4" >
+		<requirement type="QuestTier" value="4" requirementtype="Hide" />
+	</response>
+
+	<response id="jobsprev5" text="dialog_trader_response_prevtier" nextstatementid="currentjobs5" >
+		<requirement type="QuestTier" value="5" requirementtype="Hide" />
+	</response>
+		
+	<response id="jobsnext2" text="dialog_trader_response_nexttier" nextstatementid="currentjobs2" >
+		<requirement type="QuestTier" value="2" requirementtype="Hide" />
+	</response>
+
+	<response id="jobsnext3" text="dialog_trader_response_nexttier" nextstatementid="currentjobs3" >
+		<requirement type="QuestTier" value="3" requirementtype="Hide" />
+	</response>
+
+	<response id="jobsnext4" text="dialog_trader_response_nexttier" nextstatementid="currentjobs4" >
+		<requirement type="QuestTier" value="4" requirementtype="Hide" />
+	</response>
+
+	<response id="jobsnext5" text="dialog_trader_response_nexttier" nextstatementid="currentjobs5" >
+		<requirement type="QuestTier" value="5" requirementtype="Hide" />
+	</response>
+
+	<response id="jobsnext6" text="dialog_trader_response_nexttier" nextstatementid="currentjobs6" >
+		<requirement type="QuestTier" value="6" requirementtype="Hide" />
+	</response>
+
+	<response id="background" text="dialog_trader_response_background" nextstatementid="background">
+	</response>
+
+	<response id="navezgane" text="dialog_trader_response_navezgane" nextstatementid="navezgane" />
+	<response id="theduke" text="dialog_trader_response_theduke" nextstatementid="theduke" />
+	<response id="cassadores" text="dialog_trader_response_cassadores" nextstatementid="cassadores" />
+	<response id="noah" text="dialog_trader_response_noah" nextstatementid="noah" />
+	<response id="whiteriveroutposts" text="dialog_trader_response_whiteriveroutposts" nextstatementid="whiteriveroutposts" />
+	<response id="nevermind" text="dialog_trader_response_nevermind" nextstatementid="start" />
+
+	<response id="admin" text="dialog_trader_response_admin" nextstatementid="admin" >
+		<requirement type="Admin" requirementtype="Hide" />
+	</response>
+
+	<response id="restock" text="dialog_trader_response_restock">
+		<action type="Trader" id="restock" />
+	</response>
+
+	<response id="resetquests" text="dialog_trader_response_resetquests">
+		<action type="Trader" id="reset_quests" />
+	</response>
+
+	<response id="done" text="dialog_trader_response_nevermind" />
+
+	<response id="responseID_-519706824Hugh" text="responseID_-519706824Hugh" nextstatementid="statement_-142346460">
+	</response>
+
+	<response id="responseID_-1931532970" text="responseID_-1931532970" nextstatementid="statement_1491868662">
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="GTE" id="traderHughFaction" Hash="Requirement_292948548" />
+	</response>
+
+	<response id="response_1135977910" text="response_1135977910" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="ForgeAheadTracking" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="200" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="200" />
+		<action type="AddBuff" id="buffForgeAheadLvl" />
+		<action type="AddCVar, SCore" id="ForgeAheadTracking" value="1" operator="set" />
+	</response>
+
+	<response id="response_1135977911" text="response_1135977911" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="10" requirementtype="Hide" operator="GTE" id="traderHughFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="Equals" id="ForgeAheadTracking" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="LT" id="ForgeAheadTracking" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="400" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="400" />
+		<action type="AddBuff" id="buffForgeAheadLvl" />
+		<action type="AddCVar, SCore" id="ForgeAheadTracking" value="2" operator="set" />
+	</response>
+
+	<response id="response_1135977912" text="response_1135977912" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="WorkbenchesTracking" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="200" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="200" />
+		<action type="AddBuff" id="perkWorkbenchCraftingLvl" />
+		<action type="AddCVar, SCore" id="WorkbenchesTracking" value="1" operator="set" />
+	</response>
+
+	<response id="response_1135977913" text="response_1135977913" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="10" requirementtype="Hide" operator="GTE" id="traderHughFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="Equals" id="WorkbenchesTracking" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="LT" id="WorkbenchesTracking" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="400" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="400" />
+		<action type="AddBuff" id="perkWorkbenchCraftingLvl" />
+		<action type="AddCVar, SCore" id="WorkbenchesTracking" value="2" operator="set" />
+	</response>
+
+	<response id="response_-113720774" text="response_-113720774" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="20" requirementtype="Hide" operator="GTE" id="traderHughFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="ChemStation" Hash="Requirement_-1770646073" />
+		<requirement type="HasItemSDX, SCore" value="400" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="400" />
+		<action type="AddBuff" id="perkChemStationCraftingLvl" />
+		<action type="AddCVar, SCore" id="ChemStation" value="1" operator="set" />
+	</response>
+
+	<response id="TraderHughMasterLaborer" text="TraderHughMasterLaborer" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkMasterLaborer" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="100000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="100000" />
+		<action type="AddBuff" id="perkMasterLaborerLvl" />
+		<action type="AddCVar, SCore" id="perkMasterLaborer" value="1" operator="set" />
+	</response>
+
+	<response id="TraderHughMasterHunter" text="TraderHughMasterHunter" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkMasterHunter" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="100000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="100000" />
+		<action type="AddBuff" id="perkMasterHunterLvl" />
+		<action type="AddCVar, SCore" id="perkMasterHunter" value="1" operator="set" />
+	</response>
+
+	<response id="OpenTradeRoutesHugh" text="responseID_-1931532973" nextstatementid="OpenTradeRoutesHughList">
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="GTE" id="traderHughFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="tier5_nexttrader_hugh_complete" Hash="Requirement_292948548" />
+	</response>
+
+	<statement id="OpenTradeRoutesHughList" text="statement_1491868663">
+		<response_entry id="TraderHughTradeRouteOne" ref_text="Open Trade Routes (Tier 1)" />
+		<response_entry id="TraderHughTradeRouteTwo" ref_text="Open Trade Routes (Tier 2)" />
+		<response_entry id="TraderHughTradeRouteThree" ref_text="Open Trade Routes (Tier 3)" />
+		<response_entry id="TraderHughTradeRouteFour" ref_text="Open Trade Routes (Tier 4)" />
+		<response_entry id="TraderHughTradeRouteFive" ref_text="Open Trade Routes (Tier 5)" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<response id="TraderHughTradeRouteOne" text="response_-113720860" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="GTE" id="traderHughFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="tier1_nexttrader_hugh_complete" Hash="Requirement_292948548" />
+		<action type="GiveQuestSDX, SCore" id="tier1_nexttrader_hugh" />
+		<action type="AddCVar, SCore" id="tier1_nexttrader_hugh_complete" value="1" operator="set" />
+	</response>
+
+	<response id="TraderHughTradeRouteTwo" text="response_-113720861" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="15" requirementtype="Hide" operator="GTE" id="traderHughFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="tier2_nexttrader_hugh_complete" Hash="Requirement_292948548" />
+		<action type="GiveQuestSDX, SCore" id="tier2_nexttrader_hugh" />
+		<action type="AddCVar, SCore" id="tier2_nexttrader_hugh_complete" value="1" operator="set" />
+	</response>
+
+	<response id="TraderHughTradeRouteThree" text="response_-113720862" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="25" requirementtype="Hide" operator="GTE" id="traderHughFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="tier3_nexttrader_hugh_complete" Hash="Requirement_292948548" />
+		<action type="GiveQuestSDX, SCore" id="tier3_nexttrader_hugh" />
+		<action type="AddCVar, SCore" id="tier3_nexttrader_hugh_complete" value="1" operator="set" />
+	</response>
+
+	<response id="TraderHughTradeRouteFour" text="response_-113720863" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="35" requirementtype="Hide" operator="GTE" id="traderHughFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="tier4_nexttrader_hugh_complete" Hash="Requirement_292948548" />
+		<action type="GiveQuestSDX, SCore" id="tier4_nexttrader_hugh" />
+		<action type="AddCVar, SCore" id="tier4_nexttrader_hugh_complete" value="1" operator="set" />
+	</response>
+
+	<response id="TraderHughTradeRouteFive" text="response_-113720864" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="45" requirementtype="Hide" operator="GTE" id="traderHughFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="tier5_nexttrader_hugh_complete" Hash="Requirement_292948548" />
+		<action type="GiveQuestSDX, SCore" id="tier5_nexttrader_hugh" />
+		<action type="AddCVar, SCore" id="tier5_nexttrader_hugh_complete" value="1" operator="set" />
+	</response>
+</set>
+
+<set xpath="/dialogs/dialog[@id='traderJen']">
+<!-- Statements -->
+	<statement id="start" text="dialog_trader_statement_start">
+		<response_entry id="shop" />
+		<response_entry id="jobsnone" />
+		<response_entry id="jobshave1" />
+		<response_entry id="jobshave2" />
+		<response_entry id="jobshave3" />
+		<response_entry id="jobshave4" />
+		<response_entry id="jobshave5" />
+		<response_entry id="jobshave6" />
+		<response_entry id="responseID_-519706824Jen" ref_text="Can you teach me to be a better crafter?" /> 
+		<response_entry id="responseID_-1931532971" ref_text="Can you teach me any new recipes?" />
+		<response_entry id="responseID_-1931532973" ref_text="Do you have any other work?" />
+		<response_entry id="admin" />
+		<response_entry id="done" />
+	</statement>
+
+	<statement id="background" text="dialog_trader_statement_background">
+		<response_entry id="navezgane" />
+		<response_entry id="theduke" />
+		<response_entry id="cassadores" />
+		<response_entry id="noah" />
+
+		<response_entry id="nevermind" />
+	</statement>
+
+	<statement id="navezgane" text="dialog_trader_statement_navezgane" nextstatementid="background" />
+	<statement id="theduke" text="dialog_trader_statement_theduke" nextstatementid="background" />
+	<statement id="cassadores" text="dialog_trader_statement_cassadores" nextstatementid="background" />
+	<statement id="noah" text="dialog_trader_statement_noah" nextstatementid="background" />
+
+	<statement id="currentjobs1" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="1" />
+		<response_entry id="jobsnext2" uniqueid="next" />
+		<response_entry id="jobsnext3" uniqueid="next" />
+		<response_entry id="jobsnext4" uniqueid="next" />
+		<response_entry id="jobsnext5" uniqueid="next" />
+		<response_entry id="jobsnext6" uniqueid="next" />
+		<response_entry id="nevermind" />
+	</statement>
+	
+	<statement id="currentjobs2" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="2" />
+		
+		<response_entry id="jobsprev1" uniqueid="prev" />
+		
+		<response_entry id="jobsnext3" uniqueid="next" />
+		<response_entry id="jobsnext4" uniqueid="next" />
+		<response_entry id="jobsnext5" uniqueid="next" />
+		<response_entry id="jobsnext6" uniqueid="next" />
+		<response_entry id="nevermind" />
+	</statement>
+	
+	<statement id="currentjobs3" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="3" />
+		
+		<response_entry id="jobsprev2" uniqueid="prev" />
+		<response_entry id="jobsprev1" uniqueid="prev" />
+		
+		<response_entry id="jobsnext4" uniqueid="next" />
+		<response_entry id="jobsnext5" uniqueid="next" />
+		<response_entry id="jobsnext6" uniqueid="next" />
+		<response_entry id="nevermind" />
+	</statement>
+	
+	<statement id="currentjobs4" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="4" />
+		
+		<response_entry id="jobsprev3" uniqueid="prev" />
+		<response_entry id="jobsprev2" uniqueid="prev" />
+		<response_entry id="jobsprev1" uniqueid="prev" />
+		
+		<response_entry id="jobsnext5" uniqueid="next" />
+		<response_entry id="jobsnext6" uniqueid="next" />
+		<response_entry id="nevermind" />
+	</statement>
+	
+	<statement id="currentjobs5" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="5" />
+		
+		<response_entry id="jobsprev4" uniqueid="prev" />
+		<response_entry id="jobsprev3" uniqueid="prev" />
+		<response_entry id="jobsprev2" uniqueid="prev" />
+		<response_entry id="jobsprev1" uniqueid="prev" />
+		
+		<response_entry id="jobsnext6" uniqueid="next" />
+		
+		<response_entry id="nevermind" />
+	</statement>
+	
+	<statement id="currentjobs6" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="6" />
+		
+		<response_entry id="jobsprev5" uniqueid="prev" />
+		<response_entry id="jobsprev4" uniqueid="prev" />
+		<response_entry id="jobsprev3" uniqueid="prev" />
+		<response_entry id="jobsprev2" uniqueid="prev" />
+		<response_entry id="jobsprev1" uniqueid="prev" />
+		
+		<response_entry id="nevermind" />
+	</statement>
+
+	<statement id="nojobs" text="dialog_trader_statement_nojobs" nextstatementid="start" />
+
+	<statement id="admin" text="dialog_trader_statement_admin">
+		<response_entry id="restock" />
+		<response_entry id="resetquests" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<!-- Responses -->
+	<statement id="statement_-142346460" text="statement_-142346460">
+		<response_entry id="TraderJenMasterScientist" ref_text="Master Scientist (100000)" />
+		<response_entry id="nevermind" />
+	</statement>
+	
+	<statement id="statement_1491868662" text="statement_1491868662">
+		<response_entry id="response_-113720775" ref_text="Leather Armor (200)" />
+		<response_entry id="response_-113720776" ref_text="Leather Armor (200)" />
+		<response_entry id="response_-113720777" ref_text="Leather Armor (200)" />
+		<response_entry id="response_-113720778" ref_text="Scrap Armor (200)" />
+		<response_entry id="response_-113720779" ref_text="Scrap Armor (200)" />
+		<response_entry id="response_-113720780" ref_text="Scrap Armor (200)" />
+		<response_entry id="response_-113720781" ref_text="Iron Armor (200)" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<response id="shop" text="dialog_trader_response_shop">
+		<action type="Trader" id="trade" />
+	</response>
+
+	<response id="jobsnone" text="dialog_trader_response_jobsnone" nextstatementid="nojobs" >
+		<requirement type="QuestStatus" value="InProgress" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobshave1" text="dialog_trader_response_jobshave" nextstatementid="currentjobs1" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="1" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+	
+	<response id="jobshave2" text="dialog_trader_response_jobshave" nextstatementid="currentjobs2" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="2" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+	
+	<response id="jobshave3" text="dialog_trader_response_jobshave" nextstatementid="currentjobs3" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="3" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+	
+	<response id="jobshave4" text="dialog_trader_response_jobshave" nextstatementid="currentjobs4" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="4" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+	
+	<response id="jobshave5" text="dialog_trader_response_jobshave" nextstatementid="currentjobs5" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="5" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+	
+	<response id="jobshave6" text="dialog_trader_response_jobshave" nextstatementid="currentjobs6" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="6" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+	
+	<response id="jobsprev1" text="dialog_trader_response_prevtier" nextstatementid="currentjobs1" >
+		<requirement type="QuestTier" value="1" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsprev2" text="dialog_trader_response_prevtier" nextstatementid="currentjobs2" >
+		<requirement type="QuestTier" value="2" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsprev3" text="dialog_trader_response_prevtier" nextstatementid="currentjobs3" >
+		<requirement type="QuestTier" value="3" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsprev4" text="dialog_trader_response_prevtier" nextstatementid="currentjobs4" >
+		<requirement type="QuestTier" value="4" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsprev5" text="dialog_trader_response_prevtier" nextstatementid="currentjobs5" >
+		<requirement type="QuestTier" value="5" requirementtype="Hide" />
+	</response>
+		
+	<response id="jobsnext2" text="dialog_trader_response_nexttier" nextstatementid="currentjobs2" >
+		<requirement type="QuestTier" value="2" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsnext3" text="dialog_trader_response_nexttier" nextstatementid="currentjobs3" >
+		<requirement type="QuestTier" value="3" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsnext4" text="dialog_trader_response_nexttier" nextstatementid="currentjobs4" >
+		<requirement type="QuestTier" value="4" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsnext5" text="dialog_trader_response_nexttier" nextstatementid="currentjobs5" >
+		<requirement type="QuestTier" value="5" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsnext6" text="dialog_trader_response_nexttier" nextstatementid="currentjobs6" >
+		<requirement type="QuestTier" value="6" requirementtype="Hide" />
+	</response>
+
+	<response id="background" text="dialog_trader_response_background" nextstatementid="background">
+	</response>
+
+	<response id="navezgane" text="dialog_trader_response_navezgane" nextstatementid="navezgane" />
+	<response id="theduke" text="dialog_trader_response_theduke" nextstatementid="theduke" />
+	<response id="cassadores" text="dialog_trader_response_cassadores" nextstatementid="cassadores" />
+	<response id="noah" text="dialog_trader_response_noah" nextstatementid="noah" />
+	<response id="whiteriveroutposts" text="dialog_trader_response_whiteriveroutposts" nextstatementid="whiteriveroutposts" />
+	<response id="nevermind" text="dialog_trader_response_nevermind" nextstatementid="start" />
+
+	<response id="admin" text="dialog_trader_response_admin" nextstatementid="admin" >
+		<requirement type="Admin" requirementtype="Hide" />
+	</response>
+
+	<response id="restock" text="dialog_trader_response_restock">
+		<action type="Trader" id="restock" />
+	</response>
+
+	<response id="resetquests" text="dialog_trader_response_resetquests">
+		<action type="Trader" id="reset_quests" />
+	</response>
+
+	<response id="done" text="dialog_trader_response_nevermind" />
+
+	<response id="responseID_-519706824Jen" text="responseID_-519706824Jen" nextstatementid="statement_-142346460">
+	</response>
+
+	<response id="responseID_-1931532971" text="responseID_-1931532971" nextstatementid="statement_1491868662">
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="GTE" id="traderJenFaction" Hash="Requirement_292948548" />
+	</response>
+
+	<response id="response_-113720775" text="response_-113720775" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="medicalAloeCream" Hash="Requirement_-1770646073" />
+		<requirement type="HasItemSDX, SCore" value="200" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="200" />
+		<action type="AddCVar, SCore" id="medicalAloeCream" value="1" operator="set" />
+		<action type="AddBuff" id="perkPerkLvlNotification" />
+	</response>
+
+	<response id="response_-113720776" text="response_-113720776" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="medicalFirstAidBandage" Hash="Requirement_-1770646073" />
+		<requirement type="HasItemSDX, SCore" value="200" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="200" />
+		<action type="AddCVar, SCore" id="medicalFirstAidBandage" value="1" operator="set" />
+		<action type="AddBuff" id="perkPerkLvlNotification" />
+	</response>
+
+	<response id="response_-113720777" text="response_-113720777" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="10" requirementtype="Hide" operator="GTE" id="traderJenFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="DFMandP" Hash="Requirement_-1770646073" />
+		<requirement type="HasItemSDX, SCore" value="200" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="200" />
+		<action type="AddCVar, SCore" id="DFMandP" value="1" operator="set" />
+		<action type="AddBuff" id="perkPerkLvlNotification" />
+	</response>
+
+	<response id="response_-113720778" text="response_-113720778" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="10" requirementtype="Hide" operator="GTE" id="traderJenFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="medicalPlasterCast" Hash="Requirement_-1770646073" />
+		<requirement type="HasItemSDX, SCore" value="400" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="200" />
+		<action type="AddCVar, SCore" id="medicalPlasterCast" value="1" operator="set" />
+		<action type="AddBuff" id="perkPerkLvlNotification" />
+	</response>
+
+	<response id="response_-113720779" text="response_-113720779" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="15" requirementtype="Hide" operator="GTE" id="traderJenFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="medicalFirstAidKit" Hash="Requirement_-1770646073" />
+		<requirement type="HasItemSDX, SCore" value="400" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="400" />
+		<action type="AddCVar, SCore" id="medicalFirstAidKit" value="1" operator="set" />
+		<action type="AddBuff" id="perkPerkLvlNotification" />
+	</response>
+
+	<response id="response_-113720780" text="response_-113720780" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="20" requirementtype="Hide" operator="GTE" id="traderJenFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="drugRecog" Hash="Requirement_-1770646073" />
+		<requirement type="HasItemSDX, SCore" value="400" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="400" />
+		<action type="AddCVar, SCore" id="drugRecog" value="1" operator="set" />
+		<action type="AddBuff" id="perkPerkLvlNotification" />
+	</response>
+
+	<response id="response_-113720781" text="response_-113720781" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="20" requirementtype="Hide" operator="GTE" id="traderJenFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="drugFortBites" Hash="Requirement_-1770646073" />
+		<requirement type="HasItemSDX, SCore" value="400" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="400" />
+		<action type="AddCVar, SCore" id="drugFortBites" value="1" operator="set" />
+		<action type="AddBuff" id="perkPerkLvlNotification" />
+	</response>
+
+	<response id="responseID_-1931532973" text="responseID_-1931532973" nextstatementid="statement_1491868663">
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="GTE" id="traderJenFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="tier5_nexttrader_jen_complete" Hash="Requirement_292948548" />
+	</response>
+
+	<statement id="statement_1491868663" text="statement_1491868663">
+		<response_entry id="response_-113720860" ref_text="Open Trade Routes (Tier 1)" />
+		<response_entry id="response_-113720861" ref_text="Open Trade Routes (Tier 2)" />
+		<response_entry id="response_-113720862" ref_text="Open Trade Routes (Tier 3)" />
+		<response_entry id="response_-113720863" ref_text="Open Trade Routes (Tier 4)" />
+		<response_entry id="response_-113720864" ref_text="Open Trade Routes (Tier 5)" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<response id="response_-113720860" text="response_-113720860" >
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="GTE" id="traderJenFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="tier1_nexttrader_jen_complete" Hash="Requirement_292948548" />
+		<action type="GiveQuestSDX, SCore" id="tier1_nexttrader_jen" />
+		<action type="AddCVar, SCore" id="tier1_nexttrader_jen_complete" value="1" operator="set" />
+	</response>
+
+	<response id="response_-113720861" text="response_-113720861" >
+		<requirement type="HasCVarSDX, SCore" value="15" requirementtype="Hide" operator="GTE" id="traderJenFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="tier2_nexttrader_jen_complete" Hash="Requirement_292948548" />
+		<action type="GiveQuestSDX, SCore" id="tier2_nexttrader_jen" />
+		<action type="AddCVar, SCore" id="tier2_nexttrader_jen_complete" value="1" operator="set" />
+	</response>
+
+	<response id="response_-113720862" text="response_-113720862" >
+		<requirement type="HasCVarSDX, SCore" value="25" requirementtype="Hide" operator="GTE" id="traderJenFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="tier3_nexttrader_jen_complete" Hash="Requirement_292948548" />
+		<action type="GiveQuestSDX, SCore" id="tier3_nexttrader_jen" />
+		<action type="AddCVar, SCore" id="tier3_nexttrader_jen_complete" value="1" operator="set" />
+	</response>
+
+	<response id="response_-113720863" text="response_-113720863" >
+		<requirement type="HasCVarSDX, SCore" value="35" requirementtype="Hide" operator="GTE" id="traderJenFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="tier4_nexttrader_jen_complete" Hash="Requirement_292948548" />
+		<action type="GiveQuestSDX, SCore" id="tier4_nexttrader_jen" />
+		<action type="AddCVar, SCore" id="tier4_nexttrader_jen_complete" value="1" operator="set" />
+	</response>
+
+	<response id="response_-113720864" text="response_-113720864" >
+		<requirement type="HasCVarSDX, SCore" value="45" requirementtype="Hide" operator="GTE" id="traderJenFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="tier5_nexttrader_jen_complete" Hash="Requirement_292948548" />
+		<action type="GiveQuestSDX, SCore" id="tier5_nexttrader_jen" />
+		<action type="AddCVar, SCore" id="tier5_nexttrader_jen_complete" value="1" operator="set" />
+	</response>
+
+	<response id="TraderJenMasterScientist" text="TraderJenMasterScientist" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkMasterScientist" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="100000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="100000" />
+		<action type="AddBuff" id="perkMasterScientistLvl" />
+		<action type="AddCVar, SCore" id="perkMasterScientist" value="1" operator="set" />
+	</response>
+</set>
+
+<set xpath="/dialogs/dialog[@id='traderBob']">
+<!-- Statements -->
+	<statement id="start" text="dialog_trader_statement_start">
+		<response_entry id="shop" />
+		<response_entry id="jobsnone" />
+		<response_entry id="jobshave1" />
+		<response_entry id="jobshave2" />
+		<response_entry id="jobshave3" />
+		<response_entry id="jobshave4" />
+		<response_entry id="jobshave5" />
+		<response_entry id="jobshave6" />
+		<response_entry id="responseID_-519706824Bob" ref_text="Can you teach me to be a better crafter?" />
+		<response_entry id="responseID_-1931532972" ref_text="Can you teach me any new recipes?" />
+		<response_entry id="responseID_-1931532974" ref_text="Do you have any other work?" />
+		<response_entry id="admin" />
+		<response_entry id="done" />
+	</statement>
+
+	<statement id="background" text="dialog_trader_statement_background">
+		<response_entry id="navezgane" />
+		<response_entry id="theduke" />
+		<response_entry id="cassadores" />
+		<response_entry id="noah" />
+
+		<response_entry id="nevermind" />
+	</statement>
+
+	<statement id="navezgane" text="dialog_trader_statement_navezgane" nextstatementid="background" />
+	<statement id="theduke" text="dialog_trader_statement_theduke" nextstatementid="background" />
+	<statement id="cassadores" text="dialog_trader_statement_cassadores" nextstatementid="background" />
+	<statement id="noah" text="dialog_trader_statement_noah" nextstatementid="background" />
+
+	<statement id="currentjobs1" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="1" />
+		<response_entry id="jobsnext2" uniqueid="next" />
+		<response_entry id="jobsnext3" uniqueid="next" />
+		<response_entry id="jobsnext4" uniqueid="next" />
+		<response_entry id="jobsnext5" uniqueid="next" />
+		<response_entry id="jobsnext6" uniqueid="next" />
+		<response_entry id="nevermind" />
+	</statement>
+	
+	<statement id="currentjobs2" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="2" />
+		
+		<response_entry id="jobsprev1" uniqueid="prev" />
+		
+		<response_entry id="jobsnext3" uniqueid="next" />
+		<response_entry id="jobsnext4" uniqueid="next" />
+		<response_entry id="jobsnext5" uniqueid="next" />
+		<response_entry id="jobsnext6" uniqueid="next" />
+		<response_entry id="nevermind" />
+	</statement>
+	
+	<statement id="currentjobs3" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="3" />
+		
+		<response_entry id="jobsprev2" uniqueid="prev" />
+		<response_entry id="jobsprev1" uniqueid="prev" />
+		
+		<response_entry id="jobsnext4" uniqueid="next" />
+		<response_entry id="jobsnext5" uniqueid="next" />
+		<response_entry id="jobsnext6" uniqueid="next" />
+		<response_entry id="nevermind" />
+	</statement>
+	
+	<statement id="currentjobs4" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="4" />
+		
+		<response_entry id="jobsprev3" uniqueid="prev" />
+		<response_entry id="jobsprev2" uniqueid="prev" />
+		<response_entry id="jobsprev1" uniqueid="prev" />
+		
+		<response_entry id="jobsnext5" uniqueid="next" />
+		<response_entry id="jobsnext6" uniqueid="next" />
+		<response_entry id="nevermind" />
+	</statement>
+	
+	<statement id="currentjobs5" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="5" />
+		
+		<response_entry id="jobsprev4" uniqueid="prev" />
+		<response_entry id="jobsprev3" uniqueid="prev" />
+		<response_entry id="jobsprev2" uniqueid="prev" />
+		<response_entry id="jobsprev1" uniqueid="prev" />
+		
+		<response_entry id="jobsnext6" uniqueid="next" />
+		
+		<response_entry id="nevermind" />
+	</statement>
+	
+	<statement id="currentjobs6" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="6" />
+		
+		<response_entry id="jobsprev5" uniqueid="prev" />
+		<response_entry id="jobsprev4" uniqueid="prev" />
+		<response_entry id="jobsprev3" uniqueid="prev" />
+		<response_entry id="jobsprev2" uniqueid="prev" />
+		<response_entry id="jobsprev1" uniqueid="prev" />
+		
+		<response_entry id="nevermind" />
+	</statement>
+
+	<statement id="nojobs" text="dialog_trader_statement_nojobs" nextstatementid="start" />
+
+	<statement id="admin" text="dialog_trader_statement_admin">
+		<response_entry id="restock" />
+		<response_entry id="resetquests" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<!-- Responses -->
+	<statement id="statement_-142346460" text="statement_-142346460">
+		<response_entry id="TraderBobMasterMechanic" ref_text="Master Mechanic (100000)" />
+		<response_entry id="nevermind" />
+	</statement>
+	<statement id="statement_1491868662" text="statement_1491868662">
+		<response_entry id="response_-113720785" ref_text="Chrysanthemum Seed (200)" />
+		<response_entry id="response_-113720786" ref_text="Blueberry Pie (200)" />
+		<response_entry id="response_-113720787" ref_text="Apple Pie (200)" />
+		<response_entry id="response_-113720788" ref_text="Meat Stew (200)" />
+		<response_entry id="response_-113720789" ref_text="Chrysanthemum Seed (200)" />
+		<response_entry id="response_-113720790" ref_text="Blueberry Pie (200)" />
+		<response_entry id="response_-113720791" ref_text="Apple Pie (200)" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<response id="shop" text="dialog_trader_response_shop">
+		<action type="Trader" id="trade" />
+	</response>
+
+	<response id="jobsnone" text="dialog_trader_response_jobsnone" nextstatementid="nojobs" >
+		<requirement type="QuestStatus" value="InProgress" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobshave1" text="dialog_trader_response_jobshave" nextstatementid="currentjobs1" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="1" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+	
+	<response id="jobshave2" text="dialog_trader_response_jobshave" nextstatementid="currentjobs2" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="2" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+	
+	<response id="jobshave3" text="dialog_trader_response_jobshave" nextstatementid="currentjobs3" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="3" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+	
+	<response id="jobshave4" text="dialog_trader_response_jobshave" nextstatementid="currentjobs4" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="4" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+	
+	<response id="jobshave5" text="dialog_trader_response_jobshave" nextstatementid="currentjobs5" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="5" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+	
+	<response id="jobshave6" text="dialog_trader_response_jobshave" nextstatementid="currentjobs6" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="6" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+	
+	<response id="jobsprev1" text="dialog_trader_response_prevtier" nextstatementid="currentjobs1" >
+		<requirement type="QuestTier" value="1" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsprev2" text="dialog_trader_response_prevtier" nextstatementid="currentjobs2" >
+		<requirement type="QuestTier" value="2" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsprev3" text="dialog_trader_response_prevtier" nextstatementid="currentjobs3" >
+		<requirement type="QuestTier" value="3" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsprev4" text="dialog_trader_response_prevtier" nextstatementid="currentjobs4" >
+		<requirement type="QuestTier" value="4" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsprev5" text="dialog_trader_response_prevtier" nextstatementid="currentjobs5" >
+		<requirement type="QuestTier" value="5" requirementtype="Hide" />
+	</response>
+		
+	<response id="jobsnext2" text="dialog_trader_response_nexttier" nextstatementid="currentjobs2" >
+		<requirement type="QuestTier" value="2" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsnext3" text="dialog_trader_response_nexttier" nextstatementid="currentjobs3" >
+		<requirement type="QuestTier" value="3" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsnext4" text="dialog_trader_response_nexttier" nextstatementid="currentjobs4" >
+		<requirement type="QuestTier" value="4" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsnext5" text="dialog_trader_response_nexttier" nextstatementid="currentjobs5" >
+		<requirement type="QuestTier" value="5" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsnext6" text="dialog_trader_response_nexttier" nextstatementid="currentjobs6" >
+		<requirement type="QuestTier" value="6" requirementtype="Hide" />
+	</response>
+
+	<response id="background" text="dialog_trader_response_background" nextstatementid="background">
+	</response>
+
+	<response id="navezgane" text="dialog_trader_response_navezgane" nextstatementid="navezgane" />
+	<response id="theduke" text="dialog_trader_response_theduke" nextstatementid="theduke" />
+	<response id="cassadores" text="dialog_trader_response_cassadores" nextstatementid="cassadores" />
+	<response id="noah" text="dialog_trader_response_noah" nextstatementid="noah" />
+	<response id="whiteriveroutposts" text="dialog_trader_response_whiteriveroutposts" nextstatementid="whiteriveroutposts" />
+	<response id="nevermind" text="dialog_trader_response_nevermind" nextstatementid="start" />
+
+	<response id="admin" text="dialog_trader_response_admin" nextstatementid="admin" >
+		<requirement type="Admin" requirementtype="Hide" />
+	</response>
+
+	<response id="restock" text="dialog_trader_response_restock">
+		<action type="Trader" id="restock" />
+	</response>
+
+	<response id="resetquests" text="dialog_trader_response_resetquests">
+		<action type="Trader" id="reset_quests" />
+	</response>
+
+	<response id="done" text="dialog_trader_response_nevermind" />
+
+	<response id="responseID_-519706824Bob" text="responseID_-519706824Bob" nextstatementid="MasteryOffer">
+	</response>
+	
+	<statement id="MasteryOffer" text="MasteryOffer">
+		<response_entry id="TraderBobMasterMechanic" ref_text="Master Mechanic" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<response id="responseID_-1931532972" text="responseID_-1931532972" nextstatementid="statement_1491868662">
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="GTE" id="traderBobFaction" Hash="Requirement_292948548" />
+	</response>
+
+	<response id="response_-113720785" text="response_-113720785" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkElectricBasicCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="200" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="200" />
+		<action type="AddBuff" id="perkElecBasicsCraftingLvl" />
+		<action type="AddCVar, SCore" id="perkElectricBasicCrafting" value="1" operator="set" />
+	</response>
+
+	<response id="response_-113720786" text="response_-113720786" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="10" requirementtype="Hide" operator="GTE" id="traderBobFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="Equals" id="perkElectricBasicCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="LT" id="perkElectricBasicCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="400" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="400" />
+		<action type="AddBuff" id="perkElecBasicsCraftingLvl" />
+		<action type="AddCVar, SCore" id="perkElectricBasicCrafting" value="2" operator="set" />
+	</response>
+
+	<response id="response_-113720787" text="response_-113720787" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkElectricTrapRangedCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="200" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="200" />
+		<action type="AddBuff" id="perkElecRangedCraftingLvl" />
+		<action type="AddCVar, SCore" id="perkElectricTrapRangedCrafting" value="1" operator="set" />
+	</response>
+
+	<response id="response_-113720788" text="response_-113720788" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="10" requirementtype="Hide" operator="GTE" id="traderBobFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="Equals" id="perkElectricTrapRangedCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="LT" id="perkElectricTrapRangedCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="400" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="400" />
+		<action type="AddBuff" id="perkElecRangedCraftingLvl" />
+		<action type="AddCVar, SCore" id="perkElectricTrapRangedCrafting" value="2" operator="set" />
+	</response>
+
+	<response id="response_-113720789" text="response_-113720789" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="15" requirementtype="Hide" operator="GTE" id="traderBobFaction" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="Equals" id="perkElectricTrapRangedCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="LT" id="perkElectricTrapRangedCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="600" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="600" />
+		<action type="AddBuff" id="perkElecRangedCraftingLvl" />
+		<action type="AddCVar, SCore" id="perkElectricTrapRangedCrafting" value="3" operator="set" />
+	</response>
+
+	<response id="response_-113720790" text="response_-113720790" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="20" requirementtype="Hide" operator="GTE" id="traderBobFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="Equals" id="perkElectricTrapRangedCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="LT" id="perkElectricTrapRangedCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="800" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="800" />
+		<action type="AddBuff" id="perkElecRangedCraftingLvl" />
+		<action type="AddCVar, SCore" id="perkElectricTrapRangedCrafting" value="4" operator="set" />
+	</response>
+
+	<response id="response_-113720791" text="response_-113720791" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="25" requirementtype="Hide" operator="GTE" id="traderBobFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="Equals" id="perkElectricTrapRangedCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="LT" id="perkElectricTrapRangedCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="1000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="1000" />
+		<action type="AddBuff" id="perkElecRangedCraftingLvl" />
+		<action type="AddCVar, SCore" id="perkElectricTrapRangedCrafting" value="5" operator="set" />
+	</response>
+
+	<response id="responseID_-1931532974" text="responseID_-1931532973" nextstatementid="statement_1491868664">
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="GTE" id="traderBobFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="tier5_nexttrader_bob_complete" Hash="Requirement_292948548" />
+	</response>
+
+	<statement id="statement_1491868664" text="statement_1491868663">
+		<response_entry id="response_-113720865" ref_text="Open Trade Routes (Tier 1)" />
+		<response_entry id="response_-113720866" ref_text="Open Trade Routes (Tier 2)" />
+		<response_entry id="response_-113720867" ref_text="Open Trade Routes (Tier 3)" />
+		<response_entry id="response_-113720868" ref_text="Open Trade Routes (Tier 4)" />
+		<response_entry id="response_-113720869" ref_text="Open Trade Routes (Tier 5)" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<response id="response_-113720865" text="response_-113720860" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="GTE" id="traderBobFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="tier1_nexttrader_bob_complete" Hash="Requirement_292948548" />
+		<action type="GiveQuestSDX, SCore" id="tier1_nexttrader_bob" />
+		<action type="AddCVar, SCore" id="tier1_nexttrader_bob_complete" value="1" operator="set" />
+	</response>
+
+	<response id="response_-113720866" text="response_-113720861" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="15" requirementtype="Hide" operator="GTE" id="traderBobFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="tier2_nexttrader_bob_complete" Hash="Requirement_292948548" />
+		<action type="GiveQuestSDX, SCore" id="tier2_nexttrader_bob" />
+		<action type="AddCVar, SCore" id="tier2_nexttrader_bob_complete" value="1" operator="set" />
+	</response>
+
+	<response id="response_-113720867" text="response_-113720862" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="25" requirementtype="Hide" operator="GTE" id="traderBobFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="tier3_nexttrader_bob_complete" Hash="Requirement_292948548" />
+		<action type="GiveQuestSDX, SCore" id="tier3_nexttrader_bob" />
+		<action type="AddCVar, SCore" id="tier3_nexttrader_bob_complete" value="1" operator="set" />
+	</response>
+
+	<response id="response_-113720868" text="response_-113720863" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="35" requirementtype="Hide" operator="GTE" id="traderBobFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="tier4_nexttrader_bob_complete" Hash="Requirement_292948548" />
+		<action type="GiveQuestSDX, SCore" id="tier4_nexttrader_bob" />
+		<action type="AddCVar, SCore" id="tier4_nexttrader_bob_complete" value="1" operator="set" />
+	</response>
+
+	<response id="response_-113720869" text="response_-113720864" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="45" requirementtype="Hide" operator="GTE" id="traderBobFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="tier5_nexttrader_bob_complete" Hash="Requirement_292948548" />
+		<action type="GiveQuestSDX, SCore" id="tier5_nexttrader_bob" />
+		<action type="AddCVar, SCore" id="tier5_nexttrader_bob_complete" value="1" operator="set" />
+	</response>
+
+	<response id="TraderBobMasterMechanic" text="TraderBobMasterMechanic" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkMasterMechanic" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="100000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="100000" />
+		<action type="AddBuff" id="perkMasterMechanicLvl" />
+		<action type="AddCVar, SCore" id="perkMasterMechanic" value="1" operator="set" />
+	</response>
+</set>
+
+<set xpath="/dialogs/dialog[@id='traderScout']">
+<!-- Statements -->
+	<statement id="start" text="dialog_trader_statement_start">
+		<response_entry id="shop" />
+		<response_entry id="jobsnone" />
+		<response_entry id="jobshave1" />
+		<response_entry id="jobshave2" />
+		<response_entry id="jobshave3" />
+		<response_entry id="jobshave4" />
+		<response_entry id="jobshave5" />
+		<response_entry id="jobshave6" />
+		<response_entry id="ScoutQuestAsk" ref_text="Do you have any jobs?" />
+		<response_entry id="WhiteRiverQuests" ref_text="Do you have any other work?" />
+		<response_entry id="responseID_-519706824" ref_text="Can you teach me to be a better crafter?" />
+		<response_entry id="admin" />
+		<response_entry id="done" />
+	</statement>
+
+	<statement id="currentjobs1" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="1" />
+		<quest_entry listindex="1" tier="1" />
+		<quest_entry listindex="2" tier="1" />
+		<quest_entry listindex="3" tier="1" />
+		<quest_entry listindex="4" tier="1" />
+		
+		<response_entry id="jobsnext2" uniqueid="next" />
+		<response_entry id="jobsnext3" uniqueid="next" />
+		<response_entry id="jobsnext4" uniqueid="next" />
+		<response_entry id="jobsnext5" uniqueid="next" />
+		<response_entry id="jobsnext6" uniqueid="next" />
+		<response_entry id="nevermind" />
+	</statement>
+	
+	<statement id="currentjobs2" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="2" />
+		<quest_entry listindex="1" tier="2" />
+		<quest_entry listindex="2" tier="2" />
+		<quest_entry listindex="3" tier="2" />
+		<quest_entry listindex="4" tier="2" />
+		
+		<response_entry id="jobsprev1" uniqueid="prev" />
+		
+		<response_entry id="jobsnext3" uniqueid="next" />
+		<response_entry id="jobsnext4" uniqueid="next" />
+		<response_entry id="jobsnext5" uniqueid="next" />
+		<response_entry id="jobsnext6" uniqueid="next" />
+		<response_entry id="nevermind" />
+	</statement>
+	
+	<statement id="currentjobs3" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="3" />
+		<quest_entry listindex="1" tier="3" />
+		<quest_entry listindex="2" tier="3" />
+		<quest_entry listindex="3" tier="3" />
+		<quest_entry listindex="4" tier="3" />
+		
+		<response_entry id="jobsprev2" uniqueid="prev" />
+		<response_entry id="jobsprev1" uniqueid="prev" />
+		
+		<response_entry id="jobsnext4" uniqueid="next" />
+		<response_entry id="jobsnext5" uniqueid="next" />
+		<response_entry id="jobsnext6" uniqueid="next" />
+		<response_entry id="nevermind" />
+	</statement>
+	
+	<statement id="currentjobs4" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="4" />
+		<quest_entry listindex="1" tier="4" />
+		<quest_entry listindex="2" tier="4" />
+		<quest_entry listindex="3" tier="4" />
+		<quest_entry listindex="4" tier="4" />
+		
+		<response_entry id="jobsprev3" uniqueid="prev" />
+		<response_entry id="jobsprev2" uniqueid="prev" />
+		<response_entry id="jobsprev1" uniqueid="prev" />
+		
+		<response_entry id="jobsnext5" uniqueid="next" />
+		<response_entry id="jobsnext6" uniqueid="next" />
+		<response_entry id="nevermind" />
+	</statement>
+	
+	<statement id="currentjobs5" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="5" />
+		<quest_entry listindex="1" tier="5" />
+		<quest_entry listindex="2" tier="5" />
+		<quest_entry listindex="3" tier="5" />
+		<quest_entry listindex="4" tier="5" />
+		
+		<response_entry id="jobsprev4" uniqueid="prev" />
+		<response_entry id="jobsprev3" uniqueid="prev" />
+		<response_entry id="jobsprev2" uniqueid="prev" />
+		<response_entry id="jobsprev1" uniqueid="prev" />
+		
+		<response_entry id="jobsnext6" uniqueid="next" />
+		
+		<response_entry id="nevermind" />
+	</statement>
+	
+	<statement id="currentjobs6" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="6" />
+		<quest_entry listindex="1" tier="6" />
+		<quest_entry listindex="2" tier="6" />
+		<quest_entry listindex="3" tier="6" />
+		<quest_entry listindex="4" tier="6" />
+		
+		<response_entry id="jobsprev5" uniqueid="prev" />
+		<response_entry id="jobsprev4" uniqueid="prev" />
+		<response_entry id="jobsprev3" uniqueid="prev" />
+		<response_entry id="jobsprev2" uniqueid="prev" />
+		<response_entry id="jobsprev1" uniqueid="prev" />
+		
+		<response_entry id="nevermind" />
+	</statement>
+
+	<statement id="currentjobsspecial" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry type="special" listindex="0" />
+		<quest_entry type="special" listindex="1" />
+		<quest_entry type="special" listindex="2" />
+		<quest_entry type="special" listindex="3" />
+		<quest_entry type="special" listindex="4" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<statement id="nojobs" text="dialog_trader_statement_nojobs" nextstatementid="start" />
+
+	<statement id="admin" text="dialog_trader_statement_admin">
+		<response_entry id="restock" />
+		<response_entry id="resetquests" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	
+	<response id="ScoutQuestAsk" text="ScoutQuestAskText" nextstatementid="ScoutQuestOffer">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="whiteriver_visit_razor_complete" Hash="Requirement_292948548" /> 
+	</response>
+	
+	<statement id="ScoutQuestOffer" text="ScoutQuestOfferText">			
+		<response_entry id="ScoutQuestOne" ref_text="The Test" />
+		<response_entry id="nevermind" />
+	</statement>
+	
+	<response id="ScoutQuestOne" text="ScoutQuestOne" >
+		<action type="GiveQuestSDX, SCore" id="challenge_dogdaysareoverT2" />
+	</response>
+	<!-- Responses -->
+	<response id="shop" text="dialog_trader_response_shop">
+		<action type="Trader" id="trade" />
+	</response>
+
+	<response id="jobsnone" text="dialog_trader_response_jobsnone" nextstatementid="nojobs" >
+		<requirement type="QuestStatus" value="InProgress" requirementtype="Hide" />
+	</response>
+	<response id="jobshave1" text="dialog_trader_response_jobshave" nextstatementid="currentjobs1" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="1" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+
+	<response id="jobshave2" text="dialog_trader_response_jobshave" nextstatementid="currentjobs2" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="2" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+
+	<response id="jobshave3" text="dialog_trader_response_jobshave" nextstatementid="currentjobs3" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="3" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+
+	<response id="jobshave4" text="dialog_trader_response_jobshave" nextstatementid="currentjobs4" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="4" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+
+	<response id="jobshave5" text="dialog_trader_response_jobshave" nextstatementid="currentjobs5" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="5" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+
+	<response id="jobshave6" text="dialog_trader_response_jobshave" nextstatementid="currentjobs6" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="6" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+	
+	<response id="jobsprev1" text="dialog_trader_response_prevtier" nextstatementid="currentjobs1" >
+		<requirement type="QuestTier" value="1" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsprev2" text="dialog_trader_response_prevtier" nextstatementid="currentjobs2" >
+		<requirement type="QuestTier" value="2" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsprev3" text="dialog_trader_response_prevtier" nextstatementid="currentjobs3" >
+		<requirement type="QuestTier" value="3" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsprev4" text="dialog_trader_response_prevtier" nextstatementid="currentjobs4" >
+		<requirement type="QuestTier" value="4" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsprev5" text="dialog_trader_response_prevtier" nextstatementid="currentjobs5" >
+		<requirement type="QuestTier" value="5" requirementtype="Hide" />
+	</response>
+		
+	<response id="jobsnext2" text="dialog_trader_response_nexttier" nextstatementid="currentjobs2" >
+		<requirement type="QuestTier" value="2" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsnext3" text="dialog_trader_response_nexttier" nextstatementid="currentjobs3" >
+		<requirement type="QuestTier" value="3" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsnext4" text="dialog_trader_response_nexttier" nextstatementid="currentjobs4" >
+		<requirement type="QuestTier" value="4" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsnext5" text="dialog_trader_response_nexttier" nextstatementid="currentjobs5" >
+		<requirement type="QuestTier" value="5" requirementtype="Hide" />
+	</response>
+	
+	<response id="jobsnext6" text="dialog_trader_response_nexttier" nextstatementid="currentjobs6" >
+		<requirement type="QuestTier" value="6" requirementtype="Hide" />
+	</response>
+
+	<response id="background" text="dialog_trader_response_background" nextstatementid="background">
+	</response>
+
+	<response id="navezgane" text="dialog_trader_response_navezgane" nextstatementid="navezgane" />
+	<response id="theduke" text="dialog_trader_response_theduke" nextstatementid="theduke" />
+	<response id="cassadores" text="dialog_trader_response_cassadores" nextstatementid="cassadores" />
+	<response id="noah" text="dialog_trader_response_noah" nextstatementid="noah" />
+	<response id="whiteriveroutposts" text="dialog_trader_response_whiteriveroutposts" nextstatementid="whiteriveroutposts" />
+	<response id="nevermind" text="dialog_trader_response_nevermind" nextstatementid="start" />
+
+	<response id="admin" text="dialog_trader_response_admin" nextstatementid="admin" >
+		<requirement type="Admin" requirementtype="Hide" />
+	</response>
+
+	<response id="restock" text="dialog_trader_response_restock">
+		<action type="Trader" id="restock" />
+	</response>
+
+	<response id="resetquests" text="dialog_trader_response_resetquests">
+		<action type="Trader" id="reset_quests" />
+	</response>
+
+	<response id="done" text="dialog_trader_response_nevermind" />
+
+	<!-- This is going to be for the quests to send players to the various quest NPCs -->
+	<response id="WhiteRiverQuests" text="responseID_-1931532973" nextstatementid="WhiteRiverQuestList">
+		<!--<requirement type="HasCVarSDX, SCore" value="10" requirementtype="Hide" operator="GTE" id="whiteRiverSurvivorsFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="whiteriver_visit_razor_complete" Hash="Requirement_292948548" />-->
+	</response>
+
+	<statement id="WhiteRiverQuestList" text="statement_1491868663">
+		<response_entry id="WhiteRiverQuestOne" ref_text="Open Trade Routes (Tier 1)" /> 
+		<response_entry id="nevermind" />
+	</statement>
+
+	<response id="WhiteRiverQuestOne" text="response_-113720860" nextstatementid="start">  
+		<!--<requirement type="HasCVarSDX, SCore" value="10" requirementtype="Hide" operator="GTE" id="whiteRiverSurvivorsFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="whiteriver_visit_razor_complete" Hash="Requirement_292948548" />-->
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="WhiteRiverQuestOneStarted" Hash="Requirement_292948548" />
+		<action type="GiveQuestSDX, SCore" id="whiteriver_visit_razor" />
+		<action type="AddCVar, SCore" id="WhiteRiverQuestOneStarted" value="1"/>
+	</response>
+	
+	<response id="responseID_-519706824" text="responseID_-519706824" nextstatementid="statement_-142346460">
+	</response>
+
+	<statement id="statement_-142346460" text="statement_-142346460">
+		<response_entry id="response_1135977886" ref_text="Light Armor Crafting (1000)" />
+		<response_entry id="response_1135977887" ref_text="Light Armor Crafting (2000)" />
+		<response_entry id="response_1135977888" ref_text="Light Armor Crafting (3000)" />
+		<response_entry id="response_1135977889" ref_text="Light Armor Crafting (4000)" />
+		<response_entry id="response_1135977890" ref_text="Light Armor Crafting (5000)" />
+		<response_entry id="response_2246088991" ref_text="Heavy Armor Crafting (1000)" />
+		<response_entry id="response_2246088992" ref_text="Heavy Armor Crafting (2000)" />
+		<response_entry id="response_2246088993" ref_text="Heavy Armor Crafting (3000)" />
+		<response_entry id="response_2246088994" ref_text="Heavy Armor Crafting (4000)" />
+		<response_entry id="response_2246088995" ref_text="Heavy Armor Crafting (5000)" />
+		<response_entry id="response_1135977922" ref_text="Bladed Weapon Crafting (1000)" />
+		<response_entry id="response_1135977923" ref_text="Bladed Weapon Crafting (2000)" />
+		<response_entry id="response_1135977924" ref_text="Bladed Weapon Crafting (3000)" />
+		<response_entry id="response_1135977925" ref_text="Bladed Weapon Crafting (4000)" />
+		<response_entry id="response_1135977926" ref_text="Bladed Weapon Crafting (5000)" />
+		<response_entry id="response_3246088991" ref_text="Blunt Weapon Crafting (1000)" />
+		<response_entry id="response_3246088992" ref_text="Blunt Weapon Crafting (2000)" />
+		<response_entry id="response_3246088993" ref_text="Blunt Weapon Crafting (3000)" />
+		<response_entry id="response_3246088994" ref_text="Blunt Weapon Crafting (4000)" />
+		<response_entry id="response_3246088995" ref_text="Blunt Weapon Crafting (5000)" />
+		<response_entry id="response_1135977896" ref_text="Auto Gun Crafting (1000)" />
+		<response_entry id="response_1135977897" ref_text="Auto Gun Crafting (2000)" />
+		<response_entry id="response_1135977898" ref_text="Auto Gun Crafting (3000)" />
+		<response_entry id="response_1135977899" ref_text="Auto Gun Crafting (4000)" />
+		<response_entry id="response_1135977900" ref_text="Auto Gun Crafting (5000)" />
+		<response_entry id="response_4435977896" ref_text="Pistol Crafting (1000)" />
+		<response_entry id="response_4435977897" ref_text="Pistol Crafting (2000)" />
+		<response_entry id="response_4435977898" ref_text="Pistol Crafting (3000)" />
+		<response_entry id="response_4435977899" ref_text="Pistol Crafting (4000)" />
+		<response_entry id="response_4435977900" ref_text="Pistol Crafting (5000)" />
+		<response_entry id="response_5535977896" ref_text="Rifle Crafting (1000)" />
+		<response_entry id="response_5535977897" ref_text="Rifle Crafting (2000)" />
+		<response_entry id="response_5535977898" ref_text="Rifle Crafting (3000)" />
+		<response_entry id="response_5535977899" ref_text="Rifle Crafting (4000)" />
+		<response_entry id="response_5535977900" ref_text="Rifle Crafting (5000)" />
+		<response_entry id="response_6635977896" ref_text="Shotgun Crafting (1000)" />
+		<response_entry id="response_6635977897" ref_text="Shotgun Crafting (2000)" />
+		<response_entry id="response_6635977898" ref_text="Shotgun Crafting (3000)" />
+		<response_entry id="response_6635977899" ref_text="Shotgun Crafting (4000)" />
+		<response_entry id="response_6635977900" ref_text="Shotgun Crafting (5000)" />
+		<response_entry id="response_7735977896" ref_text="Bow Crafting (1000)" />
+		<response_entry id="response_7735977897" ref_text="Bow Crafting (2000)" />
+		<response_entry id="response_7735977898" ref_text="Bow Crafting (3000)" />
+		<response_entry id="response_7735977899" ref_text="Bow Crafting (4000)" />
+		<response_entry id="response_7735977900" ref_text="Bow Crafting (5000)" />
+		<response_entry id="response_1135977905" ref_text="Tool Crafting (1000)" />
+		<response_entry id="response_1135977906" ref_text="Tool Crafting (2000)" />
+		<response_entry id="response_1135977907" ref_text="Tool Crafting (3000)" />
+		<response_entry id="response_1135977908" ref_text="Tool Crafting (4000)" />
+		<response_entry id="response_1135977909" ref_text="Tool Crafting (5000)" />
+		<response_entry id="response_1135977914" ref_text="Science Crafting (1000)" />
+		<response_entry id="response_1135977915" ref_text="Science Crafting (2000)" />
+		<response_entry id="response_1135977916" ref_text="Science Crafting (3000)" />
+		<response_entry id="response_1135977917" ref_text="Science Crafting (4000)" />
+		<response_entry id="response_1135977918" ref_text="Science Crafting (5000)" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<response id="response_1135977886" text="response_1135977886" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkHeavyArmorCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="3000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="3000" />
+		<action type="AddBuff" id="perkCraftArmorLvl" />
+		<action type="AddCVar, SCore" id="perkHeavyArmorCrafting" value="1" operator="set" />
+	</response>
+
+	<response id="response_1135977887" text="response_1135977887" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="Equals" id="perkHeavyArmorCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="LT" id="perkHeavyArmorCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="6000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="6000" />
+		<action type="AddBuff" id="perkCraftArmorLvl" />
+		<action type="AddCVar, SCore" id="perkHeavyArmorCrafting" value="2" operator="set" />
+	</response>
+
+	<response id="response_1135977888" text="response_1135977888" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="Equals" id="perkHeavyArmorCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="LT" id="perkHeavyArmorCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="9000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="9000" />
+		<action type="AddBuff" id="perkCraftArmorLvl" />
+		<action type="AddCVar, SCore" id="perkHeavyArmorCrafting" value="3" operator="set" />
+	</response>
+
+	<response id="response_1135977889" text="response_1135977889" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="Equals" id="perkHeavyArmorCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="LT" id="perkHeavyArmorCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="12000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="12000" />
+		<action type="AddBuff" id="perkCraftArmorLvl" />
+		<action type="AddCVar, SCore" id="perkHeavyArmorCrafting" value="4" operator="set" />
+	</response>
+
+	<response id="response_1135977890" text="response_1135977890" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="Equals" id="perkHeavyArmorCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="LT" id="perkHeavyArmorCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="15000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="15000" />
+		<action type="AddBuff" id="perkCraftArmorLvl" />
+		<action type="AddCVar, SCore" id="perkHeavyArmorCrafting" value="5" operator="set" />
+	</response>
+	
+	<response id="response_2246088991" text="response_2246088991" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkLightArmorCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="3000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="3000" />
+		<action type="AddBuff" id="perkCraftLightArmorLvl" />
+		<action type="AddCVar, SCore" id="perkLightArmorCrafting" value="1" operator="set" />
+	</response>
+
+	<response id="response_2246088992" text="response_2246088992" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="Equals" id="perkLightArmorCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="LT" id="perkLightArmorCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="6000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="6000" />
+		<action type="AddBuff" id="perkCraftLightArmorLvl" />
+		<action type="AddCVar, SCore" id="perkLightArmorCrafting" value="2" operator="set" />
+	</response>
+
+	<response id="response_2246088993" text="response_2246088993" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="Equals" id="perkLightArmorCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="LT" id="perkLightArmorCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="9000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="9000" />
+		<action type="AddBuff" id="perkCraftLightArmorLvl" />
+		<action type="AddCVar, SCore" id="perkLightArmorCrafting" value="3" operator="set" />
+	</response>
+
+	<response id="response_2246088994" text="response_2246088994" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="Equals" id="perkLightArmorCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="LT" id="perkLightArmorCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="12000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="12000" />
+		<action type="AddBuff" id="perkCraftLightArmorLvl" />
+		<action type="AddCVar, SCore" id="perkLightArmorCrafting" value="4" operator="set" />
+	</response>
+
+	<response id="response_2246088995" text="response_2246088995" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="Equals" id="perkLightArmorCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="LT" id="perkLightArmorCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="15000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="15000" />
+		<action type="AddBuff" id="perkCraftLightArmorLvl" />
+		<action type="AddCVar, SCore" id="perkLightArmorCrafting" value="5" operator="set" />
+	</response>
+
+	<response id="response_1135977922" text="response_1135977922" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkBladedWeaponCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="3000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="3000" />
+		<action type="AddBuff" id="perkCraftWeaponsLvl" />
+		<action type="AddCVar, SCore" id="perkBladedWeaponCrafting" value="1" operator="set" />
+	</response>
+
+	<response id="response_1135977923" text="response_1135977923" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="Equals" id="perkBladedWeaponCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="LT" id="perkBladedWeaponCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="6000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="6000" />
+		<action type="AddBuff" id="perkCraftWeaponsLvl" />
+		<action type="AddCVar, SCore" id="perkBladedWeaponCrafting" value="2" operator="set" />
+	</response>
+
+	<response id="response_1135977924" text="response_1135977924" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="Equals" id="perkBladedWeaponCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="LT" id="perkBladedWeaponCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="9000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="9000" />
+		<action type="AddBuff" id="perkCraftWeaponsLvl" />
+		<action type="AddCVar, SCore" id="perkBladedWeaponCrafting" value="3" operator="set" />
+	</response>
+
+	<response id="response_1135977925" text="response_1135977925" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="Equals" id="perkBladedWeaponCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="LT" id="perkBladedWeaponCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="12000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="12000" />
+		<action type="AddBuff" id="perkCraftWeaponsLvl" />
+		<action type="AddCVar, SCore" id="perkBladedWeaponCrafting" value="4" operator="set" />
+	</response>
+
+	<response id="response_1135977926" text="response_1135977926" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="Equals" id="perkBladedWeaponCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="LT" id="perkBladedWeaponCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="15000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="15000" />
+		<action type="AddBuff" id="perkCraftWeaponsLvl" />
+		<action type="AddCVar, SCore" id="perkBladedWeaponCrafting" value="5" operator="set" />
+	</response>
+	
+	<response id="response_3246088991" text="response_3246088991" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkBluntWeaponCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="3000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="3000" />
+		<action type="AddBuff" id="perkCraftBluntWeaponsLvl" />
+		<action type="AddCVar, SCore" id="perkBluntWeaponCrafting" value="1" operator="set" />
+	</response>
+
+	<response id="response_3246088992" text="response_3246088992" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="Equals" id="perkBluntWeaponCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="LT" id="perkBluntWeaponCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="6000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="6000" />
+		<action type="AddBuff" id="perkCraftBluntWeaponsLvl" />
+		<action type="AddCVar, SCore" id="perkBluntWeaponCrafting" value="2" operator="set" />
+	</response>
+
+	<response id="response_3246088993" text="response_3246088993" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="Equals" id="perkBluntWeaponCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="LT" id="perkBluntWeaponCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="9000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="9000" />
+		<action type="AddBuff" id="perkCraftBluntWeaponsLvl" />
+		<action type="AddCVar, SCore" id="perkBluntWeaponCrafting" value="3" operator="set" />
+	</response>
+
+	<response id="response_3246088994" text="response_3246088994" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="Equals" id="perkBluntWeaponCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="LT" id="perkBluntWeaponCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="12000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="12000" />
+		<action type="AddBuff" id="perkCraftBluntWeaponsLvl" />
+		<action type="AddCVar, SCore" id="perkBluntWeaponCrafting" value="4" operator="set" />
+	</response>
+
+	<response id="response_3246088995" text="response_3246088995" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="Equals" id="perkBluntWeaponCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="LT" id="perkBluntWeaponCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="15000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="15000" />
+		<action type="AddBuff" id="perkCraftBluntWeaponsLvl" />
+		<action type="AddCVar, SCore" id="perkBluntWeaponCrafting" value="5" operator="set" />
+	</response>
+
+	<response id="response_1135977896" text="response_1135977896" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkAutoGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="3000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="3000" />
+		<action type="AddBuff" id="perkCraftGunLvl" />
+		<action type="AddCVar, SCore" id="perkAutoGunCrafting" value="1" operator="set" />
+	</response>
+
+	<response id="response_1135977897" text="response_1135977897" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="Equals" id="perkAutoGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="LT" id="perkAutoGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="6000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="6000" />
+		<action type="AddBuff" id="perkCraftGunLvl" />
+		<action type="AddCVar, SCore" id="perkAutoGunCrafting" value="2" operator="set" />
+	</response>
+
+	<response id="response_1135977898" text="response_1135977898" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="Equals" id="perkAutoGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="LT" id="perkAutoGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="9000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="9000" />
+		<action type="AddBuff" id="perkCraftGunLvl" />
+		<action type="AddCVar, SCore" id="perkAutoGunCrafting" value="3" operator="set" />
+	</response>
+
+	<response id="response_1135977899" text="response_1135977899" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="Equals" id="perkAutoGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="LT" id="perkAutoGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="12000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="12000" />
+		<action type="AddBuff" id="perkCraftGunLvl" />
+		<action type="AddCVar, SCore" id="perkAutoGunCrafting" value="4" operator="set" />
+	</response>
+
+	<response id="response_1135977900" text="response_1135977900" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="Equals" id="perkAutoGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="LT" id="perkAutoGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="15000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="15000" />
+		<action type="AddBuff" id="perkCraftGunLvl" />
+		<action type="AddCVar, SCore" id="perkAutoGunCrafting" value="5" operator="set" />
+	</response>
+	
+	<response id="response_4435977896" text="response_4435977896" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkPistolGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="3000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="3000" />
+		<action type="AddBuff" id="perkCraftPistolLvl" />
+		<action type="AddCVar, SCore" id="perkPistolGunCrafting" value="1" operator="set" />
+	</response>
+
+	<response id="response_4435977897" text="response_4435977897" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="Equals" id="perkPistolGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="LT" id="perkPistolGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="6000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="6000" />
+		<action type="AddBuff" id="perkCraftPistolLvl" />
+		<action type="AddCVar, SCore" id="perkPistolGunCrafting" value="2" operator="set" />
+	</response>
+
+	<response id="response_4435977898" text="response_4435977898" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="Equals" id="perkPistolGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="LT" id="perkPistolGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="9000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="9000" />
+		<action type="AddBuff" id="perkCraftPistolLvl" />
+		<action type="AddCVar, SCore" id="perkPistolGunCrafting" value="3" operator="set" />
+	</response>
+
+	<response id="response_4435977899" text="response_4435977899" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="Equals" id="perkPistolGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="LT" id="perkPistolGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="12000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="12000" />
+		<action type="AddBuff" id="perkCraftPistolLvl" />
+		<action type="AddCVar, SCore" id="perkPistolGunCrafting" value="4" operator="set" />
+	</response>
+
+	<response id="response_4435977900" text="response_4435977900" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="Equals" id="perkPistolGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="LT" id="perkPistolGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="15000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="15000" />
+		<action type="AddBuff" id="perkCraftPistolLvl" />
+		<action type="AddCVar, SCore" id="perkPistolGunCrafting" value="5" operator="set" />
+	</response>
+	
+	<response id="response_5535977896" text="response_5535977896" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkRifleGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="3000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="3000" />
+		<action type="AddBuff" id="perkCraftRifleLvl" />
+		<action type="AddCVar, SCore" id="perkRifleGunCrafting" value="1" operator="set" />
+	</response>
+
+	<response id="response_5535977897" text="response_5535977897" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="Equals" id="perkRifleGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="LT" id="perkRifleGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="6000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="6000" />
+		<action type="AddBuff" id="perkCraftRifleLvl" />
+		<action type="AddCVar, SCore" id="perkRifleGunCrafting" value="2" operator="set" />
+	</response>
+
+	<response id="response_5535977898" text="response_5535977898" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="Equals" id="perkRifleGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="LT" id="perkRifleGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="9000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="9000" />
+		<action type="AddBuff" id="perkCraftRifleLvl" />
+		<action type="AddCVar, SCore" id="perkRifleGunCrafting" value="3" operator="set" />
+	</response>
+
+	<response id="response_5535977899" text="response_5535977899" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="Equals" id="perkRifleGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="LT" id="perkRifleGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="12000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="12000" />
+		<action type="AddBuff" id="perkCraftRifleLvl" />
+		<action type="AddCVar, SCore" id="perkRifleGunCrafting" value="4" operator="set" />
+	</response>
+
+	<response id="response_5535977900" text="response_5535977900" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="Equals" id="perkRifleGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="LT" id="perkRifleGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="15000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="15000" />
+		<action type="AddBuff" id="perkCraftRifleLvl" />
+		<action type="AddCVar, SCore" id="perkRifleGunCrafting" value="5" operator="set" />
+	</response>
+	
+	<response id="response_6635977896" text="response_6635977896" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkShotgunGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="3000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="3000" />
+		<action type="AddBuff" id="perkCraftShotgunLvl" />
+		<action type="AddCVar, SCore" id="perkShotgunGunCrafting" value="1" operator="set" />
+	</response>
+
+	<response id="response_6635977897" text="response_6635977897" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="Equals" id="perkShotgunGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="LT" id="perkShotgunGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="6000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="6000" />
+		<action type="AddBuff" id="perkCraftShotgunLvl" />
+		<action type="AddCVar, SCore" id="perkShotgunGunCrafting" value="2" operator="set" />
+	</response>
+
+	<response id="response_6635977898" text="response_6635977898" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="Equals" id="perkShotgunGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="LT" id="perkShotgunGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="9000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="9000" />
+		<action type="AddBuff" id="perkCraftShotgunLvl" />
+		<action type="AddCVar, SCore" id="perkShotgunGunCrafting" value="3" operator="set" />
+	</response>
+
+	<response id="response_6635977899" text="response_6635977899" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="Equals" id="perkShotgunGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="LT" id="perkShotgunGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="12000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="12000" />
+		<action type="AddBuff" id="perkCraftShotgunLvl" />
+		<action type="AddCVar, SCore" id="perkShotgunGunCrafting" value="4" operator="set" />
+	</response>
+
+	<response id="response_6635977900" text="response_6635977900" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="Equals" id="perkShotgunGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="LT" id="perkShotgunGunCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="15000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="15000" />
+		<action type="AddBuff" id="perkCraftShotgunLvl" />
+		<action type="AddCVar, SCore" id="perkShotgunGunCrafting" value="5" operator="set" />
+	</response>
+	
+	<response id="response_7735977896" text="response_7735977896" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkBowCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="3000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="3000" />
+		<action type="AddBuff" id="perkCraftBowLvl" />
+		<action type="AddCVar, SCore" id="perkBowCrafting" value="1" operator="set" />
+	</response>
+
+	<response id="response_7735977897" text="response_7735977897" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="Equals" id="perkBowCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="LT" id="perkBowCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="6000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="6000" />
+		<action type="AddBuff" id="perkCraftBowLvl" />
+		<action type="AddCVar, SCore" id="perkBowCrafting" value="2" operator="set" />
+	</response>
+
+	<response id="response_7735977898" text="response_7735977898" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="Equals" id="perkBowCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="LT" id="perkBowCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="9000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="9000" />
+		<action type="AddBuff" id="perkCraftBowLvl" />
+		<action type="AddCVar, SCore" id="perkBowCrafting" value="3" operator="set" />
+	</response>
+
+	<response id="response_7735977899" text="response_7735977899" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="Equals" id="perkBowCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="LT" id="perkBowCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="12000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="12000" />
+		<action type="AddBuff" id="perkCraftBowLvl" />
+		<action type="AddCVar, SCore" id="perkBowCrafting" value="4" operator="set" />
+	</response>
+
+	<response id="response_7735977900" text="response_7735977900" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="Equals" id="perkBowCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="LT" id="perkBowCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="15000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="15000" />
+		<action type="AddBuff" id="perkCraftBowLvl" />
+		<action type="AddCVar, SCore" id="perkBowCrafting" value="5" operator="set" />
+	</response>
+
+	<response id="response_1135977905" text="response_1135977905" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkToolCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="3000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="3000" />
+		<action type="AddBuff" id="perkCraftToolLvl" />
+		<action type="AddCVar, SCore" id="perkToolCrafting" value="1" operator="set" />
+	</response>
+
+	<response id="response_1135977906" text="response_1135977906" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="Equals" id="perkToolCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="LT" id="perkToolCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="6000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="6000" />
+		<action type="AddBuff" id="perkCraftToolLvl" />
+		<action type="AddCVar, SCore" id="perkToolCrafting" value="2" operator="set" />
+	</response>
+
+	<response id="response_1135977907" text="response_1135977907" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="Equals" id="perkToolCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="LT" id="perkToolCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="9000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="9000" />
+		<action type="AddBuff" id="perkCraftToolLvl" />
+		<action type="AddCVar, SCore" id="perkToolCrafting" value="3" operator="set" />
+	</response>
+
+	<response id="response_1135977908" text="response_1135977908" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="Equals" id="perkToolCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="LT" id="perkToolCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="12000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="12000" />
+		<action type="AddBuff" id="perkCraftToolLvl" />
+		<action type="AddCVar, SCore" id="perkToolCrafting" value="4" operator="set" />
+	</response>
+
+	<response id="response_1135977909" text="response_1135977909" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="Equals" id="perkToolCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="LT" id="perkToolCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="15000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="15000" />
+		<action type="AddBuff" id="perkCraftToolLvl" />
+		<action type="AddCVar, SCore" id="perkToolCrafting" value="5" operator="set" />
+	</response>
+
+	<response id="response_1135977914" text="response_1135977914" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkScienceCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="3000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="3000" />
+		<action type="AddBuff" id="perkCraftScienceLvl" />
+		<action type="AddCVar, SCore" id="perkScienceCrafting" value="1" operator="set" />
+	</response>
+
+	<response id="response_1135977915" text="response_1135977915" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="Equals" id="perkScienceCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="LT" id="perkScienceCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="6000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="6000" />
+		<action type="AddBuff" id="perkCraftScienceLvl" />
+		<action type="AddCVar, SCore" id="perkScienceCrafting" value="2" operator="set" />
+	</response>
+
+	<response id="response_1135977916" text="response_1135977916" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="Equals" id="perkScienceCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="LT" id="perkScienceCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="9000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="9000" />
+		<action type="AddBuff" id="perkCraftScienceLvl" />
+		<action type="AddCVar, SCore" id="perkScienceCrafting" value="3" operator="set" />
+	</response>
+
+	<response id="response_1135977917" text="response_1135977917" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="Equals" id="perkScienceCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="LT" id="perkScienceCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="12000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="12000" />
+		<action type="AddBuff" id="perkCraftScienceLvl" />
+		<action type="AddCVar, SCore" id="perkScienceCrafting" value="4" operator="set" />
+	</response>
+
+	<response id="response_1135977918" text="response_1135977918" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="Equals" id="perkScienceCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="LT" id="perkScienceCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="15000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="15000" />
+		<action type="AddBuff" id="perkCraftScienceLvl" />
+		<action type="AddCVar, SCore" id="perkScienceCrafting" value="5" operator="set" />
+	</response>
+</set>
+
+<set xpath="/dialogs/dialog[@id='traderCaitlin']">
+<!-- Statements -->
+	<statement id="start" text="dialog_trader_statement_start">
+		<response_entry id="shop" />
+		<response_entry id="jobsnone" />
+		<response_entry id="jobshave1" />
+		<response_entry id="jobshave2" />
+		<response_entry id="jobshave3" />
+		<response_entry id="jobshave4" />
+		<response_entry id="jobshave5" /> <!--
+		<response_entry id="WhiteRiverQuests" ref_text="Do you have any other work?" /> -->
+		<response_entry id="responseID_-519706824" ref_text="Can you teach me to be a better crafter?" />
+		<response_entry id="MasteryText" ref_text="Do you know any class masteries?" />
+		<response_entry id="admin" />
+		<response_entry id="done" />
+	</statement>
+
+	<statement id="currentjobs1" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="1" />
+		<quest_entry listindex="1" tier="1" />
+		<quest_entry listindex="2" tier="1" />
+		<quest_entry listindex="3" tier="1" />
+		<quest_entry listindex="4" tier="1" />
+		<response_entry id="jobsnext2" uniqueid="next" />
+		<response_entry id="jobsnext3" uniqueid="next" />
+		<response_entry id="jobsnext4" uniqueid="next" />
+		<response_entry id="jobsnext5" uniqueid="next" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<statement id="currentjobs2" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="2" />
+		<quest_entry listindex="1" tier="2" />
+		<quest_entry listindex="2" tier="2" />
+		<quest_entry listindex="3" tier="2" />
+		<quest_entry listindex="4" tier="2" />
+
+		<response_entry id="jobsprev1" uniqueid="prev" />
+
+		<response_entry id="jobsnext3" uniqueid="next" />
+		<response_entry id="jobsnext4" uniqueid="next" />
+		<response_entry id="jobsnext5" uniqueid="next" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<statement id="currentjobs3" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="3" />
+		<quest_entry listindex="1" tier="3" />
+		<quest_entry listindex="2" tier="3" />
+		<quest_entry listindex="3" tier="3" />
+		<quest_entry listindex="4" tier="3" />
+
+		<response_entry id="jobsprev2" uniqueid="prev" />
+		<response_entry id="jobsprev1" uniqueid="prev" />
+
+		<response_entry id="jobsnext4" uniqueid="next" />
+		<response_entry id="jobsnext5" uniqueid="next" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<statement id="currentjobs4" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="4" />
+		<quest_entry listindex="1" tier="4" />
+		<quest_entry listindex="2" tier="4" />
+		<quest_entry listindex="3" tier="4" />
+		<quest_entry listindex="4" tier="4" />
+
+		<response_entry id="jobsprev3" uniqueid="prev" />
+		<response_entry id="jobsprev2" uniqueid="prev" />
+		<response_entry id="jobsprev1" uniqueid="prev" />
+
+		<response_entry id="jobsnext5" uniqueid="next" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<statement id="currentjobs5" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry listindex="0" tier="5" />
+		<quest_entry listindex="1" tier="5" />
+		<quest_entry listindex="2" tier="5" />
+		<quest_entry listindex="3" tier="5" />
+		<quest_entry listindex="4" tier="5" />
+
+		<response_entry id="jobsprev4" uniqueid="prev" />
+		<response_entry id="jobsprev3" uniqueid="prev" />
+		<response_entry id="jobsprev2" uniqueid="prev" />
+		<response_entry id="jobsprev1" uniqueid="prev" />
+
+		<response_entry id="nevermind" />
+	</statement>
+
+	<statement id="currentjobsspecial" text="dialog_trader_statement_currentjobs" nextstatementid="start" >
+		<quest_entry type="special" listindex="0" />
+		<quest_entry type="special" listindex="1" />
+		<quest_entry type="special" listindex="2" />
+		<quest_entry type="special" listindex="3" />
+		<quest_entry type="special" listindex="4" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<statement id="nojobs" text="dialog_trader_statement_nojobs" nextstatementid="start" />
+
+	<statement id="admin" text="dialog_trader_statement_admin">
+		<response_entry id="restock" />
+		<response_entry id="resetquests" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<!-- Responses -->
+	<response id="shop" text="dialog_trader_response_shop">
+		<action type="Trader" id="trade" />
+	</response>
+
+	<response id="jobsnone" text="dialog_trader_response_jobsnone" nextstatementid="nojobs" >
+		<requirement type="QuestStatus" value="InProgress" requirementtype="Hide" />
+	</response>
+	<response id="jobshave1" text="dialog_trader_response_jobshave" nextstatementid="currentjobs1" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="1" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+
+	<response id="jobshave2" text="dialog_trader_response_jobshave" nextstatementid="currentjobs2" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="2" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+
+	<response id="jobshave3" text="dialog_trader_response_jobshave" nextstatementid="currentjobs3" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="3" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+
+	<response id="jobshave4" text="dialog_trader_response_jobshave" nextstatementid="currentjobs4" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="4" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+
+	<response id="jobshave5" text="dialog_trader_response_jobshave" nextstatementid="currentjobs5" >
+		<requirement type="QuestStatus" value="NotStarted" requirementtype="Hide" />
+		<requirement type="QuestTierHighest" value="5" requirementtype="Hide" />
+		<action type="AddJournalEntry" id="questTip" />
+	</response>
+
+	<response id="jobsprev1" text="Previous Tier" nextstatementid="currentjobs1" >
+		<requirement type="QuestTier" value="1" requirementtype="Hide" />
+	</response>
+
+	<response id="jobsprev2" text="Previous Tier" nextstatementid="currentjobs2" >
+		<requirement type="QuestTier" value="2" requirementtype="Hide" />
+	</response>
+
+	<response id="jobsprev3" text="Previous Tier" nextstatementid="currentjobs3" >
+		<requirement type="QuestTier" value="3" requirementtype="Hide" />
+	</response>
+
+	<response id="jobsprev4" text="Previous Tier" nextstatementid="currentjobs4" >
+		<requirement type="QuestTier" value="4" requirementtype="Hide" />
+	</response>
+
+	<response id="jobsnext2" text="Next Tier" nextstatementid="currentjobs2" >
+		<requirement type="QuestTier" value="2" requirementtype="Hide" />
+	</response>
+
+	<response id="jobsnext3" text="Next Tier" nextstatementid="currentjobs3" >
+		<requirement type="QuestTier" value="3" requirementtype="Hide" />
+	</response>
+
+	<response id="jobsnext4" text="Next Tier" nextstatementid="currentjobs4" >
+		<requirement type="QuestTier" value="4" requirementtype="Hide" />
+	</response>
+
+	<response id="jobsnext5" text="Next Tier" nextstatementid="currentjobs5" >
+		<requirement type="QuestTier" value="5" requirementtype="Hide" />
+	</response>
+
+	<response id="background" text="dialog_trader_response_background" nextstatementid="background">
+	</response>
+
+	<response id="navezgane" text="dialog_trader_response_navezgane" nextstatementid="navezgane" />
+	<response id="theduke" text="dialog_trader_response_theduke" nextstatementid="theduke" />
+	<response id="cassadores" text="dialog_trader_response_cassadores" nextstatementid="cassadores" />
+	<response id="noah" text="dialog_trader_response_noah" nextstatementid="noah" />
+	<response id="whiteriveroutposts" text="dialog_trader_response_whiteriveroutposts" nextstatementid="whiteriveroutposts" />
+	<response id="nevermind" text="dialog_trader_response_nevermind" nextstatementid="start" />
+
+	<response id="admin" text="dialog_trader_response_admin" nextstatementid="admin" >
+		<requirement type="Admin" requirementtype="Hide" />
+	</response>
+
+	<response id="restock" text="dialog_trader_response_restock">
+		<action type="Trader" id="restock" />
+	</response>
+
+	<response id="resetquests" text="dialog_trader_response_resetquests">
+		<action type="Trader" id="reset_quests" />
+	</response>
+
+	<response id="done" text="dialog_trader_response_nevermind" />
+
+	<!-- This is going to be for the quests to send players to the various quest NPCs 
+	<response id="WhiteRiverQuests" text="responseID_-1931532973" nextstatementid="WhiteRiverQuestList">
+		<requirement type="HasCVarSDX, SCore" value="10" requirementtype="Hide" operator="GTE" id="traderCaitlinFaction" Hash="Requirement_292948548" />
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="whiteriver_visit_razor_complete" Hash="Requirement_292948548" />
+	</response>
+
+	<statement id="WhiteRiverQuestList" text="statement_1491868663">
+		<response_entry id="WhiteRiverQuestOne" ref_text="Open Trade Routes (Tier 1)" /> 
+	</statement>
+
+	<response id="WhiteRiverQuestOne" text="response_-113720860" nextstatementid="start"> 
+		<requirement type="HasStartedQuest, Harmony-0-DarknessFallsCore" requirementtype="Hide" value="!whiteriver_visit_razor"/>
+		<action type="GiveQuestSDX, SCore" id="whiteriver_visit_razor" />
+	</response> -->
+	
+	<response id="responseID_-519706824" text="responseID_-519706824" nextstatementid="statement_-142346460">
+	</response> 
+
+	<statement id="statement_-142346460" text="statement_-142346460">
+		<response_entry id="response_1135977886" ref_text="Armor Crafting (1000)" />
+		<response_entry id="response_1135977887" ref_text="Armor Crafting (2000)" />
+		<response_entry id="response_1135977888" ref_text="Armor Crafting (3000)" />
+		<response_entry id="response_1135977889" ref_text="Armor Crafting (4000)" />
+		<response_entry id="response_1135977890" ref_text="Armor Crafting (5000)" />
+		<response_entry id="response_1135977896" ref_text="Gun Crafting (1000)" />
+		<response_entry id="response_1135977897" ref_text="Gun Crafting (2000)" />
+		<response_entry id="response_1135977898" ref_text="Gun Crafting (3000)" />
+		<response_entry id="response_1135977899" ref_text="Gun Crafting (4000)" />
+		<response_entry id="response_1135977900" ref_text="Gun Crafting (5000)" />
+		<response_entry id="response_1135977905" ref_text="Tool Crafting (1000)" />
+		<response_entry id="response_1135977906" ref_text="Tool Crafting (2000)" />
+		<response_entry id="response_1135977907" ref_text="Tool Crafting (3000)" />
+		<response_entry id="response_1135977908" ref_text="Tool Crafting (4000)" />
+		<response_entry id="response_1135977909" ref_text="Tool Crafting (5000)" />
+		<response_entry id="response_1135977914" ref_text="Science Crafting (1000)" />
+		<response_entry id="response_1135977915" ref_text="Science Crafting (2000)" />
+		<response_entry id="response_1135977916" ref_text="Science Crafting (3000)" />
+		<response_entry id="response_1135977917" ref_text="Science Crafting (4000)" />
+		<response_entry id="response_1135977918" ref_text="Science Crafting (5000)" />
+		<response_entry id="nevermind" />
+	</statement>
+
+	<response id="response_1135977886" text="response_1135977886" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkArmorCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="3000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="3000" />
+		<action type="AddBuff" id="perkCraftArmorLvl" />
+		<action type="AddCVar, SCore" id="perkArmorCrafting" value="1" operator="set" />
+	</response>
+
+	<response id="response_1135977887" text="response_1135977887" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="Equals" id="perkArmorCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="LT" id="perkArmorCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="6000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="6000" />
+		<action type="AddBuff" id="perkCraftArmorLvl" />
+		<action type="AddCVar, SCore" id="perkArmorCrafting" value="2" operator="set" />
+	</response>
+
+	<response id="response_1135977888" text="response_1135977888" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="Equals" id="perkArmorCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="LT" id="perkArmorCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="9000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="9000" />
+		<action type="AddBuff" id="perkCraftArmorLvl" />
+		<action type="AddCVar, SCore" id="perkArmorCrafting" value="3" operator="set" />
+	</response>
+
+	<response id="response_1135977889" text="response_1135977889" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="Equals" id="perkArmorCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="LT" id="perkArmorCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="12000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="12000" />
+		<action type="AddBuff" id="perkCraftArmorLvl" />
+		<action type="AddCVar, SCore" id="perkArmorCrafting" value="4" operator="set" />
+	</response>
+
+	<response id="response_1135977890" text="response_1135977890" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="Equals" id="perkArmorCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="LT" id="perkArmorCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="15000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="15000" />
+		<action type="AddBuff" id="perkCraftArmorLvl" />
+		<action type="AddCVar, SCore" id="perkArmorCrafting" value="5" operator="set" />
+	</response>
+
+	<response id="response_1135977896" text="response_1135977896" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkCraftGuns" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="3000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="3000" />
+		<action type="AddBuff" id="perkCraftGunLvl" />
+		<action type="AddCVar, SCore" id="perkCraftGuns" value="1" operator="set" />
+	</response>
+
+	<response id="response_1135977897" text="response_1135977897" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="Equals" id="perkCraftGuns" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="LT" id="perkCraftGuns" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="6000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="6000" />
+		<action type="AddBuff" id="perkCraftGunLvl" />
+		<action type="AddCVar, SCore" id="perkCraftGuns" value="2" operator="set" />
+	</response>
+
+	<response id="response_1135977898" text="response_1135977898" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="Equals" id="perkCraftGuns" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="LT" id="perkCraftGuns" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="9000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="9000" />
+		<action type="AddBuff" id="perkCraftGunLvl" />
+		<action type="AddCVar, SCore" id="perkCraftGuns" value="3" operator="set" />
+	</response>
+
+	<response id="response_1135977899" text="response_1135977899" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="Equals" id="perkCraftGuns" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="LT" id="perkCraftGuns" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="12000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="12000" />
+		<action type="AddBuff" id="perkCraftGunLvl" />
+		<action type="AddCVar, SCore" id="perkCraftGuns" value="4" operator="set" />
+	</response>
+
+	<response id="response_1135977900" text="response_1135977900" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="Equals" id="perkCraftGuns" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="LT" id="perkCraftGuns" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="15000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="15000" />
+		<action type="AddBuff" id="perkCraftGunLvl" />
+		<action type="AddCVar, SCore" id="perkCraftGuns" value="5" operator="set" />
+	</response>
+
+	<response id="response_1135977905" text="response_1135977905" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkToolCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="3000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="3000" />
+		<action type="AddBuff" id="perkCraftToolLvl" />
+		<action type="AddCVar, SCore" id="perkToolCrafting" value="1" operator="set" />
+	</response>
+
+	<response id="response_1135977906" text="response_1135977906" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="Equals" id="perkToolCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="LT" id="perkToolCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="6000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="6000" />
+		<action type="AddBuff" id="perkCraftToolLvl" />
+		<action type="AddCVar, SCore" id="perkToolCrafting" value="2" operator="set" />
+	</response>
+
+	<response id="response_1135977907" text="response_1135977907" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="Equals" id="perkToolCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="LT" id="perkToolCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="9000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="9000" />
+		<action type="AddBuff" id="perkCraftToolLvl" />
+		<action type="AddCVar, SCore" id="perkToolCrafting" value="3" operator="set" />
+	</response>
+
+	<response id="response_1135977908" text="response_1135977908" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="Equals" id="perkToolCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="LT" id="perkToolCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="12000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="12000" />
+		<action type="AddBuff" id="perkCraftToolLvl" />
+		<action type="AddCVar, SCore" id="perkToolCrafting" value="4" operator="set" />
+	</response>
+
+	<response id="response_1135977909" text="response_1135977909" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="Equals" id="perkToolCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="LT" id="perkToolCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="15000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="15000" />
+		<action type="AddBuff" id="perkCraftToolLvl" />
+		<action type="AddCVar, SCore" id="perkToolCrafting" value="5" operator="set" />
+	</response>
+
+	<response id="response_1135977914" text="response_1135977914" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkScienceCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="3000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="3000" />
+		<action type="AddBuff" id="perkCraftScienceLvl" />
+		<action type="AddCVar, SCore" id="perkScienceCrafting" value="1" operator="set" />
+	</response>
+
+	<response id="response_1135977915" text="response_1135977915" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="Equals" id="perkScienceCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="LT" id="perkScienceCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="6000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="6000" />
+		<action type="AddBuff" id="perkCraftScienceLvl" />
+		<action type="AddCVar, SCore" id="perkScienceCrafting" value="2" operator="set" />
+	</response>
+
+	<response id="response_1135977916" text="response_1135977916" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="2" requirementtype="Hide" operator="Equals" id="perkScienceCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="LT" id="perkScienceCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="9000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="9000" />
+		<action type="AddBuff" id="perkCraftScienceLvl" />
+		<action type="AddCVar, SCore" id="perkScienceCrafting" value="3" operator="set" />
+	</response>
+
+	<response id="response_1135977917" text="response_1135977917" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="3" requirementtype="Hide" operator="Equals" id="perkScienceCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="LT" id="perkScienceCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="12000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="12000" />
+		<action type="AddBuff" id="perkCraftScienceLvl" />
+		<action type="AddCVar, SCore" id="perkScienceCrafting" value="4" operator="set" />
+	</response>
+
+	<response id="response_1135977918" text="response_1135977918" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="4" requirementtype="Hide" operator="Equals" id="perkScienceCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasCVarSDX, SCore" value="5" requirementtype="Hide" operator="LT" id="perkScienceCrafting" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="15000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="15000" />
+		<action type="AddBuff" id="perkCraftScienceLvl" />
+		<action type="AddCVar, SCore" id="perkScienceCrafting" value="5" operator="set" />
+	</response>
+	
+	<response id="MasteryText" text="MasteryText" nextstatementid="MasteryOffer">
+	</response>
+
+	<statement id="MasteryOffer" text="MasteryOffer">
+		<response_entry id="TraderRektMasterFarmer" ref_text="Master Farmer" />
+		<response_entry id="TraderJoelMasterSecurity" ref_text="Master Security" />
+		<response_entry id="TraderJoelMasterSurvivalist" ref_text="Master Survivalist" />
+		<response_entry id="TraderHughMasterLaborer" ref_text="Master Laborer" />
+		<response_entry id="TraderHughMasterHunter" ref_text="Master Hunter" />
+		<response_entry id="TraderJenMasterScientist" ref_text="Master Scientist" />
+		<response_entry id="TraderBobMasterMechanic" ref_text="Master Mechanic" />
+		<response_entry id="nevermind" />
+	</statement>
+	
+	<response id="TraderRektMasterFarmer" text="TraderRektMasterFarmer" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkMasterFarmer" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="100000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="100000" />
+		<action type="AddBuff" id="perkMasterFarmerLvl" />
+		<action type="AddCVar, SCore" id="perkMasterFarmer" value="1" operator="set" />
+	</response>
+	
+	<response id="TraderJoelMasterSecurity" text="TraderJoelMasterSecurity" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkMasterSecurity" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="100000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="100000" />
+		<action type="AddBuff" id="perkMasterSecurityLvl" />
+		<action type="AddCVar, SCore" id="perkMasterSecurity" value="1" operator="set" />
+	</response>
+
+	<response id="TraderJoelMasterSurvivalist" text="TraderJoelMasterSurvivalist" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkMasterSurvivalist" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="100000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="100000" />
+		<action type="AddBuff" id="perkMasterSurvivalistLvl" />
+		<action type="AddCVar, SCore" id="perkMasterSurvivalist" value="1" operator="set" />
+	</response>
+	
+	<response id="TraderHughMasterLaborer" text="TraderHughMasterLaborer" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkMasterLaborer" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="100000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="100000" />
+		<action type="AddBuff" id="perkMasterLaborerLvl" />
+		<action type="AddCVar, SCore" id="perkMasterLaborer" value="1" operator="set" />
+	</response>
+
+	<response id="TraderHughMasterHunter" text="TraderHughMasterHunter" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkMasterHunter" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="100000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="100000" />
+		<action type="AddBuff" id="perkMasterHunterLvl" />
+		<action type="AddCVar, SCore" id="perkMasterHunter" value="1" operator="set" />
+	</response>
+	
+	<response id="TraderJenMasterScientist" text="TraderJenMasterScientist" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkMasterScientist" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="100000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="100000" />
+		<action type="AddBuff" id="perkMasterScientistLvl" />
+		<action type="AddCVar, SCore" id="perkMasterScientist" value="1" operator="set" />
+	</response>
+	
+	<response id="TraderBobMasterMechanic" text="TraderBobMasterMechanic" nextstatementid="start">
+		<requirement type="HasCVarSDX, SCore" value="1" requirementtype="Hide" operator="LT" id="perkMasterMechanic" Hash="Requirement_-1518065101" />
+		<requirement type="HasItemSDX, SCore" value="100000" requirementtype="Hide" id="casinoCoin" Hash="Requirement_123757519" />
+		<action type="GiveToNPC, SCore" id="casinoCoin" value="100000" />
+		<action type="AddBuff" id="perkMasterMechanicLvl" />
+		<action type="AddCVar, SCore" id="perkMasterMechanic" value="1" operator="set" />
+	</response>
+</set>
+</config>
